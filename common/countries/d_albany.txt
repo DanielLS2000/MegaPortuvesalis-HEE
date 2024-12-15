@@ -1,0 +1,23 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 220 130 0 }
+monarch_names = {
+	"Adomnán #0" = 0
+	"Ailis #0" = -1
+	"Aniel #1" = 10
+	"Caínchomrac #0" = 0
+	"Congalach #0" = 0
+	"Cú-Roí #0" = 0
+	"Duncan #1" = 10
+	"Fíne #0" = -1
+	"Galam #1" = 10
+	"Galiena #2" = -1
+	"Johnne #1" = 10
+	"Malcolm #1" = 10
+	"Malmure #1" = 10
+	"Máel-Cianáin #0" = 0
+	"Sweeny #1" = 10
+	"Telurg #1" = 10
+	"Tighearnach #1" = 10
+	"Walter #2" = 10
+}

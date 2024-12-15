@@ -1,0 +1,15 @@
+owner = JNN
+controller = JNN
+capital = "San"
+is_city = yes
+culture = bozo
+religion = converted_dynamic_faith_162
+trade_goods = iron
+base_tax = 3
+base_production = 3
+base_manpower = 1
+add_core = JNN
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

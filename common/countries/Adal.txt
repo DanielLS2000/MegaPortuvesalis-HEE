@@ -1,0 +1,106 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 145 70 130 }
+revolutionary_colors = { 0 5 0 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	religious_ideas
+	spy_ideas
+	economic_ideas
+	quantity_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	adal_guerilla_warfare
+	adal_gunpowder_warfare
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	westernized_adal
+}
+monarch_names = {
+	"Abadir #1" = 10
+	"Abdulah #0" = 0
+	"Adeer #1" = 10
+	"Adey #0" = -1
+	"Ahmed #0" = 0
+	"Astur #0" = -1
+	"Awa #0" = -1
+	"Awe #0" = 0
+	"Barni #0" = -1
+	"Basimah #0" = -1
+	"Basr #0" = -1
+	"Beydaan #0" = -1
+	"Billan #0" = -1
+	"Canab #0" = -1
+	"Cawo #0" = -1
+	"Deeqa #0" = -1
+	"Dhidhin #0" = 0
+	"Fawzia #0" = -1
+	"Garoo #0" = 0
+	"Hamalmal #0" = 0
+	"Hamar #0" = 0
+	"Haqq #0" = 0
+	"Harba'ir #1" = 10
+	"Kadhafo #2" = 10
+	"Khadra #0" = -1
+	"Khalaf #0" = 0
+	"Leyla #0" = -1
+	"Magol #0" = -1
+	"Mahamed #0" = 0
+	"Mansur #0" = 0
+	"Moussa #0" = 0
+	"Naleye #0" = 0
+	"Nasr #0" = 0
+	"Nasteexo #0" = -1
+	"Omer #0" = 0
+	"Sa'ad #1" = 10
+	"Sabr #0" = 0
+	"Sadiq #0" = 0
+	"Sagal #0" = -1
+	"Sahra #0" = -1
+	"Talha #1" = 10
+	"Tanan #0" = 0
+	"Tinzert #0" = -1
+	"Ubah #0" = -1
+	"Umar #1" = 10
+	"Watt'as #0" = 0
+	"Zaynab #0" = -1
+}
+leader_names = {
+	"Abdelrashid"
+	"Barré"
+	"Bol"
+	"Deng"
+	"Lemn"
+	"Leta"
+	"Semer"
+	"Teka"
+	"Tsige"
+	"Yagoub"
+}
+ship_names = {
+	"Asayita"
+	"Aura"
+	"Awash"
+	"Berahle"
+	"Chifra"
+	"Dallol"
+	"Dubti"
+	"Dulecha"
+	"Elidar"
+	"Ewa"
+	"Gewane"
+	"Koneba"
+	"Mille"
+	"Semera"
+	"Simurobi"
+	"Yalo"
+}

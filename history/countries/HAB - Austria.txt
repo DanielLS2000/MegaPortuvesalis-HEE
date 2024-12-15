@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = austrian_archduchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = cosmopolitan_french
+capital = 134
+add_accepted_culture = dynamic-bavarian-culture-num1
+1444.11.11= {
+	monarch = {
+		name = "Ferdinand"
+		dynasty = "von Habsburg-Lothringen"
+		adm = 5
+		dip = 3
+		mil = 4
+		birth_date = 1402.4.11
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Etel"
+		dynasty = "Budai Nagy"
+		adm = 2
+		dip = 4
+		mil = 3
+		country_of_origin = HAB
+		birth_date = 1403.8.12
+		death_date = 1463.8.12
+		female = yes
+		religion = catholic
+		culture = hungarian
+	}
+	add_queen_personality = charismatic_negotiator_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Louis"
+		monarch_name = "Louis"
+		dynasty = "von Habsburg-Lothringen"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1429.2.7
+		death_date = 1494.2.7
+		claim = 89
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+	add_heir_personality = craven_personality
+	add_heir_personality = cruel_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 81
+}

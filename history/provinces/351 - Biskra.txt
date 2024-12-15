@@ -1,0 +1,16 @@
+owner = Z0K
+controller = Z0K
+capital = "Biskra"
+is_city = yes
+culture = algerian
+religion = sunni
+trade_goods = wool
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = ALG
+add_core = Z0K
+discovered_by = TUR
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

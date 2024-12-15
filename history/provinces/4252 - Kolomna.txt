@@ -1,0 +1,17 @@
+owner = Z3N
+controller = Z3N
+capital = "Kolomna"
+is_city = yes
+culture = russian
+religion = catholic
+trade_goods = livestock
+hre = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = MOS
+add_core = Z3N
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

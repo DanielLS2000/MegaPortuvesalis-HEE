@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = polish
+capital = 256
+1444.11.11= {
+	monarch = {
+		name = "Odon"
+		dynasty = "Ossowski"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1383.11.26
+		religion = catholic
+		culture = polish
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Milokka"
+		dynasty = "Jesenský"
+		adm = 4
+		dip = 3
+		mil = 3
+		country_of_origin = MAZ
+		birth_date = 1379.3.16
+		death_date = 1439.3.16
+		female = yes
+		religion = catholic
+		culture = hungarian
+	}
+	add_queen_personality = fierce_negotiator_personality
+	add_queen_personality = free_thinker_personality
+	heir = {
+		name = "Miloslaw"
+		monarch_name = "Miloslaw III"
+		dynasty = "Ossowski"
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 1401.10.24
+		death_date = 1466.10.24
+		claim = 89
+		religion = catholic
+		culture = polish
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 74
+}

@@ -1,0 +1,114 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 66 126 157 }
+revolutionary_colors = { 0 5 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	religious_ideas
+	offensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Alef #1" = 10
+	"Ansoald #0" = 0
+	"Baderic #1" = 10
+	"Baldegilde #0" = -1
+	"Basinus #1" = 10
+	"Berta #1" = -1
+	"Berthar #2" = 10
+	"Berunch #0" = 0
+	"Bozydar #0" = 0
+	"Chamar #3" = 10
+	"Egino #1" = 10
+	"Faidiva #0" = -1
+	"Fisud #1" = 10
+	"Galiena #0" = -1
+	"Gunhilda #0" = -1
+	"Hadulf #1" = 10
+	"Helmold #0" = 0
+	"Hermanfred #1" = 10
+	"Karel #0" = 0
+	"Konrad #1" = 10
+	"Landelanda #0" = -1
+	"Liutbert #0" = 0
+	"Matthias #1" = 10
+	"Maximilian #0" = 0
+	"Olena #0" = -1
+	"Poppo #2" = 10
+	"Radulf #3" = 10
+	"Richwara #0" = -1
+	"Sclaomir #0" = 0
+	"Solomonida #0" = -1
+	"Thankulf #2" = 10
+	"Wilhelm #1" = 10
+	"Wolfgang #2" = 10
+	"Swietopelk #0" = 0
+}
+leader_names = {
+	"Becher"
+	"Berndt"
+	"Blochberger"
+	"Bohn"
+	"Brendelin"
+	"Brosius"
+	"Burgberg"
+	"Bär"
+	"Eisenschmid"
+	"Grieser"
+	"Grimm"
+	"Gäbelein"
+	"Hofmann"
+	"Horn"
+	"Jauch"
+	"Langheinrich"
+	"Meier"
+	"Meisgeier"
+	"Möser"
+	"Oswald"
+	"Rank"
+	"Rauh"
+	"Ritter"
+	"Schilling"
+	"Schmidt"
+	"Schreuser"
+	"Söll"
+	"Taut"
+	"Trögel"
+}
+ship_names = {
+	"Heinrich Raspe"
+	"Herzog Heden"
+	"Herzog Radulf"
+	"Katwalda"
+	"König Baderich"
+	"König Berthachar"
+	"König Bisinus"
+	"König Herminafried"
+	"Landgraf Hermann"
+	"Marbod"
+	"Markgraf Ekkehard I"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

@@ -1,0 +1,16 @@
+owner = Z1U
+controller = Z1U
+capital = "Córdoba"
+is_city = yes
+culture = andalucian
+religion = sunni
+trade_goods = grain
+hre = yes
+base_tax = 5
+base_production = 8
+base_manpower = 3
+add_core = Z1U
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

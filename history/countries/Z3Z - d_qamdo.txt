@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = tibetan
+capital = 2131
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Tong'an"
+		dynasty = "Nagormo"
+		adm = 3
+		dip = 5
+		mil = 5
+		birth_date = 1394.1.16
+		female = yes
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	queen = {
+		name = "Gaoligu"
+		dynasty = "Sumpa-Gaotai"
+		adm = 5
+		dip = 4
+		mil = 4
+		country_of_origin = Z3Z
+		birth_date = 1390.8.11
+		death_date = 1450.8.11
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Tong'an"
+		monarch_name = "Tong'an"
+		dynasty = "Sumpa-Gaotai"
+		adm = 5
+		dip = 5
+		mil = 6
+		birth_date = 1410.11.7
+		death_date = 1475.11.7
+		female = yes
+		claim = 89
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = intricate_web_weaver_personality
+}
+1444.11.11= {
+	add_prestige = 80
+	add_treasury = 69
+}

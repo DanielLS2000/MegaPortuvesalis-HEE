@@ -1,0 +1,15 @@
+owner = Z1V
+controller = Z1V
+capital = "Malé"
+is_city = yes
+culture = sinhala
+religion = buddhism
+trade_goods = gems
+base_tax = 4
+base_production = 1
+base_manpower = 2
+add_core = Z1V
+add_permanent_claim = MAD
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim

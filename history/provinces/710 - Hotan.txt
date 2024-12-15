@@ -1,0 +1,16 @@
+owner = Z2T
+controller = Z2T
+capital = "Hotan"
+is_city = yes
+culture = saka
+religion = mahayana
+trade_goods = gems
+base_tax = 7
+base_production = 3
+base_manpower = 8
+extra_cost = 8
+center_of_trade = 1
+add_core = KAS
+add_core = Z2T
+discovered_by = chinese
+discovered_by = nomad_group

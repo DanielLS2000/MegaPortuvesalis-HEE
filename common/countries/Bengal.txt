@@ -1,0 +1,155 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 36 109 194 }
+revolutionary_colors = { 9 5 9 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	humanist_ideas
+	quantity_ideas
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	quality_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Akkadevi #0" = -1
+	"Amritakala #0" = -1
+	"Anangpal #0" = 0
+	"Arjunpala #0" = 0
+	"Bhagabhadra #0" = 0
+	"Bhumpala #0" = 0
+	"Birpal #0" = 0
+	"Birpala #0" = 0
+	"Chandrabbalabbe #0" = -1
+	"Câramutaiyân #0" = 0
+	"Dattadevi #0" = -1
+	"Dehanagadevi #0" = -1
+	"Devapala #1" = 10
+	"Dharmapala #1" = 10
+	"Dhruvadevi #0" = -1
+	"Dhruvasvamini #0" = -1
+	"Goleda #0" = 0
+	"Gopala #2" = 10
+	"Harpal #1" = 10
+	"Irâcêntira #0" = 0
+	"Ishtpala #0" = 0
+	"Jasapala #0" = 0
+	"Jaspal #1" = 10
+	"Kakanvati #0" = -1
+	"Kalayandevi #0" = -1
+	"Kanchuka #0" = -1
+	"Khadgodyama #2" = 10
+	"Khojin #0" = -1
+	"Kumaradevi #0" = -1
+	"Lokpala #0" = 0
+	"Maharani #0" = -1
+	"Mahendrapala #1" = 10
+	"Mahidevi #0" = -1
+	"Mahipala #1" = 10
+	"Mahipata #0" = 0
+	"Merwan #0" = 0
+	"Naranarayan #0" = 0
+	"Narayanapala #1" = 10
+	"Nayanadevi #0" = -1
+	"Nayapala #1" = 10
+	"Nyandak #0" = -1
+	"Prabhavati #0" = -1
+	"Pratapnarayan #0" = 0
+	"Puppadevi #0" = -1
+	"Rajabhata #0" = 0
+	"Rajyapala #1" = 10
+	"Shrimitradevi #0" = -1
+	"Sisupala #0" = 0
+	"Srichandra #0" = 0
+	"Subhatavarman #0" = 0
+	"Suhava #0" = -1
+	"Suvrata #0" = -1
+	"Tejapala #3" = 10
+	"Traillokyachandra #0" = 0
+	"Tökarma #0" = -1
+	"Udirnakhadga #2" = 10
+	"Upendranayaran #0" = 0
+	"Vigrahapala #3" = 10
+	"Viramdeva #0" = 0
+	"Zarifa #0" = -1
+}
+leader_names = {
+	"Azad"
+	"Bose"
+	"Chodhury"
+	"Das"
+	"Debshikdar"
+	"Ganesha"
+	"Ganguly"
+	"Ghosh"
+	"Karani"
+	"Khan"
+	"Majumdar"
+	"Mukerjhee"
+	"Pal"
+	"Roy"
+	"Saraswoti"
+	"Sarkar"
+	"Sen"
+	"Shahi"
+	"Shaikh"
+	"Suri"
+	"Thakur"
+	"Waddedar"
+	"Zamindar"
+	"ad-Daula"
+}
+ship_names = {
+	"Abu Bakr"
+	"Ali Khan"
+	"Bhagirathi"
+	"Brahmaputra"
+	"Chingri Mach"
+	"Chittagong"
+	"Durbar"
+	"Durdasha"
+	"Fatima"
+	"Ganga"
+	"Hilsa Mach"
+	"Hooghly"
+	"Ilish Mach"
+	"Jalangi"
+	"Jasmine"
+	"Kali Meghana"
+	"Kali Nauk"
+	"Kolkata"
+	"Lal Nauk"
+	"Machli"
+	"Malda"
+	"Meghna"
+	"Mongla"
+	"Murshidabad"
+	"Nauk-i-Islam"
+	"Nawaber Nauk"
+	"Nil Nauk"
+	"Nil Sagor"
+	"Osman"
+	"Padma"
+	"Rui Mach"
+	"Sagorer Bahini"
+	"Shaheed"
+	"Sheikher Nauk"
+	"Sonar Bangladesh"
+	"Sunderboner Bahini"
+	"Sunderboner Nauk"
+	"Tasleema"
+}

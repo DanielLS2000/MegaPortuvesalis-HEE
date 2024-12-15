@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = czech
+capital = 278
+add_accepted_culture = dynamic-russian_culture-culture-num1
+add_accepted_culture = ruthenian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Vladislava"
+		dynasty = "Vessalius"
+		adm = 2
+		dip = 5
+		mil = 4
+		birth_date = 1398.7.21
+		female = yes
+		religion = catholic
+		culture = czech
+	}
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Pawel"
+		dynasty = "Swieca"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = Z3V
+		birth_date = 1404.4.10
+		death_date = 1464.4.10
+		religion = catholic
+		culture = sorbian
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = infertile_personality
+	heir = {
+		name = "Boleslav"
+		monarch_name = "Boleslav"
+		dynasty = "Vessalius"
+		adm = 4
+		dip = 2
+		mil = 3
+		birth_date = 1433.11.10
+		death_date = 1498.11.10
+		claim = 89
+		religion = catholic
+		culture = czech
+	}
+	add_heir_personality = calm_personality
+	add_heir_personality = just_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 65
+}

@@ -1,0 +1,93 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 175 82 16 }
+revolutionary_colors = { 9 0 9 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+	economic_ideas
+	quantity_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Azraq #0" = 0
+	"Bakkar #0" = 0
+	"Beser #1" = 10
+	"Bênaz #0" = -1
+	"Cevid #1" = 10
+	"Dharasena #0" = 0
+	"Dhiya #0" = 0
+	"Dujanah #0" = -1
+	"Ebadaah #0" = 0
+	"Guhtem #0" = -1
+	"Karacik #0" = -1
+	"Khashayar #1" = 10
+	"Mukesh #0" = 0
+	"Nadhir #0" = 0
+	"Navid #0" = 0
+	"Parviz #2" = 10
+	"Qabool #0" = -1
+	"Shayan #1" = 10
+	"Syed #0" = 0
+	"Uquna #0" = 0
+	"Vali #1" = 10
+	"Wabisa #0" = -1
+	"Ya'qub #1" = 10
+}
+leader_names = {
+	"Barakzay"
+	"Bozdar"
+	"Bugti"
+	"Ghilzai"
+	"Hooth"
+	"Jamot"
+	"Jatoi"
+	"Khokhar"
+	"Korai"
+	"Lashari"
+	"Lund"
+	"Mihrabanid"
+	"Mirrani"
+	"Nausherwani"
+	"Rind"
+	"Shar"
+	"Zikri"
+}
+ship_names = {
+	"Alia"
+	"Arusa"
+	"Dasht"
+	"Fatimah"
+	"Hormuz"
+	"Indus"
+	"Kech"
+	"Khan"
+	"Mashkaal"
+	"Nihing"
+	"Niknaz"
+	"Niloufa"
+	"Noor"
+	"Rakhshan"
+	"Salima"
+	"Shameena"
+	"Suhalia"
+	"Yasmine"
+	"Zahira"
+	"Zhab"
+}

@@ -1,0 +1,14 @@
+owner = FIN
+controller = FIN
+capital = "Umeå"
+is_city = yes
+culture = sapmi
+religion = catholic
+trade_goods = fur
+hre = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = FIN
+discovered_by = eastern
+discovered_by = western

@@ -1,0 +1,16 @@
+owner = ZUN
+controller = ZUN
+capital = "Maralbexi"
+is_city = yes
+culture = uzbehk
+religion = mahayana
+trade_goods = wool
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = SHY
+add_core = Z2R
+add_core = ZUN
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

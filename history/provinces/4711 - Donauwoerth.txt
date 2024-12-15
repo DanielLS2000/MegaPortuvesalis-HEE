@@ -1,0 +1,17 @@
+owner = SWA
+controller = SWA
+capital = "Nördlingen"
+is_city = yes
+culture = swabian
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 2
+base_production = 4
+base_manpower = 2
+add_core = SWA
+add_permanent_claim = FKN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

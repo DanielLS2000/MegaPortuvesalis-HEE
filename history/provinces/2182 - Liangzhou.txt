@@ -1,0 +1,13 @@
+owner = Z0M
+controller = Z0M
+capital = "Liangzhou"
+is_city = yes
+culture = dynamic-tibetan-tangut-culture-num1
+religion = confucianism
+trade_goods = livestock
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = Z0M
+discovered_by = chinese
+discovered_by = nomad_group

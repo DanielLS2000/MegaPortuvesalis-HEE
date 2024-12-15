@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 1
+technology_group = nomad_group
+religion = mahayana
+primary_culture = astrakhani
+capital = 1971
+fixed_capital = 1971
+add_accepted_culture = cuman
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Uquna"
+		dynasty = "Uqun"
+		adm = 3
+		dip = 0
+		mil = 4
+		birth_date = 1398.8.17
+		religion = mahayana
+		culture = astrakhani
+	}
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Kutlug"
+		dynasty = "al-Harrani"
+		adm = 4
+		dip = 3
+		mil = 6
+		country_of_origin = Z7P
+		birth_date = 1413.10.29
+		death_date = 1473.10.29
+		female = yes
+		religion = orthodox
+		culture = cuman
+	}
+	add_queen_personality = malevolent_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Keremün"
+		monarch_name = "Keremün"
+		dynasty = "Uqun"
+		adm = 3
+		dip = 0
+		mil = 3
+		birth_date = 1435.9.25
+		death_date = 1500.9.25
+		claim = 89
+		religion = mahayana
+		culture = mongol
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 44
+}

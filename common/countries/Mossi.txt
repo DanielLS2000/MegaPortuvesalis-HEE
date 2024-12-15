@@ -1,0 +1,73 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 27 128 45 }
+revolutionary_colors = { 16 8 10 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	administrative_ideas
+	quantity_ideas
+}
+historical_units = {
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_mandelaku
+	african_mossi_horsemen
+	african_spearmen
+	african_tuareg_cavalry
+	african_western_franchise_warfare
+	mali_tribal_warfare
+	niger_kongolese_gunpowder_warfare
+	westernized_niger_kongolese
+}
+monarch_names = {
+	"Alima #1" = -1
+	"Assita #0" = -1
+	"Awo #0" = -1
+	"Builsa Hamaria #1" = 10
+	"Cédulie #0" = -1
+	"Ekenedilichukwu #0" = 0
+	"Huntani #1" = 10
+	"Kenga #0" = -1
+	"Kutu #1" = 10
+	"Nen #0" = -1
+	"Nurumba #0" = -1
+	"Relwende #0" = -1
+	"Sanpoko #1" = -1
+	"Siakoh #0" = 0
+	"Solange #0" = -1
+	"Sorgo #2" = 10
+	"Sulayman #0" = 0
+	"Tiiga #1" = 10
+	"Yensombu #0" = 0
+}
+leader_names = {
+	"Addy"
+	"Afrifa"
+	"Akoto"
+	"Donkor"
+	"Moyoyo"
+	"Offei"
+	"Sabah"
+	"Sadami"
+	"Sribor"
+	"Zakari"
+}
+ship_names = {
+	"Asase Yaa"
+	"Benada"
+	"Bia"
+	"Dwoada"
+	"Fiada"
+	"Kwasiada"
+	"Memeneda"
+	"Nyame"
+	"Tano"
+	"Wukuada"
+	"Yawoada"
+}

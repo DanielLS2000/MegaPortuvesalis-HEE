@@ -1,0 +1,16 @@
+owner = Z4Z
+controller = Z4Z
+capital = "Velsk"
+is_city = yes
+culture = bjarmian
+religion = catholic
+trade_goods = fur
+fort_15th = yes
+hre = yes
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = Z4Z
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

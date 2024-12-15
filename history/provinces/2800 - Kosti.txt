@@ -1,0 +1,15 @@
+capital = "Kosti"
+culture = nubian
+religion = coptic
+trade_goods = unknown
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = BEJ
+add_core = NUB
+add_permanent_claim = NBI
+discovered_by = ALO
+discovered_by = MAK
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9

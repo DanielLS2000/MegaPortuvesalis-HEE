@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 125 110 225 }
+revolutionary_colors = { 10 0 1 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdallah #0" = 0
+	"Abu-Bakr #0" = 0
+	"Amunet #0" = -1
+	"Andali #0" = -1
+	"Anthimos #0" = 0
+	"Ashraf #1" = 10
+	"Duncan #0" = 0
+	"Eikkir #0" = -1
+	"Gönül #0" = -1
+	"Halil #0" = 0
+	"Hamid #0" = 0
+	"Haroun #2" = 10
+	"Hisham #0" = 0
+	"Hussayn #0" = 0
+	"Ilyas #0" = 0
+	"Jalid #0" = 0
+	"Jawar #0" = 0
+	"Jidr #0" = 0
+	"Jonet #0" = -1
+	"Juzayy #0" = 0
+	"Liudmila #0" = -1
+	"Marios #0" = 0
+	"Massiva #0" = 0
+	"Mu'awiyah #0" = 0
+	"Muhammad #0" = 0
+	"Nasir #0" = 0
+	"Osman #1" = 10
+	"Rana #0" = -1
+	"Ridwan #0" = 0
+	"Samira #0" = -1
+	"Shogofa #0" = -1
+	"Temujin #0" = 0
+	"Usama #1" = 10
+	"Ziyad #1" = 10
+}
+leader_names = {
+	"Damad"
+	"Esad"
+	"Farhad"
+	"Fazil"
+	"Hafiz"
+	"Ismail"
+	"Mehmed"
+	"Murad"
+	"Nasuh"
+	"Osman"
+	"Salih"
+	"Sinan"
+}
+ship_names = {
+	"Arif"
+	"Azmi"
+	"Dervish"
+	"Fuad"
+	"Haci"
+	"Haydar"
+	"Mulish"
+	"Nuri"
+	"Said"
+	"Salih"
+	"Sefveti"
+	"Shukri"
+}

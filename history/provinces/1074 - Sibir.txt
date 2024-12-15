@@ -1,0 +1,13 @@
+owner = Z0B
+controller = Z0B
+capital = "Qashliq"
+is_city = yes
+culture = ostyaki
+religion = mahayana
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = SIB
+add_core = Z0B
+discovered_by = nomad_group

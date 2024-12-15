@@ -1,0 +1,138 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 187 79 86 }
+revolutionary_colors = { 6 9 6 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	defensive_ideas
+	economic_ideas
+	quality_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ajitapida #1" = 10
+	"Anangapida #1" = 10
+	"Anangpal #1" = 10
+	"Anoushirvan #0" = 0
+	"Arghavan #0" = -1
+	"Bhoja #1" = 10
+	"Cippatajayapida #1" = 10
+	"Dokez #0" = -1
+	"Humayun #0" = 0
+	"Husun #0" = 0
+	"Jamshid #1" = 10
+	"Jayapida #1" = 10
+	"Jekundag #0" = 0
+	"Khojin #0" = -1
+	"Khorijin #0" = -1
+	"Kuvalayapida #1" = 10
+	"Laksmadeva #1" = 10
+	"Lalitaditya-Muktapida #1" = 10
+	"Lalitapida #1" = 10
+	"Maeen #0" = -1
+	"Mahtab #0" = -1
+	"Mangpojé #0" = -1
+	"Nazilla #0" = -1
+	"Nyima #0" = -1
+	"Phakpa #0" = 0
+	"Prithvyapida #1" = 10
+	"Raya #0" = -1
+	"Samgramapida #1" = 10
+	"Soraya #0" = -1
+	"Suhava #0" = -1
+	"Tekine #0" = -1
+	"Tensung #0" = 0
+	"Toghtoga #0" = 0
+	"Tugor #0" = 0
+	"Utpalapida #1" = 10
+	"Vahid #0" = 0
+	"Vajraditya #1" = 10
+	"Vandad #1" = 10
+	"Vštaspean #0" = 0
+	"Yesugun #0" = -1
+	"Ödétsen #0" = 0
+	"Ülgen #0" = 0
+	"Ülger #0" = 0
+}
+leader_names = {
+	"Ahluwalia"
+	"Bahadur"
+	"Bara"
+	"Bhangalia"
+	"Bhatia"
+	"Bhatta"
+	"Chandral"
+	"Chattar"
+	"Chauhan"
+	"Das"
+	"Dev"
+	"Gahunia"
+	"Gami"
+	"Jamwal"
+	"Jivan"
+	"Kamboh"
+	"Katoch"
+	"Khan"
+	"Khatri"
+	"Khokhar"
+	"Kisthwaria"
+	"Lal"
+	"Makhdum"
+	"Mian"
+	"Minha"
+	"Naga"
+	"Naru"
+	"Pahore"
+	"Pakhral"
+	"Parmanand"
+	"Pundir"
+	"Rai"
+	"Ramgarhia"
+	"Rathore"
+	"Samma"
+	"Saran"
+	"Shergill"
+	"Singh"
+	"Sodhi"
+	"Sohal"
+	"Soomrah"
+	"Suleria"
+}
+ship_names = {
+	"Beas"
+	"Chenab"
+	"Devi"
+	"Gayatri"
+	"Guru"
+	"Indus"
+	"Jalsena"
+	"Jhelum"
+	"Lakshmi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Ravi"
+	"Sagar"
+	"Sarasvati"
+	"Sita"
+	"Sutlej"
+}

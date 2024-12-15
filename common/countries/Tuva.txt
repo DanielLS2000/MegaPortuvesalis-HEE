@@ -1,0 +1,61 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 45 112 100 }
+revolutionary_colors = { 8 0 14 }
+historical_idea_groups = {
+	horde_ideas
+	economic_ideas
+	quantity_ideas
+	spy_ideas
+	offensive_ideas
+	administrative_ideas
+	quality_ideas
+	trade_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Alan Gua #0" = -1
+	"Alchidai #0" = 0
+	"Amgalan #1" = 10
+	"Asep #0" = 0
+	"Baldan #0" = 0
+	"Belek-kis #0" = -1
+	"Bilge #0" = 0
+	"Boroghson #0" = 0
+	"Chagur #0" = -1
+	"Dashi-Dorzho #1" = 10
+	"Dilek #0" = -1
+	"Doquz #0" = -1
+	"Elijigidei #2" = 10
+	"Eljigedei #0" = 0
+	"Gou'er #2" = 10
+	"Iturgen #0" = 0
+	"Jakha #0" = 0
+	"Jamukha #0" = 0
+	"Karakash #0" = 0
+	"Khadagan #0" = -1
+	"Kulbur #0" = 0
+	"Mandukhai #0" = -1
+	"Nogai #0" = 0
+	"Qoshila #1" = 10
+	"Sahag #0" = 0
+	"Selbar #0" = 0
+	"Sevindik #0" = -1
+	"Tolun #0" = 0
+	"Tricham #0" = -1
+	"Urzin #0" = 0
+	"Yanxi #1" = 10
+	"Çiçek #0" = -1
+}

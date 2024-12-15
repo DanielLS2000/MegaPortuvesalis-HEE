@@ -1,0 +1,79 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 24 50 123 }
+revolutionary_colors = { 0 13 0 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	spy_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	quality_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_spahi
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Angela #0" = -1
+	"Apostolus #0" = 0
+	"Chrysogonos #0" = 0
+	"Empeirikos #0" = 0
+	"Eudokia #0" = -1
+	"Eudoxius #0" = 0
+	"Eustratios #0" = 0
+	"Helene #0" = -1
+	"Kinga #0" = -1
+	"Komninos #0" = 0
+	"Martha #0" = -1
+	"Petros #0" = 0
+	"Phronton #0" = 0
+	"Polychronios #0" = 0
+	"Synkletike #0" = -1
+	"Yana #0" = -1
+}
+leader_names = {
+	"Crispo"
+	"Della Carceri"
+	"Gattilusi"
+	"Gavalas"
+	"Ghisi"
+	"Giustiniani"
+	"Loredano"
+	"Morosini"
+	"Pisani"
+	"Sanudo"
+	"Saudos"
+	"Sommarippa"
+	"Zeno"
+	"Zorzi"
+	"d'Anoe"
+}
+ship_names = {
+	"Apollon"
+	"Crispo"
+	"Donoussa"
+	"Francis"
+	"Kastraki"
+	"Keros"
+	"Koufonisi"
+	"Mesaria"
+	"Moutsouna"
+	"Naxos"
+}

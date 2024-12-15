@@ -1,0 +1,15 @@
+owner = Z06
+controller = Z06
+capital = "Kansala"
+is_city = yes
+culture = senegambian
+religion = sunni
+trade_goods = ivory
+base_tax = 2
+base_production = 1
+base_manpower = 2
+extra_cost = 8
+center_of_trade = 1
+add_core = Z06
+add_permanent_claim = KBU
+discovered_by = sub_saharan

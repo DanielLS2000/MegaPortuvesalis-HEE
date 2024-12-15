@@ -1,0 +1,90 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 169 168 101 }
+revolutionary_colors = { 15 0 15 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_clubmen
+	african_dragoon
+	african_hussar
+	african_somali_cavalry
+	african_western_franchise_warfare
+	bantu_gunpowder_warfare
+	bantu_plains_warfare
+	bantu_tribal_warfare
+	westernized_bantu
+}
+monarch_names = {
+	"Akako #0" = 0
+	"Allaia #0" = 0
+	"Araattu #0" = -1
+	"Ashille #0" = -1
+	"Balad #0" = 0
+	"Buyunbu #0" = 0
+	"Chowaka #1" = 10
+	"Dagoye #2" = 10
+	"Danchille #0" = -1
+	"Daraittu #0" = -1
+	"Galaan #0" = 0
+	"Garasu #0" = 0
+	"Garoo #1" = 10
+	"Hodan #0" = -1
+	"Hokkuu #0" = 0
+	"Jahan #0" = -1
+	"Jawe #0" = 0
+	"Jawi #0" = 0
+	"Jidda #0" = 0
+	"Jimma #0" = 0
+	"Kombo #0" = 0
+	"Konoo #0" = 0
+	"Kyrion #0" = 0
+	"Nyawela #0" = -1
+	"Ogata #0" = 0
+	"Oncho #0" = 0
+	"Qixxeessa #0" = -1
+	"Rebo #0" = 0
+	"Sadiq #0" = 0
+	"Sagal #0" = -1
+	"Sirba #0" = 0
+	"Soddo #0" = 0
+	"Tanaz #0" = -1
+	"Wariko #1" = 10
+	"Wolassa #0" = -1
+	"Z'ergha #0" = -1
+	"Zuber #0" = 0
+}
+leader_names = {
+	"Birir"
+	"Chirombo"
+	"Chrima"
+	"Kagona"
+	"Moyo"
+	"Mutasa"
+	"Njie"
+	"Nkomo"
+	"Rise"
+	"Tembo"
+}
+ship_names = {
+	"Dziva"
+	"Dzivaguru"
+	"Mai Vedu"
+	"Mazendere"
+	"Mbonga"
+	"Mulungu"
+	"Musikavanhu"
+	"Mutorwa"
+	"Mwari"
+	"Svikiro"
+}

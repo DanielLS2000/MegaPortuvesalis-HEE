@@ -1,0 +1,15 @@
+owner = Z6A
+controller = Z6A
+capital = "Urumqi"
+is_city = yes
+culture = uyghur
+religion = tengri_pagan
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KAS
+add_core = Z62
+add_core = Z6A
+discovered_by = chinese
+discovered_by = nomad_group

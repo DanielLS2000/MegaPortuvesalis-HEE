@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 2
+technology_group = muslim
+religion = sunni
+primary_culture = algerian
+capital = 2463
+religious_school = hanbali_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Urtilian"
+		dynasty = "Almoravid"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1392.8.3
+		religion = sunni
+		culture = algerian
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Wrina"
+		dynasty = "Almoravid"
+		adm = 4
+		dip = 3
+		mil = 3
+		country_of_origin = Z0K
+		birth_date = 1392.10.17
+		death_date = 1452.10.17
+		female = yes
+		religion = sunni
+		culture = berber
+	}
+	add_queen_personality = careful_personality
+	add_queen_personality = scholar_personality
+	heir = {
+		name = "Ifser"
+		monarch_name = "Ifser"
+		dynasty = "Almoravid"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1415.10.20
+		death_date = 1480.10.20
+		claim = 89
+		religion = sunni
+		culture = berber
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = well_connected_personality
+}
+1444.11.11= {
+	add_prestige = 83
+	add_treasury = 68
+}

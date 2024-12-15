@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = irish
+capital = 376
+1444.11.11= {
+	monarch = {
+		name = "Máel-Tólai II"
+		dynasty = "Conchobair"
+		adm = 3
+		dip = 2
+		mil = 3
+		birth_date = 1398.4.20
+		religion = catholic
+		culture = irish
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = embezzler_personality
+	queen = {
+		name = "Galiena"
+		dynasty = "Smith"
+		adm = 3
+		dip = 5
+		mil = 3
+		country_of_origin = CNN
+		birth_date = 1379.10.8
+		death_date = 1439.10.8
+		female = yes
+		religion = catholic
+		culture = irish
+	}
+	add_queen_personality = charismatic_negotiator_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Fothad"
+		monarch_name = "Fothad II"
+		dynasty = "Conchobair"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1415.8.2
+		death_date = 1480.8.2
+		claim = 89
+		religion = catholic
+		culture = irish
+	}
+	add_heir_personality = embezzler_personality
+	add_heir_personality = greedy_personality
+}
+1444.11.11= {
+	add_prestige = 81
+	add_treasury = 55
+}

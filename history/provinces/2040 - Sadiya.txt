@@ -1,0 +1,15 @@
+owner = AVA
+controller = AVA
+capital = "Sadiya"
+is_city = yes
+culture = assamese
+religion = buddhism
+trade_goods = tea
+base_tax = 4
+base_production = 4
+base_manpower = 2
+add_core = AVA
+add_permanent_claim = ASS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 222 155 78 }
+monarch_names = {
+	"Alexandru #1" = 10
+	"Ana #0" = -1
+	"Baran #0" = 0
+	"Deuslosal #0" = 0
+	"Forflissa #0" = -1
+	"Ingrid #0" = -1
+	"Konstandin #1" = 10
+	"Margarete #0" = -1
+	"Moise #0" = 0
+	"Prvul #0" = 0
+	"Radu #0" = 0
+	"Sophia #0" = -1
+	"Stavrija #0" = 0
+	"Ugur #0" = 0
+}

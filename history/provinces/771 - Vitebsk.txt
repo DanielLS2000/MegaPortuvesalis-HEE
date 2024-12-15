@@ -1,0 +1,15 @@
+owner = EST
+controller = EST
+capital = "Vitebsk"
+is_city = yes
+culture = byelorussian
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = EST
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

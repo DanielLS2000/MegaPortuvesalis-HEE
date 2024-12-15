@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = gyalrong
+capital = 2133
+add_accepted_culture = tibetan
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Zhuozhen"
+		dynasty = "Sumpa-Shapotou"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1394.12.24
+		female = yes
+		religion = vajrayana
+		culture = gyalrong
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Min"
+		dynasty = "Nagormo-Bumgyê"
+		adm = 2
+		dip = 5
+		mil = 4
+		country_of_origin = Z34
+		birth_date = 1392.9.22
+		death_date = 1452.9.22
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Yu"
+		monarch_name = "Yu"
+		dynasty = "Nagormo-Bumgyê"
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 1415.7.26
+		death_date = 1480.7.26
+		claim = 89
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 78
+	add_treasury = 71
+}

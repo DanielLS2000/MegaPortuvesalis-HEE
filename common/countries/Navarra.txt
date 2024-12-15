@@ -1,0 +1,143 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 252 233 58 }
+revolutionary_colors = { 5 8 5 }
+historical_idea_groups = {
+	maritime_ideas
+	religious_ideas
+	defensive_ideas
+	economic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	french_caracolle
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"A'idh #0" = 0
+	"Abd al-Rahman #1" = 10
+	"Adela #0" = -1
+	"Alesonne #0" = -1
+	"Amacéi #0" = -1
+	"Antso #4" = 10
+	"Asbat #0" = 0
+	"Balj #0" = 0
+	"Belasko #1" = 10
+	"Berlwin #0" = 0
+	"Chil #0" = 0
+	"Donis #1" = 10
+	"Eneko #1" = 10
+	"Escobar #0" = 0
+	"Gartzia #7" = 10
+	"Gemeni #0" = 0
+	"Huda #0" = -1
+	"Ibrahim #0" = 0
+	"Jariya #0" = -1
+	"Marmolejo #0" = 0
+	"Motarrif #1" = 10
+	"Orti #1" = 10
+	"Patro #1" = 10
+	"Placentius #0" = 0
+	"Ramiro #3" = 10
+	"Savaric #0" = 0
+	"Zoame #0" = -1
+}
+leader_names = {
+	"Bergera"
+	"Elizalde"
+	"Goyeneche"
+	"Jimeno"
+	"Jiménez de Rada"
+	"Navarro"
+	"Palafox"
+	"Pérez de Zabalza"
+	"de Aguirre"
+	"de Albret"
+	"de Antillón"
+	"de Aranda"
+	"de Armendariz"
+	"de Azagra"
+	"de Azpilcueta"
+	"de Beaumont"
+	"de Beortegui"
+	"de Borbón"
+	"de Carranza"
+	"de Garay"
+	"de Goñi"
+	"de Heredia"
+	"de Hijar"
+	"de Jaso"
+	"de Landívar"
+	"de Salazar"
+	"de Uribe"
+	"de Ursúa"
+	"de Yanguas"
+	"de Zárate"
+}
+ship_names = {
+	"Atlántida"
+	"Conde de Evreux"
+	"Conde de Foix"
+	"Conde de Guenduláin"
+	"Conde de Lerín"
+	"Don Jimeno"
+	"Duque de Armagnac"
+	"Duque de Champaña"
+	"El Agramontés"
+	"El Beaomontés"
+	"El Bearnés"
+	"El Cruzado Navarro"
+	"El Montañés"
+	"El Navarro"
+	"El Salvador"
+	"El Trobador"
+	"El Viñador"
+	"Emperador Hispánico"
+	"Europa"
+	"Mar de Navarra"
+	"Nuestra Sra de Leyre"
+	"Príncipe de Viana"
+	"Reina Juana"
+	"Rey Enrique"
+	"Rey García"
+	"Rey Sancho"
+	"Reyno de Navarra"
+	"Reyno de Pamplona"
+	"San Agustín"
+	"San Andrés"
+	"San Antonio"
+	"San Carlos"
+	"San Enrique"
+	"San Esteban"
+	"San Fermín"
+	"San Francisco"
+	"San Francisco Xabier"
+	"San Gregorio"
+	"San Juan"
+	"San León"
+	"San Miguel Arcángel"
+	"San Raimundo"
+	"San Virila"
+	"Santa Ana"
+	"Santa Catalina"
+	"Santa Juana"
+	"Santa Leonor"
+	"Santísima Trinidad"
+	"Señor de Tudela"
+	"Vasconia"
+}

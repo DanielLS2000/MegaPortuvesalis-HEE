@@ -1,0 +1,78 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 140 45 100 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	offensive_ideas
+	religious_ideas
+	maritime_ideas
+	defensive_ideas
+	expansion_ideas
+	administrative_ideas
+	trade_ideas
+	economic_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Aggur #0" = 0
+	"Al'a'addin #0" = 0
+	"Amawal #2" = 10
+	"Ameska #0" = 0
+	"Arwin #1" = 10
+	"Bghnat #0" = -1
+	"Bilqis #0" = -1
+	"Dulcedram #0" = 0
+	"Everar #0" = 0
+	"Haidar #1" = 10
+	"Igmi #1" = 10
+	"Magsen #1" = 10
+	"Micipsa #0" = 0
+	"Misibsen #0" = 0
+	"Natal'ja #0" = -1
+	"Niptasan #1" = 10
+	"Terèsa #0" = -1
+	"Werneke #0" = 0
+}
+leader_names = {
+	"Alami"
+	"Arazi"
+	"Barek"
+	"Behar"
+	"Berui"
+	"Haida"
+	"Lahsini"
+	"Sahiri"
+	"Sellami"
+	"Skah"
+}
+ship_names = {
+	"Afuww"
+	"Badi"
+	"Baqi"
+	"Darr"
+	"Fa'uf"
+	"Fazl Azim"
+	"Ghani"
+	"Hadi"
+	"Jalal Ikram"
+	"Jami"
+	"Malik Mulk"
+	"Mani"
+	"Mughni"
+	"Muntaqim"
+	"Muqsit"
+	"Nafi"
+	"Nur"
+	"Rashid"
+	"Sabur"
+	"Tawwab"
+	"Warith"
+}

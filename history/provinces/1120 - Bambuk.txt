@@ -1,0 +1,13 @@
+owner = MAL
+controller = MAL
+capital = "Bambuk"
+is_city = yes
+culture = soninke
+religion = shamanism
+trade_goods = gold
+base_tax = 3
+base_production = 3
+base_manpower = 3
+add_core = MAL
+add_core = ZAF
+discovered_by = sub_saharan

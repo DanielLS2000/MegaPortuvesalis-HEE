@@ -1,0 +1,41 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = hungarian
+capital = 162
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Gyorziszló II"
+		dynasty = "de Bazadais"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1383.9.30
+		religion = catholic
+		culture = hungarian
+	}
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = sinner_personality
+	heir = {
+		name = "Ond"
+		monarch_name = "Ond"
+		dynasty = "de Bazadais"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1400.8.31
+		death_date = 1465.8.31
+		claim = 89
+		religion = catholic
+		culture = hungarian
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = well_connected_personality
+}
+1444.11.11= {
+	add_prestige = 85
+	add_treasury = 80
+}

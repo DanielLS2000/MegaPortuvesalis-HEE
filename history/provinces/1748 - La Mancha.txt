@@ -1,0 +1,16 @@
+owner = Z1U
+controller = Z1U
+capital = "Jaén"
+is_city = yes
+culture = andalucian
+religion = catholic
+trade_goods = wool
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = Z1U
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

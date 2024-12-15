@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = malvi
+capital = 4452
+add_accepted_culture = gondi
+1444.11.11= {
+	monarch = {
+		name = "Akal"
+		dynasty = "Dronasinhid"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1421.3.9
+		female = yes
+		religion = hinduism
+		culture = malvi
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = kind_hearted_personality
+	queen = {
+		name = "Ksemankaradeva"
+		dynasty = "Skandavarman"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = RTT
+		birth_date = 1420.11.29
+		death_date = 1480.11.29
+		religion = hinduism
+		culture = oriya
+	}
+	add_queen_personality = strict_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Vijayapala"
+		monarch_name = "Vijayapala II"
+		dynasty = "Dronasinhid"
+		adm = 1
+		dip = 0
+		mil = 0
+		birth_date = 1438.4.10
+		death_date = 1503.4.10
+		claim = 89
+		religion = hinduism
+		culture = malvi
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = obsessive_perfectionist_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 64
+}

@@ -1,0 +1,106 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 176 72 77 }
+revolutionary_colors = { 0 5 0 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	maritime_ideas
+	religious_ideas
+	economic_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	bardiche_infantry
+	druzhina_cavalry
+	eastern_carabinier
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Adélaïse #0" = -1
+	"Alexei #1" = 10
+	"Andrei #0" = 0
+	"Ausilia #0" = -1
+	"Azyren #0" = 0
+	"Bay #2" = 10
+	"Bratislav #0" = 0
+	"Briachislav #0" = 0
+	"Clarencia #0" = -1
+	"Dalaana #1" = -1
+	"Domán #0" = 0
+	"Feodor #0" = 0
+	"Gorislava #0" = -1
+	"Iliya #0" = 0
+	"Irina #0" = -1
+	"Kvedor #0" = 0
+	"Lev #1" = 10
+	"Malusha #0" = -1
+	"Mingaila #1" = 10
+	"Olena #1" = -1
+	"Pereyaslava #0" = -1
+	"Pribislava #1" = -1
+	"Sofia #0" = -1
+	"Vasilisa #0" = -1
+	"Vladan #0" = 0
+	"Yevstafiy #1" = 10
+	"Zbigniew #0" = 0
+}
+leader_names = {
+	"Apraksin"
+	"Bagration"
+	"Barclay de Tolly"
+	"Bibikoff"
+	"Bodisco"
+	"Boruffsin"
+	"Golitzin"
+	"Kaibula"
+	"Kamenski"
+	"Kolzoff"
+	"Mensjikov"
+	"Mustislavski"
+	"Ostermann Tolstoy"
+	"Paletskij"
+	"Rajevski"
+	"Schuvalov"
+	"Sjeremetjev"
+	"Sjtjenjatvev"
+	"Tiesenhusen"
+	"Vasiljevitj"
+	"von Buxhoevden"
+	"von Knorring"
+	"von Lascy"
+}
+ship_names = {
+	"Coluna"
+	"Cortiza"
+	"Dmitri Donskoi"
+	"Iausa"
+	"Ivan Kalita"
+	"Klin"
+	"Konstantin I"
+	"Moscha"
+	"Mosnisk"
+	"Nizhny Novgorod"
+	"Olescho"
+	"Piersek"
+	"Rurik"
+	"Schorna"
+	"Suzdal"
+	"Troitzkoy"
+	"Volga"
+	"Wolok"
+}

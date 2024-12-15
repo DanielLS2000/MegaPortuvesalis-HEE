@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 2
+technology_group = chinese
+religion = vajrayana
+primary_culture = tibetan
+capital = 2128
+1444.11.11= {
+	monarch = {
+		name = "Thekchen"
+		dynasty = "Pugyel-Qulho"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 1414.6.22
+		female = yes
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = kind_hearted_personality
+	queen = {
+		name = "Ertugrul"
+		dynasty = "Zangmo"
+		adm = 3
+		dip = 3
+		mil = 5
+		country_of_origin = GUG
+		birth_date = 1414.7.10
+		death_date = 1474.7.10
+		religion = vajrayana
+		culture = bengali
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = industrious_personality
+	heir = {
+		name = "Dro"
+		monarch_name = "Dro"
+		dynasty = "Pugyel-Qulho"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1431.8.7
+		death_date = 1496.8.7
+		female = yes
+		claim = 89
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_heir_personality = benevolent_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 83
+	add_treasury = 78
+}

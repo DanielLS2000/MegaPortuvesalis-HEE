@@ -1,0 +1,10 @@
+owner = Z0C
+controller = Z0C
+add_core = Z0C
+capital = "Dzhaman-Kuduk"
+culture = cuman
+religion = tengri_pagan
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 2

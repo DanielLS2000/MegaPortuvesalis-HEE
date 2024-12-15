@@ -1,0 +1,59 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = chinese
+religion = sunni
+primary_culture = mongol
+capital = 2079
+fixed_capital = 2079
+religious_school = hanafi_school
+add_accepted_culture = sindhi
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Yokhunan"
+		dynasty = "Jurchedei"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 1367.1.29
+		religion = sunni
+		culture = mongol
+	}
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = scholar_personality
+	queen = {
+		name = "Gurbesu"
+		dynasty = "Qun"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = Z7K
+		birth_date = 1395.5.23
+		death_date = 1455.5.23
+		female = yes
+		religion = sunni
+		culture = mongol
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Jurchedei"
+		monarch_name = "Jurchedei"
+		dynasty = "Jurchedei"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1389.9.29
+		death_date = 1454.9.29
+		claim = 89
+		religion = sunni
+		culture = mongol
+	}
+	add_heir_personality = greedy_personality
+	add_heir_personality = midas_touched_personality
+}
+1444.11.11= {
+	add_prestige = 99
+	add_treasury = 60
+}

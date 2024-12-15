@@ -1,0 +1,17 @@
+owner = Z1A
+controller = Z1A
+capital = "Avellino"
+is_city = yes
+culture = magnagreek
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 5
+base_production = 8
+base_manpower = 3
+add_core = BYZ
+add_core = Z1A
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

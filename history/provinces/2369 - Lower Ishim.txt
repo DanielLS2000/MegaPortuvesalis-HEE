@@ -1,0 +1,10 @@
+owner = Z0B
+controller = Z0B
+add_core = Z0B
+capital = "Zhanibek"
+culture = nogaybak
+religion = vajrayana
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 1

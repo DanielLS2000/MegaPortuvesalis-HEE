@@ -1,0 +1,10 @@
+owner = Z0B
+controller = Z0B
+add_core = Z0B
+capital = "Kurgan"
+culture = bashkir
+religion = vajrayana
+trade_goods = fur
+base_tax = 2
+base_production = 1
+base_manpower = 1

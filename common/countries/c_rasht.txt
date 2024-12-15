@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 65 150 30 }
+monarch_names = {
+	"Bahman #0" = 0
+	"Beybîn #1" = -1
+	"Binevš #0" = -1
+	"Chirhya Lynhua #0" = 0
+	"Dawud #1" = 10
+	"Ehsan #0" = 0
+	"Elî #1" = 10
+	"Eyyub #0" = 0
+	"Ešot #0" = 0
+	"Goland #0" = -1
+	"Gunduz #1" = 10
+	"Ilyas #1" = 10
+	"Ketboga #1" = 10
+	"Kûrušê #0" = 0
+	"Odchigin #0" = 0
+	"Orqina #1" = -1
+	"Tunga #1" = 10
+	"Uquna #0" = 0
+	"Vinita #0" = 0
+	"Xêlîcan #0" = -1
+	"Ülgen #1" = 10
+	"Šahbaz #0" = 0
+}

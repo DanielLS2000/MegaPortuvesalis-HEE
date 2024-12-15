@@ -1,0 +1,16 @@
+owner = TUV
+controller = TUV
+capital = "Altai Uriankhai"
+is_city = yes
+culture = khazak
+religion = mahayana
+trade_goods = fur
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KZH
+add_core = TUV
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = nomad_group

@@ -1,0 +1,100 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 67 80 128 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	quality_ideas
+	religious_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalbert #1" = 10
+	"Adela #1" = -1
+	"Adelheid #1" = -1
+	"André #0" = 0
+	"Baldwald #1" = 10
+	"Baudilio #0" = 0
+	"Bernát #0" = 0
+	"Czcibór #0" = 0
+	"Dedo #1" = 10
+	"Dobroniega #0" = -1
+	"Dructbald #0" = 0
+	"Eadwynn #0" = -1
+	"Edda #0" = -1
+	"Elisanna #0" = -1
+	"Erik #1" = 10
+	"Esiko #1" = 10
+	"Fridwald #0" = 0
+	"Gero #2" = 10
+	"Gottlwald #0" = 0
+	"Konrad #1" = 10
+	"Liutswind #1" = -1
+	"Liutward #1" = 10
+	"Máté #0" = 0
+	"Nándor #0" = 0
+	"Odo #2" = 10
+	"Predimir #0" = 0
+	"Radomil #1" = 10
+	"Serventa #0" = -1
+	"Stanislav #0" = 0
+	"Thietmar #2" = 10
+	"Volkwin #0" = 0
+}
+leader_names = {
+	"Abeln"
+	"Greve"
+	"Gronau"
+	"Heintzel"
+	"Hergesell"
+	"Hoppe"
+	"Jauernik"
+	"Kahl"
+	"Liegnitz"
+	"Schwarz"
+	"Sterner"
+	"Tilch"
+	"Wiehle"
+}
+ship_names = {
+	"Bautzen"
+	"Breslau"
+	"Cosel-Beuthen"
+	"Cottbus"
+	"Falkenberg"
+	"Glogau"
+	"Guben"
+	"Görlitz"
+	"Liegnitz-Brieg"
+	"Luckau"
+	"Münsterberg"
+	"Neisse-Ottmachau"
+	"Oels"
+	"Oppeln"
+	"Ratibor"
+	"Sagan"
+	"Schweidnitz-Jauer"
+	"Spremberg"
+	"Steinau"
+	"Teschen"
+	"Zossen"
+}

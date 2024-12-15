@@ -1,0 +1,101 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 255 134 0 }
+revolutionary_colors = { 8 10 8 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_cavalry_archers
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	shaybani
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Ali Tigin #1" = 10
+	"Amin #0" = 0
+	"Asep #1" = 10
+	"Bala #0" = 0
+	"Bidun #1" = 10
+	"Bimala #0" = -1
+	"Bunyat #1" = 10
+	"Chormakhan #0" = 0
+	"Devidas #0" = 0
+	"Dolma #0" = -1
+	"Farhang #1" = 10
+	"Farzad #1" = 10
+	"Haidaracandra #0" = 0
+	"Hasan Bughra #1" = 10
+	"Ibrahim #2" = 10
+	"Isma'il #1" = 10
+	"Kezuhun #0" = -1
+	"Khatun #1" = -1
+	"Kutlu #1" = 10
+	"Kyipo #0" = 0
+	"Lhathrimo #0" = -1
+	"Litta #0" = -1
+	"Mandukhai #0" = -1
+	"Masud #1" = 10
+	"Muhammad #1" = 10
+	"Nasr #2" = 10
+	"Nayaga #0" = 0
+	"Ot-tegin #1" = 10
+	"Parsak #1" = 10
+	"Qutayba #1" = 10
+	"Sakan #1" = 10
+	"Siavakhsh #1" = 10
+	"Sirçan #0" = 0
+	"Tarxun #1" = 10
+	"Temur #0" = 0
+	"Thrin #0" = 0
+	"Toghrul #1" = 10
+	"Tughshada #1" = 10
+	"Uzur #1" = 10
+	"Ülgen #0" = 0
+}
+leader_names = {
+	"Altan Vachir"
+	"Arigh Gan"
+	"Bayan Checheg"
+	"Boke Arslan"
+	"Bora Chinua"
+	"Chagan Erdene"
+	"Mongke Bayar"
+	"Mongke Enq"
+	"Mongke Nasan"
+	"Qara Temur"
+	"Shria Gal"
+	"Suren Unegen"
+	"Yeke Burilgi"
+}
+ship_names = {
+	"Amudarja"
+	"Bajsun"
+	"Chiva"
+	"Chudzand"
+	"Cimkent"
+	"Gizduvan"
+	"Gulistan"
+	"Guzar"
+	"Jangijul"
+	"Karakul"
+	"Karsi"
+	"Kerki"
+	"Mukry"
+	"Syrdarja"
+}

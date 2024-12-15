@@ -1,0 +1,17 @@
+owner = SCN
+controller = SCN
+capital = "Ronneby"
+is_city = yes
+culture = danish
+religion = catholic
+trade_goods = naval_supplies
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = DAN
+add_core = SCN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

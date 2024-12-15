@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+capital = 69
+elector = yes
+1444.11.11= {
+	monarch = {
+		name = "Leopold"
+		dynasty = "von Habsburg-Lothringen"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1399.7.25
+		religion = catholic
+		culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+	}
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Morta"
+		dynasty = "Akkad-Dausar"
+		adm = 4
+		dip = 4
+		mil = 3
+		country_of_origin = KOL
+		birth_date = 1410.5.10
+		death_date = 1470.5.10
+		female = yes
+		religion = catholic
+		culture = dynamic-armenian-assyrian-culture-num1
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Lothar"
+		monarch_name = "Lothar"
+		dynasty = "von Habsburg-Lothringen"
+		adm = 2
+		dip = 1
+		mil = 2
+		birth_date = 1437.7.3
+		death_date = 1502.7.3
+		claim = 89
+		religion = catholic
+		culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 98
+	add_treasury = 76
+}

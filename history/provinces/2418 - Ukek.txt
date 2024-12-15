@@ -1,0 +1,10 @@
+owner = Z0B
+controller = Z0B
+add_core = Z0B
+capital = "Ukek"
+culture = astrakhani
+religion = sunni
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 1

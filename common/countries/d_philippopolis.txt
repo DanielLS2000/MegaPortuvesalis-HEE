@@ -1,0 +1,9 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 75 100 110 }
+monarch_names = {
+	"Birute #0" = -1
+	"Bonanno #0" = 0
+	"Codratus #0" = 0
+	"Gwrgeneu #0" = 0
+}

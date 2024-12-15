@@ -1,0 +1,14 @@
+owner = Z0D
+controller = Z0D
+capital = "Rutog"
+is_city = yes
+culture = zhangzhung
+religion = sunni
+trade_goods = wool
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = Z0D
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

@@ -1,0 +1,15 @@
+owner = AVA
+controller = AVA
+capital = "Koliabar"
+is_city = yes
+culture = assamese
+religion = mahayana
+trade_goods = silk
+base_tax = 4
+base_production = 3
+base_manpower = 2
+add_core = AVA
+add_permanent_claim = ASS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

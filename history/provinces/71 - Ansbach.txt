@@ -1,0 +1,17 @@
+owner = TTL
+controller = TTL
+capital = "Ansbach"
+is_city = yes
+culture = franconian
+religion = catholic
+trade_goods = salt
+hre = yes
+base_tax = 3
+base_production = 4
+base_manpower = 2
+add_core = TTL
+add_permanent_claim = FKN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

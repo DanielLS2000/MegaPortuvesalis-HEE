@@ -1,0 +1,15 @@
+owner = Z55
+controller = Z55
+capital = "Ust-Vym"
+is_city = yes
+culture = vepsian
+religion = orthodox
+trade_goods = fur
+hre = yes
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = Z55
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

@@ -1,0 +1,120 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 93 180 76 }
+revolutionary_colors = { 8 0 6 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Adigh #0" = 0
+	"Adzom #0" = 0
+	"Arslan #0" = 0
+	"Ayasun #0" = -1
+	"Baojing #0" = -1
+	"Barak #0" = 0
+	"Bhutivarman #0" = 0
+	"Buka #0" = 0
+	"Böndrö #0" = 0
+	"C'anglong #0" = -1
+	"Chakna #0" = 0
+	"Champa #0" = 0
+	"Changchub #0" = 0
+	"Chukpo #0" = -1
+	"Chöejor #2" = 10
+	"Dampa #0" = 0
+	"Danujmadhava #0" = 0
+	"Dattadevi #0" = -1
+	"Dechen #0" = -1
+	"Drakpa #0" = 0
+	"Drolma #0" = -1
+	"Eldeçyuk #0" = 0
+	"Ertugrul #0" = 0
+	"Gayatri #0" = -1
+	"Gedun #0" = -1
+	"Geleg #0" = -1
+	"Gemang #0" = 0
+	"Gungtsen #0" = 0
+	"Gébum #0" = 0
+	"Hemavati #0" = -1
+	"Karakash #0" = 0
+	"Karmavati #0" = -1
+	"Khadroma #0" = 0
+	"Khenchok #0" = 0
+	"Khrimalod #0" = -1
+	"Kipu #1" = 10
+	"Kunphel #0" = -1
+	"Lhachen #0" = 0
+	"Lhadé #0" = 0
+	"Maharani #0" = -1
+	"Mahidevi #0" = -1
+	"Mangpoje #2" = 10
+	"Mihira #0" = 0
+	"Namkha #0" = -1
+	"Ngodup #0" = 0
+	"Norzang #0" = 0
+	"Nuba #0" = -1
+	"Pasang #0" = 0
+	"Puppadevi #0" = -1
+	"Ratnavati #0" = -1
+	"Riumel #0" = 0
+	"Sal #1" = -1
+	"Sendha #0" = 0
+	"Serua-eterat #0" = -1
+	"Shashanka #0" = 0
+	"Shenden #0" = -1
+	"Shuo #0" = 0
+	"Songul #0" = -1
+	"Tashiganpa #0" = 0
+	"Togo #0" = -1
+	"Torma #0" = -1
+	"Tsechup #0" = 0
+	"Tsering #0" = -1
+	"Tsuktsen #0" = 0
+	"Tömür #0" = 0
+	"Yinal #0" = 0
+	"Yéshégyeltsen #1" = 10
+	"Zangmo #0" = -1
+}
+leader_names = {
+	"Chomphel"
+	"Gyaltshen"
+	"Gyamtsho"
+	"Lhopi"
+	"Peljor"
+	"Phuntsho"
+	"Rabgye"
+	"Tshering"
+	"Wangchuk"
+	"Wangpo"
+}
+ship_names = {
+	"Chhu"
+	"Dng Chu"
+	"Manas Chu"
+	"Mangde Chu"
+	"Mo Chu"
+	"Pa Chu"
+	"Pho Chu"
+	"Punaka"
+	"Sangkosh"
+	"Thimbu"
+	"Tongsa Chu"
+	"Towang Chu"
+}

@@ -1,0 +1,125 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 191 155 203 }
+revolutionary_colors = { 1 0 1 }
+historical_idea_groups = {
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	religious_ideas
+	offensive_ideas
+}
+historical_units = {
+	anglofrench_line
+	british_hussar
+	british_redcoat
+	british_square
+	gaelic_free_shooter
+	gaelic_galloglaigh
+	gaelic_mercenary
+	irish_charge
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+}
+monarch_names = {
+	"Art #2" = 10
+	"Balwin #0" = 0
+	"Berchte #0" = -1
+	"Bran #0" = 0
+	"Branagán #0" = 0
+	"Caíndelbán #0" = 0
+	"Cellachán #0" = 0
+	"Cernach #1" = 10
+	"Ciarmac #1" = 10
+	"Cuircthe #0" = 0
+	"Derbforgaill #0" = -1
+	"Domnall #1" = 10
+	"Duiblesc #0" = 0
+	"Dícuill #1" = 10
+	"Dúngal #0" = 0
+	"Erchanger #0" = 0
+	"Euginia #0" = -1
+	"Fechine #0" = 0
+	"Fergal #1" = 10
+	"Finn #0" = 0
+	"Fionnghall #0" = 0
+	"Flavia #0" = -1
+	"Fáeldobur #0" = 0
+	"Muirgel #0" = -1
+	"Murchad #1" = 10
+	"Máel-Tólai #1" = 10
+	"Natfraich #1" = 10
+	"Raynaud #0" = 0
+	"Ruaidrí #2" = 10
+	"Ruarc #1" = 10
+	"Sáerlaith #0" = -1
+	"Síthmaith #0" = -1
+	"Tigernán #1" = 10
+	"Tuathflaith #0" = -1
+	"Áed #2" = 10
+	"Éibhleann #0" = -1
+	"Éremón #0" = 0
+	"Íomhar #0" = 0
+}
+leader_names = {
+	"Mac Branain"
+	"Mac Conraoi"
+	"Mac Cuille"
+	"Mac Diarmada"
+	"Mac Donnchadha"
+	"Mac Eochaidh"
+	"Mac Maghnais"
+	"Ó Birn"
+	"Ó Breislein"
+	"Ó Cadhla"
+	"Ó Caithniadh"
+	"Ó Cathail"
+	"Ó Cearbhaill"
+	"Ó Cléirigh"
+	"Ó Coigligh"
+	"Ó Concheannain"
+	"Ó Conghailaigh"
+	"Ó Cuana"
+	"Ó Céirín"
+	"Ó Diubháin"
+	"Ó Doibhilin"
+	"Ó Domhnalláin"
+	"Ó Dorchaidhe"
+	"Ó Dúnadhaigh"
+	"Ó Fionn"
+	"Ó Fionnachta"
+	"Ó Fionnagáin"
+	"Ó Fionnáin"
+	"Ó Flaithbheartach"
+	"Ó Gadhra"
+	"Ó Leannain"
+	"Ó Manachain"
+	"Ó Maoldúin"
+	"Ó Mughráin"
+	"Ó Reachtagáin"
+	"Ó Seachnasaigh"
+	"Ó Tarpaigh"
+	"Ó Tighearnaigh"
+	"Ó hAllmhuráin"
+	"Ó hEaghra"
+	"Ó hUigín"
+}
+ship_names = {
+	"Athlone"
+	"Ballina"
+	"Ballinrobe"
+	"Ballyhaunis"
+	"Boyle"
+	"Castlebar"
+	"Connemara"
+	"Galway"
+	"Mayo"
+	"Roscommon"
+}

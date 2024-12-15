@@ -1,0 +1,23 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 255 120 35 }
+monarch_names = {
+	"Albereda #1" = -1
+	"Alfunus #1" = 10
+	"Andrâ #0" = 0
+	"Benoni #0" = 0
+	"Claricia #0" = -1
+	"Eardulf #1" = 10
+	"Ellyner #1" = -1
+	"Eoric #1" = 10
+	"Gormgus #0" = 0
+	"Halfdan #1" = 10
+	"Hugh #0" = 0
+	"Morcar #1" = 10
+	"Sæfaru #0" = 0
+	"Torhtræd #1" = 10
+	"Tostig #1" = 10
+	"Wulfrun #1" = -1
+	"Æthelred #1" = 10
+	"Æðelgar #1" = 10
+}

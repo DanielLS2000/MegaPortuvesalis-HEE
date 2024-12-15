@@ -1,0 +1,136 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 122 179 97 }
+revolutionary_colors = { 8 5 0 }
+historical_idea_groups = {
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	spy_ideas
+	economic_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Akkadevi #0" = -1
+	"Ama #1" = 10
+	"Amritakala #0" = -1
+	"Anangpal #0" = 0
+	"Arjunpala #0" = 0
+	"Bacchdev #2" = 10
+	"Bhagabhadra #0" = 0
+	"Bhoja #2" = 10
+	"Bhumpala #0" = 0
+	"Birpal #0" = 0
+	"Birpala #0" = 0
+	"Chandrabbalabbe #0" = -1
+	"Câramutaiyân #0" = 0
+	"Dattadevi #0" = -1
+	"Dehanagadevi #0" = -1
+	"Devapala #0" = 0
+	"Dhruvadevi #0" = -1
+	"Dhruvasvamini #0" = -1
+	"Doth #1" = 10
+	"Dundaka #1" = 10
+	"Goleda #0" = 0
+	"Indrayudha #1" = 10
+	"Irâcêntira #0" = 0
+	"Ishtpala #0" = 0
+	"Jasapala #0" = 0
+	"Kakanvati #0" = -1
+	"Kalayandevi #0" = -1
+	"Kanchuka #0" = -1
+	"Keeratdeva #1" = 10
+	"Khojin #0" = -1
+	"Kumaradevi #0" = -1
+	"Lokpala #0" = 0
+	"Maharani #0" = -1
+	"Mahendrapala #2" = 10
+	"Mahidevi #0" = -1
+	"Mahipala #1" = 10
+	"Mahipata #0" = 0
+	"Mandandeva #1" = 10
+	"Merwan #0" = 0
+	"Nagabhata #1" = 10
+	"Naranarayan #0" = 0
+	"Narayanapala #0" = 0
+	"Nayanadevi #0" = -1
+	"Nyandak #0" = -1
+	"Prabhavati #0" = -1
+	"Pratapnarayan #0" = 0
+	"Puppadevi #0" = -1
+	"Rajabhata #0" = 0
+	"Ramabhadra #1" = 10
+	"Shrimitradevi #0" = -1
+	"Sisupala #0" = 0
+	"Srichandra #0" = 0
+	"Subhatavarman #0" = 0
+	"Suhava #0" = -1
+	"Suvrata #0" = -1
+	"Tejapala #2" = 10
+	"Traillokyachandra #0" = 0
+	"Trilochanpala #1" = 10
+	"Tökarma #0" = -1
+	"Upendranayaran #0" = 0
+	"Vajrayudha #1" = 10
+	"Viramdeva #0" = 0
+	"Yasovarman #3" = 10
+	"Zarifa #0" = -1
+}
+leader_names = {
+	"Afridi"
+	"Awadhi"
+	"Bahadur"
+	"Bangash"
+	"Chand"
+	"Ghori"
+	"Hindustani"
+	"Karrani"
+	"Khan"
+	"Khilji"
+	"Lodi"
+	"Pundir"
+	"Sahgal"
+	"Sarwar"
+	"Satsangi"
+	"Sharqi"
+	"Siddiqui"
+	"Uzbek"
+	"Yousafzai"
+	"ud Daula"
+}
+ship_names = {
+	"Alia"
+	"Betwa"
+	"Fatimah"
+	"Gandak"
+	"Ghagra"
+	"Gomti"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Sagar"
+	"Satlaj"
+	"Yamuna"
+	"Yasmine"
+}

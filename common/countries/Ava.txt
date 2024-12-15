@@ -1,0 +1,157 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 98 138 99 }
+revolutionary_colors = { 8 9 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	administrative_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Akkadevi #0" = -1
+	"Alaungpaya #0" = 0
+	"Altani #0" = -1
+	"Amolika #0" = -1
+	"Amrapali #0" = -1
+	"Anawrahta #1" = 10
+	"Bhairav Singh #0" = 0
+	"Bibibai #0" = -1
+	"Bishwas Devi #0" = -1
+	"Chinnambike #0" = -1
+	"Dattadevi #0" = -1
+	"Devabhuti #0" = 0
+	"Devavati #0" = -1
+	"Devi Ahiylya #0" = -1
+	"Dhireshwar #0" = 0
+	"Dhirsingha #0" = 0
+	"Ghosha #0" = 0
+	"Govindachandra #0" = 0
+	"Hari Singh #1" = 10
+	"Hemantasen #0" = 0
+	"Hemavati #0" = -1
+	"Jingshou #0" = -1
+	"Jira #0" = -1
+	"Jitendranarayan #0" = 0
+	"Kalyanachandra #0" = 0
+	"Kanchani #0" = -1
+	"Kanchuka #0" = -1
+	"Kyansittha #1" = 10
+	"Ladahachandra #0" = 0
+	"Lomapada #1" = 10
+	"Mandukhai #0" = -1
+	"Mârapanmar #0" = 0
+	"Naranarayan #1" = 10
+	"Niyâyaparipâlapattan #0" = 0
+	"Nripendranarayan #0" = 0
+	"Parikshitnayaran #1" = 10
+	"Prabhavati #0" = -1
+	"Ranjitsingha #0" = 0
+	"Shivanarayan #0" = 0
+	"Shurapala #1" = 10
+	"Somesvara #0" = 0
+	"Suvrata #0" = -1
+	"Syamadevi #0" = -1
+	"Tharahpi #0" = -1
+	"Theinhko #0" = 0
+	"Thihathu #0" = 0
+	"Thupyinnya #1" = 10
+	"Tsephel #0" = -1
+	"Uditanarayan #0" = 0
+	"Vallal Sen #0" = 0
+	"Vijnayavati #0" = -1
+	"Vina #0" = -1
+	"Wareru #0" = 0
+	"Öljei #0" = 0
+}
+leader_names = {
+	"Ava"
+	"Banyin"
+	"Bawnin"
+	"Bawzaing"
+	"Bhamo"
+	"Hopon"
+	"Kale"
+	"Kokang"
+	"Kyaingchaing"
+	"Kyaingkan"
+	"Kyaingtong"
+	"Kyaukku"
+	"Kyithi Bansan"
+	"Kyon"
+	"Lwee"
+	"Lwelong"
+	"Lwemaw"
+	"Lègya"
+	"Maingpyin"
+	"Maingseik"
+	"Maington"
+	"Manglon"
+	"Maukme"
+	"Maw"
+	"Mobye"
+	"Mogaung"
+	"Mohnyin"
+	"Momeik"
+	"Mong Pan"
+	"Monghsu"
+	"Mongleam"
+	"Monglin"
+	"Mongnawng"
+	"Mongtorm"
+	"Monè"
+	"Mönglong"
+	"Möngyawng"
+	"Nanke"
+	"Nankok"
+	"Nankon"
+	"Nantok"
+	"Nyaungshwe"
+	"Panglawng"
+	"Pangmi"
+	"Pindara"
+	"Poila"
+	"Sakoi"
+	"Samka"
+	"Tawngpeng"
+	"Thamaingkan"
+	"Thaton"
+	"Thaungdut"
+	"Theinni"
+	"Thibaw"
+	"Thigyit"
+	"Wynn Tho"
+	"Yatsauk"
+	"Yengan"
+}
+ship_names = {
+	"Hsim"
+	"Inle"
+	"Kengtong"
+	"Lui"
+	"Myitnge"
+	"Nam"
+	"Pilu"
+	"Saluen"
+	"Salween"
+	"Shweli"
+	"Tachileik"
+	"Taunggyi"
+	"Teng"
+	"Thanlwin"
+}
+special_unit_culture = south_east_asian_special

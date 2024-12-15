@@ -1,0 +1,13 @@
+owner = Z2V
+controller = Z2V
+capital = "Khovsgol"
+is_city = yes
+culture = oirats
+religion = mahayana
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z2V
+discovered_by = chinese
+discovered_by = nomad_group

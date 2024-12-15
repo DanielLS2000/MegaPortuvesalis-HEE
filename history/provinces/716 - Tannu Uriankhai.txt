@@ -1,0 +1,15 @@
+owner = Z5Y
+controller = Z5Y
+capital = "Tannu Uriankhai"
+is_city = yes
+culture = khazak
+religion = mahayana
+trade_goods = fur
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KZH
+add_core = Z5Y
+add_permanent_claim = TUV
+discovered_by = chinese
+discovered_by = nomad_group

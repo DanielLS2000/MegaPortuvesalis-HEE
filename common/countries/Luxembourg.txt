@@ -1,0 +1,117 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 53 140 73 }
+revolutionary_colors = { 16 0 14 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	administrative_ideas
+	spy_ideas
+}
+historical_units = {
+	anglofrench_line
+	dutch_maurician
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Agnerald #1" = 10
+	"Airas #0" = 0
+	"Arnoul #2" = 10
+	"Ayyub #0" = 0
+	"Balduccio #0" = 0
+	"Bernard #0" = 0
+	"Bouvin #1" = 10
+	"Bocek #0" = 0
+	"Bács #0" = 0
+	"Caelo #0" = 0
+	"Charles #2" = 10
+	"Dietrich #1" = 10
+	"Enoh #0" = 0
+	"Eufemie #0" = -1
+	"Fedot #0" = 0
+	"Filippa #0" = -1
+	"Gerhard #1" = 10
+	"Giselbert #1" = 10
+	"Heinrich #2" = 10
+	"Karel #3" = 10
+	"Konrad #1" = 10
+	"Leszek #0" = 0
+	"Lupold #1" = 10
+	"Marsilius #0" = 0
+	"Rainier #1" = 10
+	"Robert #0" = 0
+	"Siegfried #1" = 10
+	"Sigebert #1" = 10
+	"Svatopluk #0" = 0
+	"Vnislav #0" = 0
+	"Winthir #0" = 0
+	"Šárka #0" = -1
+}
+leader_names = {
+	"Biberen"
+	"Borchert"
+	"Bourscheidt"
+	"Bültel"
+	"Cemmerer"
+	"Clees"
+	"Croye"
+	"Delhaes"
+	"Dumont"
+	"Genot"
+	"Gonderinger"
+	"Greff"
+	"Herrig"
+	"Hoscheit"
+	"Maussen"
+	"Mersch"
+	"Nissar"
+	"Paguet"
+	"Petilliot"
+	"Pinkernell"
+	"Riener"
+	"Schannen"
+	"Voigt"
+	"Weiler"
+	"Winen"
+	"du Carme"
+	"von Bettborn"
+	"von Bous"
+	"von Capellen"
+	"von Diekirch"
+	"von Grevenmach"
+	"von Grosbous"
+	"von Pontpierre"
+	"von Redange"
+	"von Reisdorf"
+	"von Schuttrange"
+	"von Sommerfeld"
+}
+ship_names = {
+	"Capellen"
+	"Clervaux"
+	"Diekirch"
+	"Echternach"
+	"Esch-sur-Alzette"
+	"Feulen"
+	"Grevenmacher"
+	"Mersch"
+	"Redange"
+	"Remich"
+	"Vianden"
+	"Wiltz"
+}

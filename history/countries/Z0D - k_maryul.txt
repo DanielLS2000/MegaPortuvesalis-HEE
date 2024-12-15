@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 2
+technology_group = indian
+religion = sunni
+primary_culture = hindustani_proper
+capital = 2074
+religious_school = hanafi_school
+add_accepted_culture = tibetan
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Sukhavaraman"
+		dynasty = "Ghaznavid"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1402.11.10
+		religion = sunni
+		culture = hindustani_proper
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = well_connected_personality
+	queen = {
+		name = "Nawxoš"
+		dynasty = "Badakhshanid"
+		adm = 3
+		dip = 3
+		mil = 3
+		country_of_origin = Z0D
+		birth_date = 1401.10.2
+		death_date = 1461.10.2
+		female = yes
+		religion = sunni
+		culture = afghani
+	}
+	add_queen_personality = expansionist_personality
+	add_queen_personality = midas_touched_personality
+	heir = {
+		name = "Zartosht"
+		monarch_name = "Zartosht II"
+		dynasty = "Ghaznavid"
+		adm = 6
+		dip = 5
+		mil = 4
+		birth_date = 1428.5.16
+		death_date = 1493.5.16
+		claim = 89
+		religion = sunni
+		culture = tibetan
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 71
+}

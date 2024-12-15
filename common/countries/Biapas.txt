@@ -1,0 +1,83 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 229 153 34 }
+revolutionary_colors = { 15 1 15 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Akbar #0" = 0
+	"Donya #0" = -1
+	"Ehmed #2" = 10
+	"Feramez #1" = 10
+	"Ioseph #1" = 10
+	"Iturgen #0" = 0
+	"Jamukha #0" = 0
+	"Khutulun #0" = -1
+	"Mamlan #1" = 10
+	"Mandukhai #0" = -1
+	"Mehrzad #1" = 10
+	"Muhammad #1" = 10
+	"Murr #1" = 10
+	"Nazgul #0" = -1
+	"Perçem #0" = -1
+	"Surxap #1" = 10
+	"Theopiste #0" = -1
+	"Timur #0" = 0
+	"Yahya #1" = 10
+	"Yogush #0" = 0
+	"Yousef #2" = 10
+	"Zakare #0" = 0
+	"Ülgen #0" = 0
+}
+leader_names = {
+	"Ardashir"
+	"Buzurg"
+	"Dabuya"
+	"Dadhburzmihr"
+	"Farrukhan"
+	"Hassan"
+	"Kamal"
+	"Khurshid"
+	"Kiya"
+	"Mazyar"
+	"Qarin"
+	"Quhyar"
+	"Rida"
+	"Rustam"
+	"Shahriyar"
+	"Vindadhhurmuzd"
+}
+ship_names = {
+	"Amol"
+	"Ardashir"
+	"Astarabad"
+	"Chalus"
+	"Farim"
+	"Kelar"
+	"Lahican"
+	"Mazyar"
+	"Natel"
+	"Rustam"
+	"Vindadhhurmuzd"
+}

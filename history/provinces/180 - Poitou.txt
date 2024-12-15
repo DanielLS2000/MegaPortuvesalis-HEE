@@ -1,0 +1,16 @@
+owner = Z3X
+controller = Z3X
+capital = "Poitiers"
+is_city = yes
+culture = occitain
+religion = catholic
+trade_goods = livestock
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 3
+add_core = Z3X
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

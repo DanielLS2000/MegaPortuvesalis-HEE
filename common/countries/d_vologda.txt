@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 57 120 191 }
+monarch_names = {
+	"Gregoras #0" = 0
+	"Iroda #1" = 10
+	"Liutgarde #0" = -1
+	"Miikkula #0" = 0
+	"Miitrei #0" = 0
+	"Pauli #0" = 0
+	"Pedri #1" = 10
+	"Savastei #1" = 10
+	"Sofia #0" = -1
+	"Ulljoi #1" = 10
+	"Vihtora #3" = 10
+	"Zenobios #0" = 0
+}

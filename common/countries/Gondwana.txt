@@ -1,0 +1,138 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 224 146 113 }
+revolutionary_colors = { 6 13 6 }
+historical_idea_groups = {
+	quantity_ideas
+	spy_ideas
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	offensive_ideas
+}
+historical_units = {
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Akal #1" = -1
+	"Ammaraja #0" = 0
+	"Anantadevi #0" = -1
+	"Annaladevi #0" = -1
+	"Baghpal #1" = 10
+	"Bauladevi #0" = -1
+	"Bhimadeva #1" = 10
+	"Bhimaratha #0" = 0
+	"Bhoja #0" = 0
+	"Bhumpal #0" = 0
+	"Bhuvan-Singh #0" = 0
+	"Bhuvikrama #0" = 0
+	"Bukha #0" = 0
+	"Bukka #2" = 10
+	"Butuga #0" = 0
+	"Chaud-Singh #0" = 0
+	"Dashavarman #1" = 10
+	"Dehanagadevi #0" = -1
+	"Desaladevi #0" = -1
+	"Devavati #0" = -1
+	"Dharapatta #0" = 0
+	"Dharma #0" = -1
+	"Dhruvadevi #0" = -1
+	"Draupada #0" = 0
+	"Farroukh #0" = 0
+	"Gangeyadeva #1" = 10
+	"Günes #0" = -1
+	"Hirapala #0" = 0
+	"Hrøríkr #0" = 0
+	"Jagadhekamalla #0" = 0
+	"Kanvarpal #0" = 0
+	"Karmavati #0" = -1
+	"Karnadeva #1" = 10
+	"Kiratpala #1" = 10
+	"Kirtivarman #0" = 0
+	"Kokkala #1" = 10
+	"Krishnray #0" = 0
+	"Kumaradevi #0" = -1
+	"Lakshman #1" = -1
+	"Lakshmanaraja #1" = 10
+	"Laxmidevi #0" = -1
+	"Lunavarman #0" = 0
+	"Mahadevi #0" = -1
+	"Maharani #0" = -1
+	"Mahidevi #0" = -1
+	"Mahipal #0" = 0
+	"Mayanalladevi #0" = -1
+	"Nagasani #0" = 0
+	"Neetimarga #0" = 0
+	"Padmaladevi #0" = -1
+	"Padmini #0" = -1
+	"Prabhavatigupta #0" = -1
+	"Pratha #0" = -1
+	"Praudharaya #0" = 0
+	"Putalabai #0" = -1
+	"Rahap #0" = 0
+	"Rajkumar #0" = 0
+	"Ramapala #0" = 0
+	"Rudaladevi #0" = -1
+	"Rupadevi #0" = -1
+	"Sahanapala #0" = 0
+	"Samanta #0" = 0
+	"Samyukta #0" = -1
+	"Sankaragana #1" = 10
+	"Sevilay #0" = -1
+	"Shrimitradevi #0" = -1
+	"Sidhawa #0" = -1
+	"Subhatavarman #0" = 0
+	"Tavañceytâl #0" = -1
+	"Udayamati #0" = -1
+	"Vijada-Dasasyandana #1" = 10
+	"Vijayapala #1" = 10
+	"Vindhyavarman #0" = 0
+	"Xemraja #0" = 0
+	"Yashkarna #1" = 10
+	"Yuvaraja #2" = 10
+}
+leader_names = {
+	"Ballar"
+	"Chandi"
+	"Deogadhi"
+	"Gadhi"
+	"Garha-Mandli"
+	"Haihaya"
+	"Kherli"
+	"Narayan"
+	"Palamaui"
+	"Raj Gondi"
+	"Raksel"
+	"Shahi"
+	"Simha"
+}
+ship_names = {
+	"Amitha"
+	"Amman"
+	"Arul"
+	"Baitarani"
+	"Balasore"
+	"Balugaon"
+	"Brahmani"
+	"Chellam"
+	"Devi"
+	"Durga"
+	"Juggernaut"
+	"Lakshmi"
+	"Mahanadi"
+	"Mou"
+	"Nilima"
+	"Paradeep"
+	"Parvati"
+	"Radha"
+	"Sarasvati"
+	"Sharmistha"
+	"Tuli"
+}

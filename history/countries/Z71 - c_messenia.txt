@@ -1,0 +1,14 @@
+government = monarchy
+add_government_reform = english_monarchy
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = italian
+capital = 1773
+fixed_capital = 1773
+add_accepted_culture = greek
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 64
+	add_treasury = 0
+}

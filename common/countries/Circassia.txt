@@ -1,0 +1,96 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 42 107 17 }
+revolutionary_colors = { 15 2 10 }
+historical_idea_groups = {
+	defensive_ideas
+	maritime_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	humanist_ideas
+	quantity_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Alda #1" = -1
+	"Arbuz #0" = 0
+	"Balsag #1" = 10
+	"Bayar #0" = 0
+	"Bazuk #1" = 10
+	"Buriberdi #1" = 10
+	"Diadumena #0" = -1
+	"Dorothea #0" = -1
+	"Durgulel #2" = 10
+	"Elham #0" = -1
+	"Eltut #0" = 0
+	"Huddan #1" = 10
+	"Hurmat #0" = -1
+	"Itaz #1" = 10
+	"Kobyak #0" = 0
+	"Kozel #0" = 0
+	"Kutlug #0" = -1
+	"Levan #1" = 10
+	"Lorîcan #0" = -1
+	"Mahdokht #0" = -1
+	"Mariami #1" = -1
+	"Mehrzad #0" = 0
+	"Negar #0" = -1
+	"Petronia #0" = -1
+	"Ramina #0" = -1
+	"Salman #1" = 10
+	"Toghrul #0" = 0
+	"Urdur #1" = 10
+	"Yasynya #1" = 10
+}
+leader_names = {
+	"Abzakh"
+	"Adamiy"
+	"Beslenei"
+	"Cöbein"
+	"Guaye"
+	"Hatuqwai"
+	"Khegaik"
+	"Khetuk"
+	"Mamkhegh"
+	"Mokhosh"
+	"Natukhai"
+	"Okhlov"
+	"Shapsug"
+	"Tazryt"
+	"Temirgoy"
+	"Ubykh"
+	"Zhaney"
+}
+ship_names = {
+	"Adyghe"
+	"Anapa"
+	"Beslenei"
+	"Cöbein"
+	"Kabardia"
+	"Mamkhegh"
+	"Nalchik"
+	"Natukhay"
+	"Ossetia"
+	"Petrezok"
+	"Tuapse"
+	"Zichia"
+}

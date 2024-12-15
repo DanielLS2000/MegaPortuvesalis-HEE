@@ -1,0 +1,20 @@
+owner = Z5P
+controller = Z5P
+capital = "Chester"
+is_city = yes
+culture = scottish
+religion = catholic
+trade_goods = salt
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 2
+add_core = SCO
+add_core = Z5P
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

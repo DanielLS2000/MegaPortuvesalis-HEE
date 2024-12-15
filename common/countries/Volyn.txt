@@ -1,0 +1,108 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 205 38 38 }
+revolutionary_colors = { 13 5 8 }
+historical_idea_groups = {
+	defensive_ideas
+	expansion_ideas
+	religious_ideas
+	offensive_ideas
+	naval_ideas
+	spy_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	bardiche_infantry
+	druzhina_cavalry
+	eastern_carabinier
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Adalbero #0" = 0
+	"Azrur #0" = 0
+	"Blažena #0" = -1
+	"Datsko #0" = 0
+	"Gavriil #1" = 10
+	"Gulebu #0" = 0
+	"Helena #0" = -1
+	"Hroznata #1" = 10
+	"Igor #1" = 10
+	"Jitka #0" = -1
+	"Lyubomir #2" = 10
+	"Milena #0" = -1
+	"Mešek #0" = 0
+	"Orsolya #0" = -1
+	"Rostislav #1" = 10
+	"Sviatoslav #1" = 10
+	"Szatmár #0" = 0
+	"Sedziej #0" = 0
+	"Terentiy #1" = 10
+	"Vadimiru #1" = 10
+	"Viacheslav #1" = 10
+	"Vladislav #0" = 0
+	"Vladislava #0" = -1
+	"Volodar #1" = 10
+	"Vsevolod #1" = 10
+	"Yaroslav #1" = 10
+	"Yildiz #0" = -1
+	"Zdislav #0" = 0
+	"Zebilót #0" = 0
+	"Zegota #0" = 0
+}
+leader_names = {
+	"Apraksin"
+	"Bagration"
+	"Barclay de Tolly"
+	"Bibikoff"
+	"Bodisco"
+	"Boruffsin"
+	"Golitzin"
+	"Kaibula"
+	"Kamenski"
+	"Kolzoff"
+	"Mensjikov"
+	"Mustislavski"
+	"Ostermann Tolstoy"
+	"Paletskij"
+	"Rajevski"
+	"Schuvalov"
+	"Sjeremetjev"
+	"Sjtjenjatvev"
+	"Tiesenhusen"
+	"Vasiljevitj"
+	"von Buxhoevden"
+	"von Knorring"
+	"von Lascy"
+}
+ship_names = {
+	"Coluna"
+	"Cortiza"
+	"D. Aleksandrovich"
+	"Dmitri Donskoi"
+	"Iausa"
+	"Ivan Kalita"
+	"Klin"
+	"Moscha"
+	"Mosnisk"
+	"Olescho"
+	"Piersek"
+	"Rurik"
+	"Schorna"
+	"Troitzkoy"
+	"Vasiliy I"
+	"Volga"
+	"Wolok"
+}

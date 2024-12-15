@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = mongol
+capital = 442
+fixed_capital = 442
+1444.11.11= {
+	add_prestige = 100
+	add_treasury = 63
+}

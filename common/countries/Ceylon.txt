@@ -1,0 +1,98 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 60 123 65 }
+revolutionary_colors = { 9 6 4 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	economic_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Agabala #0" = 0
+	"Aggabodhi #1" = 10
+	"Allada #0" = 0
+	"Ammakkanâr #0" = -1
+	"Amrapali #0" = -1
+	"Ananda #0" = 0
+	"Arittha #1" = 10
+	"Bhuvanekabahu #0" = 0
+	"Cuntara #0" = 0
+	"Damarakita #0" = -1
+	"Damasena #0" = -1
+	"Damutara #0" = -1
+	"Dathappabhuti #0" = 0
+	"Dathopatissa #0" = 0
+	"Desaladevi #0" = -1
+	"Devarakita #1" = -1
+	"Dharmasena #0" = 0
+	"Gajabahu #1" = 10
+	"Hadana #4" = 10
+	"Kakanvati #0" = -1
+	"Kariyamâtêvi #0" = -1
+	"Kundakadevi #0" = -1
+	"Maharani #0" = -1
+	"Mahasattha #0" = 0
+	"Mahasiva #0" = 0
+	"Mahidevi #0" = -1
+	"Nuga #0" = -1
+	"Rasaladevi #0" = -1
+	"Sanyukta #0" = -1
+	"Sena #1" = 10
+	"Sidata #0" = 0
+	"Siripali #0" = -1
+	"Somali #0" = -1
+	"Varakuni #0" = -1
+	"Vassaba #0" = 0
+	"Vijayabahu #1" = 10
+	"Vikrama #1" = 10
+	"Vikramabahu #3" = 10
+	"Vimaladharma #0" = 0
+	"Viranarendra #0" = 0
+	"Vîrarâcêntira #0" = 0
+}
+leader_names = {
+	"Atapattu"
+	"Chandana"
+	"Jayaratne"
+	"Jayawardene"
+	"Kalpage"
+	"Pushpakumara"
+	"Ranga"
+	"Ratnayake"
+	"Thilakaratne"
+	"Tillekaratne"
+}
+ship_names = {
+	"Anaradhapura"
+	"Anula"
+	"Jaffna"
+	"Kandy"
+	"Mahaweli"
+	"Mannar"
+	"Nil Manel"
+	"Palk"
+	"Pidurutalagala"
+	"Siddhartha"
+	"Sigiriya"
+	"Sinharaja"
+	"Sirimavo"
+	"Sri Maha Bodhi"
+	"Sri Pada"
+}

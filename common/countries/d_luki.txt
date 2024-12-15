@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 137 174 120 }
+monarch_names = {
+	"Allheyt #0" = -1
+	"Bay #1" = 10
+	"Cirulis #1" = 10
+	"Dagmar #0" = -1
+	"Dirick #0" = 0
+	"Doumenge #0" = 0
+	"Ilme #0" = -1
+	"Iziaslav #1" = 10
+	"Kalju #0" = 0
+	"Kirill #1" = 10
+	"Lev #2" = 10
+	"Lutseia #0" = -1
+	"Mingaila #1" = 10
+	"Mstislav #1" = 10
+	"Tasulemb #0" = 0
+	"Vandemeel #0" = 0
+	"Varvara #0" = -1
+}

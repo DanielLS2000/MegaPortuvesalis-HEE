@@ -1,0 +1,136 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 138 193 231 }
+revolutionary_colors = { 0 15 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	quality_ideas
+	religious_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	russian_cuirassier
+	russian_lancer
+	russian_mass
+	slavic_stradioti
+}
+monarch_names = {
+	"Arnbior #0" = 0
+	"Bohumila #0" = -1
+	"Boleslaw #1" = 10
+	"Božena #0" = -1
+	"Bálaszlófi #0" = 0
+	"Docelin #0" = 0
+	"Domaslav #0" = 0
+	"Fiebron #0" = 0
+	"Godzimir #0" = 0
+	"Helloysis #0" = -1
+	"Jan #0" = 0
+	"Jindrich #0" = 0
+	"Kazimierz #2" = 10
+	"Kedruta #0" = -1
+	"Krakus #1" = 10
+	"Lech #1" = 10
+	"Marcella #0" = -1
+	"Marcin #1" = 10
+	"Marsilius #1" = 10
+	"Mastka #1" = -1
+	"Radka #0" = -1
+	"Strachkvas #0" = 0
+	"Techomir #0" = 0
+	"Valentina #0" = -1
+	"Vácslav #1" = 10
+	"Wanda #2" = -1
+	"Wojciech #0" = 0
+	"Zoltána #0" = -1
+	"Zelibrat #2" = 10
+}
+leader_names = {
+	"Chrzan"
+	"Glegola"
+	"Jagnyziak"
+	"Jankowski"
+	"Jastrzebski"
+	"Lewczuk"
+	"Maciejewski"
+	"Nowak"
+	"Nowicki"
+	"Patoleta"
+	"Potapczyk"
+	"Starosz"
+	"Urban"
+	"Wyciszkiewicz"
+	"Zaszczynski"
+}
+ship_names = {
+	"Arka Noego"
+	"Belzkie"
+	"Bialy Lew"
+	"Bialy Orzel"
+	"Braclawskie"
+	"Brzesko-Kujawskie"
+	"Burza"
+	"Charitas"
+	"Chelminskie"
+	"Czarny Kruk"
+	"Czarny Orzel"
+	"Czernichowskie"
+	"Fortuna"
+	"Gnieznienskie"
+	"Gryf"
+	"Gwiazda"
+	"Inoworclawskie"
+	"Kaliskie"
+	"Kijowskie"
+	"Krakowskie"
+	"Kraków"
+	"Król Dawid"
+	"Latajacy Jelen'"
+	"Leczyckie"
+	"Lubelskie"
+	"Lublin"
+	"Lwów"
+	"Malborskie"
+	"Maly Bialy Orzel"
+	"Mazowieckie"
+	"Niewrazliwy"
+	"Nowy Czarny Orzel"
+	"Panna Wodna"
+	"Plockie"
+	"Plomien"
+	"Podlaskie"
+	"Podolskie"
+	"Poznanskie"
+	"Prorok Samuel"
+	"Rawskie"
+	"Ruskie"
+	"Rycerz Swiety Jerzy"
+	"Sandomierskie"
+	"Sieradzkie"
+	"Strzelec"
+	"Suwerenny"
+	"Swiety Kazimierz"
+	"Swiety Piotr"
+	"Warminskie"
+	"Warszawa"
+	"Wielkie Slonce"
+	"Wodnik"
+	"Wolynskie"
+	"Zwyciestwo"
+	"Zólty Lew"
+}

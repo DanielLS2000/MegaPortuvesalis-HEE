@@ -1,0 +1,125 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 67 124 181 }
+revolutionary_colors = { 6 8 6 }
+historical_idea_groups = {
+	offensive_ideas
+	administrative_ideas
+	defensive_ideas
+	quality_ideas
+	trade_ideas
+	economic_ideas
+	spy_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_cavalry
+	maharathan_guerilla_warfare
+	mughal_musketeer
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Achyutadeva #0" = 0
+	"Avasara #0" = 0
+	"Bhuvikrama #1" = 10
+	"Butuga #1" = 10
+	"Chachinidevi #0" = -1
+	"Chagatai #0" = 0
+	"Dhruva #0" = 0
+	"Hoysaladevi #0" = -1
+	"Indra #2" = 10
+	"Kirtiraja #0" = 0
+	"Krishna #0" = 0
+	"Lebna #0" = 0
+	"Lukose #0" = 0
+	"Madhava #0" = 0
+	"Mahendrapala #0" = 0
+	"Pavak #0" = 0
+	"Praudharaya #0" = 0
+	"Sangappai #0" = -1
+	"Somesvara #1" = 10
+	"Taila #0" = 0
+	"Uzur #0" = 0
+	"Vendakadri #0" = 0
+	"Venkatadri #2" = 10
+	"Vijamba #0" = -1
+	"Vina #0" = -1
+	"Vishwanathpant #0" = 0
+}
+leader_names = {
+	"Aher"
+	"Bhat"
+	"Bhoit"
+	"Bhonsle"
+	"Chavan"
+	"Dabhad"
+	"Gaikwad"
+	"Gujar"
+	"Holkar"
+	"Jadhav"
+	"Jagtap"
+	"Kadam"
+	"Kate"
+	"Kaushal"
+	"Khursh"
+	"Krishnamma"
+	"Lolaksi"
+	"Malusare"
+	"Maruthi"
+	"Moit"
+	"Moray"
+	"Nagaraj"
+	"Narsala"
+	"Nikam"
+	"Nimbalk"
+	"Palkar"
+	"Pawar"
+	"Ramiah"
+	"Rane"
+	"Satavahana"
+	"Sawant"
+	"Shinde"
+	"Shirke"
+	"Yadava"
+}
+ship_names = {
+	"Agni"
+	"Bhim"
+	"Brahma"
+	"Devi"
+	"Durga"
+	"Ganesh"
+	"Gayatri"
+	"Hanumaun"
+	"Indra"
+	"Jalsena"
+	"Kala Jahazi"
+	"Kali"
+	"Krishna"
+	"Kubera"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Shiva"
+	"Sita"
+	"Soma"
+	"Surya"
+	"Varuna"
+	"Vayu"
+	"Vishnu"
+	"Yama"
+}

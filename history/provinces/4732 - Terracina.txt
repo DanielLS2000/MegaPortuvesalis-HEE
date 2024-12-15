@@ -1,0 +1,17 @@
+owner = Z30
+controller = Z30
+capital = "Terracina"
+is_city = yes
+culture = umbrian
+religion = catholic
+trade_goods = fish
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 5
+add_core = URB
+add_core = Z30
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

@@ -1,0 +1,14 @@
+capital = "Dunkwa"
+culture = aka
+religion = shamanism
+trade_goods = coffee
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = ASH
+add_core = Z00
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

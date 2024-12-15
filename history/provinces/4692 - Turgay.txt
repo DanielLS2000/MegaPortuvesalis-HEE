@@ -1,0 +1,10 @@
+capital = "Zhakeikin"
+culture = cuman
+religion = converted_dynamic_faith_161
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 2
+owner = Z0B
+controller = Z0B
+add_core = Z0B

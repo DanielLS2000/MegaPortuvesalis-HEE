@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 42 87 151 }
+monarch_names = {
+	"Agilulfus #0" = 0
+	"Belmaco #0" = 0
+	"Egonaiga #1" = 10
+	"Gamonales #0" = 0
+	"Gaston #0" = 0
+	"Gomidafe #0" = 0
+	"Guayasen #1" = 10
+	"Iballa #0" = -1
+	"Iiju #0" = -1
+	"Masaquera #1" = -1
+	"Masnsen #4" = 10
+	"Massnsen #1" = 10
+	"Nasçique #1" = -1
+	"Philippe #0" = 0
+}
