@@ -1,7 +1,4 @@
-owner = Z0B
-controller = Z0B
 capital = "Berezov"
-is_city = yes
 culture = ostyaki
 religion = sunni
 trade_goods = unknown

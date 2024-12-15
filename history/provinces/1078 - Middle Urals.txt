@@ -1,7 +1,4 @@
-owner = BSH
-controller = BSH
 capital = "Neromkar"
-is_city = yes
 culture = bashkir
 religion = mahayana
 trade_goods = unknown

@@ -48,40 +48,8 @@ union=
 
 union=
 {
-	first="FIN"
-	second="Z3W"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="Z1K"
 	second="DNZ"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BUR"
-	second="AVI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BUR"
-	second="DAU"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BUR"
-	second="Z5G"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -112,14 +80,6 @@ union=
 
 union=
 {
-	first="Z09"
-	second="IRQ"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="Z2P"
 	second="Z3T"
 	start_date="1444.11.11"
@@ -130,30 +90,6 @@ union=
 {
 	first="Z3V"
 	second="Z3C"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="KOL"
-	second="AAC"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="KOL"
-	second="BRB"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="KOL"
-	second="KLE"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -186,14 +122,6 @@ union=
 {
 	first="LEI"
 	second="MCM"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z1T"
-	second="Z19"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -408,38 +336,6 @@ union=
 
 union=
 {
-	first="EGY"
-	second="SYR"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="MLO"
-	second="GEN"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="MLO"
-	second="SPI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="MLO"
-	second="Z30"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="HES"
 	second="ANH"
 	start_date="1444.11.11"
@@ -466,62 +362,6 @@ union=
 {
 	first="Z2X"
 	second="SLZ"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z4B"
-	second="HSA"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z4B"
-	second="Z4O"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BOS"
-	second="HRZ"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BOS"
-	second="Z37"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="ESX"
-	second="KOI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="ESX"
-	second="Z1L"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="PLT"
-	second="EST"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

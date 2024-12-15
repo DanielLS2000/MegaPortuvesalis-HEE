@@ -1,7 +1,4 @@
-owner = YUG
-controller = YUG
 capital = "Pelym"
-is_city = yes
 culture = ostyaki
 religion = siberian_pagan
 trade_goods = unknown

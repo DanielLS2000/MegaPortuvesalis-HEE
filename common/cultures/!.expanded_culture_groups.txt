@@ -447,6 +447,18 @@ latin = {
 		primary = ITA
 		dynasty_names = { "de Liguori" "della Rovere" "di Borbone di Parma" "di Robilant" "di Savoia" "di Savoia-Aosta" "La M�rmora" "Pacoret de Saint Bon" "Thaon di Revel" Albricci Anfora Baratieri Bava-Beccaris Bonaccorsi Cadorna Cagni Canevaro Caraga Caviglia Ceccherini Clary Colonna d'Absburgo-Toscana Dezza Diaz Filomarino Giardino Gironda Govone Gravina Lanza Lombardo Lunardi Molinelli Orengo Orsini Pecori-Giraldi Perruchetti Pianelli Pironti Porro Ramorino Ricotti-Magnani Sanna Scammacca Solari Torlonia Turrisi Vaccari Zunica }
 	}
+	siculo_arabic = {
+		primary = SIC
+		male_names = {
+			"Aaron" "Abanoub" "Abderahman" "Abdul-Aziz" "Abdul-Haq" "Abdul-Madjid" "Abdul-Salaam" "Abdullah" "Abianos" "Abisalom" "Ablarion" "Abraam" "Abu-Bakr" "Adnan" "Agathon" "Agathonikos" "Agathos" "Ahmad" "Akbar" "Alam" "Ali" "Amr" "Androus" "Anthinos" "Arsenios" "Ashraf" "Asim" "Athanasios" "Badr" "Bashir" "Biktor" "Binyamin" "Bishoi" "Boutros" "Danyal" "Dawlat" "Daoud" "Ezra" "Farhan" "Firuz" "Gabriel" "Georgios" "Ghiyasaddin" "Habil" "Hakam" "Hammud" "Hanri" "Haroun" "Hisham" "Hussayn" "Ibrahim" "Ilyas" "Ismail" "Izzaddin" "Jalaaladdin" "Jawdat" "Jerjer" "Kemaladdin" "Khalil" "Krystafer" "Latif" "Lot" "Malik" "Matta" "Mehtar" "Mikail" "Mikhael" "Milad" "Mina" "Muammar" "Muhammad" "Mukhtar" "Murad" "Murshid" "Musa" "Muzaffaraddin" "Nabil" "Nasir" "Nassib" "Nuraddin" "Pamin" "Qadir" "Rauf" "Rafiq" "Ridwan" "Sabah" "Salim" "Shaban" "Sharif" "Suhail" "Tadros" "Tajaddin" "Tayyib" "Touma" "Usama" "Walid" "Yahya" "Yared" "Yassir" "Youkhanna" "Youssef" "Zaia" "Zakariyah"
+		}
+		female_names = {
+			Acenith Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena 			Fatima Halima Jamila Khadija Majida Mariam Nabila Nura Radiya Rana 			Sacmis Safiya Samira Suhaila Tawaret Taweret Titi Thuriya Zara 				Zahra
+		}
+		dynasty_names = { 
+			"Hammadid" "Taishufin" "Hafsid" "Zayanid" "Aznagid" "Wanurid" 				"Alivid" "Madinid" "Muttawakilid" "Mansurid" "Yazid" "Tremecen" 			"Ishaqid" "Yahyavid" "Bilalid" "Utmanid" "Tittawin" "Sebtaid" 				"Tariqid" "Muhajir" "Ladenid" "Hannachid" "Sabrid" "Safavid" 				"Sajjadid" "Saidid" "Sedkid" "Shakeelid" "Sharifid" "Shehzadid" 			"Sidqid" "Tahirid" "Talalid" "Medjerdid" "Tasneemid" "Tayebid" 				"Umarid" "Waheedid" "Wahidid" "Waleedid" "Wazirid" "Younisid" 				"Zafarid" "Zahirid" "Zakariyid" "Zakidid" "Zaydid" "Abdoid" 				"Abidin" "Adilid" "Balochid" "Bakkalid" "Mahmoudid" "Nadeerid" 				"Nadvid" "Najidid" "Naqvid" "Namjoid" "Anwarid" "Fawzid" "Nawfalid" 			"Abbasid" "Bari" "Isavid" "Fatamid" "Ayyubid" "Khazrunid" "Marinid" 			"Almohad" "Ghaniya" "Jalayar" "Tudjinid" "Seddoukid" "Raghraghwid" 			"Temimid" "Azfavid" "Hamdanid" "Thabitid" "Khaldun" "Battuta" 				"Kamalid"
+		}
+	}
 	oltremare = { primary = KOJ }	
 }
 iberian	= {

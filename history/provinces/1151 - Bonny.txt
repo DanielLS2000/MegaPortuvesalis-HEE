@@ -1,7 +1,4 @@
-owner = Z08
-controller = Z08
 capital = "Bonny"
-is_city = yes
 culture = yorumba
 religion = shamanism
 trade_goods = slaves
