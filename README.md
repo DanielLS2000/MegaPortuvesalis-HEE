@@ -42,17 +42,17 @@ Countries:
 	- Formavel: Scandinavia
 ## Akkad:
 	- Qara Qoyunlu
-	- Oman
 	- Hisn Kayfa
+	- Hormuz
 ## Estonia:
 	- Novgorod
 	- Livonian Order
 	- Lithuania
 	- Formavel: Russia
 ## Bosnia:
-	- Bosnia
+	- Ragusa
 	- Serbia
-	- Croatia
+	- Albania
 	- Formavel: Dalmatia
 # Essex:
 	- England
