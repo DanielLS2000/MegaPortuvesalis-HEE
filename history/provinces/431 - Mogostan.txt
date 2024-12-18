@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = AKD
+controller = AKD
 capital = "Gamrun"
 is_city = yes
 culture = persian
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = Z09
+add_core = AKD
 add_permanent_claim = PER
 discovered_by = east_african
 discovered_by = indian

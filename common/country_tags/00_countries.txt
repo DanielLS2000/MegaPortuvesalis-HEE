@@ -972,7 +972,6 @@ Z05 = "countries/k_caucasus.txt"
 Z06 = "countries/k_guinea.txt"
 Z07 = "countries/k_gyalrong.txt"
 Z08 = "countries/k_igbo-benue.txt"
-Z09 = "countries/k_jazira.txt"
 Z0A = "countries/k_khakassia.txt"
 Z0B = "countries/k_kimek.txt"
 Z0C = "countries/k_kipchak.txt"
@@ -1289,4 +1288,8 @@ ZNI = "countries/Zuni.txt"
 ZUL = "countries/Zulu.txt"
 ZUN = "countries/Zunghar.txt"
 ZZZ = "countries/Zazzau.txt"
+
+#Thomas
+
+AKD = "countries/Akkad.txt"
 
