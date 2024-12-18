@@ -1,5 +1,5 @@
-owner = Z7U
-controller = Z7U
+owner = KSH
+controller = KSH
 capital = "Kalat"
 is_city = yes
 culture = sindhi
@@ -8,7 +8,7 @@ trade_goods = dyes
 base_tax = 4
 base_production = 3
 base_manpower = 4
-add_core = Z7U
+add_core = KSH
 add_permanent_claim = SND
 discovered_by = KAS
 discovered_by = indian
