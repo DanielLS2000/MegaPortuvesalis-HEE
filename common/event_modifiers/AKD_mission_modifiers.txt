@@ -32,3 +32,7 @@ akd_pearl_of_the_empire = {
 	trade_goods_size_modifier = 0.5
 	allowed_num_of_manufactories = 1
 }
+akkad_mausoleum = {
+	legitimacy = 0.5
+	global_unrest = -1
+}

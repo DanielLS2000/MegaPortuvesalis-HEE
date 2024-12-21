@@ -36,4 +36,178 @@ country_event = {
 		set_country_flag = no_more_comet_sighted_event
 	}
 }
+country_event = {
+	id = flavor_akd.2
+	title = flavor_akd.2.t
+	desc = flavor_akd.2.d
+	picture = {	
+		trigger = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Star and Crescent"
+			}
+		}
+		picture = muslimgfx_GREAT_BUILDING_eventPicture
+	}
+	picture = {	
+		trigger = {
+			NOT = {
+				OR = {
+					has_dlc = "Cradle of Civilization"
+					has_dlc = "Star and Crescent"
+				}
+			}
+		}
+		picture = GREAT_BUILDING_eventPicture
+	}
+	
+	trigger = {
+		OR = {
+			tag = AKD
+			was_tag = AKD
+		}
+		owns_core_province = 4293
+		is_at_war = no
+		4293 = {
+			has_tax_building_trigger = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = flavor_akd.2.a
+		add_years_of_income = -0.5
+		4293 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		4293 = {
+			upgrade_tax_building = yes
+		}
+	}
+	
+	option = {
+		name = flavor_hsn.6.b
+		add_adm_power = 50
+	}
+	
+}
+country_event = {
+	id = flavor_akd.3
+	title = flavor_akd.3.t
+	desc = flavor_akd.3.d
+	picture = muslimgfx_GREAT_BUILDING_eventPicture
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	trigger = {
+		OR = {
+			tag = AKD
+			was_tag = AKD
+		}
+		religion = nestorian
+		owns = 2312
+	}
+	
+	fire_only_once = yes
 
+	option = {
+		name = flavor_turkoman.10.a
+		add_adm_power = -100
+		add_country_modifier = {
+			name = akkad_mausoleum
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_turkoman.10.b
+		add_adm_power = 50
+	}
+	
+}
+country_event = {
+	id = flavor_akd.4
+	title = flavor_akd.4.t
+	desc = flavor_akd.4.d
+	picture = {	
+		trigger = {
+			has_dlc = "Star and Crescent"
+		}
+		picture = muslimgfx_BORDER_TENSION_eventPicture
+	}
+	picture = {	
+		trigger = {
+			NOT = { has_dlc = "Star and Crescent" }
+		}
+		picture = BATTLE_eventPicture
+	}
+	
+	trigger = {
+		OR = {
+			tag = AKD
+			was_tag = AKD
+		}
+		owns_core_province = 410
+		owns_core_province = 2999
+		is_at_war = no
+		NOT = {
+			OR = {
+				410 = {
+					is_capital_of = ROOT
+				}
+				2999 = {
+					is_capital_of = ROOT
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = flavor_akd.4.a
+		410 = {
+			move_capital_effect = yes
+		}
+		410 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	
+	option = {
+		name = flavor_akd.4.b
+		2999 = {
+			move_capital_effect = yes
+		}
+		2999 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	
+	option = {
+		name = flavor_hsn.7.c
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	
+}
