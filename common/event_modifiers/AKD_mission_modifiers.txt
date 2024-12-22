@@ -1,0 +1,38 @@
+##################################################################################################
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+# MOD missions rewards
+
+akd_nestorian_convert = {
+    global_missionary_strength = 0.02
+    missionary_maintenance_cost = -0.25
+}
+akd_bitlis = {
+	innovativeness_gain = 0.25
+	allowed_num_of_buildings = 1
+}
+akd_paradise_gardens = {
+	local_development_cost_modifier = -0.1
+}
+era_of_akkad2 = {
+	land_morale = 0.1
+	naval_morale = 0.1
+	all_power_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+	max_absolutism = 5
+	max_revolutionary_zeal = 10
+}
+era_of_akkad = {
+	monthly_splendor = 1
+	global_unrest = -2
+}
+akd_pearl_of_the_empire = {
+	trade_goods_size_modifier = 0.5
+	allowed_num_of_manufactories = 1
+}
+akkad_mausoleum = {
+	legitimacy = 0.5
+	global_unrest = -1
+}
