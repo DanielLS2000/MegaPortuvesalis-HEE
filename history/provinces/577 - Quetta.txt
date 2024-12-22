@@ -1,5 +1,5 @@
-owner = Z5A
-controller = Z5A
+owner = KSH
+controller = KSH
 capital = "Quetta"
 is_city = yes
 culture = oghuz
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = Z5A
+add_core = KSH
 add_permanent_claim = AFG
 discovered_by = KAS
 discovered_by = indian
