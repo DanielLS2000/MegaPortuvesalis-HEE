@@ -1,0 +1,163 @@
+west_branch_expansion = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	the_west_sucession = {
+		icon = mission_build_up_to_force_limit
+		generic = yes
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	march_west = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { the_west_sucession }
+		trigger = { }
+		effect = { }
+	}
+	unify_livonia = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { march_west neva_trade_port }
+		trigger = { }
+		effect = { }
+	}
+	minority_problem = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { unify_livonia }
+		trigger = { }
+		effect = { }
+	}
+}
+
+trade_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	neva_trade_port = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_interior }
+		trigger = { }
+		effect = { }
+	}
+}
+
+administrative_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	stabilize_the_interior = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	estonian_inquisition = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_interior }
+		trigger = { }
+		effect = { }
+	}
+	stabilish_national_census = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { estonian_inquisition consolidate_in_frontier }
+		trigger = { }
+		effect = { }
+	}
+	ensure_religious_unity = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { stabilish_national_census }
+		trigger = { }
+		effect = { }
+	}
+	heal_the_schism = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { minority_problem ensure_religious_unity unify_russia }
+		trigger = { }
+		effect = { }
+	}
+	unlikely_great_power = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { heal_the_schism }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	consolidate_in_frontier = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_interior }
+		trigger = { }
+		effect = { }
+	}
+}
+
+east_branch_expansion = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	begin_the_eastward_expansion = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	march_to_moscow = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { begin_the_eastward_expansion }
+		trigger = { }
+		effect = { }
+	}
+	northern_kingdoms = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { consolidate_in_frontier march_to_moscow }
+		trigger = { }
+		effect = { }
+	}
+	unify_russia = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { northern_kingdoms }
+		trigger = { }
+		effect = { }
+	}
+}
+
