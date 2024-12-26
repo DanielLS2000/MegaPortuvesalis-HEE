@@ -3,37 +3,243 @@ west_branch_expansion = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EST
 	}
 
 	the_west_sucession = {
-		icon = mission_build_up_to_force_limit
-		generic = yes
+		icon = mission_the_polish_throne
 		position = 1
 		required_missions = {  }
-		trigger = { }
-		effect = { }
+		trigger = { army_size_percentage = 0.9 }
+		effect = { 
+				ruthenia_region = {
+						limit = { 
+							NOT = { owned_by = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT 
+					}
+				livonia_area = {
+					limit = { 
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+				estonia_ingria_area = {
+					limit = { 
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+				curonia_area = {
+					limit = { 
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+				add_prestige = 10 
+		}
 	}
 	march_west = {
 		icon = mission_build_up_to_force_limit
 		position = 2
 		required_missions = { the_west_sucession }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			region = ruthenia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = ruthenia_region 
+				value = 12 
+			}
+		 }
+		effect = {
+					change_ruler_stat = {
+						type = adm
+						amount = 1
+					}
+					change_ruler_stat = {
+						type = dip
+						amount = 1
+					}
+					change_ruler_stat = {
+						type = mil
+						amount = 1
+					}
+					poland_region = {
+						limit = { country_or_non_sovereign_subject_holds = ROOT } 
+						add_local_autonomy = -10 
+					}
+		 }
 	}
 	unify_livonia = {
 		icon = mission_build_up_to_force_limit
 		position = 3
 		required_missions = { march_west neva_trade_port }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = estonia_ingria_area
+				area = curonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {		
+			add_country_modifier = {
+				name = "baltic_ambition_new"
+				duration = 7300
+			}
+			malopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			mazovia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit =  {
+					NOT = {
+						NOV = {
+							OR = {
+								alliance_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				novgorod_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 	}
 	minority_problem = {
 		icon = mission_build_up_to_force_limit
 		position = 4
 		required_missions = { unify_livonia }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			OR = {
+				area = malopolska_area
+				area = mazovia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				POL = {
+					is_subject_of = ROOT
+				}
+				AND = {
+					malopolska_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					mazovia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_prussia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			grown_by_development = 250 
+			monthly_income = 50
+			OR = {
+				num_accepted_cultures = 4 
+				development_in_provinces = {
+					value = 175
+					culture = novgorodian
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { 
+					NOT = { government_rank = 3 }
+				}
+				add_government_reform = lithuanian_grand_kingdom
+			}
+			else = { add_adm_power = 50 }
+			custom_tooltip = lit_4_ca_tt
+			tooltip = {
+				add_country_modifier = {
+					name = lit_attracting_migrants_modifier
+					duration = 3650 
+				}
+			}
+			custom_tooltip = pol_alternatively_tt
+			tooltip = {
+				add_country_modifier = {
+					name = lit_lithuanian_supremacy_modifier
+					duration = 10950 
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						development_in_provinces = {
+							value = 200
+							culture = lithuanian
+						}
+					}
+					add_country_modifier = {
+						name = lit_lithuanian_supremacy_modifier
+						duration = 10950 
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = lit_attracting_migrants_modifier
+						duration = 3650 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -42,15 +248,44 @@ trade_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EST
 	}
 
 	neva_trade_port = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_develop_nevas_port
 		position = 2
 		required_missions = { stabilize_the_interior }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			province_id = 33
+		}
+		trigger = {
+			33 = {
+				owned_by = ROOT
+				has_building = marketplace
+				has_building = dock
+				is_strongest_trade_power = ROOT
+			}
+			navy_size_percentage = 1
+		}
+		effect = {
+			33 = {
+				add_province_modifier = {
+					name = "neva_fleet"
+					duration = -1
+				}
+			}
+			38 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 	}
 }
 
@@ -59,50 +294,322 @@ administrative_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EST
 	}
 
 	stabilize_the_interior = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_lit_stabilize_interior
 		position = 1
 		required_missions = {  }
-		trigger = { }
-		effect = { }
+		trigger = {
+			stability = 1 
+			NOT = { average_autonomy_above_min = 10 }
+			custom_trigger_tooltip = {
+				tooltip = lit_all_estates_loyalty_55_tt
+				if = { 
+					limit = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles 
+						loyalty = 55 
+					}
+				}
+				estate_loyalty = {
+					estate = estate_church 
+					loyalty = 55 
+				}
+				estate_loyalty = {
+					estate = estate_nobles 
+					loyalty = 55 
+				}
+				if = { 
+					limit = { has_estate = estate_cossacks }
+					estate_loyalty = {
+						estate = estate_nobles 
+						loyalty = 55 
+					}
+				}
+				if = { 
+					limit = { has_estate = estate_nomadic_tribes }
+					estate_loyalty = {
+						estate = estate_nomadic_tribes 
+						loyalty = 55 
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				add_ruler_modifier = {
+					name = lit_stable_rule_modifier
+					duration = -1 
+				}
+			}
+			else = {
+				add_ruler_modifier = {
+					name = lit_stable_rule_2_modifier
+					duration = -1 
+				}
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+		}
 	}
 	estonian_inquisition = {
-		icon = mission_build_up_to_force_limit
+		icon = catholic_confraternity
 		position = 2
 		required_missions = { stabilize_the_interior }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60 
+			}
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes 
+				value = 8
+			}
+			if = {
+				limit = { religion = catholic } 
+				OR = { 
+					PAP = { 
+						has_opinion = { 
+							who = ROOT 
+							value = 125 
+						}
+						owes_favors = { who = ROOT value = 10 }
+					}
+					is_papal_controller = yes 
+				}
+			}
+			else = { religious_unity = 0.85 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = lit_wave_piety_modifier
+				duration = 7300 
+			}
+			if = {
+				limit = { religion = catholic }
+				random_owned_province = { 
+					limit = { 
+						has_cardinal = no 
+						has_owner_religion = yes 
+					} 
+					add_cardinal = yes 
+				}
+			}
+			#if = { #Commented out, as there was an error regarding Saint Casimir identity
+				#limit = { 
+					#religion = catholic
+					#has_ruler_flag = lit_casimir_alive_flag 
+				#}
+				#custom_tooltip = lit_canonize_casimir_tt
+				#country_event = { id = flavor_lit.14 }
+			#}
+			else_if = {
+				limit = { 
+					religion = orthodox 
+					has_dlc = "Third Rome"
+				}
+				add_patriarch_authority = 0.1
+			}
+			else = {				
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			} 
+		}
 	}
 	stabilish_national_census = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_noble_council	
 		position = 3
 		required_missions = { estonian_inquisition consolidate_in_frontier }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+			NOT = { has_courthouse_building_trigger = yes }
+		}
+		trigger = {
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
+			capital_scope = {
+				has_courthouse_building_trigger = yes
+			}
+			if = {
+				limit = { has_estate = estate_church }
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = { has_estate = estate_nobles }
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = { has_estate = estate_burghers }
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			set_country_flag = liv_completed_diet_mission
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_triggered_modifier = livonian_diet_capital
+			}
+		}
 	}
 	ensure_religious_unity = {
-		icon = mission_build_up_to_force_limit
+		icon = chivalry_is_not_dead
 		position = 4
 		required_missions = { stabilish_national_census }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { religion = ROOT }
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
+			religion = catholic
+			grown_by_states = 5
+			religious_unity = 1
+		}
+		effect = {
+			add_papal_influence = 50
+			add_country_modifier = {
+				name = liv_unity_in_faith
+				duration = 9125
+			}
+		}
 	}
 	heal_the_schism = {
-		icon = mission_build_up_to_force_limit
+		icon = end_the_schism
 		position = 5
 		required_missions = { minority_problem ensure_religious_unity unify_russia }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			region = russia_region
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { religion = ROOT }
+			}
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
+			religion = catholic
+			OR = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = liv_heal_the_schism_at
+						295 = {
+							owner = { religion = catholic }
+							religion = ROOT
+						}
+						33 = {
+							owner = { religion = catholic }
+							religion = ROOT
+						}
+						310 = {
+							owner = { religion = catholic }
+							religion = ROOT
+						}
+					}
+					calc_true_if = {
+						desc = liv_heal_the_schism_bt
+						all_province = {
+							region = russia_region
+							religion = catholic
+						}
+						amount = 40
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = catholics_healed_schism_tt
+					has_global_flag = catholics_healed_schism
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { has_global_flag = catholics_healed_schism } }
+				custom_tooltip = liv_heal_the_schism_tt
+				hidden_effect = {
+					set_global_flag = catholics_healed_schism
+					every_country = {
+						limit = { 
+							religion = orthodox 
+							knows_country = ROOT
+						}
+						country_event = { id = flavor_liv.7 }
+					}
+				}
+			}
+			else = {
+				add_papal_influence = 100
+			}
+			add_country_modifier = {
+				name = teu_crusade_end_of_the_schism
+				duration = -1
+			}
+			if = {
+				limit = {
+					295 = {
+						NOT = { religion = catholic }
+					}
+				}
+				295 = { change_religion = catholic }
+			}
+		}
 	}
 	unlikely_great_power = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_lit_great_power_politics 
 		position = 6
 		required_missions = { heal_the_schism }
-		trigger = { }
-		effect = { }
+		trigger = {
+			power_projection = 80 
+			prestige = 90 
+			if = {
+				limit = {
+					OR = { 
+						has_dlc = "Emperor"
+						has_dlc = "Rights of Man"
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = lit_better_than_2_gp_tt 
+					NOT = { great_power_rank = 3 } 
+				}
+			}
+			else = { total_development = 800 } 
+		}
+		effect = { 
+			add_permanent_power_projection = {
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+			add_country_modifier = {
+				name = lit_golden_age_lit_modifier
+				duration = 9125
+			}
+			if = { 
+				limit = { has_dlc = "Emperor" }
+				custom_tooltip = lit_halve_hegemony_reqs_tt
+				set_country_flag = halve_hegemony_requirements
+			}
+			else = { add_adm_power = 100 add_dip_power = 100 add_mil_power = 100 }
+		}
 	}
 }
 
@@ -111,15 +618,60 @@ dev_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EST
 	}
 
 	consolidate_in_frontier = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_eastern_european_city
 		position = 2
 		required_missions = { stabilize_the_interior }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			province_id = 310
+		}
+		trigger = {
+			310 = {
+				development = 20
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				310 = {
+					OR = {
+						base_production = 10
+						province_has_center_of_trade_of_level = 3
+					}
+					has_trade_building_trigger = yes 
+				}
+			}
+			else = {
+				310 = {
+					has_trade_building_trigger = yes 
+					base_production = 10 
+				}
+			}
+		}
+		effect = {
+			310 = {
+				add_province_modifier = {
+					name = "restoration_of_kiev"
+					duration = -1
+				}
+			}
+			if = { 
+				limit = { 
+					has_dlc = "Rights of Man" 
+					NOT = { num_of_ruler_traits = { amount = 3 } }
+				}
+				add_ruler_personality = architectural_visionary_personality
+			}
+			else = { 
+				change_ruler_stat = {
+					type = adm
+					amount = 2
+				}
+			}
+		}
 	}
 }
 
@@ -128,7 +680,7 @@ east_branch_expansion = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EST
 	}
 
 	begin_the_eastward_expansion = {
@@ -166,7 +718,10 @@ rus_russian_bureaucracy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -259,7 +814,10 @@ rus_russian_nobility = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -434,7 +992,10 @@ rus_russian_disaster = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -484,7 +1045,10 @@ rus_russian_disaster = {
 			}
 		}
 		trigger = {
-			tag = RUS
+						AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		}
 		effect = {
 			remove_country_modifier = centralization_modifier
@@ -589,7 +1153,10 @@ rus_russian_streltsy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -813,7 +1380,10 @@ rus_court_and_church = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -920,7 +1490,10 @@ rus_russian_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_country_flag = rus_modernized_russia
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
@@ -1013,7 +1586,10 @@ rus_russian_government = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_country_flag = rus_modernized_russia
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
@@ -1114,7 +1690,10 @@ rus_russian_religion_serfdom = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_country_flag = rus_modernized_russia
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
@@ -1418,7 +1997,10 @@ rus_russian_military = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_country_flag = rus_modernized_russia
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
@@ -1535,7 +2117,10 @@ rus_russian_westernization = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+					AND = {
+				was_tag = EST
+				tag = RUS
+			}
 		has_country_flag = rus_modernized_russia
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
