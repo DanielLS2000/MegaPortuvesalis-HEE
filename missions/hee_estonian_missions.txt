@@ -953,6 +953,542 @@ east_branch_expansion = {
 	}
 }
 
+russian_expansion_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
+	}
+
+	mos_rus_build_up_army = {
+		icon = mission_early_russian_army
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = { ai = no }
+				monthly_adm = 10
+			}
+			army_size_percentage = 0.8
+		}
+		effect = {
+			country_event_with_insight = {
+				id = flavor_rus.100
+				insight_tooltip = mos_rus_build_up_army_at
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+	nov_rus_conquer_muscovy = {
+		icon = mission_defeat_muscovy
+		required_missions = { mos_rus_build_up_army }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = novgorod_area
+				area = beloozero_area
+				area = pomor_area
+				area = north_karelia
+				area = arkhangelsk_area
+				province_id = 4148
+				province_id = 1777
+				province_id = 33
+				province_id = 34
+				province_id = 1961
+				owned_by = MOS
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			MOS = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+			owns = 310
+			owns = 33
+			owns = 1955
+			num_of_owned_provinces_with = {
+				OR = {
+					area = novgorod_area
+					area = beloozero_area
+					area = pomor_area
+					area = north_karelia
+					area = arkhangelsk_area
+					province_id = 4148
+					province_id = 1777
+					province_id = 33
+					province_id = 34
+					province_id = 1961
+				}
+				value = 15
+			}
+		}
+		effect = {
+			estonia_ingria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			curonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			ruthenia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		}
+	}
+	mos_rus_conquer_ruthenia = {
+		icon = mission_restore_kiev
+		required_missions = { nov_rus_conquer_muscovy }
+		position = 7
+		provinces_to_highlight = {
+			region = ruthenia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 280
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = ruthenia_region
+				value = 20
+			}
+		}
+		effect = {
+			country_event_with_insight = {
+				id = flavor_rus.106
+				insight_tooltip = mos_rus_conquer_ruthenia_at
+			}
+			ruthenia_region = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "ruthenian_integration"
+					duration = 9125
+				}
+			}
+			poland_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	mos_rus_partition_poland = {
+		icon = mission_partition_poland
+		required_missions = { mos_rus_conquer_ruthenia }
+		position = 8
+		provinces_to_highlight = {
+			region = poland_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = poland_region
+				value = 15
+			}
+		}
+		effect = {
+			tooltip = {
+				add_accepted_culture = czech
+				add_accepted_culture = sorbian
+				add_accepted_culture = schlesian
+				add_accepted_culture = polish
+				add_accepted_culture = slovak
+			}
+			add_country_modifier = {
+				name = rus_west_slavic_union
+				duration = -1
+				desc = mos_rus_partition_poland_at
+			}
+			hidden_effect = {
+				add_accepted_culture = czech
+				add_accepted_culture = sorbian
+				add_accepted_culture = schlesian
+				add_accepted_culture = polish
+				add_accepted_culture = slovak
+			}
+			add_country_modifier = {
+				name = "rus_partition_poland_modifier"
+				duration = 7300
+			}
+			carpathia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+russian_expansion_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
+	}
+
+	nov_rus_window_on_the_west = {
+		icon = mission_conquer_riga
+		required_missions = { nov_rus_conquer_muscovy }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = curonia_area
+				area = estonia_ingria_area
+				area = livonia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "baltic_ambition_new"
+				duration = 9125
+			}
+			baltic_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			finland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			bothnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			laponia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	nov_rus_conquer_finland = {
+		icon = mission_conquer_finland
+		required_missions = { nov_rus_window_on_the_west }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+				area = bothnia_area
+				area = laponia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			bothnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			laponia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = nov_rus_scandinavian_conquest
+				duration = -1
+			}
+			add_accepted_culture = finnish
+			add_accepted_culture = sapmi
+			add_country_modifier = {
+				name = "conquest_of_finland"
+				duration = 9125
+			}
+			scandinavia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+siberian_ranch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
+	}
+
+	mos_rus_colonize_west_siberia = {
+		icon = mission_beyond_the_urals
+		position = 5
+		required_missions = { unify_russia }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1074
+				province_id = 1075
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 1074
+			owns = 1075
+		}
+		effect = {
+			1074 = {
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 2
+			}
+			1075 = {
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 1
+			}
+			west_siberia_region = {
+				limit = {
+					trade_goods = fur
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "siberian_fur_production"
+					duration = 7300
+				}
+			}
+			tannu_uriankhai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+			define_conquistador = {
+				name = "Yermak Timofeyevich"
+				shock = 6
+				fire = 6
+				manuever = 5
+				siege = 0
+			}
+		}
+	}
+	mos_rus_colonize_central_siberia = {
+		icon = mission_collect_yasak
+		required_missions = { mos_rus_colonize_west_siberia }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = irkutsk_area
+				area = tunguska_area
+				area = central_siberia_area
+				area = tannu_uriankhai_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = irkutsk_area
+					area = tunguska_area
+					area = central_siberia_area
+					area = tannu_uriankhai_area
+				}
+				value = 15
+			}
+			owns = 1064
+		}
+		effect = {
+			1064 = {
+				center_of_trade = 2
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 2
+			}
+			east_siberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	mos_rus_colonize_eastern_siberia = {
+		icon = mission_extent_yasak_to_the_east
+		required_missions = { mos_rus_colonize_central_siberia }
+		position = 7
+		provinces_to_highlight = {
+			region = east_siberia_region
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = east_siberia_region
+				value = 20
+			}
+			owns = 1043
+		}
+		effect = {
+			east_siberia_region = {
+				limit = {
+					trade_goods = fur
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "siberian_fur_production"
+					duration = 7300
+				}
+			}
+			define_explorer = {
+				name = "Vitus Bering"
+				fire = 4
+				shock = 2
+				manuever = 5
+			}
+			1043 = {
+				if = {
+					limit = {
+						NOT = { has_building = shipyard }
+						NOT = { has_building = grand_shipyard }
+					}
+					add_building = shipyard
+				}
+				center_of_trade = 2
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 2
+				add_province_modifier = {
+					name = "russian_pacific_port"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = rus_new_world_colonization
+				duration = 36500
+			}
+			increase_gold_discovery = yes
+			furdan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			ilan_hala_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			central_jilin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			sakhalin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
 rus_russian_bureaucracy = {
 	slot = 1
 	generic = no
@@ -2410,539 +2946,5 @@ rus_russian_westernization = {
 	}
 }
 
-russian_expansion_branch = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-				AND = {
-			was_tag = EST
-			tag = RUS
-		}
-	}
 
-	mos_rus_build_up_army = {
-		icon = mission_early_russian_army
-		required_missions = {  }
-		position = 1
-		provinces_to_highlight = {
-		}
-		trigger = {
-			if = {
-				limit = { ai = no }
-				monthly_adm = 10
-			}
-			army_size_percentage = 0.8
-		}
-		effect = {
-			country_event_with_insight = {
-				id = flavor_rus.100
-				insight_tooltip = mos_rus_build_up_army_at
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-	nov_rus_conquer_muscovy = {
-		icon = mission_defeat_muscovy
-		required_missions = { mos_rus_build_up_army }
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				area = novgorod_area
-				area = beloozero_area
-				area = pomor_area
-				area = north_karelia
-				area = arkhangelsk_area
-				province_id = 4148
-				province_id = 1777
-				province_id = 33
-				province_id = 34
-				province_id = 1961
-				owned_by = MOS
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			MOS = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-				}
-			}
-			owns = 310
-			owns = 33
-			owns = 1955
-			num_of_owned_provinces_with = {
-				OR = {
-					area = novgorod_area
-					area = beloozero_area
-					area = pomor_area
-					area = north_karelia
-					area = arkhangelsk_area
-					province_id = 4148
-					province_id = 1777
-					province_id = 33
-					province_id = 34
-					province_id = 1961
-				}
-				value = 15
-			}
-		}
-		effect = {
-			estonia_ingria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			livonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			curonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			ruthenia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-		}
-	}
-	mos_rus_conquer_ruthenia = {
-		icon = mission_restore_kiev
-		required_missions = { nov_rus_conquer_muscovy }
-		position = 7
-		provinces_to_highlight = {
-			region = ruthenia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 280
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = ruthenia_region
-				value = 20
-			}
-		}
-		effect = {
-			country_event_with_insight = {
-				id = flavor_rus.106
-				insight_tooltip = mos_rus_conquer_ruthenia_at
-			}
-			ruthenia_region = {
-				limit = { country_or_non_sovereign_subject_holds = ROOT }
-				add_province_modifier = {
-					name = "ruthenian_integration"
-					duration = 9125
-				}
-			}
-			poland_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-	
-	mos_rus_partition_poland = {
-		icon = mission_partition_poland
-		required_missions = { mos_rus_conquer_ruthenia }
-		position = 8
-		provinces_to_highlight = {
-			region = poland_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = poland_region
-				value = 15
-			}
-		}
-		effect = {
-			tooltip = {
-				add_accepted_culture = czech
-				add_accepted_culture = sorbian
-				add_accepted_culture = schlesian
-				add_accepted_culture = polish
-				add_accepted_culture = slovak
-			}
-			add_country_modifier = {
-				name = rus_west_slavic_union
-				duration = -1
-				desc = mos_rus_partition_poland_at
-			}
-			hidden_effect = {
-				add_accepted_culture = czech
-				add_accepted_culture = sorbian
-				add_accepted_culture = schlesian
-				add_accepted_culture = polish
-				add_accepted_culture = slovak
-			}
-			add_country_modifier = {
-				name = "rus_partition_poland_modifier"
-				duration = 7300
-			}
-			carpathia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-}
-
-russian_expansion_branch_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-				AND = {
-			was_tag = EST
-			tag = RUS
-		}
-	}
-
-	nov_rus_window_on_the_west = {
-		icon = mission_conquer_riga
-		required_missions = { nov_rus_conquer_muscovy }
-		position = 7
-		provinces_to_highlight = {
-			OR = {
-				area = curonia_area
-				area = estonia_ingria_area
-				area = livonia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			curonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			estonia_ingria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			livonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "baltic_ambition_new"
-				duration = 9125
-			}
-			baltic_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			finland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			bothnia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			laponia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-	
-	nov_rus_conquer_finland = {
-		icon = mission_conquer_finland
-		required_missions = { nov_rus_window_on_the_west }
-		position = 8
-		provinces_to_highlight = {
-			OR = {
-				area = finland_area
-				area = bothnia_area
-				area = laponia_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			finland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			bothnia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			laponia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = nov_rus_scandinavian_conquest
-				duration = -1
-			}
-			add_accepted_culture = finnish
-			add_accepted_culture = sapmi
-			add_country_modifier = {
-				name = "conquest_of_finland"
-				duration = 9125
-			}
-			scandinavia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-}
-
-siberian_ranch = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-				AND = {
-			was_tag = EST
-			tag = RUS
-		}
-	}
-
-	mos_rus_colonize_west_siberia = {
-		icon = mission_beyond_the_urals
-		position = 5
-		required_missions = { unify_russia }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1074
-				province_id = 1075
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			owns = 1074
-			owns = 1075
-		}
-		effect = {
-			1074 = {
-				change_religion = ROOT
-				change_culture = ROOT
-				add_base_production = 2
-			}
-			1075 = {
-				change_religion = ROOT
-				change_culture = ROOT
-				add_base_production = 1
-			}
-			west_siberia_region = {
-				limit = {
-					trade_goods = fur
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "siberian_fur_production"
-					duration = 7300
-				}
-			}
-			tannu_uriankhai_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			define_conquistador = {
-				name = "Yermak Timofeyevich"
-				shock = 6
-				fire = 6
-				manuever = 5
-				siege = 0
-			}
-		}
-	}
-	mos_rus_colonize_central_siberia = {
-		icon = mission_collect_yasak
-		required_missions = { mos_rus_colonize_west_siberia }
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				area = irkutsk_area
-				area = tunguska_area
-				area = central_siberia_area
-				area = tannu_uriankhai_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					area = irkutsk_area
-					area = tunguska_area
-					area = central_siberia_area
-					area = tannu_uriankhai_area
-				}
-				value = 15
-			}
-			owns = 1064
-		}
-		effect = {
-			1064 = {
-				center_of_trade = 2
-				change_religion = ROOT
-				change_culture = ROOT
-				add_base_production = 2
-			}
-			east_siberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-	
-	mos_rus_colonize_eastern_siberia = {
-		icon = mission_extent_yasak_to_the_east
-		required_missions = { mos_rus_colonize_central_siberia }
-		position = 7
-		provinces_to_highlight = {
-			region = east_siberia_region
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				region = east_siberia_region
-				value = 20
-			}
-			owns = 1043
-		}
-		effect = {
-			east_siberia_region = {
-				limit = {
-					trade_goods = fur
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "siberian_fur_production"
-					duration = 7300
-				}
-			}
-			define_explorer = {
-				name = "Vitus Bering"
-				fire = 4
-				shock = 2
-				manuever = 5
-			}
-			1043 = {
-				if = {
-					limit = {
-						NOT = { has_building = shipyard }
-						NOT = { has_building = grand_shipyard }
-					}
-					add_building = shipyard
-				}
-				center_of_trade = 2
-				change_religion = ROOT
-				change_culture = ROOT
-				add_base_production = 2
-				add_province_modifier = {
-					name = "russian_pacific_port"
-					duration = -1
-				}
-			}
-			add_country_modifier = {
-				name = rus_new_world_colonization
-				duration = 36500
-			}
-			increase_gold_discovery = yes
-			furdan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-			ilan_hala_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-			central_jilin_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-			sakhalin_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-}
 
