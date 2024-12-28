@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = AKD
+controller = AKD
 capital = "Wasit"
 is_city = yes
 culture = dynamic-armenian-assyrian-culture-num1
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = Z09
+add_core = AKD
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
