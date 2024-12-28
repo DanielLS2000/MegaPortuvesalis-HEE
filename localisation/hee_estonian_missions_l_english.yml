@@ -1,0 +1,58 @@
+l_english:
+
+#---------------------------------------------------------
+# West Branch Expansion
+#---------------------------------------------------------
+
+the_west_sucession_title: "The West Sucession"
+the_west_sucession_desc: "With the kingdom's destiny at stake, the West awaits strong and wise leadership... or at least something close to it. As a bold yet somewhat misguided king, your mission is to ensure Estonia's legacy isn't lost in the struggle between the great Western powers."
+march_west_title: "March West"
+march_west_desc: "The West shines with promises of glory and wealth, but also formidable enemies. Under your leadership, perhaps stumbling forward is a valid strategy. The important thing is to march, with or without a plan."
+unify_livonia_title: "Unify Livonia"
+unify_livonia_desc: "The fragmented and contested lands of Livonia cry out for unity. Surely, a brilliant king would make astute decisions here. However, history will be made, even if by accident."
+minority_problem_title: "Minority Problem"
+minority_problem_desc: "Our Catholic kingdom thrives, but there are those who still follow other doctrines or customs. We must address the minority issue in a way that strengthens our glory... or at least doesn't create more problems."
+
+#---------------------------------------------------------
+# Trade Branch
+#---------------------------------------------------------
+
+neva_trade_port_title: "Neva Trade Port"
+neva_trade_port_desc: "The mouth of the Neva River is a strategic trade hub. Under your almost divine (or entirely misguided) vision, we will transform this port into a pillar of our economy – or at least give it a good try."
+
+#---------------------------------------------------------
+# Administrative Branch
+#---------------------------------------------------------
+
+stabilize_the_interior_title: "Stabilize The Interior"
+stabilize_the_interior_desc: "Our interior is a boiling pot of tensions and issues. Even with questionable leadership, stabilizing these lands will be crucial to the kingdom's survival."
+estonian_inquisition_title: "Estonian Inquisition"
+estonian_inquisition_desc: "The Catholic faith is the pillar of our greatness, and any resistance must be crushed. Launch the inquisition, even if with the subtlety of an elephant in a porcelain shop."
+stabilish_national_census_title: "Establish National Census"
+stabilish_national_census_desc: "Knowing how many subjects we have is a revolutionary idea for this kingdom. Let us begin a census, hoping we don't lose count along the way."
+ensure_religious_unity_title: "Ensure Religious Unity"
+ensure_religious_unity_desc: "Religious unity is essential. Persuading, converting, or, as a last resort, crushing those who dissent from our faith is the only way to ensure a stable future."
+heal_the_schism_title: "Heal The Schism"
+heal_the_schism_desc: "The religious schism of the past separates us from the rest of the Christian world. Under your leadership, we will unite the hearts of the faithful... or at least try something close to it."
+unlikely_great_power_title: "Unlikely Great Power"
+unlikely_great_power_desc: "The great powers have never seen Estonia as a threat. It is time to prove them wrong, even if we do so clumsily."
+
+#---------------------------------------------------------
+# Dev Branch
+#---------------------------------------------------------
+
+consolidate_in_frontier_title: "Consolidate In Frontier"
+consolidate_in_frontier_desc: "The frontier lands are unexplored and dangerous, but they hold great potential. With determination – and a good dose of luck – we will consolidate our presence."
+
+#---------------------------------------------------------
+# East Branch Expansion
+#---------------------------------------------------------
+
+begin_the_eastward_expansion_title: "Begin The Eastward Expansion"
+begin_the_eastward_expansion_desc: "The East is vast and hostile, but that has never stopped our dreams... even if they are nonsensical. Let us begin our expansion, whether out of stubbornness or desperation."
+march_to_moscow_title: "March To Moscow"
+march_to_moscow_desc: "Glory awaits in Moscow, one of the Eastern centers of power. Even if marching there seems absurd, history is written by those who dare to try."
+northern_kingdoms_title: "Northern Kingdoms"
+northern_kingdoms_desc: "The northern kingdoms are a formidable challenge, but they also represent an opportunity for expansion. Under your 'brilliant' leadership, they might be brought under our dominion."
+unify_russia_title: "Unify Russia"
+unify_russia_desc: "The dream of unifying the Russian lands under our rule might be a delusion... or a divine ambition. Let us find out which as we try."

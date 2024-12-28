@@ -36,6 +36,7 @@ tr_russian_minors_1 = {
 				NOT = { tag = MOS }
 				NOT = { tag = NOV }
 				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
@@ -289,9 +290,15 @@ NOT = { tag = EST }
 			}
 			AND = {
 				culture_group = east_slavic
-				NOT = { tag = MOS }
+					potential = {
+		OR = {
+		tag = EST
+		was_tag = EST
+		}
+	}				NOT = { tag = MOS }
 				NOT = { tag = NOV }
 				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
@@ -453,9 +460,15 @@ NOT = { tag = EST }
 			}
 			AND = {
 				culture_group = east_slavic
-				NOT = { tag = MOS }
+					potential = {
+		OR = {
+		tag = EST
+		was_tag = EST
+		}
+	}				NOT = { tag = MOS }
 				NOT = { tag = NOV }
 				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
