@@ -2415,7 +2415,10 @@ russian_expansion_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
 	}
 
 	mos_rus_build_up_army = {
@@ -2618,7 +2621,10 @@ russian_expansion_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
 	}
 
 	nov_rus_window_on_the_west = {
@@ -2746,7 +2752,10 @@ siberian_ranch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+				AND = {
+			was_tag = EST
+			tag = RUS
+		}
 	}
 
 	mos_rus_colonize_west_siberia = {
@@ -2801,19 +2810,139 @@ siberian_ranch = {
 			}
 		}
 	}
-	s_2 = {
-		icon = mission_build_up_to_force_limit
+	mos_rus_colonize_central_siberia = {
+		icon = mission_collect_yasak
+		required_missions = { mos_rus_colonize_west_siberia }
 		position = 6
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			OR = {
+				area = irkutsk_area
+				area = tunguska_area
+				area = central_siberia_area
+				area = tannu_uriankhai_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = irkutsk_area
+					area = tunguska_area
+					area = central_siberia_area
+					area = tannu_uriankhai_area
+				}
+				value = 15
+			}
+			owns = 1064
+		}
+		effect = {
+			1064 = {
+				center_of_trade = 2
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 2
+			}
+			east_siberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
-	s_3 = {
-		icon = mission_build_up_to_force_limit
+	
+	mos_rus_colonize_eastern_siberia = {
+		icon = mission_extent_yasak_to_the_east
+		required_missions = { mos_rus_colonize_central_siberia }
 		position = 7
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			region = east_siberia_region
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = east_siberia_region
+				value = 20
+			}
+			owns = 1043
+		}
+		effect = {
+			east_siberia_region = {
+				limit = {
+					trade_goods = fur
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "siberian_fur_production"
+					duration = 7300
+				}
+			}
+			define_explorer = {
+				name = "Vitus Bering"
+				fire = 4
+				shock = 2
+				manuever = 5
+			}
+			1043 = {
+				if = {
+					limit = {
+						NOT = { has_building = shipyard }
+						NOT = { has_building = grand_shipyard }
+					}
+					add_building = shipyard
+				}
+				center_of_trade = 2
+				change_religion = ROOT
+				change_culture = ROOT
+				add_base_production = 2
+				add_province_modifier = {
+					name = "russian_pacific_port"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = rus_new_world_colonization
+				duration = 36500
+			}
+			increase_gold_discovery = yes
+			furdan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			ilan_hala_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			central_jilin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+			sakhalin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_russian_claim = yes
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 }
 
