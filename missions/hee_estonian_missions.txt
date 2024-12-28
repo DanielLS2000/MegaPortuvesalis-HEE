@@ -1,4 +1,5 @@
 west_branch_expansion = {
+has_country_shield = yes
 	slot = 1
 	generic = no
 	ai = yes
@@ -13,7 +14,9 @@ west_branch_expansion = {
 		icon = mission_the_polish_throne
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = {
+			army_size_percentage = 0.9
+		 }
 		effect = {
 			ruthenia_region = {
 				limit = {
@@ -247,6 +250,7 @@ west_branch_expansion = {
 }
 
 trade_branch = {
+has_country_shield = yes
 	slot = 2
 	generic = no
 	ai = yes
@@ -296,6 +300,7 @@ trade_branch = {
 }
 
 administrative_branch = {
+has_country_shield = yes
 	slot = 3
 	generic = no
 	ai = yes
@@ -615,6 +620,7 @@ administrative_branch = {
 }
 
 dev_branch = {
+has_country_shield = yes
 	slot = 4
 	generic = no
 	ai = yes
@@ -680,6 +686,7 @@ dev_branch = {
 }
 
 east_branch_expansion = {
+has_country_shield = yes
 	slot = 5
 	generic = no
 	ai = yes
@@ -954,6 +961,7 @@ east_branch_expansion = {
 }
 
 russian_expansion_branch = {
+has_country_shield = yes
 	slot = 1
 	generic = no
 	ai = yes
@@ -1160,6 +1168,7 @@ russian_expansion_branch = {
 }
 
 russian_expansion_branch_2 = {
+has_country_shield = yes
 	slot = 2
 	generic = no
 	ai = yes
@@ -1291,6 +1300,7 @@ russian_expansion_branch_2 = {
 }
 
 siberian_ranch = {
+has_country_shield = yes
 	slot = 5
 	generic = no
 	ai = yes
@@ -1490,6 +1500,7 @@ siberian_ranch = {
 }
 
 rus_russian_bureaucracy = {
+has_country_shield = yes
 	slot = 1
 	generic = no
 	ai = yes
@@ -1586,6 +1597,7 @@ rus_russian_bureaucracy = {
 }
 
 rus_russian_nobility = {
+has_country_shield = yes
 	slot = 2
 	generic = no
 	ai = yes
@@ -1764,6 +1776,7 @@ rus_russian_nobility = {
 }
 
 rus_russian_disaster = {
+has_country_shield = yes
 	slot = 3
 	generic = no
 	ai = yes
@@ -1925,6 +1938,7 @@ rus_russian_disaster = {
 }
 
 rus_russian_streltsy = {
+has_country_shield = yes
 	slot = 4
 	generic = no
 	ai = yes
@@ -2152,6 +2166,7 @@ rus_russian_streltsy = {
 }
 
 rus_court_and_church = {
+has_country_shield = yes
 	slot = 5
 	generic = no
 	ai = yes
@@ -2262,6 +2277,7 @@ rus_court_and_church = {
 }
 
 rus_russian_navy = {
+has_country_shield = yes
 	slot = 1
 	generic = no
 	ai = yes
@@ -2358,6 +2374,7 @@ rus_russian_navy = {
 }
 
 rus_russian_government = {
+has_country_shield = yes
 	slot = 2
 	generic = no
 	ai = yes
@@ -2462,6 +2479,7 @@ rus_russian_government = {
 }
 
 rus_russian_religion_serfdom = {
+has_country_shield = yes
 	slot = 3
 	generic = no
 	ai = yes
@@ -2769,6 +2787,7 @@ rus_russian_religion_serfdom = {
 }
 
 rus_russian_military = {
+has_country_shield = yes
 	slot = 4
 	generic = no
 	ai = yes
@@ -2889,6 +2908,7 @@ rus_russian_military = {
 }
 
 rus_russian_westernization = {
+has_country_shield = yes
 	slot = 5
 	generic = no
 	ai = yes
