@@ -7382,3 +7382,51 @@ crusader_nobility_reform = {
 	}
 
 }
+
+
+# Milanese Monarchy
+
+aurelian_monarchy_reform = {
+	icon = "trading_city"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+		yearly_corruption = -0.1
+		monarch_lifespan = 0.25
+	}
+	legacy_equivalent = venetian_merchant_republic
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = VEN
+			tag = MLO
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = venice_merchants_reform
+			}
+			AND = {
+				tag = ITA
+				have_had_reform = venice_merchants_reform
+			}
+		}
+	}
+	boost_income = yes
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	can_use_trade_post = yes
+	can_form_trade_league = yes
+	trade_city_reform = trading_city
+	government_abilities = {
+		council_of_ten
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+}
