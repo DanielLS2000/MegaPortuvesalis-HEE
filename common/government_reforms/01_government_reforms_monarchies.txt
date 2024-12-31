@@ -7387,7 +7387,7 @@ crusader_nobility_reform = {
 # Milanese Monarchy
 
 aurelian_monarchy_reform = {
-	icon = "trading_city"
+	icon = "holy_state_reform"
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	modifiers = {
@@ -7396,23 +7396,11 @@ aurelian_monarchy_reform = {
 		yearly_corruption = -0.1
 		monarch_lifespan = 0.25
 	}
-	legacy_equivalent = venetian_merchant_republic
 	potential = {
-		NOT = { map_setup = map_setup_random }
-		OR = {
-			tag = VEN
-			tag = MLO
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = venice_merchants_reform
+		is_or_was_tag = { 
+			tag = MLO 
 			}
-			AND = {
-				tag = ITA
-				have_had_reform = venice_merchants_reform
-			}
-		}
 	}
-	boost_income = yes
 	factions = {
 		mr_aristocrats
 		mr_traders
