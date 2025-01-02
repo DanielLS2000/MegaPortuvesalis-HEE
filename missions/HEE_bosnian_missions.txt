@@ -1,0 +1,285 @@
+bos_first_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BOS
+			was_tag = BOS
+		} 
+	}
+	has_country_shield = yes
+
+	bos_fund_the_monasteries = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	bos_unity_in_belief = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bos_restore_medieval_law }
+		trigger = { }
+		effect = { }
+	}
+	bos_patron_of_the_reinassance = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { bos_the_great_university }
+		trigger = { }
+		effect = { }
+	}
+	bos_frontier_fortifications = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { bos_army_reforms }
+		trigger = { }
+		effect = { }
+	}
+	bos_adriatic_presence = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { bos_expand_the_coastline }
+		trigger = { }
+		effect = { }
+	}
+}
+
+bos_second_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BOS
+			was_tag = BOS
+		} 
+	}
+	has_country_shield = yes
+
+	bos_restore_medieval_law = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { bos_fund_the_monasteries bos_balance_the_estates }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_great_university = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bos_restore_medieval_law bos_bibliotheca_bosnia }
+		trigger = { }
+		effect = { }
+	}
+	bos_army_reforms = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { bos_a_strong_government }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_mountain_legion = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { bos_army_reforms }
+		trigger = { }
+		effect = { }
+	}
+	bos_expand_the_coastline = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { bos_bosnian_royal_family }
+		trigger = { }
+		effect = { }
+	}
+	bos_bosnian_fleet = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { bos_adriatic_presence }
+		trigger = { }
+		effect = { }
+	}
+}
+
+bos_third_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BOS
+			was_tag = BOS
+		} 
+	}
+	has_country_shield = yes
+
+	bos_balance_the_estates = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	bos_bibliotheca_bosnia = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { bos_balance_the_estates }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_great_capital = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bos_bibliotheca_bosnia }
+		trigger = { }
+		effect = { }
+	}
+	bos_a_strong_government = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { bos_the_great_capital }
+		trigger = { }
+		effect = { }
+	}
+	bos_found_sarajevo = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { bos_a_strong_government }
+		trigger = { }
+		effect = { }
+	}
+	bos_bosnian_royal_family = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	bos_south_slavia = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { bos_expand_the_coastline bos_encroach_on_the_serbians }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_albanian_crown = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { bos_south_slavia bos_bosnian_fleet bos_fortress_of_the_balkans }
+		trigger = { }
+		effect = { }
+	}
+}
+
+bos_fourth_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BOS
+			was_tag = BOS
+		} 
+	}
+	has_country_shield = yes
+
+	bos_the_adriatic_port = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { bos_balance_the_estates bos_encourage_german_immigrants }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_great_centers_of_trade = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bos_bibliotheca_bosnia bos_the_adriatic_port }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_peoples_of_the_balkans = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { bos_a_strong_government }
+		trigger = { }
+		effect = { }
+	}
+	bos_multicultural_kingdom = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { bos_the_peoples_of_the_balkans }
+		trigger = { }
+		effect = { }
+	}
+	bos_encroach_on_the_serbians = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { bos_bosnian_royal_family }
+		trigger = { }
+		effect = { }
+	}
+	bos_fortress_of_the_balkans = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { bos_subjugate_serbia }
+		trigger = { }
+		effect = { }
+	}
+}
+
+bos_fifth_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BOS
+			was_tag = BOS
+		} 
+	}
+	has_country_shield = yes
+
+	bos_encourage_german_immigrants = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	bos_dominate_dubrovinik = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bos_the_adriatic_port }
+		trigger = { }
+		effect = { }
+	}
+	bos_the_lands_of_the_balkans = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { bos_the_great_centers_of_trade }
+		trigger = { }
+		effect = { }
+	}
+	bos_a_new_trade_power = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { bos_the_peoples_of_the_balkans }
+		trigger = { }
+		effect = { }
+	}
+	bos_subjugate_serbia = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { bos_encroach_on_the_serbians }
+		trigger = { }
+		effect = { }
+	}
+}
+

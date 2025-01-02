@@ -1,0 +1,85 @@
+l_english:
+ #---------------------------------------------------------
+ # Bos First Branch
+ #---------------------------------------------------------
+
+ bos_fund_the_monasteries_title: "Fund The Monasteries"
+ bos_fund_the_monasteries_desc: ""
+ bos_unity_in_belief_title: "Unity In Belief"
+ bos_unity_in_belief_desc: ""
+ bos_patron_of_the_reinassance_title: "Patron Of The Reinassance"
+ bos_patron_of_the_reinassance_desc: ""
+ bos_frontier_fortifications_title: "Frontier Fortifications"
+ bos_frontier_fortifications_desc: ""
+ bos_adriatic_presence_title: "Adriatic Presence"
+ bos_adriatic_presence_desc: ""
+
+ #---------------------------------------------------------
+ # Bos Second Branch
+ #---------------------------------------------------------
+
+ bos_restore_medieval_law_title: "Restore Medieval Law"
+ bos_restore_medieval_law_desc: ""
+ bos_the_great_university_title: "The Great University"
+ bos_the_great_university_desc: ""
+ bos_army_reforms_title: "Army Reforms"
+ bos_army_reforms_desc: ""
+ bos_the_mountain_legion_title: "The Mountain Legion"
+ bos_the_mountain_legion_desc: ""
+ bos_expand_the_coastline_title: "Expand The Coastline"
+ bos_expand_the_coastline_desc: ""
+ bos_bosnian_fleet_title: "Bosnian Fleet"
+ bos_bosnian_fleet_desc: ""
+
+ #---------------------------------------------------------
+ # Bos Third Branch
+ #---------------------------------------------------------
+
+ bos_balance_the_estates_title: "Balance The Estates"
+ bos_balance_the_estates_desc: ""
+ bos_bibliotheca_bosnia_title: "Bibliotheca Bosnia"
+ bos_bibliotheca_bosnia_desc: ""
+ bos_the_great_capital_title: "The Great Capital"
+ bos_the_great_capital_desc: ""
+ bos_a_strong_government_title: "A Strong Government"
+ bos_a_strong_government_desc: ""
+ bos_found_sarajevo_title: "Found Sarajevo"
+ bos_found_sarajevo_desc: ""
+ bos_bosnian_royal_family_title: "Bosnian Royal Family"
+ bos_bosnian_royal_family_desc: ""
+ bos_south_slavia_title: "South Slavia"
+ bos_south_slavia_desc: ""
+ bos_the_albanian_crown_title: "The Albanian Crown"
+ bos_the_albanian_crown_desc: ""
+
+ #---------------------------------------------------------
+ # Bos Fourth Branch
+ #---------------------------------------------------------
+
+ bos_the_adriatic_port_title: "The Adriatic Port"
+ bos_the_adriatic_port_desc: ""
+ bos_the_great_centers_of_trade_title: "The Great Centers Of Trade"
+ bos_the_great_centers_of_trade_desc: ""
+ bos_the_peoples_of_the_balkans_title: "The Peoples Of The Balkans"
+ bos_the_peoples_of_the_balkans_desc: ""
+ bos_multicultural_kingdom_title: "Multicultural Kingdom"
+ bos_multicultural_kingdom_desc: ""
+ bos_encroach_on_the_serbians_title: "Encroach On The Serbians"
+ bos_encroach_on_the_serbians_desc: ""
+ bos_fortress_of_the_balkans_title: "Fortress Of The Balkans"
+ bos_fortress_of_the_balkans_desc: ""
+
+ #---------------------------------------------------------
+ # Bos Fifth Branch
+ #---------------------------------------------------------
+
+ bos_encourage_german_immigrants_title: "Encourage German Immigrants"
+ bos_encourage_german_immigrants_desc: ""
+ bos_dominate_dubrovinik_title: "Dominate Dubrovinik"
+ bos_dominate_dubrovinik_desc: ""
+ bos_the_lands_of_the_balkans_title: "The Lands Of The Balkans"
+ bos_the_lands_of_the_balkans_desc: ""
+ bos_a_new_trade_power_title: "A New Trade Power"
+ bos_a_new_trade_power_desc: ""
+ bos_subjugate_serbia_title: "Subjugate Serbia"
+ bos_subjugate_serbia_desc: ""
