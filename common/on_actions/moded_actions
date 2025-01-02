@@ -1,0 +1,10 @@
+on_holy_order_established = {
+	ROOT = {
+		if = {
+			limit = {
+				has_country_flag = ven_establish_scuola_effect_flag
+			}
+			change_innovativeness = 1
+		}
+	}
+}
