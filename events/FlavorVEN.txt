@@ -1,960 +1,3 @@
-########################################
-# Events for Milano
-#
-# written by Johan Andersson
-########################################
-
-namespace = flavor_mlo
-normal_or_historical_nations = yes
-
-# The Ambrosian Republic
-country_event = {
-	id = flavor_mlo.1
-	title = flavor_mlo.1.t
-	desc = flavor_mlo.1.d
-	picture = DEBATE_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {	
-			set_country_flag = had_ambrosian_republic
-			change_government = republic
-			add_government_reform = ambrosian_republic
-		}
-	}
-	
-	option = {
-		name = flavor_mlo.1.a
-		ai_chance = { factor = 90 }
-		tooltip = {
-			change_government = republic
-			add_government_reform = ambrosian_republic
-		}
-		add_republican_tradition = 5
-		add_stability = -2
-		every_neighbor_country  = {
-			limit = {
-				is_subject = no
-				government = monarchy
-				religion = catholic
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_against_ambrosian
-			}
-			if = {
-				limit = {
-					government = monarchy
-					NOT = { has_reform = elective_monarchy }
-				}
-				
-				add_casus_belli = {	
-					target = MLO
-					type = cb_change_government
-					months = 120
-				}		
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_regency = yes
-				}
-				country_event = { id = 700 }
-			}
-		}
-	}
-}
-
-# Low tradition, Guelphs vs Ghibellines
-country_event = {
-	id = flavor_mlo.2
-	title = flavor_mlo.2.t
-	desc = flavor_mlo.2.d
-	picture = DEBATE_REPUBLICAN_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = MLO
-		has_reform = ambrosian_republic
-		NOT = { republican_tradition = 75 }
-	}
-	option = {
-		name = flavor_mlo.2.a
-		add_republican_tradition = -10
-		add_stability = 1
-		random_owned_province = {
-			limit = {
-				region = italy_region
-			}
-			add_unrest = 10
-		}
-	}
-	option = {
-		name = flavor_mlo.2.b
-		add_republican_tradition = 10
-		add_stability = -1
-		random_owned_province = {
-			limit = {
-				region = italy_region
-			}
-			add_unrest = 10
-		}
-	}
-}
-
-# Ospedale Maggiore
-country_event = {
-	id = flavor_mlo.3
-	title = flavor_mlo.3.t
-	desc = flavor_mlo.3.d
-	picture = UNIVERSITY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1456
-		owns = 104
-		is_at_war = no
-		NOT = { is_year = 1470 }
-	}	
-	
-	mean_time_to_happen = {
-		months = 48
-	}
-	option = {
-		name = flavor_mlo.3.a
-		add_republican_tradition = 10
-		add_stability_or_adm_power = yes
-		add_legitimacy = 10
-		104 = { add_base_tax = 1 add_base_manpower = 1 }
-	}
-}
-
-# Peace of Lodi
-country_event = {
-	id = flavor_mlo.4
-	title = flavor_mlo.4.t
-	desc = flavor_mlo.4.d
-	picture = DIPLOMACY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1450
-		is_at_war = no
-		num_of_cities = 3
-		
-		NOT = { is_year = 1490 }
-		
-		SIC = {
-			is_at_war = no
-			num_of_cities = 3
-		}
-		PAP = {
-			is_at_war = no
-			num_of_cities = 3
-		}
-		BOS = {
-			is_at_war = no
-			num_of_cities = 3
-		}
-	}	
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-	option = {
-		name = flavor_mlo.4.a
-		ai_chance = { factor = 90 }
-		
-		SIC = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}	
-		BOS = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}			
-		
-		hidden_effect = {
-			SIC = { country_event = {  id = flavor_mlo.5 } }
-			PAP = { country_event = {  id = flavor_mlo.5 } }
-			LAN = { country_event = {  id = flavor_mlo.5 } }
-		}
-	}
-	option = {
-		name = flavor_mlo.4.b
-		add_mil_power = 10
-	}
-}
-
-# For the other countries
-country_event = {
-	id = flavor_mlo.5
-	title = flavor_mlo.5.t
-	desc = flavor_mlo.5.d
-	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_mlo.5.a
-		SIC = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}
-		LAN = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}
-		owner = { 104 } = {
-			add_opinion = {
-				who = ROOT
-				modifier = mlo_peace_of_lodi
-			}		
-		}
-	}	
-}
-
-
-# Niccolo Macchiavelli
-country_event = {
-	id = flavor_mlo.6
-	title = flavor_mlo.6.t
-	desc = flavor_mlo.6.d
-	picture = ADVISOR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1490
-		NOT = { advisor_exists = 796 }
-		owns = 116
-		NOT = { is_year = 1515 }
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-	}	
-
-	immediate = {
-		set_country_flag = we_have_macchiavelli	
-	}
-	
-	option = {
-		name = flavor_mlo.6.a
-		ai_chance = { factor = 90 }
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		define_advisor = {
-			type = philosopher
-			culture = tuscan
-			name = "Niccol� Machiavelli"
-			discount = yes
-			location = 116
-			skill = 2
-		}	
-		add_prestige = 20
-	}
-	option = {
-		name = flavor_mlo.6.b
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		define_advisor = {
-			type = statesman
-			name = "Niccol� Machiavelli"
-			culture = tuscan
-			discount = yes
-			location = 116
-			skill = 2
-		}	
-		add_stability_or_adm_power = yes		
-	}
-}
-
-# The Prince
-country_event = {
-	id = flavor_mlo.7
-	title = flavor_mlo.7.t
-	desc = flavor_mlo.7.d
-	picture = ADVISOR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1513
-		NOT = { is_year = 1530 }
-		OR = {
-			is_advisor_employed = 796
-			has_country_flag = we_have_macchiavelli
-		}
-	}	
-	mean_time_to_happen = {
-		months = 12
-	}		
-	option = {
-		name = flavor_mlo.7.a
-		add_republican_tradition = 10
-		add_stability_or_adm_power = yes
-		add_prestige = 10
-		add_legitimacy = 10
-		hidden_effect = {
-			ROOT = {
-				country_event = { 
-					id = flavor_mlo.8
-					days = 5
-					random = 8
-				}
-			}
-		}
-	}
-}
-
-# Praise from Machiavelli
-country_event = {
-	id = flavor_mlo.8
-	title = flavor_mlo.8.t
-	desc = flavor_mlo.8.d
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_mlo.8.a
-		add_prestige_or_monarch_power = { amount = 25 }
-		add_dip_power = 50
-	}
-}
-
-# Leonardo da Vinci
-country_event = {
-	id = flavor_mlo.9
-	title = flavor_mlo.9.t
-	desc = flavor_mlo.9.d
-	picture = PAINTER_ARTIST_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_year = 1497
-		NOT = { advisor_exists = 790 }
-		owns = 104
-		NOT = { is_year = 1500 }
-	}
-	
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-	option = {
-		name = flavor_mlo.9.a
-		define_advisor = {
-				type = natural_scientist
-				name = "Leonardo da Vinci"
-				culture = tuscan
-				location = 104
-				discount = yes
-				skill = 3
-			}
-		add_dip_power = 50
-		add_mil_power = 50
-		add_adm_power = 50
-	}
-}
-
-# The centre of fashion
-country_event = {
-	id = flavor_mlo.10
-	title = flavor_mlo.10.t
-	desc = flavor_mlo.10.d
-	picture = COURT_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1500
-		owns = 104
-		NOT = { is_year = 1600 }
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = flavor_mlo.10.a
-		add_adm_power = 50
-		104 = { add_base_tax = 1 }
-	}
-}
-
-# Milano and Swiss Mercenaries
-country_event = {
-	id = flavor_mlo.11
-	title = flavor_mlo.11.t
-	desc = flavor_mlo.11.d
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1492
-		war_with = emperor
-		owns = 104
-		any_owned_province = { controlled_by = emperor }
-		NOT = { is_year = 1600 }
-		NOT = { num_of_cities = emperor	}	#france must be a bit bigger.
-	}	
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = flavor_mlo.11.a
-		add_country_modifier = {
-			name = mlo_cheap_mercs
-			duration = 3650
-		}
-	}
-}
-
-
-###########################################
-# More Events for Milano
-#
-# written and scripted by Pierre du Plessis
-###########################################
-
-namespace = new_flavour_mlo
-
-
-# Silk in Como?
-province_event = {
-	id = new_flavour_mlo.15
-	title = new_flavour_mlo.15.name
-	desc = new_flavour_mlo.15.desc
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		owns = 4740
-		development_in_provinces = {
-				value = 150 #starts at 90 (of which 20 owned by Venice)
-				culture = lombard
-			}
-		owns = 4740
-	}
-	
-	goto = 4740
-
-	immediate = {
-		hidden_effect = {
-			owner = {
-				set_saved_name = {
-					key = mlo_silk_guy
-					type = advisor
-					scope = this
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = new_flavour_mlo.15.a
-		goto = 4740
-		owner = {
-			add_dip_power = -100
-		}
-
-		add_base_production = 2
-		change_trade_goods = silk
-
-		ai_chance = {
-			factor = 1
-		}
-	}
-	option = {
-		name = new_flavour_mlo.15.b #Channel his inventive energies elsewhere.
-
-		owner = {
-			if = {
-				limit = {
-					NOT = { monthly_income = 15 }
-				}
-				define_advisor = {
-					type = natural_scientist
-					name = mlo_silk_guy
-					skill = 1
-					discount = yes
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { monthly_income = 25 }
-				}
-				define_advisor = {
-					type = natural_scientist
-					name = mlo_silk_guy
-					skill = 2
-					discount = yes
-				}
-			}
-			else = {
-				define_advisor = {
-					type = natural_scientist
-					name = mlo_silk_guy
-					skill = 3
-					discount = yes
-				}
-			}
-		}
-		
-		ai_chance = {
-			factor = 0
-		}
-	}
-	after = {
-		owner = {
-			clear_saved_name = mlo_silk_guy
-		}
-	}
-}
-
-
-########################################
-# Flavor Events for Tuscany
-#
-# Scripted and written by Sara Wendel-�rtqvist
-# and Petter Vilberg
-########################################
-
-namespace = flavor_tus 
-normal_or_historical_nations = yes
-
-# Michelangelo
-country_event = {
-	id = flavor_tus.1
-	title = "flavor_tus.EVTNAME1"
-	desc = "flavor_tus.EVTDESC1"
-	picture = PAINTER_ARTIST_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1500
-		NOT = { is_year = 1550 }
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	option = {
-		name = "flavor_tus.EVTOPTA1"
-		define_advisor = {
-			type = artist
-			skill = 3
-			cost_multiplier = 0.25
-			name = "Michelangelo"
-		}
-	}
-}
-
-
-
-
-#The emperor condemns the Duchy's elevation
-country_event = {
-	id = flavor_tus.2
-	title = flavor_tus.2.t
-	desc = flavor_tus.2.d
-	picture = REFORM_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		NOT = {
-			is_year = 1600
-		}
-		is_emperor = no
-		NOT = {
-			reverse_has_opinion = {
-				who = emperor
-				value = 75 
-			}
-		}
-		reverse_has_opinion = {
-			who = PAP
-			value = 50
-		}
-		religion = catholic
-		NOT = {
-			num_of_cities = 6
-		}
-		government = monarchy
-	}
-
-	option = {
-		name = flavor_tus.2.a
-		ai_chance = {
-			factor = 80
-		}
-		emperor = {
-			add_opinion = {
-				who = is_or_was_tag = {
-							tag = MLO
-						}
-				modifier = opinion_emperor_tus_refused
-			}
-		}
-		PAP = {
-			add_opinion = {
-				who = is_or_was_tag = {
-							tag = MLO
-						}
-				modifier = opinion_papal_tus_refused
-			}
-		}
-		add_legitimacy = -10
-		add_prestige = 10
-		add_country_modifier = {
-			name = emperor_condemns_tuscany
-			duration = 7300
-		}
-	}
-
-	option = {
-		name = flavor_tus.2.b 	#We yield to the emperor
-		add_prestige = -15
-		emperor = {
-			add_opinion = {
-				who = TUS
-				modifier = opinion_emperor_tus_yielded
-			}
-		}
-		PAP = {
-			add_opinion = {
-				who = TUS
-				modifier = opinion_papal_tus_yielded
-			}
-		}
-	}
-}
-
-#Emperor Confirms The Grand Duchy's Elevation
-country_event = {
-	id = flavor_tus.3
-	title = flavor_tus.3.t
-	desc = flavor_tus.3.d
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		has_country_modifier = emperor_condemns_tuscany
-		reverse_has_opinion = {
-				who = emperor
-				value = 100
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 3
-	}
-
-	option = {
-		name = flavor_tus.3.a
-		emperor = {
-			remove_opinion = {
-				who = TUS
-				modifier = opinion_emperor_tus_refused
-			}
-		}
-		add_legitimacy = 10
-		add_stability_or_adm_power = yes
-		remove_country_modifier = emperor_condemns_tuscany
-	}
-}
-
-
-#Fernandino's Construction Projects
-country_event = {
-	id = flavor_tus.4
-	title = flavor_tus.4.t
-	desc = flavor_tus.4.d
-	picture = CITY_DEVELOPMENT_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		} 
-		is_year = 1550
-		owns = 115
-		NOT = {
-			is_year = 1610
-		}
-		is_at_war = no
-	}
-
-	mean_time_to_happen = {
-		months = 600 # previous mtth was extreme
-		modifier = {
-			factor = 0.8
-			has_idea_group = economic_ideas
-		}
-		modifier = {
-			factor = 0.8
-			has_idea_group = trade_ideas
-		}
-	}
-
-	option = {
-		name = flavor_tus.4.a
-		115 = {
-			add_base_production = 2
-		}
-		add_country_modifier = {
-			name = tuscany_fernandino_construction
-			duration = 3650
-		}
-	}
-}
-
-
-#The $MONARCHTITLE$'s treasury
-country_event = {
-	id = flavor_tus.5
-	title = flavor_tus.5.t
-	desc = flavor_tus.5.d
-	picture = ARTWORK_eventPicture
-
-	fire_only_once = yes
-
-	is_or_was_tag = {
-			tag = MLO
-		}
-
-	mean_time_to_happen = {
-		months = 240
-	}
-
-	option = {
-		name = flavor_tus.5.a
-		add_prestige = 5
-		add_ruler_modifier = {
-			name = tuscany_duke_treasury
-			duration = 7300
-		}
-	}
-
-	option = {
-		name = flavor_tus.5.b
-		add_prestige = -5
-		add_ruler_modifier = {
-			name = tuscany_state_treasury
-			duration = 7300
-		}
-	}
-}
-
-
-#Reforms of Peter Leopold
-country_event = {
-	id = flavor_tus.6
-	title = flavor_tus.6.t
-	desc = flavor_tus.6.d
-	picture = REFORM_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1760
-		NOT = {
-			is_year = 1790
-		}
-		is_at_war = no
-	}
-	
-	mean_time_to_happen = {
-		months = 240
-		modifier = {
-			factor = 0.8
-			has_idea_group = innovativeness_ideas
-		}
-		modifier = {
-			factor = 1.3
-			NOT = {
-				ADM = 3
-			}
-		}
-	}
-
-	option = {
-		name = flavor_tus.6.a
-		add_stability = -1
-		add_country_modifier = {
-			name = peter_tuscan_reforms
-			duration = -1
-		}
-	}
-
-	option = {
-		name = flavor_tus.6.b
-		add_stability_or_adm_power = yes
-		add_adm_power = 50
-		add_legitimacy = 10
-	}
-}
-
-#Accademia del Cimento
-country_event = {
-	id = flavor_tus.7
-	title = flavor_tus.7.t
-	desc = flavor_tus.7.d
-	picture = GREAT_BUILDING_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		is_year = 1650
-		NOT = {
-			is_year = 1670
-		}
-		owns = 116
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-		modifier = {
-			factor = 0.75
-			advisor = natural_scientist
-		}
-		modifier = {
-			factor = 0.8
-			ADM = 4
-		}
-	}
-	
-	option = {
-		name = flavor_tus.7.a
-		add_country_modifier = {
-			name = accademia_cimento
-			duration = 3650
-		}
-	}
-	option = {
-		name = flavor_tus.7.b
-		add_treasury = -25
-		add_country_modifier = {
-			name = institution_cimento
-			duration = 3650
-		}
-	}
-}
-
-
-#Medici Oriental Press
-country_event = {
-	id = flavor_tus.8
-	title = flavor_tus.8.t
-	desc = flavor_tus.8.d
-	picture = BIG_BOOK_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}
-		has_institution = printing_press
-		is_at_war = no
-	}
-	mean_time_to_happen = {
-		months = 200
-		modifier = {
-			factor = 0.8
-			has_idea_group = innovativeness_ideas
-		}
-	}
-	option = {
-		name = flavor_tus.8.a
-		add_country_modifier = {
-			name = oriental_press
-			duration = 10950
-		}
-	}
-}
-
 ###############################################################
 # Events for Venice
 #
@@ -976,16 +19,14 @@ country_event = {
 	trigger ={
 		is_year = 1450
 		NOT = { is_year = 1550 }
-		is_or_was_tag = {
-			tag = MLO
-		}
+		tag = VEN
 		151 = {
-			owned_by = Z3U
+			owned_by = TUR
 		}
 		358 = {
-			owned_by = Z3U
+			owned_by = TUR
 		}
-		Z3U = { is_free_or_tributary_trigger = yes	}
+		TUR = { is_free_or_tributary_trigger = yes	}
 		NOT = { alliance_with = TUR }
 		NOT = { war_with = TUR }
    	}
@@ -998,7 +39,7 @@ country_event = {
 		name = "flavor_ven.EVTOPTA1"
 		ai_chance = { factor = 90 }
 	
-		Z3U = {
+		TUR = {
 			country_event = { id = flavor_tur.3359 days = 10 tooltip = "flavor_ven.EVTTOOLTIP1" }
 		}
 	}
@@ -1022,6 +63,43 @@ country_event = {
 	}
 }
 
+# Alexandria Aquired
+country_event = {
+	id = flavor_ven.3
+	title = "flavor_ven.EVTNAME3"
+	desc = "flavor_ven.EVTDESC3"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {		# Excellent
+		name = "EXCELLENT"
+	}
+}
+
+# Control of Famagusta (from CYP event)
+country_event = {
+	id = flavor_ven.4
+	title = flavor_ven.4.t
+	desc = flavor_ven.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_ven.4.a
+		add_prestige = 5
+		163 = {
+			add_trade_modifier = {
+				who = root
+				duration = 7300
+				power = 5
+				key = control_of_famagusta
+			}
+		}		
+	}
+}
+
 # Stratioti
 country_event = {
 	id = flavor_ven.5
@@ -1032,13 +110,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}
+		tag = VEN
 		NOT = { exists = BYZ }
 		NOT = { is_year = 1550 }
 		151 = {
-			owned_by = Z3U
+			owned_by = TUR
 		}
 		any_owned_province = {
 			culture = greek
@@ -1072,15 +148,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}
+		tag = VEN
 		NOT = { is_year = 1500 }
 		145 = {
-			owned_by = Z3U
+			owned_by = TUR
 		}
 		1773 = {
-			owned_by = Z3U
+			owned_by = TUR
 		}
    	}
 	
@@ -1092,14 +166,14 @@ country_event = {
 		name = flavor_ven.6.a
 		ai_chance = { factor = 90 }
 
-		Z3U = {
+		TUR = {
 			add_opinion = { who = ROOT modifier = ven_opinion_morean_confrontation }
 		}
 		add_claim = 145
 		add_claim = 1773
 		
 		hidden_effect = {
-			Z3U = {
+			TUR = {
 				country_event = { id = flavor_ven.7 }
 			}
 		}
@@ -1116,7 +190,7 @@ country_event = {
 			}
 		}
 		add_prestige = -5
-		add_legitimacy = -5
+		add_republican_tradition = -5
 	}
 }
 
@@ -1132,11 +206,7 @@ country_event = {
 	option = {		
 		name = flavor_ven.7.a
 		add_casus_belli = {
-			target = {
-					is_or_was_tag = {
-					tag = MLO
-				}	
-			}
+			target = VEN
 			type = cb_insult
 			months = 60
 		}
@@ -1153,9 +223,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}
+		tag = VEN
 		is_year = 1460
 		NOT = { is_year = 1550 }
 		num_of_loans = 1
@@ -1190,9 +258,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		religion = catholic
 		is_at_war = no
 		NOT = { is_year = 1550 }
@@ -1237,9 +303,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1475
 		NOT = { is_year = 1500 }
 	}	
@@ -1324,9 +388,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		exists = MAM
 		exists = POR
 		4346 = { # Gulf of Aden
@@ -1394,11 +456,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		owns = 112
-		
+		government = republic
 		is_year = 1500
 		NOT = { is_year = 1550 }
 	}	
@@ -1434,9 +494,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		has_country_modifier = ven_venetian_first
 		is_year = 1500
 		NOT = {
@@ -1484,9 +542,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		NOT = { has_idea = quest_for_the_new_world }
 		exists = SPA
 		SPA = {
@@ -1527,9 +583,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		
@@ -1542,7 +596,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.66
-			Z3U = { is_rival = VEN }
+			TUR = { is_rival = VEN }
 		}
 	}
 	
@@ -1570,10 +624,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		is_or_was_tag = {
-			tag = MLO
-		}	
-		owns = 101
+		tag = VEN
+		owns = 112
 		mil_tech = 9
 		NOT = { is_year = 1600 }
 	}
@@ -1590,7 +642,7 @@ country_event = {
 		name = flavor_ven.19.a
 		ai_chance = { factor = 90 }
 		add_years_of_income = -0.2
-		101 = {
+		112 = {
 			add_province_modifier = {
 				name = "fortezza_di_sant_andrea"
 				duration = -1
@@ -1602,6 +654,49 @@ country_event = {
 		add_stability_or_adm_power = yes
 	}
 }	
+	
+# Plague in Venice
+country_event = {
+	id = flavor_ven.20
+	title = flavor_ven.20.t
+	desc = flavor_ven.20.d
+	picture = PLAGUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1500
+		NOT = { is_year = 1700 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier =  {
+			factor = 0.5
+			has_country_modifier = ven_venetian_first
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = has_competent_doctors
+		}
+	}	
+	option = {	
+		name = flavor_ven.20.a
+		112 = {
+			add_province_modifier = {
+				name = "ven_recover_from_plague"
+				duration = 3650
+			}
+		}
+	}
+	option = {	
+		name = flavor_ven.20.b
+		add_adm_power = -20
+		add_dip_power = -20
+		add_mil_power = -20
+	}	
+}
 
 # Ponte di Rialto	
 country_event = {
@@ -1613,9 +708,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1585
 		NOT = { is_year = 1595 }
 	}
@@ -1632,7 +725,7 @@ country_event = {
 	option = {	
 		name = flavor_ven.21.b
 		ai_chance = { factor = 5 }
-		add_legitimacy = -5
+		add_republican_tradition = -5
 	}	
 }	
 
@@ -1670,9 +763,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1610
 		NOT = { is_year = 1640 }
 	}
@@ -1693,7 +784,7 @@ country_event = {
 	option = {	
 		name = flavor_ven.23.b
 		add_adm_power = 100
-		add_legitimacy = 20
+		add_republican_tradition = 10
 	}	
 	option = {	
 		name = flavor_ven.23.c
@@ -1712,11 +803,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1460
 		NOT = { is_year = 1500 }
+		has_government_attribute = is_merchant_republic
 	}
 	
 	mean_time_to_happen = {
@@ -1727,7 +817,7 @@ country_event = {
 		ai_chance = { 
 			factor = 1		
 		}
-		add_legitimacy = 10
+		add_republican_tradition = 10
 		add_country_modifier = {
 			name = ven_ten_restrained
 			duration = -1
@@ -1738,7 +828,7 @@ country_event = {
 		ai_chance = { 
 			factor = 0	
 		}
-		add_legitimacy = -10
+		add_republican_tradition = -10
 		add_country_modifier = {
 			name = ven_council_of_ten_strong
 			duration = -1
@@ -1756,10 +846,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
-		
+		tag = VEN
+		has_government_attribute = is_merchant_republic
 		has_country_modifier = ven_ten_restrained
 	}
 	
@@ -1772,7 +860,7 @@ country_event = {
 			factor = 0
 		}
 		add_stability = -1
-		add_legitimacy = 5
+		add_republican_tradition = 5
 		#Keep modifier
 	}
 	option = {	#Ignore the restraining laws
@@ -1787,7 +875,7 @@ country_event = {
 		ai_chance = {
 			factor = 0		
 		}
-		add_legitimacy = -10
+		add_republican_tradition = -10
 		add_stability_or_adm_power = yes
 		add_adm_power = 50
 		add_dip_power = 50
@@ -1805,12 +893,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1520
 		NOT = { is_year = 1560 }
-		
+		has_government_attribute = is_merchant_republic
 	}
 	
 	mean_time_to_happen = {
@@ -1833,6 +919,224 @@ country_event = {
 	}
 }
 
+# The Barnabotti
+country_event = {
+	id = flavor_ven.27
+	title = flavor_ven.27.t
+	desc = flavor_ven.27.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		151 = {
+			NOT = { owned_by = BYZ }
+			NOT = { owned_by = VEN }
+		}
+		is_year = 1550
+		OR = {
+			has_country_modifier = ven_expanded_council
+			163 = { owned_by = TUR }
+		}
+		has_government_attribute = is_merchant_republic
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}	
+	option = {	#They won't be a problem for long with those habits.
+		name = flavor_ven.27.a
+		add_faction_influence = {
+			faction = mr_traders
+			influence = 20
+		}
+		add_country_modifier = {
+			name = ven_barnabotti
+			duration = -1
+		}
+	}
+}
+
+# Accademia della Guidecca
+country_event = {
+	id = flavor_ven.28
+	title = flavor_ven.28.t
+	desc = flavor_ven.28.d
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		has_country_modifier = ven_barnabotti
+		is_year = 1650
+		NOT = { is_year = 1670 }
+		has_government_attribute = is_merchant_republic
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}	
+	option = {	#Create the Accademia della Guidecca
+		name = flavor_ven.28.a
+		add_faction_influence = {
+			faction = mr_aristocrats
+			influence = 10
+		}
+		add_country_modifier = {
+			name = ven_accademia_della_guidecca
+			duration = -1
+		}
+		add_years_of_income = -0.1
+	}
+	option = {	#They should be content with their pensions.
+		name = flavor_ven.28.b
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Renier Zen
+country_event = {
+	id = flavor_ven.29
+	title = flavor_ven.29.t
+	desc = flavor_ven.29.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		is_year = 1600
+		NOT = { is_year = 1650 }
+		has_government_attribute = is_merchant_republic
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}	
+	option = {	#The Doge must be deposed!
+		name = flavor_ven.29.a
+		add_republican_tradition = 30
+		add_stability = -2
+		kill_ruler = yes
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -2
+		}
+		add_faction_influence = {
+			faction = mr_traders
+			influence = 40
+		}
+		if = {
+			limit = { has_country_modifier = ven_council_of_ten_strong }
+			remove_country_modifier = ven_council_of_ten_strong
+		}
+	}
+	option = {	#Have Zen arrested and replace the members of the Ten.
+		name = flavor_ven.29.b
+		add_stability = -1
+		add_adm_power = -50
+		add_dip_power = -50
+		add_corruption = 0.5
+		if = {
+			limit = { has_country_modifier = ven_council_of_ten_strong }
+			remove_country_modifier = ven_council_of_ten_strong
+		}
+	}
+	option = {	#Support the Doge and the Ten.
+		name = flavor_ven.29.c
+		add_stability = -2
+		add_adm_power = 50
+		add_dip_power = 50
+		add_republican_tradition = -25
+		add_corruption = 1
+		add_faction_influence = {
+			faction = mr_aristocrats
+			influence = 40
+		}
+		if = {
+			limit = { has_country_modifier = ven_ten_restrained }
+			remove_country_modifier = ven_ten_restrained
+		}
+	}
+}
+
+
+# The Plague of YEAR (1631)
+country_event = {
+	id = flavor_ven.30
+	title = flavor_ven.30.t
+	desc = flavor_ven.30.d
+	picture = PLAGUE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		is_year = 1628
+		NOT = { is_year = 1635 }
+		owns = 112
+		112 = {
+			NOT = {
+				has_province_modifier = ven_recover_from_plague
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 21
+	}	
+	option = {	#Ok.
+		name = flavor_ven.30.a
+		112 = { add_base_tax = -1 }
+		add_stability = -1
+		set_country_flag = ven_great_plague
+		add_faction_influence = {
+			faction = mr_traders
+			influence = -10
+		}
+	}
+}
+
+#Dwindling Nobility
+country_event = {
+	id = flavor_ven.31
+	title = flavor_ven.31.t
+	desc = flavor_ven.31.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		is_year = 1645
+		NOT = { is_year = 1720 }
+		has_country_flag = ven_great_plague
+		has_government_attribute = is_merchant_republic
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}	
+	option = {	#Let us create more nobles!
+		name = flavor_ven.31.a
+		add_republican_tradition = 10
+		add_prestige = -15
+		add_country_modifier = {
+			name = ven_nobility_bought
+			duration = -1
+		}
+	}
+	option = {	#This isn't that big a problem.
+		name = flavor_ven.31.b
+		add_stability_or_adm_power = yes
+		add_prestige = 15
+	}
+}
+
 #Aldus Manutius & the Aldine Press
 country_event = {
 	id = flavor_ven.32
@@ -1843,9 +1147,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		is_year = 1498
 		NOT = { is_year = 1515 }
 	}
@@ -1871,12 +1173,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = {
-			tag = MLO
-		}	
+		tag = VEN
 		151 = {
 			NOT = { owned_by = BYZ }
-			NOT = { owned_by = is_or_was_tag = { tag = MLO }}}
+			NOT = { owned_by = VEN }
+		}
 		owns = 112
 	}
 	
@@ -1917,7 +1218,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = { tag = MLO }
+		tag = VEN
 		is_year = 1730
 		NOT = { is_year = 1770 }
 		owns = 112
@@ -1946,7 +1247,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = { tag = MLO }
+		tag = VEN
 		is_year = 1570
 		NOT = { is_year = 1590 }
 	}
@@ -1976,7 +1277,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = { tag = MLO }
+		tag = VEN
 		is_year = 1550
 		NOT = { is_year = 1580 }
 	}
@@ -2010,7 +1311,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_or_was_tag = { tag = MLO }
+		tag = VEN
 		is_year = 1550
 		NOT = { is_year = 1610 }
 	}
@@ -2027,12 +1328,290 @@ country_event = {
 	}
 }
 
+#Venice is a monarchy
+country_event = {
+	id = flavor_ven.38
+	title = flavor_ven.38.t
+	desc = flavor_ven.38.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		not = { government = republic }
+		OR = {
+			has_country_modifier = ven_nobility_bought
+			has_country_modifier = ven_accademia_della_guidecca
+			has_country_modifier = ven_barnabotti
+			has_country_modifier = ven_expanded_council
+			has_country_modifier = ven_ten_restrained
+			has_country_modifier = ven_council_of_ten_strong
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	option = {	#Ok.
+		name = flavor_ven.38.a
+		if = {
+			limit = { has_country_modifier = ven_nobility_bought }
+			remove_country_modifier = ven_nobility_bought
+		}
+		if = {
+			limit = { has_country_modifier = ven_accademia_della_guidecca }
+			remove_country_modifier = ven_accademia_della_guidecca
+		}
+		if = {
+			limit = { has_country_modifier = ven_barnabotti }
+			remove_country_modifier = ven_barnabotti
+		}
+		if = {
+			limit = { has_country_modifier = ven_expanded_council }
+			remove_country_modifier = ven_ten_restrained
+		}
+		if = {
+			limit = { has_country_modifier = ven_council_of_ten_strong }
+			remove_country_modifier = ven_council_of_ten_strong
+		}
+		if = {
+			limit = { has_country_modifier = ven_nobility_bought }
+			remove_country_modifier = ven_nobility_bought
+		}
+	}
+}
+
 
 ##         History of Venice Events         ##
 ##         written, designed, localised by  ##
 ##                  Big Boss	            ##
 
 #Made for you, to share the love for a game we both hold dear
+
+country_event = { #Tiziano - Venice's Renaissance Champion
+	id = flavor_ven.40
+	title = flavor_ven.40.t
+	desc = flavor_ven.40.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.40.a
+
+		define_advisor = {
+			name = "Tiziano"
+			type = artist 
+			cost_multiplier = 0.25
+			skill = 3
+		}
+		if = {
+			limit = { has_dlc = "Rule Britannia" }
+			change_innovativeness = 2
+		}
+		else = { add_adm_power = 25 add_dip_power = 25 add_mil_power = 25 }
+	}
+
+	option = {
+		name = flavor_ven.40.b
+
+		custom_tooltip = tell_me_more_tt
+		hidden_effect = {
+			define_advisor = {
+				name = "Tiziano"
+				type = artist 
+				cost_multiplier = 0.25
+				skill = 3
+			}
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				change_innovativeness = 2
+			}
+			else = { add_adm_power = 25 add_dip_power = 25 add_mil_power = 25 }
+		}
+		
+		country_event = {
+			id = flavor_ven.41
+		}
+	}
+}
+
+country_event = { #Venice During the Renaissance
+	id = flavor_ven.41
+	title = flavor_ven.41.t
+	desc = flavor_ven.41.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = flavor_ven.41.a
+
+		#Fascinating!
+	}
+}
+
+country_event = {
+	id = flavor_ven.42 #* 
+	title = flavor_ven.42.t
+	desc = flavor_ven.42.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ven_splendor_flag
+		}
+	}
+
+	option = {
+		name = flavor_ven.42.a
+
+		add_republican_tradition = 5
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			custom_tooltip = adm_advisors_will_generate_1_splendor_per_level
+		}
+		else = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+	}
+
+	option = {
+		name = flavor_ven.40.b
+		
+		add_republican_tradition = 5
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			custom_tooltip = adm_advisors_will_generate_1_splendor_per_level
+		}
+		else = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+		custom_tooltip = tell_me_more_tt
+		country_event = {
+			id = flavor_ven.43
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ven.43
+	title = flavor_ven.43.t
+	desc = flavor_ven.43.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.43.a
+
+	}
+}
+
+country_event = { #The Power of the Doge
+	id = flavor_ven.44
+	title = flavor_ven.44.t
+	desc = flavor_ven.44.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.44.a
+
+		add_government_power = {
+			mechanic_type = council_of_ten
+			power_type = authority_power
+			value = -10
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ven.45
+	title = flavor_ven.45.t
+	desc = flavor_ven.45.d
+	picture = DOGE_PALACE_eventPicture
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.45.a
+
+		add_government_power = {
+			mechanic_type = council_of_ten
+			power_type = authority_power
+			value = -25
+		}
+		change_estate_land_share = {
+			estate = all
+			share = -5
+		}
+		add_dip_power = 100
+	}
+}
+
+country_event = {
+	id = flavor_ven.46
+	title = flavor_ven.46.t
+	desc = flavor_ven.46.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.46.a
+
+		define_advisor = {
+			type = artist
+			cost_multiplier = 0.1
+			skill = 3
+		}
+		custom_tooltip = empty_line_tt
+		add_adm_power = 100
+	}
+}
+
+country_event = { #The Loredanian Academy
+	id = flavor_ven.47
+	title = flavor_ven.47.t
+	desc = flavor_ven.47.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.47.a
+
+		if = {
+			limit = { has_dlc = "Rule Britannia" }
+			custom_tooltip = ven_academy_of_the_unknowns_reward_dlc_tt
+		}
+		else = {
+			custom_tooltip = ven_academy_of_the_unknowns_reward_tt
+		}
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+	}
+}
 
 country_event = {
 	id = flavor_ven.48
@@ -2046,7 +1625,7 @@ country_event = {
 	option = {
 		name = flavor_ven.48.a
 		change_country_color = { 
-			color = { 0 62 128 }
+			color = { 128 0 32 }
 		}
 		set_country_flag = has_overriden_color_flag
 		override_country_name = LNS
@@ -2061,7 +1640,7 @@ country_event = {
 		name = flavor_ven.48.b
 		
 		change_country_color = { 
-			color = { 0 62 128 }
+			color = { 128 0 32 }
 		}
 		set_country_flag = has_overriden_color_flag
 		set_country_flag = LNS_ideas_flag
@@ -2095,6 +1674,170 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = flavor_ven.49
+	title = flavor_ven.49.t
+	desc = flavor_ven.49.d
+	picture = ARTWORK_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.49.a
+		103 = {
+			if = {
+				limit = { has_building = courthouse }
+				remove_building = courthouse
+				add_building = town_hall
+			}
+			add_base_tax = 3
+		}
+		define_advisor = {
+			name = "Amedeo di Castellamonte"
+			type = natural_scientist
+			cost_multiplier = 0.25
+			skill = 3
+		}
+		add_legitimacy = 10
+		add_republican_tradition = 5
+		add_horde_unity = 10
+		add_devotion = 5
+	}
+}
+
+country_event = {
+	id = flavor_ven.50
+	title = flavor_ven.50.t
+	desc = flavor_ven.50.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.50.a
+
+		112 = {
+			if = {
+				limit = { has_building = shipyard }
+				remove_building = shipyard
+				add_building_construction = {
+					building = grand_shipyard
+				}
+			}
+			else_if = {
+				limit = { has_building = grand_shipyard }
+				add_base_production = 3
+			}
+			else = { add_building = shipyard }
+		}
+		add_country_modifier = {
+			name = "ven_arsenal_marines"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ven.51
+	title = flavor_ven.51.t
+	desc = flavor_ven.51.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.51.a
+
+		112 = {
+			upgrade_building = { tax = yes }
+		}
+		if = {
+			limit = {
+				OR = {
+					is_enemy = PAP 
+					is_rival = PAP
+				}
+			}
+			add_legitimacy = 5
+			add_horde_unity = 5
+			add_republican_tradition = 3
+			add_devotion = 3
+		}
+		else_if = {
+			limit = { religion = catholic }
+			add_papal_influence = 10
+		}
+		else = { add_prestige_or_monarch_power = { amount = 5 } }
+	}
+}
+
+country_event = { #Venice and the Italian Power Struggle
+	id = flavor_ven.52
+	title = flavor_ven.52.t
+	desc = flavor_ven.52.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.52.a
+		italy_region = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		if = { 
+			limit = { 
+				has_dlc = "Rights of Man" 
+				NOT = { num_of_ruler_traits = { amount = 3 } }
+			}				
+			add_ruler_personality = conqueror_personality
+		}
+		else = { 
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					4740 = {
+						NOT = { trade_goods = silk }
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				4740 = {
+					province_event = { 
+						id = new_flavour_mlo.15 
+						days = 30
+						random = 30
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ven.53
+	title = flavor_ven.53.t
+	desc = flavor_ven.53.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_ven.53.a
+
+		add_navy_tradition = 20
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		capital_scope = {
+			add_base_production = 1
+		}
+	}
+}
 
 country_event = { 
 	id = flavor_ven.54
@@ -2105,9 +1848,9 @@ country_event = {
 	major_trigger = {
 		has_discovered = 4316
 		OR = {
-			is_rival = MLO
-			is_enemy = MLO
-			alliance_with = MLO
+			is_rival = VEN
+			is_enemy = VEN
+			alliance_with = VEN
 			is_rival = MAM
 			is_enemy = MAM
 			alliance_with = MAM
@@ -2124,15 +1867,15 @@ country_event = {
 		ai_chance = { factor = 1 }
 		4316 = {
 			remove_core = ROOT 
-			add_core = MLO
-			cede_province = MLO
+			add_core = VEN
+			cede_province = VEN
 		}
 		2315 = {
 			remove_core = ROOT 
-			add_core = MLO
-			cede_province = MLO
+			add_core = VEN
+			cede_province = VEN
 		}
-		MLO = {
+		VEN = {
 			country_event = { id = flavor_mam.115 days = 32 }
 		}
 		add_years_of_income = 2
@@ -2142,11 +1885,11 @@ country_event = {
 	option = {
 		name = flavor_ven.54.b
 		ai_chance = { factor = 0 }
-		remove_historical_friend = MLO
-		MLO = {
+		remove_historical_friend = VEN
+		VEN = {
 			remove_historical_friend = ROOT
-			4316 = { add_permanent_claim = MLO }
-			2315 = { add_permanent_claim = MLO }
+			4316 = { add_permanent_claim = VEN }
+			2315 = { add_permanent_claim = VEN }
 			add_mil_power = 100
 		}
 	}
