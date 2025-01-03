@@ -1,4 +1,4 @@
-scuola_bitela = {
+scuola_grande = {
     icon = GFX_holy_order_scuola_grande
     trigger = {
 		is_or_was_tag = { 
