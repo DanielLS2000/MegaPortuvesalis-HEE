@@ -1341,10 +1341,10 @@ boh_third_branch = {
 						}
 					}
 				}
-				custom_tooltip = hun_friendship_yes_tt
+				custom_tooltip = sil_friendship_yes_tt
 			}
 			else = {
-				custom_tooltip = hun_friendship_no_tt
+				custom_tooltip = sil_friendship_no_tt
 			}
 			tooltip = { 
 				add_favors = {
@@ -1363,10 +1363,10 @@ boh_third_branch = {
 						}
 					}
 				}
-				custom_tooltip = boh_friendship_yes_tt
+				custom_tooltip = slo_friendship_yes_tt
 			}
 			else = {
-				custom_tooltip = boh_friendship_no_tt
+				custom_tooltip = slo_friendship_no_tt
 			}
 			tooltip = { 
 				add_favors = { 
