@@ -1,0 +1,87 @@
+﻿l_english:
+#---------------------------------------------------------
+# Diplo Colonial Branch
+#---------------------------------------------------------
+
+magi_square_title: "Rebuild The Magic Square"
+magi_square_desc: "Após séculos de estabilidade e progresso, a Casa von Klautz precisa agora restaurar o Quadrado Mágico Imperial, para garantir que os laços diplomáticos e comerciais entre os grandes reinos do Império permaneçam inquebráveis, assegurando a posição da Itália como o coração do mundo renascentista."
+
+#---------------------------------------------------------
+# Consolidate Flancs Branch
+#---------------------------------------------------------
+
+take_nice_title: "The Question of Nice"
+take_nice_desc: "A cidade de Nice sempre foi uma joia estratégica para o Império. Embora oficialmente coordenada com o Imperador, a verdadeira estabilidade de Nice está diretamente ligada ao controle da Casa von Klautz. Assegure que a cidade permaneça sob a nossa influência para consolidar ainda mais o domínio italiano no Mediterrâneo."
+
+adriatic_jewel_title: "Claim The Adriatic Jewel"
+adriatic_jewel_desc: "Com a Renascença florescendo, é hora de consolidar o domínio sobre o Adriático. A vitória sobre Veneza foi apenas o começo; agora, é necessário assegurar total controle das rotas comerciais e das cidades costeiras, fazendo do Mare Adriático um verdadeiro lago italiano."
+
+#---------------------------------------------------------
+# Unify Italy Branch
+#---------------------------------------------------------
+
+build_armata_lombadia_title: "The Army of The Alps"
+build_armata_lombadia_desc: "O Reino da Itália prospera, mas a segurança do norte, especialmente nas regiões alpinas, é sempre uma preocupação constante. Construa a poderosa Armata Lombardia, garantindo que as montanhas do norte sejam fortificadas e que qualquer ameaça externa seja rapidamente neutralizada."
+
+renaissance_in_blood_title: "Renaissance In Blood"
+renaissance_in_blood_desc: "A Itália está no auge de uma nova era, mas para preservar esse renascimento cultural, científico e artístico, é preciso enfrentar as forças que ameaçam sua ascensão. A Casa von Klautz deve ser o bastião da Renascença, nutrindo as artes e ciências enquanto enfrenta os desafios que surgem."
+
+#---------------------------------------------------------
+# Kill Tazos Branch
+#---------------------------------------------------------
+
+regia_marina_title: "Regia Marina"
+regia_marina_desc: "Com o renascimento cultural e econômico em pleno vigor, a supremacia marítima italiana é crucial. Fortaleça a Regia Marina para garantir que o comércio, as rotas de conhecimento e a defesa naval sejam imbatíveis, protegendo as costas italianas e expandindo nossa influência no Mediterrâneo."
+
+claim_valencia_title: "Claim Valencia"
+claim_valencia_desc: "A luta por Valência foi longa e árdua, mas a cidade permanece um alvo de grande importância estratégica e econômica. É hora de retomar o controle e assegurar que Valência se torne uma parte integral do império italiano, consolidando a força de Klautz sobre a Península Ibérica."
+
+#---------------------------------------------------------
+# Balkan Expansion Branch
+#---------------------------------------------------------
+
+consolidate_the_alps_title: "Consolidate In The Alps"
+consolidate_the_alps_desc: "As montanhas dos Alpes são a linha de defesa do Reino da Itália. Fortaleça as defesas nas regiões alpinas para garantir que qualquer movimento hostil do norte seja frustrado antes mesmo de chegar aos nossos portos."
+
+dominium_maris_adriaticum_title: "Dominium Maris Adriaticum"
+dominium_maris_adriaticum_desc: "O Mare Adriático deve ser nosso, incondicionalmente. A expansão sobre as costas adriáticas garantirá o domínio completo sobre as rotas comerciais, além de permitir o controle das cidades-estado que dependem do comércio marítimo. É hora de dar o passo final na dominação do Adriático."
+
+invade_greece_title: "Invade Greece"
+invade_greece_desc: "A Grécia, berço da civilização e da filosofia, está em ruínas sob o peso das invasões bizantinas e otomanas. Com o Império Bizantino em declínio, a Itália deve avançar para o leste, garantindo que a herança cultural da Grécia seja preservada sob a égide da Casa von Klautz."
+
+kingdom_of_von_klautz_title: "Kingdom Of The Von Klautz"
+kingdom_of_von_klautz_desc: "Agora que a estabilidade está firmemente estabelecida e a Renascença ilumina a Itália, é hora de consolidar o Reino da Casa von Klautz. Expanda suas fronteiras, fortaleça sua influência sobre o Sacro Império Romano-Germânico e garanta que o legado de Edimundo e Evaristo se perpetue por séculos."
+
+#---------------------------------------------------------
+# 1
+#---------------------------------------------------------
+
+dev_arsenal_title: "Arsenale di Genova"
+dev_arsenal_desc: "Gênova se tornou um farol de inovação e poder naval. Desenvolva o Arsenale di Genova para torná-lo o maior centro de construção naval do Mediterrâneo, capaz de construir as mais avançadas embarcações e armamentos para manter a supremacia naval da Itália."
+
+#---------------------------------------------------------
+# 2
+#---------------------------------------------------------
+
+genoa_walls_title: "The Walls of Genova"
+genoa_walls_desc: "As muralhas de Gênova devem ser expandidas e reforçadas, tornando a cidade um bastião inquebrável contra qualquer ameaça externa. Com as muralhas completas, Gênova será capaz de resistir a qualquer cerco e garantir a segurança dos nossos cidadãos e riquezas."
+
+#---------------------------------------------------------
+# 3
+#---------------------------------------------------------
+
+bacon_title: "The Beacon of Renaissance"
+bacon_desc: "A Itália está no auge de uma nova era de inovações e descobertas. Se você deseja assegurar o domínio italiano sobre o mundo, deve ser a luz que guia o caminho da Renascença. Financie e promova projetos de arte, ciência e arquitetura para garantir que a Itália seja o farol do Renascimento."
+
+fornicage_di_milano_title: "Carnevali Di Milano"
+fornicage_di_milano_desc: "Milão será o centro da Renascença na Itália, onde artistas, pensadores e nobres se reúnem para celebrar a grandeza do Reino. Organize os Carnevali di Milano para unir a nobreza, as artes e os intelectuais em uma explosão cultural que marque para sempre a história da Itália."
+
+#---------------------------------------------------------
+# 4
+#---------------------------------------------------------
+
+sonne_title: "Develop Edimundo's Stoicism"
+sonne_desc: "Os ensinamentos de Edimundo sobre estoicismo e governança devem ser a base do novo império. Forme líderes que não apenas saibam governar com sabedoria, mas que também sejam inabaláveis nas adversidades. O estoicismo deve ser um princípio vital para o futuro da Casa von Klautz."
+
+game_changer_lacerda_title: "Game Changer of Lacerda"
+game_changer_lacerda_desc: "O legado de Evaristo Lacerda foi de mudança e transformação. É hora de dar um novo passo, moldando a Itália e o Sacro Império com o mesmo espírito de inovação e estratégia. A era da Renascença oferece novas oportunidades, e você deve ser o catalisador dessa mudança para garantir a ascensão de Klautz como o centro do mundo."
