@@ -13,7 +13,7 @@ magi_square_desc: "Após séculos de estabilidade e progresso, a Casa von Klautz
 take_nice_title: "The Question of Nice"
 take_nice_desc: "A cidade de Nice sempre foi uma joia estratégica para o Império. Embora oficialmente coordenada com o Imperador, a verdadeira estabilidade de Nice está diretamente ligada ao controle da Casa von Klautz. Assegure que a cidade permaneça sob a nossa influência para consolidar ainda mais o domínio italiano no Mediterrâneo."
 
-adriatic_jewel_title: "Claim The Adriatic Jewel"
+adriatic_jewel_title: "Our Eastern Flanc"
 adriatic_jewel_desc: "Com a Renascença florescendo, é hora de consolidar o domínio sobre o Adriático. A vitória sobre Veneza foi apenas o começo; agora, é necessário assegurar total controle das rotas comerciais e das cidades costeiras, fazendo do Mare Adriático um verdadeiro lago italiano."
 
 #---------------------------------------------------------
@@ -80,8 +80,13 @@ fornicage_di_milano_desc: "Milão será o centro da Renascença na Itália, onde
 # 4
 #---------------------------------------------------------
 
-sonne_title: "Develop Edimundo's Stoicism"
+sonne_title: "Edimundo's Stoicism"
 sonne_desc: "Os ensinamentos de Edimundo sobre estoicismo e governança devem ser a base do novo império. Forme líderes que não apenas saibam governar com sabedoria, mas que também sejam inabaláveis nas adversidades. O estoicismo deve ser um princípio vital para o futuro da Casa von Klautz."
 
 game_changer_lacerda_title: "Game Changer of Lacerda"
 game_changer_lacerda_desc: "O legado de Evaristo Lacerda foi de mudança e transformação. É hora de dar um novo passo, moldando a Itália e o Sacro Império com o mesmo espírito de inovação e estratégia. A era da Renascença oferece novas oportunidades, e você deve ser o catalisador dessa mudança para garantir a ascensão de Klautz como o centro do mundo."
+
+
+
+ LNS:0 "La Maladissima"
+ LNS_ADJ:0 "Maladeza"

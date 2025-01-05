@@ -40,7 +40,7 @@ diplo_colonial_branch = {
 	}
 	ven_exploration_missions = {
 		icon = mission_look_west
-		position = 5
+		position = 3
 		required_missions = { magi_square }
 		trigger = {
 			OR = {
@@ -88,7 +88,7 @@ diplo_colonial_branch = {
 	}
 	wof_ven_this_mythical_realm = {
 		icon = sources_of_trade
-		position = 6
+		position = 4
 		required_missions = { ven_exploration_missions }
 		provinces_to_highlight = {
 			OR = {
@@ -135,7 +135,7 @@ diplo_colonial_branch = {
 			}
 			custom_tooltip = ven_claims_on_every_cot_malaya_tt
 			hidden_effect = {
-				malaya_region = {
+				indonesian_islands_area = {
 					limit = {
 						province_has_center_of_trade_of_level = 1
 						NOT = { is_core = ROOT }
@@ -148,13 +148,13 @@ diplo_colonial_branch = {
 	}
 	ven_coromandel = {
 		icon = mission_coromandel_trade
-		position = 7
+		position = 5
 		required_missions = { wof_ven_this_mythical_realm }
 		provinces_to_highlight = {
-			province_id = 1340
+			province_id = 1343
 		}
 		trigger = {
-			1340 = {
+			1343 = {
 				trade_share = {
 					country = ROOT
 					share = 40
@@ -162,7 +162,7 @@ diplo_colonial_branch = {
 			}
 		}
 		effect = {
-			504 = {
+			1361 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
@@ -181,6 +181,47 @@ diplo_colonial_branch = {
 			add_country_modifier = {
 				name = ven_wealth_of_india_modifier
 				duration = -1
+			}
+		}
+	}
+
+		ven_global_trade = {
+		icon = the_shape_of_trades_to_come
+		position = 6
+		required_missions = { ven_coromandel }
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			num_free_building_slots = 1 
+			has_manufactory_trigger = no
+		}
+		trigger = {
+			has_institution = global_trade
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				has_manufactory_trigger = yes
+			}
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				OR = {
+					has_had_golden_age = yes
+					in_golden_age = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				if = {
+					limit = { has_had_golden_age = yes }
+					reset_golden_age = yes
+				}
+				else = { extend_golden_age = 600 }
+			}
+			else = {
+				add_country_modifier = {
+					name = ven_venetian_era_of_high_commerce_modifier
+					duration = -1
+				}
 			}
 		}
 	}
@@ -235,81 +276,47 @@ consolidate_flancs_branch = {
 		}
 	}
 	adriatic_jewel = {
-		icon = kingdom_of_lombardy
+		icon = control_the_means_of_transaction
 		position = 4
 		required_missions = { renaissance_in_blood }
 		provinces_to_highlight = {
 			OR = {
-				area = lombardy_area
-				area = venetia_area
-				area = piedmont_area
-				area = liguria_area
-				area = emilia_romagna_area
-				area = po_valley_area
+				area = morea_area
+				area = aegean_archipelago_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = root }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			lombardy_area = {
+			morea_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			po_valley_area = {
+			aegean_archipelago_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			emilia_romagna_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = root
-			}
-			venetia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = root
-			}
-			piedmont_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = root
-			}
-			liguria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = root
-			}
-			is_subject = no
 		}
 		effect = {
-			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 300
-				target = SIC
-			}
-			naples_area = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
+			capital_scope = {
+				add_province_modifier = {
+					name = ven_office_of_foreign_commercial_affairs
+					duration = -1
 				}
-				add_permanent_claim = root
 			}
-			apulia_area = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
+			358 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 50
+					key = PROTECTED_VENETIAN_MERCHANTS
 				}
-				add_permanent_claim = root
 			}
-			calabria_area = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
-			1769 = {
-				if = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
+			377 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 50
+					key = PROTECTED_VENETIAN_MERCHANTS
 				}
 			}
 		}
@@ -329,7 +336,6 @@ unify_italy_branch = {
 	build_armata_lombadia = {
 		icon = ven_army_republic
 		position = 1
-		required_missions = {  }
 		trigger = {
 			army_size_percentage = 0.9
 			num_of_generals = 1
@@ -1119,7 +1125,7 @@ balkan_expansion_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			151 = {
+			163 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1282,44 +1288,6 @@ balkan_expansion_branch = {
 	potential = {
 		is_or_was_tag = {
 			tag = MLO
-		}
-	}
-
-	ven_reach_malacca = {
-		icon = mission_portuguese_malacca
-		position = 7
-		required_missions = { wof_ven_this_mythical_realm }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1361
-				AND = {
-					region = malaya_region
-					province_has_center_of_trade_of_level = 1
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-			}
-		}
-		trigger = {
-			1361 = {
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 3
-				province_has_center_of_trade_of_level = 1
-				region = malaya_region
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = ven_foreign_merchant_missions_modifier
-				duration = 7300
-			}
-			add_mercantilism_or_monarch_power = { amount = 2 }
-			649 = { add_permanent_claim = ROOT }
-			650 = { add_permanent_claim = ROOT }
 		}
 	}
 	ven_patronize_the_scuole_grandi = {

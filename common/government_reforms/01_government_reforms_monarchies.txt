@@ -7406,6 +7406,7 @@ aurelian_monarchy_reform = {
 		mr_traders
 		mr_guilds
 	}
+	boost_income = yes
 	can_use_trade_post = yes
 	can_form_trade_league = yes
 	trade_city_reform = trading_city
