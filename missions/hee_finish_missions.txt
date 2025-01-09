@@ -564,7 +564,7 @@ bruh = {
 	fin_fourth_rome = {
 		icon = peace_in_europe
 		position = 6
-		required_missions = { fin_dalaskrogen fra_nine_universities generic_kill_poland_mission }
+		required_missions = { fin_dalaskrogen fra_nine_universities teu_defeat_the_poles }
 		trigger = { 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
@@ -584,12 +584,146 @@ bruh = {
 			hidden_effect = { set_country_flag = can_form_scandinavia_earlier }
 		}
 	}
-	pipocos_of_industry = {
-		icon = mission_build_up_to_force_limit
+	fra_french_industry = {
+		icon = mission_rb_prospect_for_coal 
 		position = 7
 		required_missions = { fin_fourth_rome }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			OR = { 
+				AND = {
+					has_manufactory_trigger = no 
+					owned_by = ROOT 
+				}
+				AND = { 
+					OR = {
+						province_id = 1
+						province_id = 27
+						province_id = 28
+						province_id = 8
+					}
+					OR = { 
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { development = 40 } 
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes 
+				value = 50 
+			}
+			OR = { 
+				has_institution = industrialization
+				if = { 
+					limit = { has_dlc = "Rule Britannia" } 
+					num_of_owned_provinces_with = {
+						has_building = furnace 
+						value = 5
+					}
+				}
+				else = { 
+					num_of_owned_provinces_with = {
+						has_building = counting_house 
+						value = 30
+					}
+				}
+			}
+			OR = { 
+				in_golden_age = yes 
+				is_hegemon_of_type = economic_hegemon
+				monthly_income = 1000
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fra_french_industrial_revolution_modifier
+				duration = -1 
+			}
+			
+			custom_tooltip = fra_trading_iron_tt
+			
+			custom_tooltip = fra_canal_midi_tt
+			tooltip = {
+				add_province_modifier = {
+					name = fra_canal_royal_en_languedoc_modifier
+					duration = -1 
+				}
+			}
+			
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						trading_bonus = {
+							trade_goods = copper
+							value = yes
+						}
+						trading_bonus = {
+							trade_goods = iron
+							value = yes
+						}
+					}
+					every_owned_province = {
+						limit = { 
+							OR = { 
+								trade_goods = copper 
+								trade_goods = iron 
+								trade_goods = gold 
+							}
+						}
+						add_province_modifier = {
+							name = fra_metal_barons_modifier
+							duration = -1 
+							hidden = yes 
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						1 = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							development = 40 
+						}
+						27 = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							development = 40 
+						}
+						28 = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							development = 40 
+						}
+						8 = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							development = 40 
+						}
+					}
+					1 = {
+						add_province_modifier = {
+							name = fra_canal_royal_en_languedoc_modifier
+							duration = -1 
+						}
+					}
+					27 = {
+						add_province_modifier = {
+							name = fra_canal_royal_en_languedoc_modifier 
+							duration = -1 
+						}
+					}
+					28 = { 
+						add_province_modifier = {
+							name = fra_canal_royal_en_languedoc_modifier
+							duration = -1 
+						}
+					}
+					8 = {
+						add_province_modifier = {
+							name = fra_canal_royal_en_languedoc_modifier
+							duration = -1 
+						}
+					}
+				}
+			}		
+		}
 	}
 }
 
@@ -786,7 +920,7 @@ bruh = {
 	teu_pru_teutonic_ruthenia = {
 		icon = mission_develop_kiev
 		position = 6
-		required_missions = { generic_kill_poland_mission minecraft_superplain_world }
+		required_missions = { teu_defeat_the_poles }
 		provinces_to_highlight = {
 			OR = {
 				region = ruthenia_region
@@ -821,7 +955,7 @@ bruh = {
 	teu_crusader_a_holy_horde = {
 		icon = mission_holy_horde
 		position = 7
-		required_missions = { teu_pru_teutonic_ruthenia wanna_be_poland }
+		required_missions = { teu_pru_teutonic_ruthenia teu_crusader_mil_reform_4 }
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU }
 			religion = catholic
@@ -847,7 +981,7 @@ bruh = {
 	}
 
 	teu_build_to_force_limit = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_teutonic_knights
 		position = 1
 		required_missions = {  }
 		trigger = {
@@ -878,7 +1012,7 @@ bruh = {
 	teu_crusader_mil_reform_1 = {
 		icon = mission_united_knight_order
 		position = 3
-		required_missions = { teu_build_to_force_limit }
+		required_missions = { teu_build_to_force_limit fra_form_gendarmes }
 		provinces_to_highlight = {}
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU }
@@ -906,7 +1040,6 @@ bruh = {
 		required_missions = {
 			fra_provencal_question
 			teu_crusader_mil_reform_1
-			fra_form_gendarmes
 		}
 		provinces_to_highlight = {}
 		trigger = {
