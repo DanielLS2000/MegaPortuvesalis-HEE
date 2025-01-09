@@ -64,7 +64,9 @@ malei_desc: "A nação da Alpinia é a mais malada de todas, não falta trem nen
  LNS:0 "La Maladissima"
  LNS_ADJ:0 "Maladeza"
 
- # Venice Governament Reforms Adaptation
+# Venice Governament Reforms Adaptation
 
- aurelian_monarchy_reform_title: "Aurelian Monarchy"
- aurelian_monarchy_reform_desc: "The Aurelian Monarchy is a unique form of government that combines the best aspects of a monarchy and a republic. The ruler is elected by the nobility, but the monarch's power is limited by a council of advisors. This system ensures that the ruler is always held accountable for their actions, while also allowing for a degree of stability and continuity in government."
+aurelian_monarchy_reform_title: "Aurelian Monarchy"
+aurelian_monarchy_reform_desc: "The Aurelian Monarchy is a unique form of government that combines the best aspects of a monarchy and a republic. The ruler is elected by the nobility, but the monarch's power is limited by a council of advisors. This system ensures that the ruler is always held accountable for their actions, while also allowing for a degree of stability and continuity in government."
+ufmg_title: " Università Federale del Mediterraneo e del Genio"
+ufmg_desc: "The Università Federale del Mediterraneo e del Genio is a prestigious institution of higher learning that attracts scholars and students from across the Mediterranean. It offers a wide range of courses in the arts, sciences, and engineering, and is renowned for its cutting-edge research and innovative teaching methods. The university is a beacon of knowledge and enlightenment, and plays a key role in shaping the future of the region."
