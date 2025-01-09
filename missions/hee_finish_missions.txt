@@ -5,7 +5,8 @@ bruh = {
 	potential = {
 		is_or_was_tag = FIN 
 	}
-
+	has_country_shield = yes
+	
 	fin_culture = {
 		icon = mission_the_finns
 		required_missions = { fin_grow_farms }
@@ -316,9 +317,10 @@ bruh = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
+		potential = {
 		is_or_was_tag = FIN 
 	}
+        has_country_shield = yes
 
 	fin_grow_farms = {
 		icon = prosperity_for_all
@@ -737,9 +739,10 @@ bruh = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
+		potential = {
 		is_or_was_tag = FIN 
 	}
+        has_country_shield = yes
 
 	fin_build_turku = {
 		icon = negotiate_for_avignon
@@ -986,9 +989,10 @@ bruh = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
+		potential = {
 		is_or_was_tag = FIN 
 	}
+        has_country_shield = yes
 
 	teu_build_to_force_limit = {
 		icon = mission_teutonic_knights
@@ -1173,9 +1177,10 @@ bruh = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {
+		potential = {
 		is_or_was_tag = FIN 
 	}
+        has_country_shield = yes
 
 	fra_refine_bombards = {
 		icon = fra_refine_bombards
