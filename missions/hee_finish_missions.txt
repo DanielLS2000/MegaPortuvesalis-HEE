@@ -576,7 +576,7 @@ bruh = {
 				is_defender_of_faith = yes 
 			}
 			religious_unity = 1 
-			army_size = 100
+			army_size = 70
 			stability = 3 
 			capital_scope = { development = 40 } 
 		}
@@ -972,7 +972,7 @@ bruh = {
 			religious_unity = 0.8
 			num_of_cities = 100
 			cavalry_fraction = 0.5
-			army_size = 100
+			army_size = 70
 		}
 		effect = {
 			country_event = {
@@ -995,7 +995,7 @@ bruh = {
 		position = 1
 		required_missions = {  }
 		trigger = {
-			army_size_percenis_or_was_tage = 1
+			army_size_percentage = 1
 			has_mil_advisor = yes
 		}
 		effect = {
@@ -1189,7 +1189,7 @@ bruh = {
 				}
 				artillery_fraction = 0.1 
 			}
-			army_size_percenis_or_was_tage = 0.85 
+			army_size_percentage = 0.85 
 			OR = { 
 				has_mil_advisor = yes 
 				national_focus = MIL 
