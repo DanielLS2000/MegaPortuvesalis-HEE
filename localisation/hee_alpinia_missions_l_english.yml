@@ -87,6 +87,12 @@ game_changer_lacerda_title: "Game Changer of Lacerda"
 game_changer_lacerda_desc: "O legado de Evaristo Lacerda foi de mudança e transformação. É hora de dar um novo passo, moldando a Itália e o Sacro Império com o mesmo espírito de inovação e estratégia. A era da Renascença oferece novas oportunidades, e você deve ser o catalisador dessa mudança para garantir a ascensão de Klautz como o centro do mundo."
 
 
+# Lombardy -> Alpinia
+ LOM: "Alpinia"
+ LOM_ADJ: "Alpinian"
+ Lombardy_formation_title: "Create a Kingdom of The Alps"
+ Lombardy_formation_desc: "Beside the Lombardian people, remnants of our kingdom persist, scattered within the Holy Roman Empire. Today, let's unite these fragments into a formal nation, transcending old feuds. Together, we'll revive the Lombardian Kingdom, reclaiming the grandeur of our past. Long live Lombardy!"
 
+# La Serenissima Rename
  LNS:0 "La Maladissima"
  LNS_ADJ:0 "Maladeza"
