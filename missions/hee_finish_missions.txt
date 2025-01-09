@@ -3,7 +3,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FIN 
+		is_or_was_tag = FIN 
 	}
 
 	fin_culture = {
@@ -252,8 +252,9 @@ bruh = {
 			}
 		}
 	}
+
 	teu_crusader_gain_income = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_high_income
 		position = 6
 		required_missions = {  }
 		trigger = {
@@ -284,6 +285,7 @@ bruh = {
 			}
 		}
 	}
+
 	teu_crusader_castle_expertise = {
 		icon = mission_marienburg
 		position = 7
@@ -315,7 +317,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FIN 
+		is_or_was_tag = FIN 
 	}
 
 	fin_grow_farms = {
@@ -472,6 +474,7 @@ bruh = {
 			add_mercantilism = 3
 		}
 	}
+
 	fin_abo_academy = {
 		icon = powerhouse_of_the_north
 		position = 4
@@ -523,6 +526,7 @@ bruh = {
 			} 
 		}
 	}
+
 	fra_nine_universities = {
 		icon = appease_the_estates
 		position = 5
@@ -561,6 +565,7 @@ bruh = {
 			custom_tooltip = fra_event_insight_204_tt
 		}
 	}
+
 	fin_fourth_rome = {
 		icon = peace_in_europe
 		position = 6
@@ -584,6 +589,7 @@ bruh = {
 			hidden_effect = { set_country_flag = can_form_scandinavia_earlier }
 		}
 	}
+
 	fra_french_industry = {
 		icon = mission_rb_prospect_for_coal 
 		position = 7
@@ -596,9 +602,9 @@ bruh = {
 				}
 				AND = { 
 					OR = {
-						province_id = 1
-						province_id = 27
-						province_id = 28
+						province_id = 5
+						province_id = 4
+						province_id = 1985
 						province_id = 8
 					}
 					OR = { 
@@ -680,15 +686,15 @@ bruh = {
 				}
 				if = { 
 					limit = { 
-						1 = {
+						5 = {
 							country_or_non_sovereign_subject_holds = ROOT 
 							development = 40 
 						}
-						27 = {
+						4 = {
 							country_or_non_sovereign_subject_holds = ROOT 
 							development = 40 
 						}
-						28 = {
+						1985 = {
 							country_or_non_sovereign_subject_holds = ROOT 
 							development = 40 
 						}
@@ -697,19 +703,19 @@ bruh = {
 							development = 40 
 						}
 					}
-					1 = {
+					5 = {
 						add_province_modifier = {
 							name = fra_canal_royal_en_languedoc_modifier
 							duration = -1 
 						}
 					}
-					27 = {
+					4 = {
 						add_province_modifier = {
 							name = fra_canal_royal_en_languedoc_modifier 
 							duration = -1 
 						}
 					}
-					28 = { 
+					1985 = { 
 						add_province_modifier = {
 							name = fra_canal_royal_en_languedoc_modifier
 							duration = -1 
@@ -732,7 +738,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FIN 
+		is_or_was_tag = FIN 
 	}
 
 	fin_build_turku = {
@@ -796,6 +802,7 @@ bruh = {
 			}
 		}
 	}
+
 	fra_provencal_question = {
 		icon = develop_provence
 		position = 3
@@ -820,6 +827,7 @@ bruh = {
 			add_prestige = 20
 		}
 	}
+
 	fin_baltic_empire = {
 		icon = mission_baltic_empire
 		position = 4
@@ -885,6 +893,7 @@ bruh = {
 			}
 		}
 	}
+
 	teu_defeat_the_poles = {
 		icon = mission_conquer_5_states
 		position = 5
@@ -917,6 +926,7 @@ bruh = {
 			}
 		}
 	}
+
 	teu_pru_teutonic_ruthenia = {
 		icon = mission_develop_kiev
 		position = 6
@@ -977,7 +987,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FIN 
+		is_or_was_tag = FIN 
 	}
 
 	teu_build_to_force_limit = {
@@ -985,7 +995,7 @@ bruh = {
 		position = 1
 		required_missions = {  }
 		trigger = {
-			army_size_percentage = 1
+			army_size_percenis_or_was_tage = 1
 			has_mil_advisor = yes
 		}
 		effect = {
@@ -1009,6 +1019,7 @@ bruh = {
 			}
 		}
 	}
+
 	teu_crusader_mil_reform_1 = {
 		icon = mission_united_knight_order
 		position = 3
@@ -1163,7 +1174,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FIN 
+		is_or_was_tag = FIN 
 	}
 
 	fra_refine_bombards = {
@@ -1178,7 +1189,7 @@ bruh = {
 				}
 				artillery_fraction = 0.1 
 			}
-			army_size_percentage = 0.85 
+			army_size_percenis_or_was_tage = 0.85 
 			OR = { 
 				has_mil_advisor = yes 
 				national_focus = MIL 
@@ -1207,6 +1218,7 @@ bruh = {
 			}
 		}
 	}
+
 	fra_form_gendarmes = {
 		icon = mission_have_two_subjects
 		required_missions = { fra_refine_bombards } 
@@ -1235,7 +1247,6 @@ bruh = {
 			else = { add_army_tradition = 20 } 
 		}
 	}
-
 
 	#mecho nessa desgraça dps
 	fra_french_wars_religion = {
@@ -1362,6 +1373,7 @@ bruh = {
 			set_country_flag = can_always_embrace_the_counter_reformation
 		}
 	}
+	
 	teu_crusader_destroy_the_heresies = {
 		icon = crush_heretic_strongholds
 		position = 7
