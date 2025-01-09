@@ -97,7 +97,11 @@ diplo_colonial_branch = {
 				trade_company_region = trade_company_west_india
 			}
 			is_sea = no
-			NOT = { owned_by = ROOT }
+			NOT = { OR ={
+					owned_by = ROOT
+					owned_by = PAP
+					owned_by = BOS
+				} }
 			has_discovered = ROOT
 		}
 		trigger = {
@@ -105,15 +109,27 @@ diplo_colonial_branch = {
 				tooltip = emp_ven_this_mythical_realm_tt
 				OR = {
 					trade_company_east_india = {
-						owned_by = ROOT
+								OR ={
+							owned_by = ROOT
+							owned_by = PAP
+							owned_by = BOS
+						}
 						is_city = yes
 					}
 					trade_company_coromandel = {
-						owned_by = ROOT
+								OR ={
+							owned_by = ROOT
+							owned_by = PAP
+							owned_by = BOS
+						}
 						is_city = yes
 					}
 					trade_company_west_india = {
-						owned_by = ROOT
+								OR ={
+							owned_by = ROOT
+							owned_by = PAP
+							owned_by = BOS
+						}
 						is_city = yes
 					}
 				}
@@ -481,27 +497,31 @@ unify_italy_branch = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
 				}
 			}
 			po_valley_area = {
 				type = all
-				OR = {
+								OR = {
 					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
 				}
 			}
 			emilia_romagna_area = {
 				type = all
-				OR = {
+								OR = {
 					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
 				}
 			}
 			tuscany_area = {
 				type = all
-				OR = {
+								OR = {
 					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
 				}
 			}
@@ -516,103 +536,37 @@ unify_italy_branch = {
 		}
 
 	}
-	wof_ven_challenge_papal_supremacy = {
-		icon = counter_reformation
+		wof_ven_contest_genoese_trade = {
+		icon = mission_sea_battles
 		position = 5
-		required_missions = { wof_ven_expand_the_terraferma }
+		required_missions = {wof_ven_expand_the_terraferma }
+		
 		provinces_to_highlight = {
-			province_id = 118
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_id = 1298
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
 		}
 		trigger = {
-			religious_unity = 1
-			OR = {
-				is_papal_controller = yes
-				PAP = { is_subject_of = ROOT }
-				owns = 118
+			1298 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
 			}
 		}
 		effect = {
+			add_mercantilism_or_monarch_power = { amount = 1 }
 			add_country_modifier = {
-				name = "ven_autonomous_venetian_patriarchate"
-				duration = 5475
-			}
-			if = {
-				limit = { is_papal_controller = yes }
-				custom_tooltip = ven_papal_controller_yes_tt
-				tooltip = {
-					add_papal_influence = 20
-				}
-			}
-			else = {
-				custom_tooltip = ven_papal_controller_no_tt
-				tooltip = {
-					add_papal_influence = 20
-				}
-			}
-			if = {
-				limit = {
-					PAP = { is_subject_of = ROOT }
-				}
-				custom_tooltip = ven_papal_subject_yes_tt
-				tooltip = {
-					add_power_projection_mission = { amount = 10 }
-				}
-			}
-			else = {
-				custom_tooltip = ven_papal_subject_no_tt
-				tooltip = {
-					add_power_projection_mission = { amount = 20 }
-				}
-			}
-			if = {
-				limit = {
-					owns = 118
-				}
-				custom_tooltip = ven_owns_rome_yes_tt
-				tooltip = {
-					118 = {
-						change_religion = ROOT
-						change_culture = ROOT
-						add_base_manpower = 2
-						add_base_production = 2
-					}
-				}
-			}
-			else = {
-				custom_tooltip = ven_owns_rome_no_tt
-				tooltip = {
-					118 = {
-						change_religion = ROOT
-						change_culture = ROOT
-						add_base_manpower = 2
-						add_base_production = 2
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { is_papal_controller = yes }
-					add_papal_influence = 20
-				}
-				if = {
-					limit = {
-						PAP = { is_subject_of = ROOT }
-					}
-					add_power_projection_mission = { amount = 10 }
-				}
-				if = {
-					limit = { owns = 118 }
-					118 = {
-						change_religion = ROOT
-						change_culture = ROOT
-						add_base_manpower = 2
-						add_base_production = 2
-					}
-				}
+				name = "ven_genoese_humiliation"
+				duration = -1
 			}
 		}
 	}
+
 }
 
 fort_branch = {
@@ -878,7 +832,12 @@ resorgimento_branch = {
 		trigger = {
 			italy_region = {
 				type = all
-				owned_by = ROOT
+				OR ={
+					owned_by = ROOT
+					owned_by = PAP
+					owned_by = BOS
+				}
+				
 			}
 			development_in_provinces = {
 				region = italy_region
@@ -995,7 +954,7 @@ balkan_expansion_branch = {
 			}
 		}
 		effect = {
-			give_claims = { area = aegean_archipelago_area }
+			give_claims = { area = northern_greece_area }
 			give_claims = { area = thrace_area }
 			give_claims = { area = bulgaria_area }
 			give_claims = { area = silistria_area }
@@ -1015,7 +974,7 @@ balkan_expansion_branch = {
 		required_missions = { dominium_maris_adriaticum }
 		provinces_to_highlight = {
 			OR = {
-				area = aegean_archipelago_area
+				area = northern_greece_area
 				area = thrace_area
 				area = bulgaria_area
 				area = silistria_area
@@ -1025,7 +984,7 @@ balkan_expansion_branch = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = aegean_archipelago_area
+					area = northern_greece_area
 					area = thrace_area
 					area = bulgaria_area
 					area = silistria_area
@@ -1039,7 +998,6 @@ balkan_expansion_branch = {
 			custom_tooltip = " "
 			custom_tooltip = ITA_conquest_of_east_1_2
 			hidden_effect = {
-				remove_country_modifier = ITA_conquest_of_east_1
 				add_country_modifier = {
 					name = ITA_conquest_of_east_2
 					duration = -1
@@ -1107,7 +1065,7 @@ balkan_expansion_branch = {
 			101 = { has_any_ongoing_construction = no }
 		}
 		effect = {
-			corsica_sardinia_area  = {
+			morea_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1221,7 +1179,11 @@ balkan_expansion_branch = {
 		required_missions = { ven_navy_mission_1 }
 		provinces_to_highlight = {
 			province_id = 112
-			NOT = { owned_by = ROOT }
+			NOT = { OR ={
+					owned_by = ROOT
+					owned_by = PAP
+					owned_by = BOS
+				} }
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = MLO }
