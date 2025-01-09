@@ -1,90 +1,57 @@
 ﻿l_english:
-#---------------------------------------------------------
-# Diplo Colonial Branch
-#---------------------------------------------------------
-
 magi_square_title: "Rebuild The Magic Square"
-magi_square_desc: "Após séculos de estabilidade e progresso, a Casa von Klautz precisa agora restaurar o Quadrado Mágico Imperial, para garantir que os laços diplomáticos e comerciais entre os grandes reinos do Império permaneçam inquebráveis, assegurando a posição da Itália como o coração do mundo renascentista."
-
-#---------------------------------------------------------
-# Consolidate Flancs Branch
-#---------------------------------------------------------
+magi_square_desc: "Centuries of stability and progress have rested on the pillars of the Magic Square, a fragile alliance that holds together the threads of the Renaissance. Now, as cracks begin to form in this delicate web, the House of von Klautz must rise again, restoring the Magic Square to its former glory. Only then can Italy secure its place as the unshakable heart of a reborn Europe, where art, commerce, and diplomacy intertwine to forge an eternal legacy."
 
 take_nice_title: "The Question of Nice"
-take_nice_desc: "A cidade de Nice sempre foi uma joia estratégica para o Império. Embora oficialmente coordenada com o Imperador, a verdadeira estabilidade de Nice está diretamente ligada ao controle da Casa von Klautz. Assegure que a cidade permaneça sob a nossa influência para consolidar ainda mais o domínio italiano no Mediterrâneo."
+take_nice_desc: "Nice, the glittering jewel of the Mediterranean, has always been a prize coveted by empires. Though it stands under imperial authority, its true stability lies in the hands of the House of von Klautz. Secure control over Nice to consolidate Italian dominance in the Mediterranean, ensuring the flow of riches and power remains uninterrupted."
 
-adriatic_jewel_title: "Our Eastern Flanc"
-adriatic_jewel_desc: "Com a Renascença florescendo, é hora de consolidar o domínio sobre o Adriático. A vitória sobre Veneza foi apenas o começo; agora, é necessário assegurar total controle das rotas comerciais e das cidades costeiras, fazendo do Mare Adriático um verdadeiro lago italiano."
-
-#---------------------------------------------------------
-# Unify Italy Branch
-#---------------------------------------------------------
+adriatic_jewel_title: "Our Eastern Flank"
+adriatic_jewel_desc: "With the Renaissance flourishing, the time has come to dominate the Adriatic. The conquest of Venice was only the beginning. Now, ensure total control over trade routes and coastal cities, transforming the Adriatic Sea into an Italian lake and securing our eastern flank for generations to come."
 
 build_armata_lombadia_title: "The Army of The Alps"
-build_armata_lombadia_desc: "O Reino da Itália prospera, mas a segurança do norte, especialmente nas regiões alpinas, é sempre uma preocupação constante. Construa a poderosa Armata Lombardia, garantindo que as montanhas do norte sejam fortificadas e que qualquer ameaça externa seja rapidamente neutralizada."
+build_armata_lombardia_desc: "The Kingdom of Italy prospers, yet the security of the northern regions, especially the Alpine passes, remains a constant concern. Forge the mighty Armata Lombardia to fortify the mountains, ensuring that any external threat is neutralized before it can descend upon our heartland."
 
 renaissance_in_blood_title: "Renaissance In Blood"
-renaissance_in_blood_desc: "A Itália está no auge de uma nova era, mas para preservar esse renascimento cultural, científico e artístico, é preciso enfrentar as forças que ameaçam sua ascensão. A Casa von Klautz deve ser o bastião da Renascença, nutrindo as artes e ciências enquanto enfrenta os desafios que surgem."
-
-#---------------------------------------------------------
-# Kill Tazos Branch
-#---------------------------------------------------------
+renaissance_in_blood_desc: "Italy stands at the zenith of a new era, but the forces that threaten this cultural, scientific, and artistic rebirth grow stronger. The House of von Klautz must defend this Renaissance with unwavering resolve, nurturing the arts and sciences while crushing all opposition that dares to challenge our ascendance."
 
 regia_marina_title: "Regia Marina"
-regia_marina_desc: "Com o renascimento cultural e econômico em pleno vigor, a supremacia marítima italiana é crucial. Fortaleça a Regia Marina para garantir que o comércio, as rotas de conhecimento e a defesa naval sejam imbatíveis, protegendo as costas italianas e expandindo nossa influência no Mediterrâneo."
+regia_marina_desc: "As the cultural and economic rebirth surges forward, maritime supremacy becomes paramount. Strengthen the Regia Marina to ensure trade, knowledge, and naval defenses remain unmatched, protecting Italy’s shores and expanding our influence across the Mediterranean."
 
 claim_valencia_title: "Claim Valencia"
-claim_valencia_desc: "A luta por Valência foi longa e árdua, mas a cidade permanece um alvo de grande importância estratégica e econômica. É hora de retomar o controle e assegurar que Valência se torne uma parte integral do império italiano, consolidando a força de Klautz sobre a Península Ibérica."
-
-#---------------------------------------------------------
-# Balkan Expansion Branch
-#---------------------------------------------------------
+claim_valencia_desc: "The struggle for Valencia has been long and arduous, but this city remains a key strategic and economic prize. The time has come to assert control, making Valencia an integral part of the Italian empire and cementing the House of von Klautz's power over the Iberian Peninsula."
 
 consolidate_the_alps_title: "Consolidate In The Alps"
-consolidate_the_alps_desc: "As montanhas dos Alpes são a linha de defesa do Reino da Itália. Fortaleça as defesas nas regiões alpinas para garantir que qualquer movimento hostil do norte seja frustrado antes mesmo de chegar aos nossos portos."
+consolidate_the_alps_desc: "The Alpine mountains are Italy's natural line of defense. Fortify these regions to ensure that any hostile movement from the north is halted before it reaches our vital ports and cities. With the Alps secured, no invader shall breach Italian soil."
 
 dominium_maris_adriaticum_title: "Dominium Maris Adriaticum"
-dominium_maris_adriaticum_desc: "O Mare Adriático deve ser nosso, incondicionalmente. A expansão sobre as costas adriáticas garantirá o domínio completo sobre as rotas comerciais, além de permitir o controle das cidades-estado que dependem do comércio marítimo. É hora de dar o passo final na dominação do Adriático."
+dominium_maris_adriaticum_desc: "The Adriatic Sea must be ours, unconditionally. Expand our influence over the Adriatic coasts to secure total dominance over trade routes and bring the city-states dependent on maritime commerce under our sway. It is time to make the Adriatic an Italian dominion."
 
 invade_greece_title: "Invade Greece"
-invade_greece_desc: "A Grécia, berço da civilização e da filosofia, está em ruínas sob o peso das invasões bizantinas e otomanas. Com o Império Bizantino em declínio, a Itália deve avançar para o leste, garantindo que a herança cultural da Grécia seja preservada sob a égide da Casa von Klautz."
+invade_greece_desc: "Greece, the cradle of civilization and philosophy, lies in ruins under the weight of Byzantine and Ottoman invasions. With the Byzantine Empire in decline, Italy must march eastward to preserve the cultural heritage of Greece under the banner of the House of von Klautz."
 
-kingdom_of_von_klautz_title: "Kingdom Of The Von Klautz"
-kingdom_of_von_klautz_desc: "Agora que a estabilidade está firmemente estabelecida e a Renascença ilumina a Itália, é hora de consolidar o Reino da Casa von Klautz. Expanda suas fronteiras, fortaleça sua influência sobre o Sacro Império Romano-Germânico e garanta que o legado de Edimundo e Evaristo se perpetue por séculos."
-
-#---------------------------------------------------------
-# 1
-#---------------------------------------------------------
+kingdom_of_von_klautz_title: "Kingdom Of The von Klautz"
+kingdom_of_von_klautz_desc: "With stability firmly established and the Renaissance illuminating Italy, it is time to consolidate the Kingdom of the House von Klautz. Expand its borders, solidify its influence over the Holy Roman Empire, and ensure that the legacy of Edimundo and Evaristo endures for centuries to come."
 
 dev_arsenal_title: "Arsenale di Genova"
-dev_arsenal_desc: "Gênova se tornou um farol de inovação e poder naval. Desenvolva o Arsenale di Genova para torná-lo o maior centro de construção naval do Mediterrâneo, capaz de construir as mais avançadas embarcações e armamentos para manter a supremacia naval da Itália."
+dev_arsenal_desc: "Genoa has become a beacon of innovation and naval power. Develop the Arsenale di Genova into the greatest shipbuilding center in the Mediterranean, capable of crafting the most advanced vessels and weaponry to maintain Italian naval supremacy."
 
-#---------------------------------------------------------
-# 2
-#---------------------------------------------------------
-
-genoa_walls_title: "The Walls of Genova"
-genoa_walls_desc: "As muralhas de Gênova devem ser expandidas e reforçadas, tornando a cidade um bastião inquebrável contra qualquer ameaça externa. Com as muralhas completas, Gênova será capaz de resistir a qualquer cerco e garantir a segurança dos nossos cidadãos e riquezas."
-
-#---------------------------------------------------------
-# 3
-#---------------------------------------------------------
+genoa_walls_title: "The Walls of Genoa"
+genoa_walls_desc: "The walls of Genoa must be expanded and reinforced, transforming the city into an unbreakable bastion against any external threat. With the walls complete, Genoa will stand as a fortress that safeguards our citizens and treasures."
 
 bacon_title: "The Beacon of Renaissance"
-bacon_desc: "A Itália está no auge de uma nova era de inovações e descobertas. Se você deseja assegurar o domínio italiano sobre o mundo, deve ser a luz que guia o caminho da Renascença. Financie e promova projetos de arte, ciência e arquitetura para garantir que a Itália seja o farol do Renascimento."
+bacon_desc: "Italy stands at the peak of a new age of innovation and discovery. To ensure Italian dominance over the world, become the light that guides the Renaissance. Fund and promote projects in art, science, and architecture to make Italy the beacon of progress."
 
-fornicage_di_milano_title: "Carnevali Di Milano"
-fornicage_di_milano_desc: "Milão será o centro da Renascença na Itália, onde artistas, pensadores e nobres se reúnem para celebrar a grandeza do Reino. Organize os Carnevali di Milano para unir a nobreza, as artes e os intelectuais em uma explosão cultural que marque para sempre a história da Itália."
-
-#---------------------------------------------------------
-# 4
-#---------------------------------------------------------
+fornicage_di_milano_title: "Carnevali di Milano"
+fornicage_di_milano_desc: "Milan will be the epicenter of the Renaissance in Italy, where artists, thinkers, and nobles converge to celebrate the kingdom's grandeur. Host the Carnevali di Milano to unite the nobility, the arts, and intellectuals in a cultural explosion that will forever mark Italy’s history."
 
 sonne_title: "Edimundo's Stoicism"
-sonne_desc: "Os ensinamentos de Edimundo sobre estoicismo e governança devem ser a base do novo império. Forme líderes que não apenas saibam governar com sabedoria, mas que também sejam inabaláveis nas adversidades. O estoicismo deve ser um princípio vital para o futuro da Casa von Klautz."
+sonne_desc: "The teachings of Edimundo on stoicism and governance must become the foundation of the new empire. Train leaders who not only rule with wisdom but also remain unwavering in the face of adversity. Stoicism must be a vital principle for the future of the House of von Klautz."
 
 game_changer_lacerda_title: "Game Changer of Lacerda"
-game_changer_lacerda_desc: "O legado de Evaristo Lacerda foi de mudança e transformação. É hora de dar um novo passo, moldando a Itália e o Sacro Império com o mesmo espírito de inovação e estratégia. A era da Renascença oferece novas oportunidades, e você deve ser o catalisador dessa mudança para garantir a ascensão de Klautz como o centro do mundo."
+game_changer_lacerda_desc: "The legacy of Evaristo Lacerda was one of transformation and innovation. It is time to take the next step, shaping Italy and the Holy Roman Empire with that same spirit of change. The Renaissance era offers new opportunities, and you must be the catalyst for these changes, ensuring Klautz's ascension as the center of the world."
+
+malei_title: "Of Pocancia & Maladeza"
+malei_desc: "A nação da Alpinia é a mais malada de todas, não falta trem nenhum no nosso país. O queijo minas confecionado nas montanhas é o mais saboroso de todos, e o cafezinho ja virou parte da nossa cultura, sem falar do truco mineiro que é o mais malado de todos. Estamos bonadissimos, e vamos continuar assim. Sendo assim, nnó seremos conhecidos como A Maladíssima, a nação mais malada de todas."
 
 
 # Lombardy -> Alpinia
@@ -96,3 +63,8 @@ game_changer_lacerda_desc: "O legado de Evaristo Lacerda foi de mudança e trans
 # La Serenissima Rename
  LNS:0 "La Maladissima"
  LNS_ADJ:0 "Maladeza"
+
+ # Venice Governament Reforms Adaptation
+
+ aurelian_monarchy_reform_title: "Aurelian Monarchy"
+ aurelian_monarchy_reform_desc: "The Aurelian Monarchy is a unique form of government that combines the best aspects of a monarchy and a republic. The ruler is elected by the nobility, but the monarch's power is limited by a council of advisors. This system ensures that the ruler is always held accountable for their actions, while also allowing for a degree of stability and continuity in government."
