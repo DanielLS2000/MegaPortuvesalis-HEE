@@ -1443,7 +1443,7 @@ balkan_expansion_branch = {
 	}
 	emp_mlo_all_roads_lead_to_milan = {
 		icon = all_roads_lead_to_milan
-		position = 5
+		position = 11
 		required_missions = { emp_lan_public_works ven_modern_banking_system }
 		provinces_to_highlight = {
 			OR = {
