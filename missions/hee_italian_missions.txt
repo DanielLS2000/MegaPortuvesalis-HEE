@@ -98,10 +98,10 @@ diplo_colonial_branch = {
 			}
 			is_sea = no
 			NOT = { OR ={
-					owned_by = ROOT
-					owned_by = PAP
-					owned_by = BOS
-				} }
+				owned_by = ROOT
+				owned_by = PAP
+				owned_by = BOS
+			} }
 			has_discovered = ROOT
 		}
 		trigger = {
@@ -109,7 +109,7 @@ diplo_colonial_branch = {
 				tooltip = emp_ven_this_mythical_realm_tt
 				OR = {
 					trade_company_east_india = {
-								OR ={
+						OR ={
 							owned_by = ROOT
 							owned_by = PAP
 							owned_by = BOS
@@ -117,7 +117,7 @@ diplo_colonial_branch = {
 						is_city = yes
 					}
 					trade_company_coromandel = {
-								OR ={
+						OR ={
 							owned_by = ROOT
 							owned_by = PAP
 							owned_by = BOS
@@ -125,7 +125,7 @@ diplo_colonial_branch = {
 						is_city = yes
 					}
 					trade_company_west_india = {
-								OR ={
+						OR ={
 							owned_by = ROOT
 							owned_by = PAP
 							owned_by = BOS
@@ -200,14 +200,13 @@ diplo_colonial_branch = {
 			}
 		}
 	}
-
-		ven_global_trade = {
+	ven_global_trade = {
 		icon = the_shape_of_trades_to_come
 		position = 6
 		required_missions = { ven_coromandel }
 		provinces_to_highlight = {
 			country_or_non_sovereign_subject_holds = ROOT
-			num_free_building_slots = 1 
+			num_free_building_slots = 1
 			has_manufactory_trigger = no
 		}
 		trigger = {
@@ -352,6 +351,7 @@ unify_italy_branch = {
 	build_armata_lombadia = {
 		icon = ven_army_republic
 		position = 1
+		required_missions = {  }
 		trigger = {
 			army_size_percentage = 0.9
 			num_of_generals = 1
@@ -486,11 +486,10 @@ unify_italy_branch = {
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				owner = { 
+				owner = {
 					NOT = { is_in_trade_league_with = ROOT }
 				}
 			}
-			
 		}
 		trigger = {
 			venetia_area = {
@@ -503,7 +502,7 @@ unify_italy_branch = {
 			}
 			po_valley_area = {
 				type = all
-								OR = {
+				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
@@ -511,7 +510,7 @@ unify_italy_branch = {
 			}
 			emilia_romagna_area = {
 				type = all
-								OR = {
+				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
@@ -519,7 +518,7 @@ unify_italy_branch = {
 			}
 			tuscany_area = {
 				type = all
-								OR = {
+				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					country_or_non_sovereign_subject_holds = PAP
 					owner = { is_in_trade_league_with = ROOT }
@@ -534,13 +533,11 @@ unify_italy_branch = {
 			custom_tooltip = ven_access_milanese_and_florentine_events_tt
 			set_country_flag = ven_access_italian_events_flag
 		}
-
 	}
-		wof_ven_contest_genoese_trade = {
+	wof_ven_contest_genoese_trade = {
 		icon = mission_sea_battles
 		position = 5
-		required_missions = {wof_ven_expand_the_terraferma }
-		
+		required_missions = { wof_ven_expand_the_terraferma }
 		provinces_to_highlight = {
 			province_id = 1298
 			NOT = {
@@ -566,7 +563,6 @@ unify_italy_branch = {
 			}
 		}
 	}
-
 }
 
 fort_branch = {
@@ -837,7 +833,6 @@ resorgimento_branch = {
 					owned_by = PAP
 					owned_by = BOS
 				}
-				
 			}
 			development_in_provinces = {
 				region = italy_region
@@ -1040,13 +1035,14 @@ balkan_expansion_branch = {
 	dev_arsenal = {
 		icon = expand_the_arsenal
 		position = 7
+		required_missions = {  }
 		provinces_to_highlight = {
 			province_id = 101
 		}
 		trigger = {
 			if = {
 				limit = { has_dlc = "Leviathan" }
-				101 = { 
+				101 = {
 					OR = {
 						has_great_project = {
 							type = venetian_arsenal_gp
@@ -1057,9 +1053,9 @@ balkan_expansion_branch = {
 				}
 			}
 			else = {
-				101 = { 
-					num_of_times_improved = 4 
-					has_dock_building_trigger = yes 
+				101 = {
+					num_of_times_improved = 4
+					has_dock_building_trigger = yes
 				}
 			}
 			101 = { has_any_ongoing_construction = no }
@@ -1095,7 +1091,7 @@ balkan_expansion_branch = {
 				}
 			}
 			country_event = {
-				id = flavor_ven.50 
+				id = flavor_ven.50
 			}
 			custom_tooltip = event_insight_flavor_ven.50
 		}
@@ -1123,13 +1119,10 @@ balkan_expansion_branch = {
 			custom_tooltip = event_insight_flavor_ven.53
 		}
 	}
-
-		ven_navy_mission_1 = {
+	ven_navy_mission_1 = {
 		icon = mission_launch_a_flagship
 		position = 11
-		required_missions = {
-			ven_flagship
-		}
+		required_missions = { ven_flagship }
 		trigger = {
 			not_in_mission_preview_mode = { key = MLO }
 			OR = {
@@ -1153,18 +1146,17 @@ balkan_expansion_branch = {
 				duration = -1
 			}
 			every_owned_province = {
-						limit = {
-							OR = {
-								has_dock_building_trigger = yes
-								has_shipyard_building_trigger = yes
-							}
-						}
-						add_base_production = 1
+				limit = {
+					OR = {
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
 					}
+				}
+				add_base_production = 1
+			}
 			add_navy_tradition = 20
 			add_mercantilism_or_monarch_power = { amount = 3 }
 			hidden_effect = {
-
 				if = {
 					limit = { has_reform = venice_merchants_reform }
 					set_country_flag = ven_trade_ideas_reward_flag
@@ -1172,7 +1164,6 @@ balkan_expansion_branch = {
 			}
 		}
 	}
-
 	ven_navy_mission_2 = {
 		icon = ven_navy_mission_2
 		position = 12
@@ -1180,18 +1171,18 @@ balkan_expansion_branch = {
 		provinces_to_highlight = {
 			province_id = 112
 			NOT = { OR ={
-					owned_by = ROOT
-					owned_by = PAP
-					owned_by = BOS
-				} }
+				owned_by = ROOT
+				owned_by = PAP
+				owned_by = BOS
+			} }
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = MLO }
 			navy_tradition = 85
 			navy_size = 175
 			if = {
-				limit = { 
-					OR = { 
+				limit = {
+					OR = {
 						has_dlc = "Rule Britannia"
 						has_dlc = "Domination"
 						has_dlc = "Golden Century"
@@ -1215,8 +1206,8 @@ balkan_expansion_branch = {
 				duration = -1
 			}
 			if = {
-				limit = { 
-					has_dlc = "Leviathan" 
+				limit = {
+					has_dlc = "Leviathan"
 					112 = {
 						NOT = {
 							has_great_project = {
@@ -1241,6 +1232,46 @@ balkan_expansion_branch = {
 			}
 		}
 	}
+	ven_standing_army_mission_2 = {
+		icon = ven_standing_army_mission_2 
+		position = 8
+		required_missions = { ITA_galleasses }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = VEN }
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = soldier_households
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				has_manpower_building_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				has_forcelimit_building_trigger = yes
+			}
+			OR = {
+				army_size = 200
+				has_global_modifier_value = {
+					which = discipline
+					value = 0.15
+				}
+				if = {
+					limit = { has_dlc = "Cradle of Civilization" }
+					army_professionalism = 0.5
+				}
+				else = { army_tradition = 70 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ven_iron_wall_of_italy_modifier
+				duration = -1
+			}
+		}
+	}
 }
 
 2 = {
@@ -1252,6 +1283,7 @@ balkan_expansion_branch = {
 			tag = MLO
 		}
 	}
+
 	ven_patronize_the_scuole_grandi = {
 		icon = ven_patronize_the_scuole_grandi
 		position = 7
@@ -1312,7 +1344,6 @@ balkan_expansion_branch = {
 		provinces_to_highlight = {
 			province_id = 101
 		}
-		
 		trigger = {
 			101 = {
 				owned_by = ROOT
@@ -1330,9 +1361,8 @@ balkan_expansion_branch = {
 	}
 	emp_lan_public_works = {
 		icon = public_works
-		required_missions = { fornicage_di_milano }
 		position = 10
-		
+		required_missions = { fornicage_di_milano }
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = { has_manufactory_trigger = yes }
@@ -1404,7 +1434,7 @@ balkan_expansion_branch = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_ven.42 #*
+				id = flavor_ven.42
 			}
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
@@ -1425,11 +1455,11 @@ balkan_expansion_branch = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = university 
+				has_building = university
 				value = 10
 			}
 			104 = {
-				owned_by = ROOT 
+				owned_by = ROOT
 				has_building = university
 			}
 		}
@@ -1507,7 +1537,7 @@ balkan_expansion_branch = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_ven.40 
+				id = flavor_ven.40
 			}
 			custom_tooltip = event_insight_flavor_ven.40
 		}
@@ -1535,7 +1565,7 @@ balkan_expansion_branch = {
 		}
 	}
 	ven_modern_banking_system = {
-		icon = medici_bank_ledgers 
+		icon = medici_bank_ledgers
 		position = 10
 		required_missions = { fornicage_di_milano }
 		trigger = {
@@ -1551,7 +1581,7 @@ balkan_expansion_branch = {
 				monthly_income = 100
 				calc_true_if = {
 					all_ally = {
-						subsidised_percent_amount = { 
+						subsidised_percent_amount = {
 							value = 0.2
 						}
 					}
@@ -1593,8 +1623,8 @@ balkan_expansion_branch = {
 	emp_lan_commission_the_mona_lisa = {
 		icon = commission_the_mona_lisa
 		position = 9
-		required_missions = { sonne }
 		completed_by = 1503.1.1
+		required_missions = { sonne }
 		trigger = {
 			OR = {
 				philosopher = 3
@@ -1611,9 +1641,8 @@ balkan_expansion_branch = {
 	}
 	emp_lan_academy_of_the_bran = {
 		icon = academy_of_the_bran
-		required_missions = { game_changer_lacerda emp_lan_commission_the_mona_lisa }
 		position = 10
-		
+		required_missions = { game_changer_lacerda emp_lan_commission_the_mona_lisa }
 		trigger = {
 			prestige = 90
 		}
@@ -1627,10 +1656,8 @@ balkan_expansion_branch = {
 	}
 	emp_lan_levee_the_arno = {
 		icon = levee_the_arno
-		required_missions = { emp_lan_academy_of_the_bran }
 		position = 11
-
-		
+		required_missions = { emp_lan_academy_of_the_bran }
 		provinces_to_highlight = {
 			province_id = 101
 		}
@@ -1649,13 +1676,13 @@ balkan_expansion_branch = {
 			}
 		}
 	}
-
 	emp_sav_powerhouse_of_the_north = {
 		icon = powerhouse_of_the_north
+		position = 12
 		required_missions = { emp_lan_levee_the_arno }
 		trigger = {
 			development_in_provinces = {
-				value = 100 #starts at 50 for either Savoy or Piedmont (lots of mountain provs, so this is hard)
+				value = 100
 				custom_trigger_tooltip = {
 					tooltip = same_area_as_capital_trigger
 					area = capital
@@ -1674,7 +1701,6 @@ balkan_expansion_branch = {
 			}
 		}
 	}
-
 }
 
 ita1 = {
@@ -1690,7 +1716,7 @@ ita1 = {
 	ITA_reform_the_military = {
 		icon = mission_italian_condottiere
 		position = 11
-		required_missions = { galley }
+		required_missions = {  }
 		trigger = {
 			army_size = 120
 			OR = {
