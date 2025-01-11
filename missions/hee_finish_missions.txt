@@ -3,7 +3,7 @@ bruh = {
 	generic = no
 	ai = yes
 	potential = {
-		is_or_was_tag = FIN 
+		is_or_was_tag = { tag = FIN } 
 	}
 	has_country_shield = yes
 	
@@ -162,8 +162,7 @@ bruh = {
 		icon = mission_pol_breadbasket_europe
 		position = 4
 		required_missions = { 
-			teu_crusader_conquer_poland
-			teu_crusader_lithuanian_crusade
+			fin_independence
 		}
 		provinces_to_highlight = {
 			region = baltic_region
@@ -327,7 +326,7 @@ bruh = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = FIN 
+		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
 
@@ -749,7 +748,7 @@ bruh = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = FIN 
+		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
 
@@ -999,7 +998,7 @@ bruh = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = FIN 
+		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
 
@@ -1187,7 +1186,7 @@ bruh = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = FIN 
+		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
 
@@ -1197,9 +1196,12 @@ bruh = {
 		required_missions = {  }
 		trigger = {
 			OR = { 
-				has_won_war_against = {
-					who = any_country
-					max_years_since = 100
+				any_country = {
+					
+					has_won_war_against = {
+						who = prev
+						max_years_since = 100
+					}
 				}
 				artillery_fraction = 0.1 
 			}
@@ -1272,12 +1274,12 @@ bruh = {
 					tooltip = swe_swedish_peasantry_ct
 					has_country_flag = had_the_dacke_feud
 				}
-			has_reform = crusader_order_reform
+			has_reform = crusading_kingdom_reform
 			religious_unity = 1 
 		}
 		effect = {
 			add_country_modifier = {
-				name = fra_heart_of_protestantism_modifier
+				name = fra_catholic_supremacy_modifier
 				duration = -1 
 			}
 		}

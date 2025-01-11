@@ -282,9 +282,9 @@ country_event = {
 
 
 country_event = {
-    id = custom_dacke_war_event.1
-    title = custom_dacke_war_event.1.t
-    desc = custom_dacke_war_event.1.d
+    id = custom_dracke_war_event.1
+    title = custom_dracke_war_event.1.t
+    desc = custom_dracke_war_event.1.d
     picture = EVENT_PICTURE_REBELS
 
     trigger = {
@@ -300,7 +300,7 @@ country_event = {
     }
 
     option = {
-        name = "custom_dacke_war_event.1.a"
+        name = "custom_dracke_war_event.1.a"
         add_advisor = {
             name = "Drake"
             type = spymaster
@@ -310,7 +310,7 @@ country_event = {
     }
 
     option = {
-        name = "custom_dacke_war_event.1.b"
+        name = "custom_dracke_war_event.1.b"
         add_advisor = {
             name = "Josh"
             type = army_reformer
