@@ -1,0 +1,1015 @@
+main_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		always = yes
+		tag = EGY
+	}
+
+	EGY_mercantile_relationships = {
+		icon = mam_mercantile_relationship
+		required_missions = {  }
+		position = 1
+		trigger = {
+			if = {
+				limit = {
+					MLO = { exists = yes }
+				}
+				root = {
+					navy_size = MLO
+				}
+				OR = {
+					AND = {
+						MLO = {
+							NOT = { alliance_with = ROOT }
+							custom_trigger_tooltip = {
+								tooltip = has_been_insulted_by_root
+								OR = {
+									has_opinion_modifier = {
+										who = ROOT
+										modifier = insulted
+									}
+									has_opinion_modifier = {
+										who = ROOT
+										modifier = scornfully_insulted
+									}
+								}
+							}
+						}
+					}
+					AND = {
+						MLO = {
+							alliance_with = ROOT 
+							OR = {
+								has_opinion = {
+									who = ROOT 
+									value = 150
+								}
+								trust = { who = ROOT value = 60 }
+								custom_trigger_tooltip = {
+									tooltip = has_grain_export_tt
+									has_ruler_modifier = grain_trade_imports_modifier
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				num_of_galley = 20
+				naval_reformer = 1
+			}
+		}
+		effect = {
+			if = {
+				limit = { alliance_with = MLO }
+				if = {
+					limit = { has_dlc = "Domination" }
+					custom_tooltip = mam_reward_alliance_yes_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_yes_tt_no_dlc }
+				tooltip = {
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT 
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+					MLO = {
+						add_dip_power = 100 
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { alliance_with = MLO }
+				}
+				if = {
+					limit = { has_dlc = "Domination" }
+					custom_tooltip = mam_reward_alliance_no_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_no_tt_no_dlc }
+				tooltip = {
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT 
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+					MLO = {
+						add_dip_power = 100 
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { alliance_with = MLO }
+					has_dlc = "Domination"
+				}
+				custom_tooltip = mam_reward_rival_yes_tt 
+				tooltip = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Domination"
+				}
+				custom_tooltip = mam_reward_rival_no_tt
+				tooltip = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_dlc = "Domination" }
+				}
+				add_mercantilism = 3
+				add_dip_power = 100
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { alliance_with = MLO }
+					MLO = {
+						add_dip_power = 100 
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_dlc = "Domination" }
+						add_country_modifier = {
+							name = mam_ven_cooperation_modifier 
+							duration = -1
+							hidden = yes
+						}
+					}
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT 
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+				}
+				else = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+		}
+	}
+
+	EGY_merchant_escorts = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { EGY_mercantile_relationships EGY_Naval_enterprise }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			num_free_building_slots = 1 
+			has_port = yes 
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_coast_defense_building_trigger = yes 
+			}
+			num_of_light_ship = 19
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = MAM 
+				}
+				custom_tooltip = mam_upgrade_national_idea_tt 
+				set_country_flag = mam_upgrade_national_idea_flag
+				hidden_effect = {
+					swap_free_idea_group = yes
+				}
+			}
+			else = { add_dip_power = 100 }
+			create_admiral = { tradition = 70 }
+		}
+	}
+	
+	EGY_the_holy_cities = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {  }
+				provinces_to_highlight = {
+			OR = {
+				province_id = 4274
+				province_id = 392
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4274 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			392 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			arabia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = flavor_mam.23 }
+			custom_tooltip = flavor_mam.23_tt
+		}
+	}
+	EGY_the_yemen_brother = {
+		icon = mam_yemen
+		position = 8
+		required_missions = { EGY_the_holy_cities }
+		provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = tihama_al_yemen_area
+					area = upper_yemen_area
+					area = yemen_area
+				}
+				value = 6
+			}
+			4280 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			country_event = { id = flavor_mam.105 }
+			custom_tooltip = flavor_mam.105_tt
+		}
+	}
+	EGY_Alexandrian_Trade = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Highway_of_an_Empire = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { EGY_Alexandrian_Trade }
+		trigger = { }
+		effect = { }
+	}
+	EGY_karime_merchant = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Reach_the_Spice_Islands = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { EGY_karime_merchant }
+		trigger = { }
+		effect = { }
+	}
+}
+
+second_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		always = yes
+		tag = EGY
+	}
+
+	EGY_Naval_enterprise = {
+		icon = mission_launch_a_flagship
+		position = 1
+		required_missions = {  }
+		trigger = {
+			navy_size_percentage = 0.9
+			navy_size = 35
+		}
+		effect = {
+			country_event = { id = flavor_mam.100 } 
+			custom_tooltip = flavor_mam.100_tt
+		}
+	}
+
+	EGY_fortify_alexandria = {
+		icon = mam_naval_enterprise
+		position = 2
+		required_missions = { EGY_Naval_enterprise }
+		provinces_to_highlight = {
+			province_id = 321
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			321 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			if = { 
+				limit = { has_dlc = "Mandate of Heaven" }
+				add_splendor = 100
+			}
+			else = { add_mil_power = 50 }
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+		}
+	}
+	
+	EGY_pearl_of_the_mediterranean = {
+		icon = mission_rb_mediterranean_authority
+		position = 3
+		required_missions = { EGY_merchant_escorts EGY_fortify_alexandria }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					is_capital = yes 
+					owner = {
+						NOT = { tag = ROOT }
+						any_owned_province = {
+							has_port = yes 
+							sea_zone = {
+								OR = {
+									area = eastern_mediterrenean_area
+									area = western_mediterrenean_area
+								}
+							}
+						}
+						navy_size = ROOT
+					}
+				}
+				AND = {
+					province_id = 358
+					NOT = { owned_by = ROOT }
+				}		
+			}
+		}
+		trigger = {
+			navy_size = 200 
+			OR = {
+				has_reform = maritime_military_reform
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+			}
+			custom_trigger_tooltip = {
+				tooltip = no_nation_med_stronger_navy_tt
+				NOT = {
+					any_known_country = {
+						any_owned_province = {
+							has_port = yes 
+							sea_zone = {
+								OR = {
+									area = eastern_mediterrenean_area
+									area = western_mediterrenean_area
+								}
+							}
+						}
+						navy_size = ROOT
+					}
+				}
+			}
+			358 = {
+				owned_by = ROOT
+				has_shipyard_building_trigger = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				if = {
+					limit = { has_reform = maritime_military_reform }
+					custom_tooltip = mam_nav_prof_reward_yes_tt
+				}
+				else = { custom_tooltip = mam_navy_prof_reward_no_tt }
+				if = {
+					limit = { full_idea_group = naval_ideas }
+					custom_tooltip = mam_naval_ideas_yes_tt
+					tooltip = {
+						358 = {
+							create_flagship = { type = heavy_ship }
+						}
+					}
+				}
+				else = { 
+					custom_tooltip = mam_naval_ideas_no_tt
+					tooltip = {
+						358 = {
+							create_flagship = { type = heavy_ship }
+						}
+					}
+				}
+				if = {
+					limit = { full_idea_group = maritime_ideas }
+					custom_tooltip = mam_maritime_ideas_yes_tt
+					tooltip = {
+						358 = {
+							create_flagship = { type = light_ship }
+						}
+					}
+				}
+				else = { 
+					custom_tooltip = mam_maritime_ideas_no_tt
+					tooltip = {
+						358 = {
+							create_flagship = { type = light_ship }
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_reform = maritime_military_reform }
+						set_country_flag = improve_nav_prof_flag
+					}
+					if = {
+						limit = { full_idea_group = naval_ideas }
+						358 = {
+							create_flagship = { type = heavy_ship }
+						}
+					}
+					if = {
+						limit = { full_idea_group = maritime_ideas }
+						358 = {
+							create_flagship = { type = light_ship }
+						}
+					}
+				}
+			}
+			else = {
+				add_navy_tradition = 25
+				add_mercantilism = 3
+			}
+		}	
+	}
+	
+	EGY_unite_arabia = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { EGY_the_holy_cities }
+		trigger = { }
+		effect = { }
+	}
+	EGY_the_lion_in_the_south = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { EGY_unite_arabia EGY_the_yemen_brother }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Father_of_African_Rivers = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { EGY_Alexandrian_Trade }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Harness_the_Spice_Trade = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { EGY_karime_merchant }
+		trigger = { }
+		effect = { }
+	}
+	EGY_base_in_sumatra = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { EGY_Harness_the_Spice_Trade }
+		trigger = { }
+		effect = { }
+	}
+	EGY_indonesian = {
+		icon = mission_build_up_to_force_limit
+		position = 16
+		required_missions = { EGY_Reach_the_Spice_Islands EGY_base_in_sumatra }
+		trigger = { }
+		effect = { }
+	}
+}
+
+third_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		always = yes
+		tag = EGY
+	}
+
+	EGY_army = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			syria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Egypt should survive...
+		}
+	}
+
+	EGY_the_northern_territories = {
+		icon = mam_reincorporate_northern_territories
+		position = 2
+		required_missions = { EGY_army }
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				province_id = 1849 
+				province_id = 2313 
+				province_id = 377 
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					NOT = { is_year = 1446 }
+				}
+							}
+			OR = {
+				if = {
+					limit = { 
+						OR = { 
+							has_dlc = "Res Publica"
+							has_dlc = "Common Sense"
+						}
+					}
+					national_focus = ADM
+				}
+				has_adm_advisor = yes 
+				stability = 1
+			}
+			syria_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			aleppo_area = {
+				type = all 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					province_id = 4298
+				} 
+			}
+			if = {
+				limit = {
+					SYR = { is_subject_of = ROOT }
+				}
+				SYR = {
+					NOT = { liberty_desire = 50 }
+				}
+			}
+			else_if = {
+				limit = {
+					SYR = { is_subject_of = ROOT }
+				}
+				SYR = {
+					NOT = { liberty_desire = 25 }
+				}
+			}
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aleppo_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					province_id = 4298
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = mam_intervened_syria
+			dulkadir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			germiyan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aydin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hudavendigar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					4298 = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				}
+				4298 = { add_permanent_claim = ROOT }
+			}
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				syria_area = { add_prosperity = 100 }
+				aleppo_area = { add_prosperity = 100 }
+			}
+			else = {
+				382 = { add_random_development = 1 }
+				377 = { add_random_development = 1 }
+			}
+		}
+	}
+
+	EGY_gates_of_nikea = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { EGY_the_northern_territories}
+		provinces_to_highlight = {
+			area = Hüdavendigar_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			Hüdavendigar_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = flavor_mam.112 }
+			custom_tooltip = flavor_mam.112_tt
+		}
+	}
+	
+	EGY_the_imperial_gambit = {
+		icon = mam_great_power
+		position = 4
+		required_missions = { EGY_pearl_of_the_mediterranean EGY_gates_of_nikea }
+		
+		trigger = {
+			if = {
+				limit = { 
+					OR = {
+						has_dlc = "Rights of Man"
+						has_dlc = "Emperor"
+					}
+					has_dlc = "Emperor"
+				}
+				OR = {
+					is_hegemon = yes 
+					NOT = { great_power_rank = 2 }
+				}
+			}
+			else_if = {
+				limit = { has_dlc = "Rights of Man" }
+				NOT = { great_power_rank = 2 }
+			} 
+			else = { total_development = 1500 }
+		}
+		effect = {
+			if = {
+				limit = { 
+					tag = MAM 
+					has_government_mechanic = mamluk_mechanic 
+				}
+				custom_tooltip = promote_culture_government_duration_doubled_tt
+				set_country_flag = promote_culture_government_duration_doubled_flag
+				add_government_power = { 
+					mechanic_type = mamluk_mechanic
+					power_type = mamluk_adm_power
+					value = 50
+				} 
+				add_government_power = { 
+					mechanic_type = mamluk_mechanic
+					power_type = mamluk_dip_power
+					value = 50
+				} 
+				add_government_power = { 
+					mechanic_type = mamluk_mechanic
+					power_type = mamluk_mil_power
+					value = 50
+				} 
+			}
+			else_if = {
+				limit = { 
+					tag = MAM 
+					NOT = { has_government_mechanic = mamluk_mechanic }
+				}
+				add_prestige_or_monarch_power = { amount = 50 }
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+			if = {
+				limit = { 
+					tag = EGY 
+					has_government_mechanic = egyptian_westernization
+				}
+				if = {
+					limit = { has_dlc = "Rule Britannia" }
+					change_innovativeness = 5
+				}
+				custom_tooltip = egyptian_westernization_costs_less_tt
+				set_country_flag = egyptian_westernization_costs_less_flag
+				add_government_power = { 
+					mechanic_type = egyptian_westernization
+					power_type = egyptian_westernization
+					value = 25
+				} 
+			}
+			 {
+			
+				add_prestige_or_monarch_power = { amount = 50 }
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+	EGY_renovating_the_great_library = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	EGY_the_ancestors_capital = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	EGY_take_over_the_horn_of_africa = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { EGY_the_ancestors_capital }
+		trigger = { }
+		effect = { }
+	}
+	EGY_conquest_adal = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { EGY_take_over_the_horn_of_africa }
+		trigger = { }
+		effect = { }
+	}
+	EGY_beyond_the_nile = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { EGY_the_lion_in_the_south EGY_conquest_adal EGY_the_riches_of_kaffa }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Presence_in_Aden = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { EGY_beyond_the_nile EGY_Alexandrian_Trade }
+		trigger = { }
+		effect = { }
+	}
+}
+
+fourth_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		always = yes
+		tag = EGY
+	}
+
+	EGY_kashifs_of_egypt = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { EGY_the_grain_trade }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Unify_the_Tribes = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { EGY_the_ancestors_capital }
+		trigger = { }
+		effect = { }
+	}
+	EGY_restore_adulis = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { EGY_Unify_the_Tribes }
+		trigger = { }
+		effect = { }
+	}
+	EGY_the_riches_of_kaffa = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { EGY_restore_adulis }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Cultivate_the_Delta = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { EGY_Alexandrian_Trade }
+		trigger = { }
+		effect = { }
+	}
+	EGY_A_Blessed_Empire = {
+		icon = mission_build_up_to_force_limit
+		position = 17
+		required_missions = { EGY_indonesian EGY_Presence_in_Aden EGY_Center_of_the_World }
+		trigger = { }
+		effect = { }
+	}
+}
+
+fifth_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		always = yes
+		tag = EGY
+	}
+
+	EGY_thousand_minarets = {
+		icon = mam_city_thousand_minarets
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 358 
+		}
+		trigger = {
+			358 = { 
+				owned_by = ROOT 
+				OR = {
+					num_of_times_improved = 8
+					num_of_buildings_in_province = 3
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					358 = {
+						has_province_modifier = public_works_of_cairo 
+					}
+				}
+				358 = { add_center_of_trade_level = 1 }
+			}
+			else = {
+				country_event = { id = flavor_mam.2 }
+				custom_tooltip = flavor_mam.2_tt 
+			}
+		}
+	}
+
+	EGY_the_grain_trade = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { EGY_thousand_minarets }
+		trigger = { }
+		effect = { }
+	}
+	EGY_assign_a_waqf = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { EGY_the_grain_trade EGY_kashifs_of_egypt }
+		trigger = { }
+		effect = { }
+	}
+	EGY_Center_of_the_World = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { EGY_assign_a_waqf EGY_renovating_the_great_library }
+		trigger = { }
+		effect = { }
+	}
+}
+
