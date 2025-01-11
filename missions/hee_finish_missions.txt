@@ -1274,7 +1274,7 @@ bruh = {
 					tooltip = swe_swedish_peasantry_ct
 					has_country_flag = had_the_dacke_feud
 				}
-			has_reform = crusading_kingdom_reform
+			mission_completed = teu_crusader_push_into_ruthenia
 			religious_unity = 1 
 		}
 		effect = {
