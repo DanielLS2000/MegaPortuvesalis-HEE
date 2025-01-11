@@ -158,46 +158,55 @@ bruh = {
 		}
 	}
 
-	fra_movement_centralization = { 
-		icon = reform_bergordnung
+	teu_crusader_push_into_ruthenia = {
+		icon = mission_pol_breadbasket_europe
 		position = 4
-		required_missions = { fin_independence }
-		trigger = {
-			NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
-			custom_trigger_tooltip = {
-				tooltip = centralize_fra_tt
-				NOT = {
-					any_subject_country = {
-						capital_scope = {
-							region = france_region
-						}
-					}
-				}
-			}
-			total_development = 500 
-			crown_land_share = 50 
+		required_missions = { 
+			teu_crusader_conquer_poland
+			teu_crusader_lithuanian_crusade
 		}
-		effect = { 
-			if = {
-				limit = { has_reform = feudal_france_reform }
-				#remove_government_reform = feudal_france_reform 
-				add_government_reform = absolutist_france_reform
+		provinces_to_highlight = {
+			region = baltic_region
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { religion = ROOT }
 			}
-			else = { change_government_reform_progress = 100 }
-			hidden_effect = {
-				unlock_government_reform = {
-					government_reform = absolutist_france_reform
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = TEU }
+			religion = catholic
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = baltic_region
+				religion = ROOT
+				value = 25
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_teu.39
+			}
+			if = {
+				limit = {
+					mission_completed = teu_crusader_conquer_crimea
+				}
+				ural_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
 			}
-			#custom_tooltip = fra_5_gov_cap_adm_adv_tt 
-			#set_country_flag = 5_gov_cap_bonus_flag 
+			else = {
+				add_adm_power = 100
+			}
 		}
 	}
 
 	fin_dalaskrogen = {
 		icon = mission_dalaskogen
 		position = 5
-		required_missions = { fra_movement_centralization }
+		required_missions = { teu_crusader_push_into_ruthenia }
 		provinces_to_highlight = { 
 			province_id = 8 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1259,83 +1268,17 @@ bruh = {
 		position = 5
 		required_missions = {  }
 		trigger = {
-			OR = { 
-				custom_trigger_tooltip = {
-					tooltip = fra_completed_wars_religion
-					has_country_flag = FRA_wars_of_religion_ended 
+			custom_trigger_tooltip = {
+					tooltip = swe_swedish_peasantry_ct
+					has_country_flag = had_the_dacke_feud
 				}
-				AND = { 
-					current_age = age_of_absolutism 
-					OR = { 
-						full_idea_group = religious_ideas 
-						full_idea_group = humanist_ideas 
-					}
-				}
-				AND = { 
-					current_age = age_of_revolutions 
-					OR = { 
-						full_idea_group = religious_ideas 
-						full_idea_group = humanist_ideas 
-					}
-				}
-			}
+			has_reform = crusader_order_reform
 			religious_unity = 1 
 		}
 		effect = {
-			custom_tooltip = fra_catholic_tt
-			tooltip = {
-				add_country_modifier = {
-					name = fra_catholic_supremacy_modifier
-					duration = -1 
-				}
-				set_defender_of_the_faith = {
-					who = ROOT 
-					religion = ROOT 
-				}
-			}
-			custom_tooltip = fra_protestant_tt
-			tooltip = {
-				add_country_modifier = {
-					name = fra_heart_of_protestantism_modifier
-					duration = -1 
-				}
-			}
-			custom_tooltip = fra_moderate_tt
-			tooltip = { 
-				add_country_modifier = { 
-					name = fra_moderate_path_modifier
-					duration = -1 
-				}
-			}
-			
-			hidden_effect = {
-				if = {
-					limit = { has_country_flag = FRA_supports_protestant_majority }
-					add_country_modifier = {
-						name = fra_heart_of_protestantism_modifier
-						duration = -1 
-					}
-					clr_country_flag = FRA_supports_protestant_majority
-				}
-				else_if = { 	
-					limit = { has_country_flag = FRA_supports_catholic_majority }
-					add_country_modifier = {
-						name = fra_catholic_supremacy_modifier
-						duration = -1
-					}
-					set_defender_of_the_faith = {
-						who = ROOT 
-						religion = ROOT 
-					}
-					clr_country_flag = FRA_supports_catholic_majority
-				}
-				else = {
-					add_country_modifier = { 
-						name = fra_moderate_path_modifier
-						duration = -1 
-					}
-					clr_country_flag = supports_french_moderates
-				}
+			add_country_modifier = {
+				name = fra_heart_of_protestantism_modifier
+				duration = -1 
 			}
 		}
 	}

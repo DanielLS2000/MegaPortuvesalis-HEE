@@ -1,19 +1,12 @@
 the_dacke_feud = {
 	potential = {
-		tag = SWE
+		is_or_was_tag = { tag = FIN }
 		normal_or_historical_nations = yes
 		is_free_or_tributary_trigger = yes
 		uses_doom = no
 		NOT = { has_country_flag = had_the_dacke_feud }
 		any_owned_province = {
-			OR = {
-				area = norrland_area
-				area = svealand_area
-				area = ostra_svealand_area
-				area = gotaland_area
-				area = vastra_gotaland_area
-				area = skaneland_area
-			}
+			region = scandinavia_region
 		}
 		NOT = { has_country_modifier = swe_support_of_the_peasantry }
 	}
@@ -24,10 +17,6 @@ the_dacke_feud = {
 		is_religion_enabled = protestant
 		NOT = { religious_unity = 0.8 }
 		NOT = { average_home_autonomy = 50 }
-		OR = {
-			has_country_modifier = vasa_centralization_reforms
-			NOT = { average_home_autonomy = 10 }
-		}
 	}
 	
 	
