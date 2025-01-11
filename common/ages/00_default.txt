@@ -808,7 +808,7 @@ age_of_absolutism = {
 			}
 			allow = {
 				OR = {
-					tag = NED
+					tag = LOT
 					AND = {
 						government_rank = 2
 						OR = {
