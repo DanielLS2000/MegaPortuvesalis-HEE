@@ -1690,9 +1690,12 @@ holy_imperial_monarchy_reform = {
 
 burgundian_state_reform = {
 	icon = "burgundian_state"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
-		primary_culture = burgundian
+		OR = {
+			primary_culture = burgundian
+			primary_culture = cosmopolitan_french
+		}
 	}
 	nation_designer_trigger = {
 		primary_culture = burgundian
@@ -1706,7 +1709,7 @@ burgundian_state_reform = {
 		years_to_integrate_personal_union = -5
 	}
 	ai = {
-		factor = 1
+		factor = 0
 	}
 }
 
