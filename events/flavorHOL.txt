@@ -19,7 +19,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LOT
-			tag = HOL
+			tag = KOL
 		}
 		is_year = 1495
 		NOT = {

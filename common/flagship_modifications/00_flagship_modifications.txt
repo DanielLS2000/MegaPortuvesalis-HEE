@@ -70,7 +70,7 @@ command_aftercastle = {
         OR = {
             NOT = {
                 OR = {
-                    tag = HOL
+                    tag = KOL
                     tag = LOT
                 }
             }
@@ -306,7 +306,7 @@ spanish_mass_load_cannons = {
 dutch_courage = {
     trigger = {
         OR = {
-            tag = HOL
+            tag = KOL
             tag = LOT
         }
         normal_or_historical_nations = yes
@@ -323,7 +323,7 @@ dutch_courage = {
         modifier = {
             factor = 10
             OR = {
-                tag = HOL
+                tag = KOL
                 tag = LOT
             }
         }

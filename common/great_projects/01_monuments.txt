@@ -12138,7 +12138,7 @@ dutch_polders = {
 
 	build_trigger = {
 		OR = {
-			culture = dutch
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			culture = flemish
 			culture = frisian
 			culture = roman
@@ -12154,7 +12154,7 @@ dutch_polders = {
 
 	can_use_modifiers_trigger = {
 		OR = {
-			culture = dutch
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			culture = flemish
 			culture = frisian
 			culture = roman
@@ -12164,7 +12164,7 @@ dutch_polders = {
 
 	can_upgrade_trigger = {
 		OR = {
-			culture = dutch
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			culture = flemish
 			culture = frisian
 			culture = roman
@@ -20570,22 +20570,22 @@ amsterdam_bourse = {
 	type = monument
 	build_trigger = {
 		OR = { 
-			culture = dutch
-			owner = { accepted_culture = dutch } 
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+			owner = { accepted_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1 } 
 		}
 	}
 	
 	can_use_modifiers_trigger = {
 		OR = { 
-			culture = dutch
-			owner = { accepted_culture = dutch } 
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+			owner = { accepted_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1 } 
 		}
 	}
 
 	can_upgrade_trigger = {
 		OR = { 
-			culture = dutch
-			owner = { accepted_culture = dutch } 
+			culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+			owner = { accepted_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1 } 
 		}
 	}
 

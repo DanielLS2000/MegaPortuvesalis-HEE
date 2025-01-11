@@ -1756,7 +1756,7 @@ stadthalter_monarchy_reform = {
 		OR = {
 			AND = {
 				OR = {
-					primary_culture = dutch
+					primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 					primary_culture = frisian
 					primary_culture = flemish
 				}

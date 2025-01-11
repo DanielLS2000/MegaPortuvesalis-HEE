@@ -3349,7 +3349,7 @@ staatse_leger_reform = {
 	potential = {
 		has_dlc = "Domination"
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 		}
 	}
@@ -3404,7 +3404,7 @@ watergeuzen_reform = {
 	potential = {
 		has_dlc = "Domination"
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 		}
 	}
