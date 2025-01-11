@@ -545,7 +545,7 @@ NED_2 = {
 		trigger = {  
 			OR = {
 				army_size_percentage = 1
-				army_size = 10
+				army_size = 12
 			}
 		} 
 
@@ -1543,7 +1543,150 @@ NED_3_1 = {
 		has_dlc = "Winds of Change"
 		tag = LOT
 	}
+	NED_english_channel_dominance = {
+		icon = mission_control_the_channel
+		position = 4
+		required_missions = { NED_unification_of_low_countries } 
+		provinces_to_highlight = {
+			province_id = 1269
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+		} 
+		trigger = {  
+			1269 = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+			num_of_light_ship = 30
+		} 
 
+		effect = {  
+			custom_tooltip = NED_GAIN_DIPLO_POWER_PER_ENGLISH_COT
+			custom_tooltip = " "
+			define_advisor = {
+				type = trader
+				skill = 2
+				cost_multiplier = 0.5
+			}
+			hidden_effect = {
+				1269 = {
+					every_trade_node_member_province = {
+						limit = {
+							province_has_center_of_trade_of_level = 1
+							owned_by = ROOT
+						}
+						owner = {
+							add_dip_power = 25
+						}
+					}
+				}
+			}
+		} 
+	}
+
+	NED_glorious_revolution = {
+		icon = the_glorious_revolution
+		position = 5
+		required_missions = {
+			NED_english_channel_dominance
+			NED_english_relations
+		}
+		provinces_to_highlight = {  
+			if = {
+				limit = {
+					exists = ENG
+					NOT = { exists = GBR }
+				}
+				owner = {
+					tag = ENG
+				}
+			}
+			else_if = {
+				limit = {
+					exists = GBR
+				}
+				owner = {
+					tag = GBR
+				}
+			}
+			else = {
+				OR = {
+					area = home_counties_area
+					area = east_anglia_area
+					area = wessex_area
+					area = west_midlands_area
+					area = east_midlands_area
+					area = wales_area
+					area = yorkshire_area
+					area = scottish_marches_area
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				senior_union_with = ENG
+				senior_union_with = GBR
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					OR = {
+						area = home_counties_area
+						area = east_anglia_area
+						area = wessex_area
+						area = west_midlands_area
+						area = east_midlands_area
+						area = wales_area
+						area = yorkshire_area
+						area = scottish_marches_area
+					}
+				}
+			}
+		} 
+
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_ENGLAND_PU
+				first_limit = "
+					OR = {
+						senior_union_with = ENG
+						senior_union_with = GBR
+					}
+				"
+				first_effect = "
+					ned_glorious_revolution_effect_opt_1 = yes
+				"
+				second_custom_tooltip = NED_IF_CONQUEST
+				second_limit = "
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						OR = {
+							area = home_counties_area
+							area = east_anglia_area
+							area = wessex_area
+							area = west_midlands_area
+							area = east_midlands_area
+							area = wales_area
+							area = yorkshire_area
+							area = scottish_marches_area
+						}
+					}
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = ned_conquest_of_england
+						duration = 5475
+					}
+					add_accepted_culture = english
+				"
+			}
+		}
+	}
 	NED_black_devils = {
 		icon = mission_marines
 		position = 8
@@ -1955,6 +2098,164 @@ NED_3_1 = {
 		} 
 	}
 }
+NED_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			TAG = KOL
+			tag = LOT
+		}
+	} 
+	NED_end_sound_toll = {
+		icon = mission_end_the_sound_toll
+		position = 2
+		required_missions = { NED_hansa_relations } 
+		provinces_to_highlight = {  
+			province_id = 12
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			tag = NED
+			12 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					AND = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+					}
+				}
+			}
+		} 
+
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_COMPLETED_THROUGH_DIPLOMACY
+				first_limit = "
+					12 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+					}
+				"
+				first_effect = "
+					12 = {
+						add_province_triggered_modifier = ned_sound_toll_ties
+						custom_tooltip = NED_PROVINCE_TRIGGERED_MODIFIER_GRANTS_TRADE_POWER
+					}
+				"
+				second_custom_tooltip = NED_IF_COMPLETED_THROUGH_HOSTILITY
+				second_limit = "
+					12 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				"
+				second_effect = "
+					country_event_with_option_insight = {
+						id = dutch_mission_events.4
+						option_1 = \"
+							12 = {
+								add_or_upgrade_trade_building = yes
+							}
+							custom_tooltip = NED_LOSE_RELATIONS_WITH_LUBECK_COUNTRIES
+						\"
+						option_2 = \"
+							12 = {
+								remove_province_modifier = sound_toll
+								add_or_upgrade_production_building = yes
+							}
+							add_dip_power = 75
+							custom_tooltip = NED_GAIN_RELATIONS_WITH_LUBECK_COUNTRIES
+						\"
+					}
+				"
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						12 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					country_event = {
+						id = dutch_mission_events.4
+					}
+				}
+			}
+		} 
+	}
+
+	NED_baltic_supremacy = {
+		icon = mission_rb_control_the_hansa
+		position = 3
+		required_missions = { NED_sail_towards_lubeck } 
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		} 
+
+		trigger = {  
+			45 = {
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		} 
+
+		effect = {  
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_NO_LUBECK
+				first_limit = "
+					OR = {
+						NOT = {
+							exists = HSA
+						}
+						is_trade_league_leader = no
+					}
+				"
+				first_effect = "
+					add_country_modifier_for_age = {
+						name = ned_connection_to_the_baltic
+						age = age_of_reformation
+					}
+				"
+			}
+		} 
+	}
+}
 
 NED_4_1 = {
 	slot = 4
@@ -1968,7 +2269,107 @@ NED_4_1 = {
 		has_dlc = "Winds of Change"
 		tag = LOT
 	} 
-
+	NED_english_relations = {
+		icon = english_alliance
+		position = 4
+		provinces_to_highlight = {  } 
+	
+		trigger = {  
+			if = {
+				limit = {
+					exists = ENG
+					NOT = {
+						exists = GBR
+					}
+				}
+				naval_strength = { who = ENG value = 1.1 }
+				OR = {
+					ENG = { is_subject = yes }
+					has_spy_network_in = { who = ENG value = 30 }
+				}
+				total_development = ENG
+			}
+			else_if = {
+				limit = {
+					exists = GBR
+				}
+				naval_strength = { who = GBR value = 1.1 }
+				OR = {
+					GBR = { is_subject = yes }
+					has_spy_network_in = { who = GBR value = 30 }
+				}
+				total_development = GBR
+			}
+			else = {
+				num_of_heavy_ship = 20
+			}
+		} 
+	
+		effect = {  
+			if = {
+				limit = {
+					valid_for_personal_unions_trigger = yes
+					exists = ENG
+					ENG = {
+						valid_for_personal_unions_trigger = yes
+					}
+					NOT = {
+						exists = GBR
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					target = ENG
+					months = 240
+				}
+				
+				custom_tooltip = SEPERATOR_TOOLTIP
+				
+				add_country_modifier = {
+					name = ned_devise_glorious_crossing
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = {
+					valid_for_personal_unions_trigger = yes
+					exists = GBR
+					GBR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					target = GBR
+					months = 240
+				}
+				
+				custom_tooltip = SEPERATOR_TOOLTIP
+				
+				add_country_modifier = {
+					name = ned_devise_glorious_crossing
+					duration = 7300
+				}
+			}
+			else = {
+				give_claims = { area = home_counties_area }
+				give_claims = { area = east_anglia_area }
+				give_claims = { area = wessex_area }
+				give_claims = { area = west_midlands_area }
+				give_claims = { area = east_midlands_area }
+				give_claims = { area = wales_area }
+				give_claims = { area = yorkshire_area }
+				give_claims = { area = scottish_marches_area }
+				
+				custom_tooltip = SEPERATOR_TOOLTIP
+				
+				add_country_modifier = {
+					name = ned_preparation_of_british_conquest
+					duration = 7300
+				}
+			}
+		} 
+	}
 	NED_military_reforms = {
 		icon = army_reforms
 		position = 1
@@ -2457,7 +2858,200 @@ NED_4_1 = {
 		} 
 	}
 }
+NED_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			TAG = KOL
+			tag = LOT
+		}
+	} 
+	NED_hansa_relations = {
+		icon = mission_bane_of_the_hansa
+		position = 1
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
+		trigger = {  
+			OR = {
+				45 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				45 = {
+					trade_share = {
+						country = ROOT
+						share = 5
+					}
+				}
+				45 = {
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+						alliance_with = ROOT
+					}
+				}
+			}
+		} 
+
+		effect = {  
+			add_mercantilism_or_monarch_power = { amount = 2 }
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_COMPLETED_THROUGH_DIPLOMACY
+				first_limit = "
+					45 = {
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+							alliance_with = ROOT
+						}
+					}
+				"
+				first_effect = "
+					45 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 60
+							key = NED_HANSA_ALLIANCES
+						}
+					}
+					add_dip_power = 100
+				"
+				second_custom_tooltip = NED_IF_COMPLETED_THROUGH_HOSTILITY
+				second_limit = "
+					OR = {
+						45 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						45 = {
+							trade_share = {
+								country = ROOT
+								share = 5
+							}
+						}
+					}
+				"
+				second_effect = "
+					give_claims = { id = 45 }
+					give_claims = { id = 25 }
+					45 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 30
+							key = NED_CHALLENGE_HANSA
+						}
+					}
+				"
+			}
+		} 
+	}
+
+	NED_sail_towards_lubeck = {
+		icon = support_the_bulk_trades
+		position = 2
+		required_missions = { NED_hansa_relations } 
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		} 
+
+		trigger = {  
+			num_of_light_ship = 30
+			45 = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		} 
+
+		effect = {  
+			capital_scope = {
+				add_trade_node_income = 3
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			custom_tooltip = NED_GRANT_CLAIMS_ON_ALL_BATLIC_COT_PROVINCES
+			hidden_effect = {
+				1926 = {
+					every_trade_node_member_province = { 
+						limit = {
+							province_has_center_of_trade_of_level = 1
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		} 
+	}
+
+	NED_securing_baltic_grain = {
+		icon = mission_pol_breadbasket_europe
+		position = 4
+		required_missions = { NED_sail_towards_lubeck }
+
+		trigger = { 
+			trading_bonus = {
+				trade_goods = grain
+				value = yes
+			}
+			1 = {
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+				is_strongest_trade_power = ROOT
+			}
+		} 
+
+		effect = {  
+			distribute_development = {
+				type = production
+				amount = 5
+			}
+			custom_tooltip = NED_GRANT_BONUS_ON_ALL_LOW_COUNTRIES_FARMLANDS_PROVINCES
+			tooltip = {
+				add_province_modifier = {
+					name = ned_baltic_grain_supply
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = low_countries_region
+						has_terrain = farmlands
+					}
+					add_province_modifier = {
+						name = ned_baltic_grain_supply
+						duration = -1
+					}
+				}
+			}
+		} 
+	}
+}
 NED_5_1 = {
 	slot = 5
 	generic = no
@@ -2473,7 +3067,7 @@ NED_5_1 = {
 
 	NED_garrision_system = {
 		icon = fixed_garrison_system
-		position = 2
+		position = 6
 		required_missions = { NED_military_reforms }
 
 		trigger = {  
@@ -2525,7 +3119,7 @@ NED_5_1 = {
 
 	NED_dutch_engineering = {
 		icon = dutch_engineering
-		position = 3
+		position = 7
 		required_missions = { NED_garrision_system } 
 		
 		trigger = {  
@@ -2727,29 +3321,5 @@ NED_5_1 = {
 				add_province_triggered_modifier = ned_cape_city
 			}
 		} 
-	}
-}
-NED_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = { 
-		has_dlc = "Winds of Change"
-		OR = {
-			tag = KOL
-			tag = LOT
-		}
-	}
-}
-NED_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = { 
-		has_dlc = "Winds of Change"
-		OR = {
-			tag = KOL
-			tag = LOT
-		}
 	}
 }
