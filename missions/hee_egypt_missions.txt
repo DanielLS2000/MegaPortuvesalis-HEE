@@ -1543,7 +1543,7 @@
 	mam_center_arab_islamic_world = {
 		icon = mission_restore_faith_in_the_throne
 		position = 12
-		required_missions = { mam_dar_al_hadith_turba mam_khass_al_sultan mam_assign_waqf }
+		required_missions = { mam_dar_al_hadith_turba mam_kashifs_egypt mam_assign_waqf }
 		provinces_to_highlight = {
 			if = {
 				limit = {
