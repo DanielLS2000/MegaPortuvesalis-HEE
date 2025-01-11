@@ -41,7 +41,7 @@ country_event = {
 			define_advisor = {
 				type = philosopher
 				name = "Erasmus"
-				culture = dutch
+				culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 				religion = catholic
 				discount = yes
 				skill = 3
@@ -92,7 +92,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Hugo Grotius"
-				culture = dutch
+				culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 				discount = yes
 				skill = 3
 				location = 97 #Holland
@@ -135,7 +135,7 @@ country_event = {
 			define_advisor = {
 				type = natural_scientist
 				name = "Christiaan Huygens"
-				culture = dutch
+				culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 				discount = yes
 				skill = 2
 				location = 97
@@ -1426,7 +1426,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { primary_culture = dutch }
+		NOT = { primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1 }
 		owns_core_province = 99
 		owns_core_province = 100
 		NOT = { is_year = 1523 }
@@ -1566,7 +1566,7 @@ country_event = { #The Shifting Winds of Trade
 	fire_only_once = yes
 	trigger = {
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 			primary_culture = frisian
 		}
@@ -1618,7 +1618,7 @@ country_event = {
 			num_of_buildings_in_province = 4
 		}
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 			primary_culture = frisian
 		}
@@ -1698,7 +1698,7 @@ country_event = { #The Port of Amsterdam
 
 	trigger = {
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 			primary_culture = frisian
 		}
@@ -1729,7 +1729,7 @@ country_event = { #Rempbrant
 	fire_only_once = yes
 	trigger = {
 		OR = {
-			primary_culture = dutch
+			primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			primary_culture = flemish
 			primary_culture = frisian
 		}
