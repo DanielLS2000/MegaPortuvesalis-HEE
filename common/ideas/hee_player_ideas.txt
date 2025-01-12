@@ -1,0 +1,125 @@
+BOH_ideas = {
+	start = {
+		advisor_cost = -0.1
+		improve_relation_modifier = 0.2
+	}
+	
+	bonus = {
+		same_culture_advisor_cost = -0.25
+	}
+	
+	trigger = {
+		tag = BOH
+	}
+	free = yes
+	
+	boh_empire_factory = {
+		production_efficiency = 0.1
+	}
+	boh_czech_nationalism = {
+		land_morale = 0.15
+	}
+	boh_bohemian_silver = {
+		inflation_reduction = 0.05
+        interest = -0.5
+	}
+	boh_winged_hussars = {
+		cavalry_power = 0.3
+		can_recruit_hussars = yes
+	}
+	boh_wagenburg = {
+		global_manpower_modifier = 0.25
+        infantry_power = 0.1
+	}
+	boh_university_of_prague = {
+		technology_cost = -0.1
+	}
+	boh_order_of_the_eagle = {
+		discipline = 0.05
+        reinforce_speed = 0.3
+	}
+}
+
+BOH2_ideas = {
+	start = {
+		advisor_cost = -0.1
+		improve_relation_modifier = 0.2
+	}
+	
+	bonus = {
+		same_culture_advisor_cost = -0.25
+	}
+	
+	trigger = {
+		tag = BOH
+		has_country_flag = boh_empowered_ni
+	}
+	free = yes
+	
+	boh_empire_factory = {
+		production_efficiency = 0.1
+	}
+	boh_czech_nationalism2 = {
+		land_morale = 0.15
+        development_cost_in_primary_culture = -0.05
+	}
+	boh_bohemian_silver = {
+		inflation_reduction = -0.05
+        interest = -0.5
+	}
+	boh_winged_hussars = {
+		cavalry_power = 0.3
+		can_recruit_hussars = yes
+	}
+	boh_wagenburg = {
+		global_manpower_modifier = 0.25
+        infantry_power = 0.1
+	}
+	boh_university_of_prague = {
+		technology_cost = -0.1
+	}
+	boh_order_of_the_eagle = {
+		discipline = 0.05
+        reinforce_speed = 0.3
+	}
+}
+
+# Bosnia
+BOS_ideas = {
+	start = {	
+		army_tradition_decay = -0.01
+		cavalry_power = 0.2	
+	}
+	
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = BOS
+	}
+	free = yes
+	
+	bos_renaissance = {
+		technology_cost = -0.05
+	}
+	bos_pride_of_fleet = {
+		navy_tradition = 0.5
+	}
+	bos_increase_recruits = {
+		global_manpower_modifier = 0.2
+	}
+	bos_prussia_of_balkans = {
+		discipline = 0.05
+	}
+	bos_pomoc = {
+		production_efficiency = 0.1
+	}
+	bos_merchant_fleet = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	bos_christian_bastion = {
+		hostile_attrition = 1
+		defensiveness = 0.15
+	}
+}

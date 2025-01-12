@@ -117,8 +117,10 @@
  flavor_eng.10006.t:0 "The Surrender of Dorset"
  flavor_eng.10006.d:0 "In exchange for accepting the treaty of Tours in 1444 the county of Dorset was promised to Wales. In practice, however, this has still not come to pass. No English governor wants to be remembered as the one to surrender Dorset and in [Root.Capital.GetCapitalName] prominent nobles are claiming that our negotiator, William de la Pole, had no mandate to make this concession in the first place. Welsh emissaries have repeatedly tried to remind us of this ever since the signing and [WLS.Monarch.GetName] has now finally taken matters in his own hands and shown up at the walls of Le Mans, demanding the city to surrender. Unless we surrender Dorset to the Welsh we are very likely looking at a hasty resumption of hostilities."
  flavor_eng.10006.a:0 "We must honor our obligations."
- flavor_eng.10006.b:0 "We will not surrender an inch of territory to the Wales!"
+ flavor_eng.10006.b:0 "We will not surrender an inch of territory to the Welsh!"
  flavor_eng.10007.t:0 "The Surrender of Dorset"
+ flavor_eng.10007.a:0 "Let's teach them how to war"
+ flavor_eng.10007.b:0 "It's not worth dying for Dorset"
 
  eng_rb_war_of_roses_title:0 "Dance of the Dragons"
  eng_rb_war_of_roses_desc:0 "This is a conflict that many have long seen coming. Our people must be safely shepherded through this period of uncertainty one way or another."

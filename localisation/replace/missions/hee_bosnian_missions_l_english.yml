@@ -173,7 +173,22 @@
  flavor_hun.53.e:0 "The current focus works well for us"
 
  # Decisions
- 
+
+ # ideas
+ bos_renaissance:0 "Bosnian Renaissance"
+ bos_pride_of_fleet:0 "Pride of the Fleet"
+ bos_increase_recruits:0 "Increase Recruitment"
+ bos_prussia_of_balkans:0 "Prusje na Balkanu"
+ bos_pomoc:0 "Pomoc za Siromasne"
+ bos_merchant_fleet:0 "Merchant Fleet"
+ bos_christian_bastion:0 "Krstjanov Bastion"
+ bos_renaissance_desc:0 "The Bosnian Renaissance was marked by a cultural and artistic flowering in the Balkans, fueled by the unique blend of Christian and Islamic influences. Literature, architecture and science prospered, placing Bosnia as a cultural center in the region."
+ bos_pride_of_fleet_desc:0 "The Bosnian navy is a symbol of modernization and ambition, with ships built for trade and war that rival those of coastal powers. Each ship launched carries with it the pride of a nation determined to dominate the seas."
+ bos_increase_recruits_desc:0 "Bosnia's military strength was expanded by recruitment policies that prioritized discipline and loyalty. This influx of troops allowed the nation to defend itself against external threats and consolidate its presence in the Balkans."
+ bos_prussia_of_balkans_desc:0 "Bosnia is proud of its reputation as the 'Prussia of the Balkans,' known for its rigorous military organization, efficient governance, and a booming economy that challenges the region's major powers."
+ bos_pomoc_desc:0 "The 'Aid for the Poor' program reflects Bosnia's commitment to caring for its people, redistributing wealth and promoting social equality. This policy strengthened internal cohesion and made society more resilient."
+ bos_merchant_fleet_desc:0 "The Bosnian merchant fleet connects the Balkans with the Mediterranean and beyond, transporting goods and ideas. With carefully protected routes, the Bosnian economy flourished, becoming a regional trading power."
+ bos_christian_bastion_desc:0 "Bosnia has become a Christian bastion at the crossroads between East and West, defending the faith and preserving its traditions amid external pressure. This role strengthened its national identity and united its people in times of crisis."
 
  # Other
  imperial_hungarian_government:0 "Iugoslav Mornachy"

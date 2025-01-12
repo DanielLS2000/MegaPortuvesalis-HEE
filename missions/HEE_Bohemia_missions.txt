@@ -423,10 +423,10 @@ boh_first_branch = {
 			}
 			if = {
 				limit = {
-					exists = TUR
+					exists = BYZ
 				}
 				army_strength = {
-					who = TUR
+					who = BYZ
 					value = 0.5
 				}
 			}
@@ -466,7 +466,9 @@ boh_first_branch = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
-						owned_by = TUR
+						owner = {
+							religion = orthodox
+						}
 					}
 					add_claim = ROOT
 				}
@@ -474,7 +476,9 @@ boh_first_branch = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
-						owned_by = TUR
+						owner = {
+							religion = orthodox
+						}
 					}
 					add_claim = ROOT
 				}
@@ -1649,7 +1653,7 @@ boh_third_branch = {
 				name = boh_humiliated_habsburgs
 				duration = 9125
 			}
-			lusatia_area = {
+			hinter_pommern_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1746,14 +1750,14 @@ boh_third_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			hinter_pommern_area = {
+			vorpommern_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			anhalt_area = {
+			northern_saxony_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
