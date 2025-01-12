@@ -699,9 +699,9 @@ bos_second_branch = {
 		position = 10
 		required_missions = { bos_adriatic_presence }
 		trigger = {
-			num_of_light_ship = 5
-			num_of_galley = 5
-			num_of_transport = 5
+			num_of_light_ship = 3
+			num_of_galley = 3
+			num_of_transport = 3
 		}
 		effect = {
 			add_navy_tradition = 20

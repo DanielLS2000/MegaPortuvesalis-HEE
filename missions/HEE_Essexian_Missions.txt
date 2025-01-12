@@ -1114,12 +1114,12 @@ ESX_third_branch = {
 			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { ai = no }
-				navy_size = 50
+				navy_size = 35
 				navy_size_percentage = 1
 				num_of_admirals = 1
 			}
 			else = {
-				navy_size = 25
+				navy_size = 20
 			}
 		}
 		effect = {
@@ -1157,7 +1157,7 @@ ESX_third_branch = {
 			num_of_special_units = { 
 				special_unit_category = man_of_war
 				type = heavy_ship 
-				value = 40
+				value = 25
 			}
 			is_bankrupt = no
 			is_in_deficit = no
@@ -1165,7 +1165,7 @@ ESX_third_branch = {
 				limit = { has_dlc = "Golden Century" }
 				has_flagship = yes
 			}
-			navy_size = 200
+			navy_size = 140
 			total_own_and_non_tributary_subject_development = 1500
 		}
 		effect = {
@@ -2392,7 +2392,7 @@ ESX_fifth_branch = {
 		position = 12
 		required_missions = { esx_a_house_divided }
 		trigger = {
-			army_size = 50
+			army_size = 35
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				army_professionalism = 0.2
@@ -2423,8 +2423,8 @@ ESX_fifth_branch = {
 		required_missions = { esx_found_a_standing_army }
 		trigger = {
 			reform_level = 4
-			max_manpower = 120
-			army_size = 80
+			max_manpower = 85
+			army_size = 55
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				army_professionalism = 0.4

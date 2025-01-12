@@ -234,7 +234,7 @@ boh_first_branch = {
 		}
 
 		trigger = {
-			army_size = 25
+			army_size = 18
 			prestige = 40
 			custom_trigger_tooltip = {
 				tooltip = boh_most_army_hre
@@ -431,7 +431,7 @@ boh_first_branch = {
 				}
 			}
 			else = {
-				army_size = 50
+				army_size = 35
 			}
 			is_subject = no
 		}
@@ -2719,7 +2719,7 @@ boh_fourth_branch = {
 				army_professionalism = 1 
 			}
 			else = { army_tradition = 95 } 
-			army_size = 150 
+			army_size = 105 
 			if = { 
 				limit = { 
 					has_estate = estate_cossacks 
@@ -4423,7 +4423,7 @@ boh_fifth_branch2 = {
 					}
 				}
 			}
-			army_size = 250
+			army_size = 175
 		}
 		effect = {
 			add_country_modifier = {
