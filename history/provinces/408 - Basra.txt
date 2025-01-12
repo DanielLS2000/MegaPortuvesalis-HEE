@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = AKD
+controller = AKD
 capital = "Basra"
 is_city = yes
 culture = dynamic-armenian-assyrian-culture-num1
@@ -11,7 +11,7 @@ base_production = 4
 base_manpower = 1
 extra_cost = 18
 center_of_trade = 1
-add_core = Z09
+add_core = AKD
 discovered_by = BYZ
 discovered_by = east_african
 discovered_by = indian
