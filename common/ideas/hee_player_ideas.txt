@@ -123,3 +123,123 @@ BOS_ideas = {
 		defensiveness = 0.15
 	}
 }
+
+HSA_ideas = {
+	start = {
+		land_morale = 0.1
+		trade_steering = 0.2
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.5
+	}
+	
+	trigger = {
+		tag = HSA
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
+	}
+	free = yes
+	
+	end_of_victual_brothers = {
+		infantry_power = 0.10
+	}
+	strong_league_obligations = {
+		global_own_trade_power = 0.2
+		trade_efficiency = 0.05
+	}
+	hsa_shipbuilding = {
+		merchants = 1
+	}
+	reformed_hanstag = {
+		shock_damage = 0.1
+		mercenary_discipline = 0.05
+	}
+	hanseatic_levy_system = {
+		development_cost = -0.1
+	}
+	regularised_contribution = {
+		global_trade_power = 0.15
+	}
+	the_hansa_bank = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+FU2_ideas = {
+	start = {
+		trade_efficiency = 0.2
+		merchants = 1 
+	}
+	
+	bonus = {
+		trade_steering = 0.2 
+	}
+	
+	trigger = {
+		tag = HSA
+		has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag
+	}
+	free = yes 
+	
+	FU2_foreign_kontors = {
+		global_trade_power = 0.15
+	}
+	FU2_the_handelsmarine = {
+		global_ship_trade_power = 0.25
+		global_ship_cost = -0.05
+	}
+	FU2_reform_queens_army = {
+		discipline = 0.05
+	}
+	FU2_adler_von_lubeck_legacy = {
+		heavy_ship_power = 0.1
+	}
+	FU2_merchants_with_state = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+	}
+	FU2_spread_the_northern_style = {
+		idea_cost = -0.1
+	}
+	regularised_contribution = {
+		global_prov_trade_power_modifier = 0.20
+	}
+}
+
+BUR_Ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_manpower_modifier = 0.2
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		tag = BUR
+	}
+	free = yes
+	
+	fra_taille = {
+		# Same as France
+	}
+	lessons_hundred_years_war = {
+		# Same as France
+	}
+	estates_general = {
+		# Same as France
+	}
+	native_trading_principles = {
+		# Same as France
+	}
+	divine_right_to_rule = {
+		# Same as France
+	}
+	europes_first_standing_army = {
+		# Same as France
+	}
+	vauban_fortifications = {
+		# Same as France
+	}
+}

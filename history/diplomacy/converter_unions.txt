@@ -56,14 +56,6 @@ union=
 
 union=
 {
-	first="VAL"
-	second="Z4M"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="BUL"
 	second="Z4T"
 	start_date="1444.11.11"

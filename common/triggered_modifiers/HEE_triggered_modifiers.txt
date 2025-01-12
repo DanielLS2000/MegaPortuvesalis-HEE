@@ -5,7 +5,7 @@ grand_duchy_of_hee = {
 	}
 
 	trigger = {
-		government_rank = 1
+		NOT = { government_rank = 2 }
 		num_of_owned_provinces_with = {
 			value = 10
 			is_overseas = no
