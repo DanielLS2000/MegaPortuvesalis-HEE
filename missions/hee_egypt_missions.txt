@@ -3,7 +3,7 @@
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EGY
 	}
 
 	mam_mercantile_relationship = {
@@ -476,7 +476,7 @@
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EGY
 	}
 
 	mam_naval_enterprise = {
@@ -959,7 +959,7 @@
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EGY
 	}
 
 	eth_build_an_army = {
@@ -1710,7 +1710,7 @@
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EGY
 	}
 
 	mam_reincorporate_northern_territories = {
@@ -2108,7 +2108,7 @@
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = EGY
 	}
 
 	mam_recruit_the_mamluks = {
