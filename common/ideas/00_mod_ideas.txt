@@ -1,0 +1,38 @@
+AKD_ideas = {
+	start = {
+		merchants = 1
+		global_foreign_trade_power = 0.1
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = AKD
+	}
+	free = yes
+	
+	akd_two_rivers = {
+		global_manpower_modifier = 0.25
+	}
+	akd_agressive_diplo = {
+		province_warscore_cost = -0.05
+		core_creation = -0.1
+	}
+	akd_crusade = {
+		land_morale = 0.1
+	}
+	akd_reforms = {
+		trade_efficiency = 0.1
+	}
+	akd_control_trade = {
+		global_trade_power = 0.1
+	}
+	akd_mesopotamian = {
+		development_cost = -0.1
+	}
+	akd_nestorian_navy = {
+		naval_forcelimit_modifier = 0.25
+	}
+}
