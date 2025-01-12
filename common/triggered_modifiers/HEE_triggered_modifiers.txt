@@ -1,0 +1,16 @@
+# Buff HRE nations
+grand_duchy_of_hee = {
+	potential = {
+		is_part_of_hre = yes
+	}
+
+	trigger = {
+		government_rank = 1
+		num_of_owned_provinces_with = {
+			value = 10
+			is_overseas = no
+		}
+	}
+
+	governing_capacity = 200
+}
