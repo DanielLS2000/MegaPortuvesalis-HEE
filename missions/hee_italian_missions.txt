@@ -2,11 +2,10 @@ diplo_colonial_branch = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	magi_square = {
 		icon = friends_in_high_places
@@ -246,11 +245,10 @@ consolidate_flancs_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	take_nice = {
 		icon = la_latinocrazia
@@ -342,11 +340,10 @@ unify_italy_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	build_armata_lombadia = {
 		icon = ven_army_republic
@@ -569,11 +566,10 @@ fort_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	emp_mlo_fortify_alps = {
 		icon = fortify_the_passes
@@ -673,11 +669,10 @@ merc_branch = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	emp_mlo_swiss_mercs = {
 		icon = swiss_mercenaries
@@ -713,11 +708,10 @@ kill_tazos_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	regia_marina = {
 		icon = a_worthy_navy
@@ -811,11 +805,10 @@ resorgimento_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	JHC_ITA_complete_the_risorgimento = {
 		icon = complete_the_risorgimento
@@ -872,11 +865,10 @@ balkan_expansion_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	consolidate_the_alps = {
 		icon = claim_tirol
@@ -1026,11 +1018,10 @@ balkan_expansion_branch = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	dev_arsenal = {
 		icon = expand_the_arsenal
@@ -1278,12 +1269,10 @@ balkan_expansion_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
-
+        has_country_shield = yes
 	ven_patronize_the_scuole_grandi = {
 		icon = ven_patronize_the_scuole_grandi
 		position = 7
@@ -1389,11 +1378,10 @@ balkan_expansion_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	bacon = {
 		icon = mlo_renaissance_city
@@ -1522,11 +1510,10 @@ balkan_expansion_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	sonne = {
 		icon = ven_embrace_neoplatonism
@@ -1614,11 +1601,10 @@ balkan_expansion_branch = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	emp_lan_commission_the_mona_lisa = {
 		icon = commission_the_mona_lisa
@@ -1707,11 +1693,10 @@ ita1 = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	ITA_reform_the_military = {
 		icon = mission_italian_condottiere
@@ -1953,11 +1938,10 @@ ita2 = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	ITA_unify_regional_economies = {
 		icon = dominant_economy
@@ -2220,11 +2204,10 @@ ita3 = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
-		is_or_was_tag = {
-			tag = MLO
-		}
+		potential = {
+		is_or_was_tag = MLO 
 	}
+        has_country_shield = yes
 
 	kingdom_of_von_klautz = {
 		icon = a_roman_empire
