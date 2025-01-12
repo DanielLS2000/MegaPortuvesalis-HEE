@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = AKD
+controller = AKD
 capital = "Hisn Kayfa"
 is_city = yes
 culture = dynamic-armenian-assyrian-culture-num1
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = Z09
+add_core = AKD
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
