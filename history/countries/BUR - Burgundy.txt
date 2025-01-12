@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = burgundian
 capital = 193
 add_accepted_culture = cosmopolitan_french
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Alixandre"
