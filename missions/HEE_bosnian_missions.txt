@@ -1054,7 +1054,7 @@ bos_third_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			agean_area = {
+			aegean_archipelago_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
