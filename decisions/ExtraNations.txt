@@ -1,0 +1,73 @@
+country_decisions = {
+	Lombardy_formation = {
+        major = yes
+        potential = {
+			OR = {
+           		culture_group = lombard
+				culture_group = romagnan
+				culture_group = ligurian
+			}	
+            religion = catholic
+			NOT = { tag = VEN}
+			NOT = { tag = PAP}
+			was_never_end_game_tag_trigger = yes		
+			OR = {
+				NOT = { tag = ITA }
+				NOT = { tag = VEN }
+			}
+            LOM = {
+                exists = no
+            }
+        }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 104 # Milano
+				province_id = 101 # Genova
+				province_id = 108 # Verona
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+        allow = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+				culture = lombard
+				culture = romagnan
+				culture = ligurian
+				culture = venetian
+				culture = piedmontese
+				culture = tuscan 
+				}
+			}
+            is_at_war = no
+            is_free_or_tributary_trigger = yes
+			owns_core_province = 104
+			owns_core_province = 101
+			owns_core_province = 108
+        }
+        effect = {
+            change_tag = LOM
+            add_prestige = 25
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+            change_government = monarchy
+			change_primary_culture = lombard
+            italy_region = {
+                limit = {
+                    NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = LOM
+            }
+            if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+        }
+	}
+}
+
