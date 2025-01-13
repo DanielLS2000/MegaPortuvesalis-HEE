@@ -2193,7 +2193,7 @@ renaissance_evolution_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO } 
 	}
         has_country_shield = yes
 
