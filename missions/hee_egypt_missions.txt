@@ -2,7 +2,9 @@
 	slot = 1
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
+	    tag = EGY
 		always = yes
 	}
 
@@ -13,14 +15,14 @@
 		trigger = {
 			if = {
 				limit = {
-					VEN = { exists = yes }
+					MLO = { exists = yes }
 				}
 				root = {
-					navy_size = VEN
+					navy_size = MLO
 				}
 				OR = {
 					AND = {
-						VEN = {
+						MLO = {
 							NOT = { alliance_with = ROOT }
 							custom_trigger_tooltip = {
 								tooltip = has_been_insulted_by_root
@@ -38,7 +40,7 @@
 						}
 					}
 					AND = {
-						VEN = {
+						MLO = {
 							alliance_with = ROOT
 							OR = {
 								has_opinion = {
@@ -62,7 +64,7 @@
 		}
 		effect = {
 			if = {
-				limit = { alliance_with = VEN }
+				limit = { alliance_with = mlo }
 				if = {
 					limit = { has_dlc = "Domination" }
 					custom_tooltip = mam_reward_alliance_yes_tt
@@ -78,7 +80,7 @@
 							add_building = shipyard
 						}
 					}
-					VEN = {
+					MLO = {
 						add_dip_power = 100
 						change_ruler_stat = {
 							type = dip
@@ -89,7 +91,7 @@
 			}
 			else_if = {
 				limit = {
-					NOT = { alliance_with = VEN }
+					NOT = { alliance_with = MLO }
 				}
 				if = {
 					limit = { has_dlc = "Domination" }
@@ -106,7 +108,7 @@
 							add_building = shipyard
 						}
 					}
-					VEN = {
+					MLO = {
 						add_dip_power = 100
 						change_ruler_stat = {
 							type = dip
@@ -117,7 +119,7 @@
 			}
 			if = {
 				limit = {
-					NOT = { alliance_with = VEN }
+					NOT = { alliance_with = MLO }
 					has_dlc = "Domination"
 				}
 				custom_tooltip = mam_reward_rival_yes_tt
@@ -163,8 +165,8 @@
 			}
 			hidden_effect = {
 				if = {
-					limit = { alliance_with = VEN }
-					VEN = {
+					limit = { alliance_with = MLO }
+					MLO = {
 						add_dip_power = 100
 						change_ruler_stat = {
 							type = dip
@@ -217,12 +219,13 @@
 				value = 3
 				has_coast_defense_building_trigger = yes
 			}
-			num_of_light_ship = 25
+			num_of_light_ship = 19
 		}
 		effect = {
 			if = {
 				limit = {
 					tag = MAM
+					tag = egy
 				}
 				custom_tooltip = mam_upgrade_national_idea_tt
 				set_country_flag = mam_upgrade_national_idea_flag
@@ -240,18 +243,18 @@
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 384
-				province_id = 385
+				province_id = 4274
+				province_id = 392
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			384 = {
+			4274 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			385 = {
+			392 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -297,40 +300,10 @@
 			custom_tooltip = flavor_mam.105_tt
 		}
 	}
-	eth_conquest_of_qasr_ibrim = {
-		icon = mission_build_up_to_force_limit
-		position = 6
-		required_missions = { mam_yemen }
-		provinces_to_highlight = {
-			province_id = 1234
-			OR = {
-				NOT = { religion = ROOT }
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 1234
-			1234 = { religion = ROOT }
-		}
-		effect = {
-			add_country_modifier = {
-				name = eth_coptic_offense
-				duration = 9125
-			}
-			egypt_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
 	mam_ethiopia = {
-		icon = missiomission_bedouinsn_build_up_to_force_limit
-		position = 7
-		required_missions = { eth_conquest_of_qasr_ibrim }
+		icon = mission_bedouins
+		position = 6
+		required_missions = { 	mam_yemen }
 		provinces_to_highlight = {
 			region = horn_of_africa_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -368,7 +341,7 @@
 	}
 	eth_the_riches_of_the_south = {
 		icon = mission_build_up_to_force_limit
-		position = 8
+		position = 7
 		required_missions = { mam_ethiopia }
 		provinces_to_highlight = {
 			OR = {
@@ -420,14 +393,14 @@
 		required_missions = { mam_karimi_merchants }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 650
-				province_id = 649
+				province_id = 1099
+				province_id = 1100
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			650 = { country_or_non_sovereign_subject_holds = ROOT }
-			649 = { country_or_non_sovereign_subject_holds = ROOT }
+			1099 = { country_or_non_sovereign_subject_holds = ROOT }
+			1100 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			if = {
@@ -475,7 +448,9 @@
 	slot = 2
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
+	    tag = EGY
 		always = yes
 	}
 
@@ -485,7 +460,7 @@
 		required_missions = {  }
 		trigger = {
 			navy_size_percentage = 0.9
-			navy_size = 35
+			navy_size = 26
 		}
 		effect = {
 			country_event = { id = flavor_mam.100 }
@@ -521,7 +496,7 @@
 			}
 		}
 		trigger = {
-			navy_size = 200
+			navy_size = 150
 			OR = {
 				has_reform = maritime_military_reform
 				full_idea_group = naval_ideas
@@ -646,7 +621,7 @@
 					}
 				}
 			}
-			2999 = {
+			1248 = {
 				if = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -654,6 +629,68 @@
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+		}
+	}
+		mam_unify_islam = {
+		icon = mission_islamic_golden_age
+		position = 8
+		required_missions = { eth_conquer_adal eth_the_riches_of_the_south }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 361
+				province_id = 2324
+				province_id = 379
+				province_id = 390
+				province_id = 1205
+				province_id = 1227
+				province_id = 1228
+				province_id = 387
+				province_id = 2757
+				province_id = 2762
+				province_id = 1212
+				province_id = 1099
+				province_id = 358
+				province_id = 2313				
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					{ 
+						has_dlc = "Star and Crescent"
+					}
+				}
+				religion_group = coptic
+				province_id = 361
+				province_id = 2324
+				province_id = 379
+				province_id = 390
+				province_id = 1205
+				province_id = 1227
+				province_id = 1228
+				province_id = 387
+				province_id = 2757
+				province_id = 2762
+				province_id = 1212
+				province_id = 1099
+				province_id = 358
+				province_id = 2313
+			}
+			else = { 
+				custom_trigger_tooltip = {
+					tooltip = unified_islam_tt
+					has_country_modifier = unified_islam
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = protector_of_the_islamic_realm_modifier
+				duration = -1
 			}
 		}
 	}
@@ -757,7 +794,7 @@
 					trade_goods = cloves
 					value = yes
 				}
-				358 = { 
+				358 = {
 					trade_share = {
 						country = ROOT
 						share = 51
@@ -769,7 +806,7 @@
 			unlock_government_reform = {
 				government_reform = karimi_stations_reform
 			}
-			361 = {
+			358 = {
 				change_trade_goods = cloves
 			}
 		}
@@ -826,51 +863,51 @@
 		required_missions = { mam_harness_spice_trade }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2453
-				province_id = 354
-				province_id = 2954
-				province_id = 341
+				province_id = 1101
+				province_id = 648
+				province_id = 650
+				province_id = 649
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			OR = {
-				2453 = { country_or_non_sovereign_subject_holds = ROOT }
-				354 = { country_or_non_sovereign_subject_holds = ROOT }
-				2954 = { country_or_non_sovereign_subject_holds = ROOT }
-				341 = { country_or_non_sovereign_subject_holds = ROOT }
+				1101 = { country_or_non_sovereign_subject_holds = ROOT }
+				648 = { country_or_non_sovereign_subject_holds = ROOT }
+				650 = { country_or_non_sovereign_subject_holds = ROOT }
+				649 = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
 		effect = {
-			tripolitania_area = {
+			north_sumatra_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			djerba_area = {
+			batak_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			tunisia_area = {
+			minangkabau_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			kabylia_area = {
+			central_sumatra_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			barbary_coast_area = {
+			jambi_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -885,22 +922,22 @@
 		required_missions = { EMP_crusader_africa }
 		provinces_to_highlight = {
 			OR = {
-				area = syria_area
-				area = syrian_desert_area
-				area = trans_jordan_area
+				area = north_sumatra_area
+				area = batak_area
+				area = minangkabau_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			syria_area = {
+			north_sumatra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			syrian_desert_area = {
+			batak_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			trans_jordan_area = {
+			minangkabau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -908,42 +945,42 @@
 		effect = {
 			if = {
 				limit = {
-					religion = catholic
+					religion = coptic
 				}
 				add_country_modifier = {
 					name = "kni_kingdom_of_heaven"
 					duration = 7300
 				}
 			}
-			delta_area = {
+			banten_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			bahari_area = {
+			west_java_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			vostani_area = {
+			central_java_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			gulf_of_arabia_area = {
+			surabaya_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			said_area = {
+			east_java_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -958,36 +995,61 @@
 	slot = 3
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
+	    tag = EGY
 		always = yes
 	}
 
-	eth_build_an_army = {
-		icon = mission_build_up_to_force_limit
-		required_missions = {  }
+	eth_develop_the_ancestors_city = {
+		icon = conquer_tuscany
 		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 358
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { num_of_times_improved = 5 }
+			}
+		}
 		trigger = {
-			army_size_percentage = 1
-			num_of_generals = 1
+			358 = {
+				is_core = ROOT
+				owned_by = ROOT
+				num_of_times_improved = 5
+			}
 		}
 		effect = {
-			southern_ethiopia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
+			358 = {
+				add_building_construction = {
+					building = cathedral
+					speed = 1
+					cost = 0
 				}
-				add_permanent_claim = ROOT
-			}
-			hadiya_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
+				add_province_modifier = {
+					name = eth_obelisk_of_axum
+					duration = -1
 				}
-				add_permanent_claim = ROOT
 			}
-		}
-		ai_weight = {
-			factor = 500	#Ethiopia should survive...
+			if = {
+				limit = {
+					NOT = { is_core = 377 }
+				}
+				add_core = 377
+			}
+			if = {
+				limit = {
+					NOT = { is_core = 1849 }
+				}
+				add_core = 1849
+			}
+			if = {
+				limit = {
+					NOT = { is_core = 4297 }
+				}
+				add_core = 4297
+			}
 		}
 	}
 	EMP_crusader_malta = {
@@ -995,11 +1057,11 @@
 		position = 2
 		required_missions = { mam_naval_enterprise }
 		provinces_to_highlight = {
-			province_id = 126
+			province_id = 358
 		}
 		trigger = {
-			owns_core_province = 126
-			126 = {
+			owns_core_province = 58
+			358 = {
 				OR = {
 					fort_level = 3
 					has_building = shipyard
@@ -1008,13 +1070,13 @@
 			}
 		}
 		effect = {
-			126 = {
+			358 = {
 				add_province_modifier = {
 					name = "malta_fort"
 					duration = -1
 				}
 			}
-			354 = {
+			2348 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1024,7 +1086,7 @@
 					add_permanent_claim = ROOT
 				}
 			}
-			2954 = {
+			321 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1034,7 +1096,7 @@
 					add_permanent_claim = ROOT
 				}
 			}
-			2453 = {
+			163 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1044,7 +1106,7 @@
 					add_permanent_claim = ROOT
 				}
 			}
-			341 = {
+			320 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1058,12 +1120,11 @@
 	}
 	mam_great_power = {
 		icon = mam_great_power
-		required_missions = { mam_pearl_mediterranean mam_constantinople }
 		position = 4
-		
+		required_missions = { mam_pearl_mediterranean mam_constantinople }
 		trigger = {
 			if = {
-				limit = { 
+				limit = {
 					OR = {
 						has_dlc = "Rights of Man"
 						has_dlc = "Emperor"
@@ -1071,43 +1132,43 @@
 					has_dlc = "Emperor"
 				}
 				OR = {
-					is_hegemon = yes 
+					is_hegemon = yes
 					NOT = { great_power_rank = 2 }
 				}
 			}
 			else_if = {
 				limit = { has_dlc = "Rights of Man" }
 				NOT = { great_power_rank = 2 }
-			} 
+			}
 			else = { total_development = 1500 }
 		}
 		effect = {
 			if = {
-				limit = { 
-					tag = MAM 
-					has_government_mechanic = mamluk_mechanic 
+				limit = {
+					tag = MAM
+					has_government_mechanic = mamluk_mechanic
 				}
 				custom_tooltip = promote_culture_government_duration_doubled_tt
 				set_country_flag = promote_culture_government_duration_doubled_flag
-				add_government_power = { 
+				add_government_power = {
 					mechanic_type = mamluk_mechanic
 					power_type = mamluk_adm_power
 					value = 50
-				} 
-				add_government_power = { 
+				}
+				add_government_power = {
 					mechanic_type = mamluk_mechanic
 					power_type = mamluk_dip_power
 					value = 50
-				} 
-				add_government_power = { 
+				}
+				add_government_power = {
 					mechanic_type = mamluk_mechanic
 					power_type = mamluk_mil_power
 					value = 50
-				} 
+				}
 			}
 			else_if = {
-				limit = { 
-					tag = MAM 
+				limit = {
+					tag = MAM
 					NOT = { has_government_mechanic = mamluk_mechanic }
 				}
 				add_prestige_or_monarch_power = { amount = 50 }
@@ -1125,8 +1186,8 @@
 				}
 			}
 			if = {
-				limit = { 
-					tag = EGY 
+				limit = {
+					tag = EGY
 					has_government_mechanic = egyptian_westernization
 				}
 				if = {
@@ -1135,15 +1196,15 @@
 				}
 				custom_tooltip = egyptian_westernization_costs_less_tt
 				set_country_flag = egyptian_westernization_costs_less_flag
-				add_government_power = { 
+				add_government_power = {
 					mechanic_type = egyptian_westernization
 					power_type = egyptian_westernization
 					value = 25
-				} 
+				}
 			}
 			else_if = {
-				limit = { 
-					tag = EGY 
+				limit = {
+					tag = EGY
 					NOT = { has_government_mechanic = egyptian_westernization }
 				}
 				add_prestige_or_monarch_power = { amount = 50 }
@@ -1162,74 +1223,50 @@
 			}
 		}
 	}
-	eth_develop_the_ancestors_city = {
-		icon = conquer_tuscany
+	eth_conquest_of_qasr_ibrim = {
+		icon = mission_build_up_to_force_limit
+		position = 5
 		required_missions = {  }
-		position = 1
 		provinces_to_highlight = {
-			province_id = 1227
+			province_id = 1228
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { num_of_times_improved = 5 }
+				NOT = { religion = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
+			has_discovered = ROOT
 		}
 		trigger = {
-			1227 = {
-				is_core = ROOT
-				owned_by = ROOT
-				num_of_times_improved = 5
-			}
+			owns_or_non_sovereign_subject_of = 1228
+			1228 = { religion = ROOT }
 		}
 		effect = {
-			1227 = {
-				add_building_construction = {
-					building = cathedral
-					speed = 1
-					cost = 0
-				}
-				add_province_modifier = {
-					name = eth_obelisk_of_axum
-					duration = -1
-				}
+			add_country_modifier = {
+				name = eth_coptic_offense
+				duration = 9125
 			}
-			if = {
+			horn_of_africa_region = {
 				limit = {
-					NOT = { is_core = 1230 }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				add_core = 1230
+				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					NOT = { is_core = 2787 }
-				}
-				add_core = 2787
-			}
-			if = {
-				limit = {
-					NOT = { is_core = 2766 }
-				}
-				add_core = 2766
-			}
-		}
-		ai_weight = {
-			factor = 500	#Tall missions are always okay for the AI
 		}
 	}
 	eth_harbor_city_adulis = {
 		icon = capture_adriatic_ports
 		position = 6
-		required_missions = { eth_develop_the_ancestors_city }
+		required_missions = { eth_conquest_of_qasr_ibrim }
 		provinces_to_highlight = {
-			province_id = 1230
+			province_id = 1212
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { num_of_times_improved = 5 }
 			}
 		}
 		trigger = {
-			owns = 1230
-			1230 = {
+			owns = 1212
+			1212 = {
 				religion = ROOT
 				num_of_times_improved = 5
 			}
@@ -1238,14 +1275,14 @@
 			country_event = {
 				id = flavor_eth.38
 			}
-			aussa_area = {
+			mombasa_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			ifat_area = {
+			northern_swahili_coast_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -1254,88 +1291,50 @@
 			}
 			if = {
 				limit = {
-					NOT = { is_permanent_claim = 1208 }
-					NOT = { is_core = 1208 }
+					NOT = { is_permanent_claim = 1201 }
+					NOT = { is_core = 1201 }
 				}
-				add_permanent_claim = 1208
+				add_permanent_claim = 1201
 			}
 			if = {
 				limit = {
-					NOT = { is_permanent_claim = 1210 }
-					NOT = { is_core = 1210 }
+					NOT = { is_permanent_claim = 1196 }
+					NOT = { is_core = 1196 }
 				}
-				add_permanent_claim = 1210
+				add_permanent_claim = 1196
 			}
-		}
-		ai_weight = {
-			factor = 75	#Default
 		}
 	}
 	eth_conquer_adal = {
-		icon = mission_non-western_soldiers
+		icon = mission_construct_a_corsair_fleet
 		position = 7
 		required_missions = { eth_harbor_city_adulis }
 		provinces_to_highlight = {
-			OR = {
-				area = aussa_area
-				area = ifat_area
-				province_id = 1208
-				province_id = 1210
-			}
+			region = horn_of_africa_region
+			has_port = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					area = aussa_area
-					area = ifat_area
-					province_id = 1208
+			custom_trigger_tooltip = {
+				tooltip = cruader_piracy_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					region = horn_of_africa_region
+					has_port = yes
 				}
-				value = 6
 			}
-			owns = 1210
 		}
 		effect = {
-			ogaden_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			somaliland_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			majarteen_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			ajuuran_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			mogadishu_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = "kni_crusade_against_piracy"
+				duration = -1
 			}
 		}
 	}
 	mam_alexandrian_trade = {
 		icon = mission_conquer_alexandria
-		required_missions = {  }
 		position = 8
+		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 358
@@ -1344,7 +1343,7 @@
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
-				has_trade_building_trigger = no 
+				has_trade_building_trigger = no
 			}
 		}
 		trigger = {
@@ -1355,7 +1354,6 @@
 		effect = {
 			custom_tooltip = mam_indebted_privilege_no_merc_loss_tt
 			set_country_flag = no_mercantilism_loss_estate_privilege_flag
-
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				custom_tooltip = mam_trade_building_prosperity_tt
@@ -1366,8 +1364,8 @@
 	}
 	mam_father_african_rivers = {
 		icon = mission_se_along_the_river
-		required_missions = { mam_alexandrian_trade }
 		position = 9
+		required_missions = { mam_alexandrian_trade }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 362
@@ -1382,7 +1380,7 @@
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
-					is_prosperous = no 
+					is_prosperous = no
 					NOT = { num_of_times_improved = 1 }
 					NOT = { num_of_buildings_in_province = 1 }
 				}
@@ -1439,7 +1437,7 @@
 				}
 				vostani_area = {
 					owned_by = ROOT
-					type = all 
+					type = all
 					OR = {
 						num_of_buildings_in_province = 1
 						num_of_times_improved = 1
@@ -1465,7 +1463,7 @@
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						OR = { 
+						OR = {
 							province_id = 362
 							province_id = 363
 							province_id = 2316
@@ -1482,8 +1480,8 @@
 	}
 	mam_dar_al_hadith_turba = {
 		icon = reform_the_nomocanon
-		required_missions = {  }
 		position = 11
+		required_missions = {  }
 		trigger = {
 			if = {
 				limit = {
@@ -1494,13 +1492,13 @@
 					innovativeness = 20
 					AND = {
 						estate_loyalty = {
-							estate = estate_church 
-							loyalty = 60 
+							estate = estate_church
+							loyalty = 60
 						}
 						OR = {
 							has_estate_privilege = estate_church_fund_dar_al_hadith
 							has_estate_privilege = estate_church_fund_madrasas
-						} 
+						}
 					}
 				}
 			}
@@ -1520,13 +1518,13 @@
 				adm_tech = 7
 				AND = {
 					estate_loyalty = {
-						estate = estate_church 
-						loyalty = 60 
+						estate = estate_church
+						loyalty = 60
 					}
 					OR = {
 						has_estate_privilege = estate_church_fund_dar_al_hadith
 						has_estate_privilege = estate_church_fund_madrasas
-					} 
+					}
 				}
 			}
 			else = {
@@ -1548,7 +1546,7 @@
 			if = {
 				limit = {
 					MAM = {
-						exists = yes 
+						exists = yes
 					}
 				}
 				culture_group = turko_semitic
@@ -1583,8 +1581,8 @@
 		}
 		trigger = {
 			if = {
-				limit = { 
-					tag = EGY 
+				limit = {
+					tag = EGY
 					has_government_mechanic = egyptian_westernization
 				}
 				has_government_power = {
@@ -1638,17 +1636,17 @@
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					OR = {
-						in_golden_age = yes  
+						in_golden_age = yes
 						has_had_golden_age = yes
-					} 
+					}
 				}
 				else = { stability = 3 }
 			}
 		}
 		effect = {
 			if = {
-				limit = { 
-					tag = EGY 
+				limit = {
+					tag = EGY
 					has_dlc = "Rights of Man"
 				}
 				custom_tooltip = egy_better_traits_rulers_tt
@@ -1659,15 +1657,15 @@
 				}
 				else = { add_adm_power = 100 add_dip_power = 100 }
 			}
-			else_if = { 
+			else_if = {
 				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = pol_if_used_ge_rest_else_30_years_extension_tt 
+				custom_tooltip = pol_if_used_ge_rest_else_30_years_extension_tt
 				if = {
-					limit = { has_had_golden_age = yes } 
-					reset_golden_age = yes 
+					limit = { has_had_golden_age = yes }
+					reset_golden_age = yes
 				}
 				else_if = {
-					limit = { in_golden_age = yes } 
+					limit = { in_golden_age = yes }
 					extend_golden_age = 600
 				}
 			}
@@ -1709,55 +1707,53 @@
 	slot = 4
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
+	    tag = EGY
 		always = yes
 	}
 
 	mam_reincorporate_northern_territories = {
 		icon = mam_reincorporate_northern_territories
-		required_missions = {  }
 		position = 1
+		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
 				area = syria_area
-				province_id = 1849 
-				province_id = 2313 
-				province_id = 377 
+				province_id = 1849
+				province_id = 2313
+				province_id = 377
 			}
 		}
 		trigger = {
 			if = {
-				limit = {
-					NOT = { is_year = 1446 }
-				}
-				custom_trigger_tooltip = { 
-					tooltip = mam_had_administration_syria_event_tt
-					has_country_flag = mam_had_administration_syria_event_flag
-				}
-			}
-			OR = {
-				if = {
-					limit = { 
-						OR = { 
+					limit = {
+						        NOT = { is_year = 1446 }
+							}
+
+						}
+				OR if = {
+					limit = {
+						OR = {
 							has_dlc = "Res Publica"
 							has_dlc = "Common Sense"
 						}
 					}
 					national_focus = ADM
 				}
-				has_adm_advisor = yes 
+				has_adm_advisor = yes
 				stability = 1
 			}
 			syria_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			aleppo_area = {
-				type = all 
+				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					province_id = 4298
-				} 
+				}
 			}
 			if = {
 				limit = {
@@ -1855,18 +1851,18 @@
 	mam_persia = {
 		icon = mam_persia
 		position = 2
-		required_missions = { eth_build_an_army mam_reincorporate_northern_territories }
+		required_missions = { eth_develop_the_ancestors_city mam_reincorporate_northern_territories }
 		provinces_to_highlight = {
-			region = persia_region 
+			region = anatolia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = persia_region 
-				value = 25 
+				region = anatolia_region
+				value = 25
 			}
-			428 = { country_or_non_sovereign_subject_holds = ROOT }
-			429 = { country_or_non_sovereign_subject_holds = ROOT }
+			326 = { country_or_non_sovereign_subject_holds = ROOT }
+			327 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			country_event = { id = flavor_mam.114 }
@@ -1878,12 +1874,12 @@
 		position = 3
 		required_missions = { EMP_crusader_malta mam_persia }
 		provinces_to_highlight = {
-			area = thrace_area 
+			area = rum_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			thrace_area = {
-				type = all 
+			rum_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1895,39 +1891,36 @@
 	eth_unify_the_kingdoms = {
 		icon = mission_build_up_to_force_limit
 		position = 6
-		required_missions = { eth_develop_the_ancestors_city }
+		required_missions = { eth_conquest_of_qasr_ibrim }
 		provinces_to_highlight = {
 			OR = {
-				area = syria_area
-				area = palestine_area
-				area = trans_jordan_area
-				area = aleppo_area
+				area = sennar_area
+				area = upper_nubia_area
+				area = dongola_area
+				area = lower_nubia_area
 			}
-			NOT = { religion = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			syria_area = {
-				type = all
-				religion = ROOT
-			}
-			palestine_area = {
-				type = all
-				religion = ROOT
-			}
-			trans_jordan_area = {
-				type = all
-				religion = ROOT
-			}
-			aleppo_area = {
-				type = all
-				religion = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = sennar_area
+					area = upper_nubia_area
+					area = dongola_area
+					area = lower_nubia_area
+				}
+				value = 8
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "kni_converted_the_holy_land"
-				duration = -1
+			create_colony_mission_reward = {
+				province = 1217
 			}
+			add_accepted_culture_or_dip_power = { culture = nubian dip_reward = yes }
+			add_permanent_claim = 1232
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 	mam_cultivate_the_delta = {
@@ -1938,10 +1931,10 @@
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
-					province_id = 362 
+					province_id = 362
 					province_id = 363
-					province_id = 4316 
-					province_id = 2316 
+					province_id = 4316
+					province_id = 2316
 				}
 				OR = {
 					NOT = { owned_by = ROOT }
@@ -1951,10 +1944,10 @@
 			}
 			else = {
 				OR = {
-					province_id = 362 
+					province_id = 362
 					province_id = 363
-					province_id = 4316 
-					province_id = 2316 
+					province_id = 4316
+					province_id = 2316
 				}
 				OR = {
 					NOT = { owned_by = ROOT }
@@ -1967,35 +1960,35 @@
 				limit = { has_dlc = "Mandate of Heaven" }
 				362 = {
 					OR = {
-						is_prosperous = yes 
+						is_prosperous = yes
 						num_of_times_improved = 4
 					}
 					owned_by = ROOT
 				}
 				2316 = {
 					OR = {
-						is_prosperous = yes 
+						is_prosperous = yes
 						num_of_times_improved = 4
 					}
 					owned_by = ROOT
 				}
 				363 = {
 					OR = {
-						is_prosperous = yes 
+						is_prosperous = yes
 						num_of_times_improved = 4
 					}
 					owned_by = ROOT
 				}
 				4316 = {
 					OR = {
-						is_prosperous = yes 
+						is_prosperous = yes
 						num_of_times_improved = 4
 					}
 					owned_by = ROOT
 				}
 				2316 = {
 					OR = {
-						is_prosperous = yes 
+						is_prosperous = yes
 						num_of_times_improved = 4
 					}
 					owned_by = ROOT
@@ -2031,8 +2024,8 @@
 	}
 	mam_aden_trade = {
 		icon = mission_the_tamil_trade_guilds
-		required_missions = { mam_father_african_rivers }
 		position = 10
+		required_missions = { mam_father_african_rivers }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4346
@@ -2064,7 +2057,6 @@
 		effect = {
 			custom_tooltip = mam_upgrade_private_trade_fleets_tt
 			set_country_flag = mam_upgrade_private_trade_fleets_flag
-
 			add_mercantilism = 3
 		}
 	}
@@ -2077,7 +2069,7 @@
 				full_idea_group = administrative_ideas
 				adm = 6
 				AND = {
-					crown_land_share = 50 
+					crown_land_share = 50
 					has_reform = centralize_empire_reform
 				}
 			}
@@ -2087,17 +2079,16 @@
 			}
 			if = {
 				limit = { num_of_subjects = 1 }
-				NOT = { 
+				NOT = {
 					any_subject_country = {
 						liberty_desire = 10
 					}
 				}
 			}
-			is_at_war = no 
+			is_at_war = no
 		}
 		effect = {
 			country_event = { id = flavor_mam.103 }
-
 			custom_tooltip = flavor_mam.103_tt
 		}
 	}
@@ -2107,7 +2098,9 @@
 	slot = 5
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
+	    tag = EGY
 		always = yes
 	}
 
@@ -2121,22 +2114,21 @@
 		effect = {
 			custom_tooltip = mam_access_new_agendas_about_mamluks_tt
 			set_country_flag = mam_access_new_agendas_about_mamluks_flag
-			
-			tripolitania_area = {
+			erzurum_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			djerba_area = {
+			rum_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			tunisia_area = {
+			kastamonu_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -2145,16 +2137,42 @@
 			}
 		}
 	}
+		mam_refine_the_furusiyya = {
+		icon = mam_refine_the_furusiyya
+		required_missions = { mam_recruit_the_mamluks }
+		position = 3
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				OR = {
+					army_tradition = 50 
+					army_professionalism = 0.3
+				}
+			}
+			else = { army_tradition = 50 }
+			#mamluks_percentage = 0.25 TODO 
+			reform_level = 5
+		}
+		effect = {
+			unlock_government_reform = {
+				government_reform = modernized_furusiyya_reform
+			}
+			change_government_reform_progress = 50
+		}
+	}
 	mam_city_thousand_minarets = {
 		icon = mam_city_thousand_minarets
 		position = 5
-		required_missions = { mam_great_power mam_recruit_the_mamluks }
+		required_missions = { mam_great_power mam_refine_the_furusiyya }
 		provinces_to_highlight = {
-			province_id = 361 
+			province_id = 358
 		}
 		trigger = {
-			361 = { 
-				owned_by = ROOT 
+			358 = {
+				owned_by = ROOT
 				OR = {
 					num_of_times_improved = 8
 					num_of_buildings_in_province = 3
@@ -2164,22 +2182,22 @@
 		effect = {
 			if = {
 				limit = {
-					361 = {
-						has_province_modifier = public_works_of_cairo 
+					358 = {
+						has_province_modifier = public_works_of_cairo
 					}
 				}
-				361 = { add_center_of_trade_level = 1 }
+				358 = { add_center_of_trade_level = 1 }
 			}
 			else = {
 				country_event = { id = flavor_mam.2 }
-				custom_tooltip = flavor_mam.2_tt 
+				custom_f = flavor_mam.2_tt
 			}
 		}
 	}
 	mam_khass_al_sultan = {
 		icon = mission_mal_riches_of_trade
-		required_missions = { mam_city_thousand_minarets }
 		position = 10
+		required_missions = { mam_city_thousand_minarets }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 362
@@ -2188,53 +2206,53 @@
 				province_id = 4316
 			}
 			OR = {
-				has_production_building_trigger = no 
+				has_production_building_trigger = no
 				NOT = { owned_by = ROOT }
 			}
 		}
 		trigger = {
 			OR = {
-				crown_land_share = 40 
+				crown_land_share = 40
 				has_reform = diwan_al_khass_reform
 			}
 			362 = {
-				owned_by = ROOT 
-				has_production_building_trigger = yes 
+				owned_by = ROOT
+				has_production_building_trigger = yes
 			}
 			363 = {
-				owned_by = ROOT 
-				has_production_building_trigger = yes 
+				owned_by = ROOT
+				has_production_building_trigger = yes
 			}
 			2316 = {
-				owned_by = ROOT 
-				has_production_building_trigger = yes 
+				owned_by = ROOT
+				has_production_building_trigger = yes
 			}
 			4316 = {
-				owned_by = ROOT 
-				has_production_building_trigger = yes 
+				owned_by = ROOT
+				has_production_building_trigger = yes
 			}
 		}
 		effect = {
 			custom_tooltip = add_5_crown_land_share
 			hidden_effect = {
 				change_estate_land_share = {
-				estate = all
-				share = -5
+					estate = all
+					share = -5
 				}
 			}
 			custom_tooltip = enable_export_grain_dip_action_tt
-			set_country_flag = enable_export_grain_dip_action_flag 
+			set_country_flag = enable_export_grain_dip_action_flag
 		}
 	}
 	mam_assign_waqf = {
 		icon = mission_hands_praying
-		required_missions = { mam_khass_al_sultan }
 		position = 11
+		required_missions = { mam_khass_al_sultan }
 		trigger = {
 			years_of_income = 2
 			stability = 2
 			OR = {
-				full_idea_group = humanist_ideas 
+				full_idea_group = humanist_ideas
 				full_idea_group = religious_ideas
 				has_estate_privilege = estate_church_sponsor_waqf_payments
 			}
