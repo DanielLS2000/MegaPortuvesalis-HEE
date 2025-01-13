@@ -3,7 +3,7 @@ diplo_colonial_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -246,7 +246,7 @@ consolidate_flancs_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -341,7 +341,7 @@ unify_italy_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -355,17 +355,6 @@ unify_italy_branch = {
 			num_of_galley = 6
 		}
 		effect = {
-			if = {
-				limit = { ai = no }
-				enable_branching_mission_review_without_ai = { key = MLO }
-			}
-			else = {
-				random_list = {
-					10 = { set_country_flag = ven_standing_army_missions_flag }
-					10 = { set_country_flag = ven_mercenary_army_missions_flag }
-					10 = { set_country_flag = ven_navy_missions_flag }
-				}
-			}
 			tirol_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -567,7 +556,7 @@ fort_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -670,7 +659,7 @@ merc_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -709,7 +698,7 @@ kill_tazos_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -806,7 +795,7 @@ resorgimento_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -866,7 +855,7 @@ balkan_expansion_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1019,7 +1008,7 @@ arsenale_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1270,7 +1259,7 @@ building_genoa_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
 	ven_patronize_the_scuole_grandi = {
 		icon = ven_patronize_the_scuole_grandi
@@ -1378,7 +1367,7 @@ renaissance_in_lombardy_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1510,7 +1499,7 @@ great_past_manarchs_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1601,7 +1590,7 @@ academic_erudition_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1693,7 +1682,7 @@ military_italian_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
@@ -1938,7 +1927,7 @@ treangulo_industriale_branch = {
 	generic = no
 	ai = yes
 		potential = {
-		is_or_was_tag = MLO 
+		is_or_was_tag = { tag = MLO }
 	}
         has_country_shield = yes
 
