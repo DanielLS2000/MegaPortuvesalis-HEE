@@ -537,17 +537,19 @@ has_country_shield = yes
 					}
 					calc_true_if = {
 						desc = liv_heal_the_schism_bt
-						OR = {
 							all_province = {
 								region = russia_region
 								religion = catholic
 							}
+						amount = 40
+					}
+					calc_true_if = {
+						desc = liv_heal_the_schism_bt
 							all_province = {
 								region = ruthenia_region
 								religion = catholic
 							}
-						}
-						amount = 80
+						amount = 40
 					}
 				}
 				custom_trigger_tooltip = {
