@@ -506,7 +506,10 @@ has_country_shield = yes
 		position = 5
 		required_missions = { minority_problem ensure_religious_unity unify_russia }
 		provinces_to_highlight = {
-			region = russia_region
+			OR = {
+				region = russia_region
+				region = ruthenia_region
+			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = { religion = ROOT }
@@ -534,11 +537,17 @@ has_country_shield = yes
 					}
 					calc_true_if = {
 						desc = liv_heal_the_schism_bt
-						all_province = {
-							region = russia_region
-							religion = catholic
+						OR ={
+							all_province = {
+								region = russia_region
+								religion = catholic
+							}
+							all_province = {
+								region = ruthenia_region
+								religion = catholic
+							}
 						}
-						amount = 40
+						amount = 80
 					}
 				}
 				custom_trigger_tooltip = {
