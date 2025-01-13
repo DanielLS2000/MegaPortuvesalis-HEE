@@ -1022,7 +1022,7 @@ balkan_expansion_branch = {
 	}
 }
 
-1 = {
+arsenale_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -1274,7 +1274,7 @@ balkan_expansion_branch = {
 	}
 }
 
-2 = {
+building_genoa_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1385,7 +1385,7 @@ balkan_expansion_branch = {
 	}
 }
 
-3 = {
+renaissance_in_lombardy_branch = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1518,7 +1518,7 @@ balkan_expansion_branch = {
 	}
 }
 
-4 = {
+great_past_manarchs_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1610,7 +1610,7 @@ balkan_expansion_branch = {
 	}
 }
 
-5 = {
+academic_erudition_branch = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -1703,7 +1703,7 @@ balkan_expansion_branch = {
 	}
 }
 
-ita1 = {
+military_italian_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1949,7 +1949,7 @@ ita1 = {
 	}
 }
 
-ita2 = {
+treangulo_industriale_branch = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -2216,7 +2216,7 @@ ita2 = {
 	}
 }
 
-ita3 = {
+renaissance_evolution_branch = {
 	slot = 4
 	generic = no
 	ai = yes
