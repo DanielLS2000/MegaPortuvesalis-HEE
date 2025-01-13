@@ -333,6 +333,7 @@ levantine_christian_cultural_ideas = {
 			culture_group = turko_semitic
 			capital_scope = { region = mashriq_region }
 		}
+		NOT = {tag = AKD}
 		religion_group = christian									#in case crusaders are successful
 	}
 	free = yes
