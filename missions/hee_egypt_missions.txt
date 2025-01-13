@@ -1783,7 +1783,7 @@
 					province_id = 4298
 				}
 			}
-		}
+		
 		effect = {
 			clr_country_flag = mam_intervened_syria
 			dulkadir_area = {
