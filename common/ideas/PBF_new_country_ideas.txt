@@ -1,0 +1,488 @@
+CRL_ideas = {
+	start = {
+		land_morale = 0.2
+		siege_ability = 0.2
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = CRL
+	}
+	free = yes		#will be added at load.
+
+	crl_cavalry_idea = {
+		cavalry_flanking = 0.25
+		cavalry_power = 0.15
+	}
+	crl_siege_idea = {
+		leader_siege = 1
+	}
+	crl_religion_idea = {
+		papal_influence = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.25
+	}
+	crl_trade_idea = {
+		trade_efficiency = 0.15
+	}
+	crl_cannon_idea = {
+		artillery_power = 0.1
+	}
+	crl_infantry_idea = {
+		infantry_power = 0.15
+	}
+	crl_diplomatic_rep_idea = {
+		diplomatic_reputation = 1
+	}
+}
+
+NGC_ideas = {
+	start = {
+		prestige = 1
+		army_tradition = 1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = NGC
+	}
+	free = yes		#will be added at load.
+
+	ngc_tech_idea = {
+		technology_cost = -0.05
+		idea_cost = -0.1
+	}
+	ngc_infantry_idea = {
+		infantry_power = 0.2
+	}
+	ngc_forcelimit_idea = {
+		land_forcelimit_modifier = 0.25
+	}
+	ngc_trade_idea = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ngc_diplomat_idea = {
+		diplomats = 1
+	}
+	ngc_artillery_idea = {
+		artillery_shock = 0.5
+		artillery_power = 0.1
+	}
+	ngc_professionalism_idea = {
+		yearly_army_professionalism = 0.005
+		drill_gain_modifier = 0.25
+	}
+}
+
+RHI_ideas = {
+	start = {
+		development_cost = -0.05
+		infantry_power = 0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = RHN
+	}
+	free = yes		#will be added at load.
+
+	rhi_production_idea = {
+		production_efficiency = 0.1
+	}
+	rhi_attrition_idea = {
+		hostile_attrition = 1
+	}
+	rhi_shock_idea = {
+		shock_damage = 0.2
+	}
+	rhi_trade_idea = {
+		global_own_trade_power = 0.15
+	}
+	rhi_goods_idea = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	rhi_infantry_idea = {
+		infantry_cost = -0.1
+	}
+	rhi_leader_idea = {
+		leader_land_shock = 1
+	}
+}
+
+ARI_ideas = {
+	start = {
+		galley_power = 0.2
+		trade_efficiency = 0.1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = ARI
+	}
+	free = yes
+	
+	ari_tax_idea = {
+		global_tax_modifier = 0.1
+	}
+	ari_disc_idea = {
+		discipline = 0.05
+	}
+	ari_steer_idea = {
+		trade_steering = 0.15
+	}
+	ari_idea_idea = {
+		idea_cost = -0.1
+	}
+	ari_trade_idea = {
+		global_trade_power = 0.10
+	}
+	ari_admin_idea = {
+		free_adm_policy = 1
+		adm_advisor_cost = -0.1 
+	}
+	ari_morale_idea = {
+		land_morale = 0.15
+	}
+}
+
+ZPD_ideas = {
+	start = {
+		advisor_cost = -0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		technology_cost = -0.1
+	}
+	
+	trigger = {
+		tag = ZPD
+	}
+	free = yes
+	
+	zpd_world_manufactory = {
+		production_efficiency = 0.1
+	}
+	zpd_slava_ceska = {
+		land_morale = 0.15
+	}
+	zpd_bohemian_silver = {
+		inflation_reduction = -0.05
+        interest = -0.5
+	}
+	zpd_winged_hussars = {
+		cavalry_power = 0.3
+		can_recruit_hussars = yes
+	}
+	zpd_three_nation_army = {
+		global_manpower_modifier = 0.25
+        infantry_power = 0.1
+	}
+	zpd_ostsiedlung = {
+		build_time = -0.1
+		development_cost = -0.05
+	}
+	zpd_order_of_the_eagle = {
+		discipline = 0.05
+        reinforce_speed = 0.3
+	}
+}
+
+SGC_ideas = {
+	start = {
+		development_cost = -0.05
+		interest = -0.5
+	}
+	
+	bonus = {
+		papal_influence = 2
+	}
+	
+	trigger = {
+		tag = SGC
+	}
+	free = yes
+	
+	sgc_idea_1 = {
+		artillery_power = 0.2
+	}
+	sgc_idea_2 = {
+		build_cost = -0.1
+		production_efficiency = 0.1
+	}
+	sgc_idea_3 = {
+		diplomats = 1
+		diplomatic_reputation = 1
+	}
+	sgc_idea_4 = {
+		land_morale = 0.15
+	}
+	sgc_idea_5 = {
+		global_tax_modifier = 0.15
+	}
+	sgc_idea_6 = {
+		technology_cost = -0.05
+	}
+	sgc_idea_7 = {
+	 	advisor_pool = 1
+		advisor_cost = -0.1
+	}
+}
+
+AUB_HAB_ideas = { #Austria-Bavaria, Austrian Version
+	start = {
+		imperial_authority_value = 0.10
+		diplomatic_reputation = 2.0
+	}
+	
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+	
+	trigger = {
+		tag = AUB
+		primary_culture = austrian
+	}
+	free = yes
+	
+	reinheitsgebot_for_our_beer = { #Same for both
+		production_efficiency = 0.10
+	}
+	the_troublesome_south_and_east = { #Unique
+		army_tradition_decay = -0.01
+	}
+	fugger_and_welsers_of_ab = { #Same for both
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+	navigating_hre_politics = { #Unique
+		ae_impact = -0.15
+	}
+	monpolizing_various_industries = { #Same for Both
+		global_prov_trade_power_modifier = 0.15
+	}
+	discipline_of_the_grenzers = { #Unique
+		infantry_power = 0.10
+	}
+	mastery_of_soft_power = { #Same for both
+		diplomatic_annexation_cost = -0.20
+	}
+}
+
+AUB_BAV_ideas = { #Austria-Bavaria, Bavarian Version
+	start = {
+		imperial_authority_value = 0.10
+		army_tradition = 1.0
+	}
+	
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+	
+	trigger = {
+		tag = AUB
+		primary_culture = bavarian
+	}
+	free = yes
+	
+	reinheitsgebot_for_our_beer = { #Same for both
+		production_efficiency = 0.10
+	}
+	attract_those_of_the_german_renaissance = { #Unique
+		prestige = 1.0
+		idea_cost = -0.05
+	}
+	fugger_and_welsers_of_ab = { #Same for both
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+	absolutist_power_means_a_standing_army = { #Unique
+		discipline = 0.05
+	}
+	monpolizing_various_industries = { #Same for Both
+		global_prov_trade_power_modifier = 0.15
+	}
+	army_restructuring = { #Unique
+		land_forcelimit_modifier = 0.25
+	}
+	mastery_of_soft_power = { #Same for both
+		diplomatic_annexation_cost = -0.20
+	}
+}
+
+BGM_WAL_ideas = { #Belgium, Wallonian Version
+	start = {  #Walloon identity branches from French Identity#
+		production_efficiency = 0.15
+		free_adm_policy = 1
+	}
+	
+	bonus = {
+		development_cost = -0.15
+	}
+
+	trigger = {
+		tag = BGM
+		primary_culture = wallonian
+	}
+	free = yes
+	
+	the_belgian_revolution = { #Same for both
+		land_morale = 0.10
+	}
+	continual_french_support = { #Unique
+		land_maintenance_modifier = -0.10
+	}
+	distinct_from_dutch_and_french = { #Same for both
+		manpower_recovery_speed = 0.05
+		prestige = 1.0
+	}
+	formulate_belgian_political_parties = { #Unique
+		reform_progress_growth = 0.10
+	}
+	refusal_of_pure_despotism = { #Same for Both
+		max_absolutism = -10
+		yearly_corruption = -0.10
+	}
+	evenly_distribute_the_burden = { #Unique
+		legitimacy = 1.0
+		republican_tradition = 0.5
+	}
+	shift_to_flemish_and_walloon_language = { #Same for both
+		global_unrest = -2
+	}
+}
+
+BGM_FLE_ideas = { #Belgium, Flemish Version
+	start = {  #Flemish identity branches from Dutch Identity#
+		production_efficiency = 0.15
+		free_dip_policy = 1
+	}
+	
+	bonus = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = BGM
+		primary_culture = flemish
+	}
+	free = yes
+	
+	the_belgian_revolution = { #Same for both
+		land_morale = 0.10
+	}
+	as_thrifty_as_any_dutchmen = { #Unique
+		trade_efficiency = 0.15
+	}
+	distinct_from_dutch_and_french = { #Same for both
+		manpower_recovery_speed = 0.05
+		prestige = 1.0
+	}
+	satiate_german_and_french_minorities = { #Unique
+		global_manpower_modifier = 0.25
+	}
+	refusal_of_pure_despotism = { #Same for Both
+		max_absolutism = -10
+		yearly_corruption = -0.10
+	}
+	high_level_diplomacy = { #Unique
+		diplomatic_reputation = 1
+	}
+	shift_to_flemish_and_walloon_language = { #Same for both
+		global_unrest = -2
+	}
+}
+
+PBA_ideas = {  #Polabia
+	start = {
+		infantry_power = 0.20
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		reinforce_cost_modifier = -0.33
+	}
+	
+	trigger = {
+		tag = PBA
+	}
+	free = yes
+	
+	fading_memories_reaffirmed = {
+		land_morale = 0.10
+	}
+	militarized_once_more = {
+		army_tradition_decay = -0.01
+	}
+	paid_tribute_is_returned_to_us = {
+		global_tax_modifier = 0.1
+		vassal_income = 0.25
+	}
+	revival_of_polabian_culture = {
+		production_efficiency = 0.1
+		culture_conversion_cost = -0.20
+	}
+	northern_raiders_have_taught_us = {
+		galley_power = 0.15
+		own_coast_naval_combat_bonus = 1.0
+	}
+	reorganize_land_along_polabian_lines = {
+		yearly_corruption = -0.10
+	}
+	reformation_of_the_gords = {
+		build_cost = -0.15
+		defensiveness = 0.15
+	}
+}
+
+OCC_ideas = {  #Occitania
+    start = {
+        tolerance_heretic = 3
+        advisor_pool = 1
+    }
+    
+    bonus = {
+        yearly_corruption = -0.10
+    }
+    
+    trigger = {
+        tag = OCC
+    }
+    free = yes
+    
+    lingua_d_oc = {
+        same_culture_advisor_cost = -0.20
+        prestige = 1
+    }
+    united_with_our_family_across_mountains = {
+        global_manpower_modifier = 0.20
+    }
+    frankish_disunity_discarded = {
+        global_regiment_recruit_speed = -0.10
+        land_morale = 0.10
+    }    
+    troubadours_once_again = {
+        global_unrest = -2
+    }
+    diasporas_of_occitain_people = {
+        improve_relation_modifier = 0.20
+    }
+    occitain_literature_unrestricted = {
+        global_institution_spread = 0.15
+    }    
+    albigensian_crusade_memories = {
+        discipline = 0.05
+    }
+}

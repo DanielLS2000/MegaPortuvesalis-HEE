@@ -1,0 +1,447 @@
+BOH_ideas = {
+	start = {
+		advisor_cost = -0.1
+		improve_relation_modifier = 0.2
+	}
+	
+	bonus = {
+		same_culture_advisor_cost = -0.25
+	}
+	
+	trigger = {
+		tag = BOH
+	}
+	free = yes
+	
+	boh_empire_factory = {
+		production_efficiency = 0.1
+	}
+	boh_czech_nationalism = {
+		land_morale = 0.15
+	}
+	boh_bohemian_silver = {
+		inflation_reduction = 0.05
+        interest = -0.5
+	}
+	boh_winged_hussars = {
+		cavalry_power = 0.3
+		can_recruit_hussars = yes
+	}
+	boh_wagenburg = {
+		global_manpower_modifier = 0.25
+        infantry_power = 0.1
+	}
+	boh_university_of_prague = {
+		technology_cost = -0.1
+	}
+	boh_order_of_the_eagle = {
+		discipline = 0.05
+        reinforce_speed = 0.3
+	}
+}
+
+BOH2_ideas = {
+	start = {
+		advisor_cost = -0.1
+		improve_relation_modifier = 0.2
+	}
+	
+	bonus = {
+		same_culture_advisor_cost = -0.25
+	}
+	
+	trigger = {
+		tag = BOH
+		has_country_flag = boh_empowered_ni
+	}
+	free = yes
+	
+	boh_empire_factory = {
+		production_efficiency = 0.1
+	}
+	boh_czech_nationalism2 = {
+		land_morale = 0.15
+        development_cost_in_primary_culture = -0.05
+	}
+	boh_bohemian_silver = {
+		inflation_reduction = -0.05
+        interest = -0.5
+	}
+	boh_winged_hussars = {
+		cavalry_power = 0.3
+		can_recruit_hussars = yes
+	}
+	boh_wagenburg = {
+		global_manpower_modifier = 0.25
+        infantry_power = 0.1
+	}
+	boh_university_of_prague = {
+		technology_cost = -0.1
+	}
+	boh_order_of_the_eagle = {
+		discipline = 0.05
+        reinforce_speed = 0.3
+	}
+}
+
+# Bosnia
+BOS_ideas = {
+	start = {	
+		army_tradition_decay = -0.01
+		cavalry_power = 0.2	
+	}
+	
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = BOS
+	}
+	free = yes
+	
+	bos_renaissance = {
+		technology_cost = -0.05
+	}
+	bos_pride_of_fleet = {
+		navy_tradition = 0.5
+	}
+	bos_increase_recruits = {
+		global_manpower_modifier = 0.2
+	}
+	bos_prussia_of_balkans = {
+		discipline = 0.05
+	}
+	bos_pomoc = {
+		production_efficiency = 0.1
+	}
+	bos_merchant_fleet = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	bos_christian_bastion = {
+		hostile_attrition = 1
+		defensiveness = 0.15
+	}
+}
+
+HSA_ideas = {
+	start = {
+		land_morale = 0.1
+		trade_steering = 0.2
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.5
+	}
+	
+	trigger = {
+		tag = HSA
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
+	}
+	free = yes
+	
+	end_of_victual_brothers = {
+		infantry_power = 0.10
+	}
+	strong_league_obligations = {
+		global_own_trade_power = 0.2
+		trade_efficiency = 0.05
+	}
+	hsa_shipbuilding = {
+		merchants = 1
+	}
+	reformed_hanstag = {
+		shock_damage = 0.1
+		mercenary_discipline = 0.05
+	}
+	hanseatic_levy_system = {
+		development_cost = -0.1
+	}
+	regularised_contribution = {
+		global_trade_power = 0.15
+	}
+	the_hansa_bank = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+FU2_ideas = {
+	start = {
+		trade_efficiency = 0.2
+		merchants = 1 
+	}
+	
+	bonus = {
+		trade_steering = 0.2 
+	}
+	
+	trigger = {
+		tag = HSA
+		has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag
+	}
+	free = yes 
+	
+	FU2_foreign_kontors = {
+		global_trade_power = 0.15
+	}
+	FU2_the_handelsmarine = {
+		global_ship_trade_power = 0.25
+		global_ship_cost = -0.05
+	}
+	FU2_reform_queens_army = {
+		discipline = 0.05
+	}
+	FU2_adler_von_lubeck_legacy = {
+		heavy_ship_power = 0.1
+	}
+	FU2_merchants_with_state = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+	}
+	FU2_spread_the_northern_style = {
+		idea_cost = -0.1
+	}
+	regularised_contribution = {
+		global_prov_trade_power_modifier = 0.20
+	}
+}
+
+BUR_Ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_manpower_modifier = 0.2
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		tag = BUR
+	}
+	free = yes
+	
+	fra_taille = {
+		# Same as France
+	}
+	lessons_hundred_years_war = {
+		# Same as France
+	}
+	estates_general = {
+		# Same as France
+	}
+	native_trading_principles = {
+		# Same as France
+	}
+	divine_right_to_rule = {
+		# Same as France
+	}
+	europes_first_standing_army = {
+		# Same as France
+	}
+	vauban_fortifications = {
+		# Same as France
+	}
+}
+
+AKD_ideas = {
+	start = {
+		merchants = 1
+		global_foreign_trade_power = 0.1
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = AKD
+	}
+	free = yes
+	
+	akd_two_rivers = {
+		global_manpower_modifier = 0.25
+	}
+	akd_agressive_diplo = {
+		province_warscore_cost = -0.05
+		core_creation = -0.1
+	}
+	akd_crusade = {
+		land_morale = 0.1
+	}
+	akd_reforms = {
+		trade_efficiency = 0.1
+	}
+	akd_control_trade = {
+		global_trade_power = 0.1
+	}
+	akd_mesopotamian = {
+		development_cost = -0.1
+	}
+	akd_nestorian_navy = {
+		naval_forcelimit_modifier = 0.25
+	}
+}
+
+MLO_ideas = {
+	start = {
+		infantry_power = 0.10
+		trade_steering = 0.33
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = MLO
+		NOT = { has_country_flag = LNS_ideas_flag }
+	}
+	free = yes
+	
+	mlo_torino_academy = {
+		idea_cost = -0.05
+		technology_cost = -0.05
+	}
+	mlo_genoese_arsenal = {
+		naval_forcelimit_modifier = 0.25
+		ship_durability = 0.05
+	}
+	mlo_larceda_legacy = {
+		interest = -0.5
+	}
+	mlo_tomige = {
+		trade_efficiency = 0.2
+	}
+	mlo_sicily_war = {
+		global_sailors_modifier = 0.33
+		allowed_marine_fraction = 0.1
+	}
+	mlo_stato_milano = {
+		global_trade_power = 0.1
+	}
+	mlo_condotiere = {
+		global_manpower_modifier = 0.25
+	}
+}
+
+LOM_ideas = { # Lombardy
+	start = {
+		development_cost = -0.10
+		trade_steering = 0.33
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = LOM
+		NOT = { has_country_flag = LNS_ideas_flag }
+	}
+	free = yes
+
+	mlo_torino_academy = {
+		# Same as before
+	}
+	lom_alpine_legions = {
+		infantry_power = 0.15
+	}
+	mlo_larceda_legacy = {
+		# same again
+	}
+	mlo_tomige = {
+		# again
+	}
+	mlo_sicily_war = {
+		# again
+	}
+	mlo_genoese_arsenal = {
+		# again
+	}
+	mlo_condotiere = {
+		# again
+	}
+}
+
+MALADA_ideas = {
+	start = {
+		trade_steering = 0.33
+		global_trade_power = 0.2
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = MLO
+			tag = LOM
+		}
+		NOT = { has_country_flag = ven_upgrade_state_inuisition_idea_flag }
+		has_country_flag = LNS_ideas_flag
+	}
+	free = yes		#will be added at load.
+	
+	mlo_torino_academy = {
+		technology_cost = -0.1
+	}
+	lom_alpine_legions = {
+		# again
+	}
+	mlo_larceda_legacy = {
+		trade_efficiency = 0.2
+	}
+	mlo_tomige = {
+		global_manpower_modifier = 0.33
+	}
+	mlo_sicily_war = {
+		fire_damage = 0.1
+		land_forcelimit_modifier = 0.2
+	}
+	mlo_genoese_arsenal = {
+		naval_forcelimit_modifier = 0.5
+	}
+	lns_ships = {
+		global_ship_trade_power = 0.35
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+EGY_ideas = {
+	start = {
+		cavalry_power = 0.1
+		land_morale = 0.15
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+	free = yes		#will be added at load.
+	
+	egy_centralization_works = {
+		global_missionary_strength = 2
+	}
+	training_missions_in_egypt = {
+		trade_efficiency = 0.1
+	}
+	legacy_of_the_karimis = {
+		discipline = 0.05
+	}
+	nile_production = {
+		manpower_recovery_speed = 0.15
+	}
+	westernize_the_military = {
+		trade_steering = 0.25
+	}
+	mediterranean_shipwrights = {
+		production_efficiency = 0.1
+	}
+	crossroads_between_europe_and_africa = {
+		army_tradition = 0.5
+	}
+}

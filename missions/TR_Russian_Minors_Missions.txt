@@ -7,6 +7,7 @@ tr_russian_minors_1 = {
 	}
 	potential = {
 		OR = {
+			
 			tag = VOL
 			tag = KIE
 			tag = CHR
@@ -34,6 +35,8 @@ tr_russian_minors_1 = {
 				culture_group = east_slavic
 				NOT = { tag = MOS }
 				NOT = { tag = NOV }
+				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
@@ -261,6 +264,7 @@ tr_russian_minors_2 = {
 	}
 	potential = {
 		OR = {
+NOT = { tag = EST }
 			tag = VOL
 			tag = KIE
 			tag = CHR
@@ -286,8 +290,15 @@ tr_russian_minors_2 = {
 			}
 			AND = {
 				culture_group = east_slavic
-				NOT = { tag = MOS }
+					potential = {
+		OR = {
+		tag = EST
+		was_tag = EST
+		}
+	}				NOT = { tag = MOS }
 				NOT = { tag = NOV }
+				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
@@ -423,6 +434,7 @@ tr_russian_minors_3 = {
 	}
 	potential = {
 		OR = {
+NOT = { tag = EST }
 			tag = VOL
 			tag = KIE
 			tag = CHR
@@ -448,8 +460,15 @@ tr_russian_minors_3 = {
 			}
 			AND = {
 				culture_group = east_slavic
-				NOT = { tag = MOS }
+					potential = {
+		OR = {
+		tag = EST
+		was_tag = EST
+		}
+	}				NOT = { tag = MOS }
 				NOT = { tag = NOV }
+				NOT = { tag = EST }
+				NOT = { was_tag = EST }
 				NOT = { tag = RUS }
 			}			
 		}
