@@ -3101,8 +3101,8 @@ country_event = {
 	
 	trigger = {
 		tag = SPA
-		owns_core_province = 217 #Madrid
-		NOT = { capital = 217 } #Madrid
+		owns_core_province = 227 #Madrid
+		NOT = { capital = 227 } #Madrid
 		num_of_cities = 25
 		government = monarchy
 		is_year = 1520
@@ -3123,8 +3123,8 @@ country_event = {
 				NOT = { primary_culture = castillian }
 			}
 		}
-		set_capital = 217
-		217 = {
+		set_capital = 227
+		227 = {
 			add_province_modifier = {
 				name = "solo_madrid_es_corte"
 				duration = 3650
