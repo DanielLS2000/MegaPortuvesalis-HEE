@@ -2,9 +2,8 @@
 	slot = 1
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-	    tag = EGY
+		tag = EGY
 		always = yes
 	}
 
@@ -303,7 +302,7 @@
 	mam_ethiopia = {
 		icon = mission_bedouins
 		position = 6
-		required_missions = { 	mam_yemen }
+		required_missions = { mam_yemen }
 		provinces_to_highlight = {
 			region = horn_of_africa_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -393,14 +392,14 @@
 		required_missions = { mam_karimi_merchants }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1099
-				province_id = 1100
+				province_id = 1998
+				province_id = 1999
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			1099 = { country_or_non_sovereign_subject_holds = ROOT }
-			1100 = { country_or_non_sovereign_subject_holds = ROOT }
+			1998 = { country_or_non_sovereign_subject_holds = ROOT }
+			1999 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			if = {
@@ -448,9 +447,8 @@
 	slot = 2
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-	    tag = EGY
+		tag = EGY
 		always = yes
 	}
 
@@ -632,7 +630,7 @@
 			}
 		}
 	}
-		mam_unify_islam = {
+	mam_unify_islam = {
 		icon = mission_islamic_golden_age
 		position = 8
 		required_missions = { eth_conquer_adal eth_the_riches_of_the_south }
@@ -651,7 +649,7 @@
 				province_id = 1212
 				province_id = 1099
 				province_id = 358
-				province_id = 2313				
+				province_id = 2313
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -660,7 +658,7 @@
 		trigger = {
 			if = {
 				limit = {
-					{ 
+					{
 						has_dlc = "Star and Crescent"
 					}
 				}
@@ -680,7 +678,7 @@
 				province_id = 358
 				province_id = 2313
 			}
-			else = { 
+			else = {
 				custom_trigger_tooltip = {
 					tooltip = unified_islam_tt
 					has_country_modifier = unified_islam
@@ -995,9 +993,8 @@
 	slot = 3
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-	    tag = EGY
+		tag = EGY
 		always = yes
 	}
 
@@ -1707,9 +1704,8 @@
 	slot = 4
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-	    tag = EGY
+		tag = EGY
 		always = yes
 	}
 
@@ -1720,40 +1716,40 @@
 		provinces_to_highlight = {
 			OR = {
 				area = syria_area
-				province_id = 1849
-				province_id = 2313
-				province_id = 377
+				province_id = 1849 
+				province_id = 2313 
+				province_id = 377 
 			}
 		}
 		trigger = {
 			if = {
-					limit = {
-						        NOT = { is_year = 1446 }
-							}
-
-						}
-				OR if = {
-					limit = {
-						OR = {
+				limit = {
+					NOT = { is_year = 1446 }
+				}
+			}
+			OR = {
+				if = {
+					limit = { 
+						OR = { 
 							has_dlc = "Res Publica"
 							has_dlc = "Common Sense"
 						}
 					}
 					national_focus = ADM
 				}
-				has_adm_advisor = yes
+				has_adm_advisor = yes 
 				stability = 1
 			}
 			syria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			aleppo_area = {
-				type = all
+				type = all 
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					province_id = 4298
-				}
+				} 
 			}
 			if = {
 				limit = {
@@ -1783,7 +1779,7 @@
 					province_id = 4298
 				}
 			}
-		
+		}
 		effect = {
 			clr_country_flag = mam_intervened_syria
 			dulkadir_area = {
@@ -1848,6 +1844,7 @@
 			}
 		}
 	}
+
 	mam_persia = {
 		icon = mam_persia
 		position = 2
@@ -1918,9 +1915,6 @@
 			}
 			add_accepted_culture_or_dip_power = { culture = nubian dip_reward = yes }
 			add_permanent_claim = 1232
-		}
-		ai_weight = {
-			factor = 75	#Default
 		}
 	}
 	mam_cultivate_the_delta = {
@@ -2098,9 +2092,8 @@
 	slot = 5
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-	    tag = EGY
+		tag = EGY
 		always = yes
 	}
 
@@ -2137,23 +2130,19 @@
 			}
 		}
 	}
-		mam_refine_the_furusiyya = {
+	mam_refine_the_furusiyya = {
 		icon = mam_refine_the_furusiyya
-		required_missions = { mam_recruit_the_mamluks }
 		position = 3
-		provinces_to_highlight = {
-			
-		}
+		required_missions = { mam_recruit_the_mamluks }
 		trigger = {
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				OR = {
-					army_tradition = 50 
+					army_tradition = 50
 					army_professionalism = 0.3
 				}
 			}
 			else = { army_tradition = 50 }
-			#mamluks_percentage = 0.25 TODO 
 			reform_level = 5
 		}
 		effect = {
