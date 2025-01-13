@@ -1060,7 +1060,7 @@
 			province_id = 358
 		}
 		trigger = {
-			owns_core_province = 58
+			owns_core_province = 358
 			358 = {
 				OR = {
 					fort_level = 3
