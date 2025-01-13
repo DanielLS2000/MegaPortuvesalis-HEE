@@ -15,7 +15,7 @@ bruh = {
 		trigger = { 
 			OR = { 
 				num_of_owned_provinces_with = {
-					culture = finnish 
+					culture = dynamic-cosmopolitan_french-culture-num1 
 					value = 12
 				}
 				has_cultural_union = yes 
@@ -571,7 +571,7 @@ bruh = {
 			1 = { owned_by = ROOT num_of_times_improved = 8 } 
 		}
 		effect = { 
-			country_event = { id = flavor_fra.204 } 
+			country_event = { id = recurso_tecnico_1 } 
 			custom_tooltip = fra_event_insight_204_tt
 		}
 	}
@@ -787,7 +787,7 @@ bruh = {
 		position = 2
 		required_missions = { fin_grow_farms fin_build_turku teu_build_to_force_limit }
 		trigger = { 
-			share_of_starting_income = 5
+			share_of_starting_income = 2
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
 				has_adm_advisor_2 = yes 
@@ -1040,13 +1040,7 @@ bruh = {
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU }
 			religion = catholic
-			custom_trigger_tooltip = {
-				tooltip = teu_crusader_mil_reform_1_tt
-				check_variable = {
-					which = num_won_battles
-					value = 20
-				}
-			}
+			num_of_battles = { amount = 20 }
 		}
 		effect = {
 			add_army_tradition = 10
@@ -1112,7 +1106,7 @@ bruh = {
 			has_completed_idea_group_of_category = {
 				mil_ideas = yes
 			}
-			num_of_cavalry = 25
+			num_of_cavalry = 18
 		}
 		effect = {
 			define_advisor = {
@@ -1159,7 +1153,7 @@ bruh = {
 			}
 			grain = 20
 			monthly_mil = 10
-			num_of_cavalry = 50
+			num_of_cavalry = 35
 		}
 		effect = {
 			add_army_professionalism = 0.1
@@ -1195,16 +1189,7 @@ bruh = {
 		position = 1
 		required_missions = {  }
 		trigger = {
-			OR = { 
-				any_country = {
-					
-					has_won_war_against = {
-						who = prev
-						max_years_since = 100
-					}
-				}
-				artillery_fraction = 0.1 
-			}
+			num_of_battles = { amount = 4 }
 			army_size_percentage = 0.85 
 			OR = { 
 				has_mil_advisor = yes 
@@ -1245,7 +1230,7 @@ bruh = {
 					which = cavalry_power
 					value = 0.2
 				}
-				num_of_cavalry = 16 
+				num_of_cavalry = 12 
 				if = { 
 					limit = { has_dlc = "Cradle of Civilization" }
 					army_professionalism = 0.1
