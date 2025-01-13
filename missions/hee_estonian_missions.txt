@@ -537,7 +537,7 @@ has_country_shield = yes
 					}
 					calc_true_if = {
 						desc = liv_heal_the_schism_bt
-						OR ={
+						OR = {
 							all_province = {
 								region = russia_region
 								religion = catholic
