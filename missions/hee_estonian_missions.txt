@@ -1959,7 +1959,7 @@ has_country_shield = yes
 			army_size_percentage = 0.8
 			army_tradition = 30
 			OR = {
-				num_of_streltsy = 30
+				num_of_streltsy = 20
 				AND = {
 					NOT = { has_reform = tsardom }
 					NOT = { has_reform = ruthenian_tsardom }
@@ -2809,7 +2809,7 @@ has_country_shield = yes
 			OR = {
 				AND = {
 					has_reform = streltsy_reform
-					num_of_streltsy = 50
+					num_of_streltsy = 35
 					has_leader_with = {
 						total_pips = 15
 					}
@@ -2830,7 +2830,7 @@ has_country_shield = yes
 				first_custom_tooltip = rus_dissolve_the_streltsy_at
 				first_limit = "
 				has_reform = streltsy_reform
-				num_of_streltsy = 50
+				num_of_streltsy = 35
 				has_leader_with = {
 					total_pips = 15
 				}"
