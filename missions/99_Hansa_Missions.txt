@@ -1738,7 +1738,7 @@ lubeck_missions_4 = {
 	
 	hsa_appoint_war_minister = {
 		icon = military_self_reliance
-		required_missions = { hsa_royal_prussia hsa_flow_trade hsa_bypass_sound_toll }
+		required_missions = { hsa_royal_prussia hsa_flow_trade dan_integrate_norway }
 		position = 5 
 		trigger = {
 			has_mil_advisor_3 = yes
@@ -2001,177 +2001,152 @@ lubeck_missions_5 = {
 	potential = { tag = HSA }
 	has_country_shield = yes	
 	
-	hsa_imperial_allegience = {
-		icon = lead_the_empire 
-		required_missions = { } 
-		position = 1 
+	dan_the_baltic_force = {
+		icon = mission_marines
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {}
 		trigger = {
-			if = {
-				limit = { hre_size = 1 }
-				OR = {
-					emperor = {
-						has_opinion = {
-							who = ROOT 
-							value = 100 
-						}
-					}
-					is_emperor = yes 
-				}
-			}
-			OR = {
-				statesman = 1 
-				diplomat = 1 
-			}
-			num_of_allies = 2 
+			army_size_percentage = 1
+			navy_size_percentage = 1
+			num_of_galley = 12
 		}
 		effect = {
-			add_casus_belli = {
-				target = DTT
-				type = cb_vassalize_mission
-				months = 180
+			create_admiral = {
+				tradition = 50
 			}
-			holstein_area = {
+			vastra_gotaland_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = { hre_size = 1 }
-				emperor = {
-					add_trust = {
-						who = ROOT 
-						value = 25 
-						mutual = yes 
-					}
+			skaneland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			else = { add_dip_power = 50 }
+			gotaland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
-	hsa_pen_sword = {
-		icon = unite_the_realm
-		required_missions = { hsa_secure_salt_road hsa_imperial_allegience }
+	dan_integrate_sweden = {
+		icon = mission_conquer_sweden
+		required_missions = { hsa_secure_salt_road dan_the_baltic_force }
 		position = 3 
 		provinces_to_highlight = {
-			area = holstein_area 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			holstein_area = {
-				type = all 
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					owner = { is_in_trade_league_with = ROOT }
-				}
-			}
-		}
-		effect = {
-			custom_tooltip = hsa_imperial_favor_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						emperor = {
-							has_opinion = {
-								who = ROOT 
-								value = 100 
-							}
-						}
-					}
-					1775 = { add_core = ROOT }
-				}
-			}
-			add_country_modifier = {
-				name = hsa_victory_in_holstein_modifier
-				duration = 7300
-			}
-			if = {
-				limit = {	
-					DAN = {
-						NOT = {
-							has_opinion = {
-								who = ROOT 
-								value = 0 
-							}
-						}
-					}
-				}
-				custom_tooltip = hsa_reduce_denmark_trade_tt 
-				hidden_effect = {
-					45 = { #Lubeck
-						add_trade_modifier = {
-							who = DAN
-							duration = 3650
-							power = -50
-							key = hsa_submission_to_the_hansa
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	hsa_bypass_sound_toll = {
-		icon = mission_trade_with_cathay
-		required_missions = { hsa_pen_sword }
-		position = 4 
-		provinces_to_highlight = {
-			province_id = 12 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
 			OR = {
-				12 = { country_or_non_sovereign_subject_holds = ROOT }
-				AND = {
-					45 = {
-						NOT = {
-							trade_share = {
-								country = DAN 
-								share = 20
-							}
-						}
-						is_strongest_trade_power = ROOT 
-					}
-					army_strength = { 
-						who = DAN 
-						value = 1.5 
-					}
-				}
+				area = skaneland_area
+				area = vastra_gotaland_area
+				area = gotaland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			skaneland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			vastra_gotaland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			gotaland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
 			}
 		}
 		effect = {
-			custom_tooltip = general_tooltip_dynamic_reward
-			if = {
-				limit = {
-					12 = { owned_by = ROOT }
-				}
-				12 = { change_culture = ROOT }
-			}
-			if = {
-				limit = {
-					12 = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				12 = { add_center_of_trade_level = 1 }
-			}
-			else = {
-				12 = { remove_province_modifier = sound_toll }
-				45 = { 
+			add_accepted_culture_or_dip_power = { culture = swedish free = yes}
+			custom_tooltip = dan_integrate_sweden_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = swedish
+					}
 					add_province_modifier = {
-						name = sound_toll
+						name = dan_estonian_support
 						duration = -1
 					}
 				}
 			}
-			4163 = { add_permanent_claim = ROOT }
-			17 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					NOT = { is_core = 8 }
+					NOT = { is_permanent_claim = 8 }
+				}
+				add_permanent_claim = 8
+			}
+			western_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	dan_integrate_norway = {
+		icon = mission_conquer_norway
+		required_missions = { dan_integrate_sweden }
+		position = 4 
+		provinces_to_highlight = {
+			OR = {
+				area = northern_norway
+				area = western_norway
+				area = eastern_norway
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		trigger = {
+			northern_norway = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			western_norway = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			eastern_norway = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dan_norwegian_marines
+				duration = 18250
+			}
 		}
 	}
 	
 	hsa_tame_north_sea = {
 		icon = imperial_navy 
-		required_missions = { hsa_bypass_sound_toll }
+		required_missions = { dan_integrate_norway }
 		position = 5
 		provinces_to_highlight = { province_id = 1975 }
 		trigger = {
