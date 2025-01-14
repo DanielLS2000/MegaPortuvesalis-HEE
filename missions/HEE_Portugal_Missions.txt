@@ -284,109 +284,44 @@ POR_primeirobranch = {
 		}
 	}
 	POR_crowns_of_iberia = {
-		icon = mission_empire
-		position = 13
-		required_missions = { POR_reform_the_navy POR_conquer_the_south }
-		provinces_to_highlight = {
-			OR = {
-				area = lower_andalucia_area
-				area = upper_andalucia_area
-				area = northern_morocco_area
-				area = leon_area
-				area = extremadura_area
-				area = macaronesia_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		trigger = {
-			lower_andalucia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upper_andalucia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			northern_morocco_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			leon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			extremadura_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			macaronesia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_legitimacy = 20
-			if = {
-				limit = {
-					exists = SPA
-					valid_for_personal_unions_trigger = yes
-					SPA = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = SPA
-				}
-				limit = {
-					exists = Z4M
-					valid_for_personal_unions_trigger = yes
-					Z4M = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = Z4M
-				}
-			}
-			else = {
-				valencia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				asturias_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-				castille_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_claim = ROOT
-			}
-				toledo_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_claim = ROOT
-			}
-		}
-	}
+        icon = spread_the_von_wettins
+        required_missions = { POR_conquer_the_south }
+        position = 3
+        provinces_to_highlight = {
+            region = iberia_region 
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        trigger = {
+            iberia_region = {
+                type = all 
+                country_or_non_sovereign_subject_holds = ROOT 
+            }
+            if = { 
+                limit = { 
+                    OR = { 
+                        has_dlc = "Emperor" 
+                        has_dlc = "Rights of Man"
+                    }
+                }
+                is_great_power = yes 
+            }
+            total_development = 600
+        }
+        effect = {
+            set_government_rank = 3 
+
+            if = {
+                limit = { has_dlc = "Golden Century" }
+                add_country_modifier = {
+                    name = ara_a_new_power_modifier
+                    duration = -1 
+                }
+            }
+            else = {
+                add_prestige_or_monarch_power = { amount = 50 }
+            }
+        }
+    }
 }
 
 POR_segundobranch = {
