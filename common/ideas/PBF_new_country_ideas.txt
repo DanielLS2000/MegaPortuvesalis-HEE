@@ -447,47 +447,6 @@ PBA_ideas = {  #Polabia
 	}
 }
 
-LOM_ideas = { # Lombardy
-	start = {
-		infantry_power = 0.10
-		global_tax_modifier = 0.10
-	}
-
-	bonus = {
-		diplomats = 1
-	}
-	trigger = {
-		tag = LOM
-		}
-	free = yes
-
-	Edictum_Rothari = {
-		global_unrest = -2
-	}
-	Citta_ad_Isole = {
-		build_cost = -0.10
-	}
-	the_italian_frontier = {
-		land_attrition = -0.10
-	}
-	iron_crown_of_lombardy = {
-		legitimacy = 0.75
-		prestige = 0.5
-	}
-	italian_condottieri = {
-		mercenary_manpower = 0.2
-		mercenary_discipline = 0.05	
-	}
-	trace_italienne = {
-		fort_maintenance_modifier = -0.10
-		garrison_size = 0.10
-	}
-	gastaldi = {
-		administrative_efficiency = 0.05
-		governing_capacity_modifier = 0.10
-	}
-}
-
 OCC_ideas = {  #Occitania
     start = {
         tolerance_heretic = 3

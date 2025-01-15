@@ -2511,25 +2511,33 @@ tsardom = {
 	icon = "tsardom"
 	allow_normal_conversion = yes
 	potential = {
-		religion = orthodox
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		NOT = { primary_culture = ruthenian }
-		NOT = { primary_culture = byelorussian }
 		OR = {
 			AND = {
-				tag = RUS
-				NOT = { map_setup = map_setup_random }
+			was_tag = EST
+			tag = RUS
 			}
-			AND = {
-				tag = UKR
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = tsardom
+			AND = {		
+				religion = orthodox
+				OR = {
+					culture_group = east_slavic
+					culture_group = slavic
+				}
+				NOT = { primary_culture = ruthenian }
+				NOT = { primary_culture = byelorussian }
+				OR = {
+					AND = {
+						tag = RUS
+						NOT = { map_setup = map_setup_random }
+					}
+					AND = {
+						tag = UKR
+						NOT = { map_setup = map_setup_random }
+					}
+					AND = {
+						is_playing_custom_nation = yes
+						have_had_reform = tsardom
+					}
+				}
 			}
 		}
 	}
@@ -7376,4 +7384,41 @@ crusader_nobility_reform = {
 		pp_on_heathen_wars = yes
 	}
 
+}
+
+
+# Milanese Monarchy
+
+aurelian_monarchy_reform = {
+	icon = "holy_state_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+		yearly_corruption = -0.1
+		monarch_lifespan = 0.25
+	}
+	potential = {
+		is_or_was_tag = { 
+			tag = MLO 
+			}
+	}
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	boost_income = yes
+	can_use_trade_post = yes
+	can_form_trade_league = yes
+	trade_city_reform = trading_city
+	government_abilities = {
+		council_of_ten
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
 }
