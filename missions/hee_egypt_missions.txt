@@ -1255,15 +1255,15 @@
 		position = 6
 		required_missions = { egy_conquest_of_qasr_ibrim }
 		provinces_to_highlight = {
-			province_id = 1212
+			province_id = 1230
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { num_of_times_improved = 5 }
 			}
 		}
 		trigger = {
-			owns = 1212
-			1212 = {
+			owns = 1230
+			1230 = {
 				religion = ROOT
 				num_of_times_improved = 5
 			}
