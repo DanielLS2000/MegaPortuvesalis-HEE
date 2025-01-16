@@ -700,52 +700,6 @@ country_event = {
 		add_stability_or_adm_power = yes
 	}
 }	
-	
-# Plague in Venice
-country_event = {
-	id = flavor_ven.20
-	title = flavor_ven.20.t
-	desc = flavor_ven.20.d
-	picture = PLAGUE_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-					tag = MLO 
-					was_tag = MLO
-				}
-		is_year = 1500
-		NOT = { is_year = 1700 }
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-		modifier =  {
-			factor = 0.5
-			has_country_modifier = ven_venetian_first
-		}
-		modifier = {
-			factor = 5
-			has_country_flag = has_competent_doctors
-		}
-	}	
-	option = {	
-		name = flavor_ven.20.a
-		112 = {
-			add_province_modifier = {
-				name = "ven_recover_from_plague"
-				duration = 3650
-			}
-		}
-	}
-	option = {	
-		name = flavor_ven.20.b
-		add_adm_power = -20
-		add_dip_power = -20
-		add_mil_power = -20
-	}	
-}
 
 # Ponte di Rialto	
 country_event = {
