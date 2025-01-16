@@ -2305,8 +2305,10 @@ ditchmarchen_mission = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = HSA
 	}
+	has_country_shield = yes		
+	
 
 	peasants_conquest_of_bread = {
 		icon = mission_rice_field
@@ -2340,8 +2342,10 @@ colonial_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = HSA
 	}
+	has_country_shield = yes		
+	
 
 	dan_colonial_ambitions = {
 		icon = mission_corsairs_of_the_north_sea
@@ -2635,8 +2639,10 @@ england_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = HSA
 	}
+	has_country_shield = yes		
+	
 
 	dan_trump_the_english_fleet = {
 		icon = mission_build_up_to_force_limit
@@ -2864,8 +2870,10 @@ den_absolutism = {
 	generic = no
 	ai = yes
 	potential = {
-		always = yes
+		tag = HSA
 	}
+	has_country_shield = yes		
+	
 
 	dan_an_absolute_monarchy = {
 		icon = mission_danish_absolutism
