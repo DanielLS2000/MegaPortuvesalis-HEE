@@ -223,8 +223,10 @@
 		effect = {
 			if = {
 				limit = {
-					tag = MAM
-					tag = egy
+					OR = {
+						tag = MAM
+						tag = EGY
+					}
 				}
 				custom_tooltip = mam_upgrade_national_idea_tt
 				set_country_flag = mam_upgrade_national_idea_flag

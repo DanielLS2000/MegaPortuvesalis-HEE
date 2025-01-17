@@ -2,7 +2,7 @@
  # Missions
  egy_mercantile_relationship_title: "Mercantile Relationship"
  egy_mercantile_relationship_desc: "To secure our position in the Mediterranean, we must choose our partners wisely. Aligning with Milan fosters maritime innovation and grants us unmatched naval capabilities. Alternatively, an assertive stance against Milan strengthens our mercantile dominance, ensuring the wealth of Alexandria flows through our hands."
- egy_establish_merchant_escorts_title: "Establish Merchant Escorts"
+ egy_establish_merchant_escorts_title: "Merchant Escorts"
  egy_establish_merchant_escorts_desc: "As we strive to expand our maritime endeavors, we must establish a robust merchant fleet that will operate as the backbone of our trade across the surrounding seas."
  egy_mam_holy_cities_title: "Reclaim the Bedouin"
  egy_mam_holy_cities_desc: "The deserts of Sudayr and Alarid, once integral to our realm, have slipped into the hands of Bedouin tribes. Reclaiming these lands is not merely a matter of territory but a reaffirmation of our authority over Arabia. By reuniting these provinces with our nation, we secure our legacy and extend our influence"
@@ -48,7 +48,7 @@
  egy_alexandrian_trade_desc: "Strategically placed at the heart of the Nile Delta, the development of vibrant marketplaces will solidify our control over the vital trade routes flowing through this region. By establishing these bustling centers of commerce, we will strengthen our economy, enhance our naval influence, and ensure the prosperity of our great kingdom"
  egy_father_african_rivers_title: "Father African Rivers"
  egy_father_african_rivers_desc: "we lay claim to the heart of Egypt's prosperity. With each province flourishing, we unlock the full potential of the Nile's trade and transportation networks, ensuring our dominance in the region and the strength of our economy. Through careful stewardship, the river's bounty will serve as the lifeblood of our nation, propelling us to greater heights."
- egy_dar_al_hadith_turba_title: "Reviving the Wisdom of Ages"
+ egy_dar_al_hadith_turba_title: "Reviving Old Wisdom"
  egy_dar_al_hadith_turba_desc: "The wisdom of our ancestors lies in the pages of ancient texts, and it is our duty to preserve and expand this knowledge for the future. By investing in our intellectual heritage, we shall renovate the great libraries and schools of our land, making them beacons of learning and innovation. With the strength of the past and the insights of the present, we will shape a brighter tomorrow."
  egy_center_arab_Christian_world_title: "Masters of the East and West"
  egy_center_arab_Christian_world_desc: "Through great efforts and the wisdom of our forebears, Egypt has emerged as the beacon of knowledge, surpassing the West in both technology and cultural advancements. We shall now solidify our place as the center of innovation and learning, embracing the best of both worlds and ensuring that Egypt leads the future with unmatched brilliance."
@@ -72,10 +72,12 @@
  egy_recruit_the_mamluks_desc: "With the strength of the Mamluks rooted in Egypt's history, we must restore their prominence in our military forces. By training and utilizing Mamluks once again, we will revive their legacy as a powerful force on the battlefield. Strengthening this estate will not only empower our armies but also grant us the loyalty of one of Egypt’s most iconic institutions."
  egy_refine_the_furusiyya_title: "Refine The Furusiyya"
  egy_refine_the_furusiyya_desc: "The key to a refined and deadly army is constant drills and exercises. By revising our manuals and training courses, we will attain the perfection of a powerful force at land."
- egy_city_thousand_minarets_title: "Egy City Thousand Minarets"
+ egy_city_thousand_minarets_title: "City Thousand Minarets"
  egy_city_thousand_minarets_desc: "[358.GetName] is a jewel to our prestigious crown. As such, we must make sure that it is polished and its beauty matches our legitimacy and strength!"
  egy_khass_al_sultan_title: "Grain Export Dominion"
  egy_khass_al_sultan_desc: "Our lands have long been known for their fertile fields and abundance of grain. By securing control over the key provinces and strengthening our crown lands, we can take our place as a major player in the grain trade. With the blessing of the Diwan al-Khass, we will create a foundation for economic growth and ensure a steady supply of resources for the empire."
  egy_assign_waqf_title: "Assign Waqf"
  egy_assign_waqf_desc: "Through the piety of our rulers and the prosperity of our lands, we have established a Waqf that will fund our charitable works and religious endeavors. This sacred institution, guided by [Root.Monarch.GetName], is a testament to our devotion to faith and society. With the blessings of the Waqf, we shall further strengthen our influence, both spiritually and politically."
+
+ # Tooltips
 

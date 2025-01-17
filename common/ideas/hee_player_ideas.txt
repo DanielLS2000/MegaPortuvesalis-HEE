@@ -420,11 +420,12 @@ EGY_ideas = {
 	
 	trigger = {
 		tag = EGY
+		NOT = { has_country_flag = mam_upgrade_national_idea_flag }
 	}
 	free = yes		#will be added at load.
 	
 	egy_centralization_works = {
-		global_missionary_strength = 2
+		global_missionary_strength = 0.02
 	}
 	training_missions_in_egypt = {
 		trade_efficiency = 0.1
@@ -443,5 +444,44 @@ EGY_ideas = {
 	}
 	crossroads_between_europe_and_africa = {
 		army_tradition = 0.5
+	}
+}
+
+MAM2_ideas = { #Mission reward to double mam_monopoly_ports // see mam_establish_merchant_escorts
+	start = {
+		cavalry_power = 0.1
+		land_morale = 0.15
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = EGY
+		has_country_flag = mam_upgrade_national_idea_flag
+	}
+	free = yes
+	
+	egy_centralization_works = {
+		# Same
+	}
+	training_missions_in_egypt = {
+		trade_efficiency = 0.2
+	}
+	legacy_of_the_karimis = {
+		# Same
+	}
+	nile_production = {
+		# Same
+	}
+	westernize_the_military = {
+		# Same
+	}
+	mediterranean_shipwrights = {
+		# Same
+	}
+	crossroads_between_europe_and_africa = {
+		# Same
 	}
 }
