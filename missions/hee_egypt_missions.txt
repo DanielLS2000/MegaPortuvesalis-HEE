@@ -339,7 +339,7 @@
 		}
 	}
 	egy_the_riches_of_the_south = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_chest
 		position = 7
 		required_missions = { egy_ethiopia }
 		provinces_to_highlight = {
@@ -1221,7 +1221,7 @@
 		}
 	}
 	egy_conquest_of_qasr_ibrim = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_bedouins
 		position = 5
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -1885,7 +1885,7 @@
 		}
 	}
 	egy_unify_the_kingdoms = {
-		icon = mission_build_up_to_force_limit
+		icon = trade_with_the_natives
 		position = 6
 		required_missions = { egy_conquest_of_qasr_ibrim }
 		provinces_to_highlight = {
