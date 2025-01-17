@@ -758,11 +758,11 @@ country_event = {
 		trigger = {
 			Z58 = {
 				is_subject_of = ROOT
-				owns_core_province = 4274
+				owns_core_province = 392
 					}
 			NAJ = {
 				is_subject_of = ROOT
-				owns_core_province = 392
+				owns_core_province = 4274
 			}
 			
 		}
@@ -782,11 +782,11 @@ country_event = {
 		trigger = {
 			Z58 = {
 				is_subject_of = ROOT
-				owns_core_province = 4274
+				owns_core_province = 392
 					}
 			NAJ = {
 				is_subject_of = ROOT
-				owns_core_province = 392
+				owns_core_province = 4274
 			}
 			
 		}
