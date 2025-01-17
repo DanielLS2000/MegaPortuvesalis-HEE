@@ -544,14 +544,14 @@ lubeck_missions_2 = {
 		}
 		effect = { 
 			country_event = { id = flavor_hsa.8 } #flavor_hsa.8
-			east_prussia_area = {
+			western_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			west_prussia_area = {
+			eastern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -584,31 +584,31 @@ lubeck_missions_2 = {
 		}
 	}
 	
-	hsa_royal_prussia = {
-		icon = tame_brandenburg 
+	dan_integrate_norway = {
+		icon = mission_conquer_norway 
 		required_missions = { hsa_induct_danzig_ports }
 		position = 4 
 		provinces_to_highlight = { 
 			OR = {
-				area = east_prussia_area 
-				area = west_prussia_area 
+				area = western_norway 
+				area = eastern_norway 
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			west_prussia_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+			western_norway = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
 			}
-			east_prussia_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+			eastern_norway = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
 			}
 		}
 		effect = {
-			west_prussia_area = { add_base_production = 1 }
-			east_prussia_area = { add_base_production = 1 }
-			add_accepted_culture = prussian 
+			eastern_norway = { add_base_production = 1 }
+			western_norway = { add_base_production = 1 }
+			add_accepted_culture = norwegian 
 		}
 	}
 
@@ -1738,7 +1738,7 @@ lubeck_missions_4 = {
 	
 	hsa_appoint_war_minister = {
 		icon = military_self_reliance
-		required_missions = { hsa_royal_prussia hsa_flow_trade dan_integrate_norway }
+		required_missions = { dan_integrate_norway hsa_flow_trade dan_the_german_trade_cities }
 		position = 5 
 		trigger = {
 			has_mil_advisor_3 = yes
@@ -2110,43 +2110,98 @@ lubeck_missions_5 = {
 		}
 	}
 	
-	dan_integrate_norway = {
-		icon = mission_conquer_norway
+	dan_the_german_trade_cities = {
+		icon = mission_subjugate_the_merchants
 		required_missions = { dan_integrate_sweden }
 		position = 4 
 		provinces_to_highlight = {
 			OR = {
-				area = northern_norway
-				area = western_norway
-				area = eastern_norway
+				province_id = 47
+				province_id = 1858
+				province_id = 45
+				province_id = 44
+				province_id = 1874
 			}
-			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { controller = { OR = { tag = ROOT alliance_with = ROOT is_subject_of = ROOT } } }
 		}
 		trigger = {
-			northern_norway = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
-			western_norway = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
-			eastern_norway = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
+			custom_trigger_tooltip = {
+				tooltip = dan_the_german_trade_cities_tt
+				calc_true_if = {
+					47 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							AND = { is_blockaded = yes owner = { war_with = ROOT } }
+							controlled_by = ROOT
+							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
+						}
+					}
+					1858 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							AND = { is_blockaded = yes owner = { war_with = ROOT } }
+							controlled_by = ROOT
+							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
+						}
+					}
+					45 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							AND = { is_blockaded = yes owner = { war_with = ROOT } }
+							controlled_by = ROOT
+							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
+						}
+					}
+					44 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							AND = { is_blockaded = yes owner = { war_with = ROOT } }
+							controlled_by = ROOT
+							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
+						}
+					}
+					1874 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							AND = { is_blockaded = yes owner = { war_with = ROOT } }
+							controlled_by = ROOT
+							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = dan_norwegian_marines
-				duration = 18250
+			add_prestige = 20
+			add_mercantilism = 2
+			add_years_of_trade_income = {
+				custom_tooltip = dan_the_german_trade_cities_ct
+				years = 4
+			}
+			1876 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 10
+					key = dan_the_german_trade
+				}
+			}
+			61 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 10
+					key = dan_the_german_trade
+				}
 			}
 		}
 	}
 	
 	hsa_tame_north_sea = {
 		icon = imperial_navy 
-		required_missions = { dan_integrate_norway }
+		required_missions = { dan_the_german_trade_cities }
 		position = 5
 		provinces_to_highlight = { province_id = 1975 }
 		trigger = {
