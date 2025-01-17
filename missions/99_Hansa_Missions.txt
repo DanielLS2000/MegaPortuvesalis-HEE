@@ -2896,7 +2896,7 @@ england_branch = {
 	dan_control_the_channel = {
 		icon = mission_control_the_channel
 		position = 16
-		required_missions = { dan_conquer_england }
+		required_missions = { dan_conquer_england dan_sca_colonize_canada}
 		provinces_to_highlight = {
 			province_id = 1269
 		}

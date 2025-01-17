@@ -7387,7 +7387,7 @@ crusader_nobility_reform = {
 # Milanese Reforms
 
 aurelian_monarchy_reform = {
-	icon = "holy_state_reform"
+	icon = "ambrosian_republic"
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	modifiers = {
