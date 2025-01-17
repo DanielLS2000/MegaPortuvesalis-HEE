@@ -463,7 +463,6 @@ latin = {
 }
 iberian	= {
 	province = { local_has_tercio = yes }
-	ultramar = { primary = KOJ }
 }
 french = {
 	outremer = {
@@ -860,6 +859,7 @@ turko_semitic = {
 			Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
 		}
 	}
+	ultramar = { primary = KOJ }
 	gagauz = {
 		primary = RMN
 

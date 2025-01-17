@@ -36,9 +36,9 @@ Countries:
 	- Ethiopia
 	- Formavel: Arabia
 ## Finland:
-	- Sweden
+	- France
 	- Finland
-	- Gotland (Monarchy)
+	- Teutonic Order
 	- Formavel: Scandinavia
 ## Akkad:
 	- Qara Qoyunlu
@@ -52,7 +52,7 @@ Countries:
 ## Bosnia:
 	- Ragusa
 	- Serbia
-	- Albania
+	- Hungary
 	- Formavel: Dalmatia
 # Essex:
 	- England

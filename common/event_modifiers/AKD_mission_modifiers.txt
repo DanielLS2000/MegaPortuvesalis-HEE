@@ -36,3 +36,27 @@ akkad_mausoleum = {
 	legitimacy = 0.5
 	global_unrest = -1
 }
+
+#Burgundy missions modifiers
+
+bur_victory_against_the_english_modifier = {
+	manpower_recovery_speed = 0.1
+	war_exhaustion = -0.03
+}
+bur_conquered_the_capetian_house_of_anjou_modifier = { 
+	ae_impact = -0.15
+}
+bur_rightful_emperor_of_italy_modifier = {
+	diplomatic_reputation = 1 
+	manpower_against_imperial_enemies = 35000
+}
+bur_entry_in_ned_modifier = { 
+	ae_impact = -0.1
+}
+bur_exploitation_of_burgundian_estates_modifier = {
+	development_cost = -0.1
+	global_tax_modifier = 0.15
+}
+bur_golden_march_modifier = { 
+	monarch_military_power = 1
+}
