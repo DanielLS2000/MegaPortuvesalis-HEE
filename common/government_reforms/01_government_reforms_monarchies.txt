@@ -7387,10 +7387,10 @@ crusader_nobility_reform = {
 }
 
 
-# Milanese Monarchy
+# Milanese Reforms
 
 aurelian_monarchy_reform = {
-	icon = "holy_state_reform"
+	icon = "ambrosian_republic"
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	modifiers = {
@@ -7420,5 +7420,33 @@ aurelian_monarchy_reform = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+	}
+}
+
+regional_governors_system = {
+	icon = "consolidate_power_in_doge_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = aurelian_monarchy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = aurelian_monarchy_reform
+		}
+	}
+	modifiers = {
+		governing_capacity = 250
+	}
+	has_term_election = no
+	ai = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 25
+			}
+		}
 	}
 }

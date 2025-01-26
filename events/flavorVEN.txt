@@ -700,52 +700,6 @@ country_event = {
 		add_stability_or_adm_power = yes
 	}
 }	
-	
-# Plague in Venice
-country_event = {
-	id = flavor_ven.20
-	title = flavor_ven.20.t
-	desc = flavor_ven.20.d
-	picture = PLAGUE_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-					tag = MLO 
-					was_tag = MLO
-				}
-		is_year = 1500
-		NOT = { is_year = 1700 }
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-		modifier =  {
-			factor = 0.5
-			has_country_modifier = ven_venetian_first
-		}
-		modifier = {
-			factor = 5
-			has_country_flag = has_competent_doctors
-		}
-	}	
-	option = {	
-		name = flavor_ven.20.a
-		112 = {
-			add_province_modifier = {
-				name = "ven_recover_from_plague"
-				duration = 3650
-			}
-		}
-	}
-	option = {	
-		name = flavor_ven.20.b
-		add_adm_power = -20
-		add_dip_power = -20
-		add_mil_power = -20
-	}	
-}
 
 # Ponte di Rialto	
 country_event = {
@@ -1144,44 +1098,6 @@ country_event = {
 }
 
 
-# The Plague of YEAR (1631)
-country_event = {
-	id = flavor_ven.30
-	title = flavor_ven.30.t
-	desc = flavor_ven.30.d
-	picture = PLAGUE_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-					tag = MLO 
-					was_tag = MLO
-				}
-		is_year = 1628
-		NOT = { is_year = 1635 }
-		owns = 112
-		112 = {
-			NOT = {
-				has_province_modifier = ven_recover_from_plague
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 21
-	}	
-	option = {	#Ok.
-		name = flavor_ven.30.a
-		112 = { add_base_tax = -1 }
-		add_stability = -1
-		set_country_flag = ven_great_plague
-		add_faction_influence = {
-			faction = mr_traders
-			influence = -10
-		}
-	}
-}
 
 #Dwindling Nobility
 country_event = {
@@ -1199,7 +1115,6 @@ country_event = {
 				}
 		is_year = 1645
 		NOT = { is_year = 1720 }
-		has_country_flag = ven_great_plague
 		has_government_attribute = is_merchant_republic
 	}
 	
