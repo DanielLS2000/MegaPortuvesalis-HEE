@@ -445,3 +445,172 @@ EGY_ideas = {
 		army_tradition = 0.5
 	}
 }
+
+ENG_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		land_morale = 0.1
+	}
+
+	bonus = {
+		naval_morale = 0.1
+	}
+	
+	trigger = {
+		tag = ENG
+	}
+	free = yes		#will be added at load.
+	
+	esx_land_shock = {
+		shock_damage_received = -0.1
+	}
+	esx_advisor_cost = {
+		same_culture_advisor_cost = -0.2
+	}
+	esx_manpower = {
+		global_manpower_modifier = 0.2
+	}
+	esx_navy = {
+		navy_tradition = 0.25
+		heavy_ship_power = 0.10
+	}
+	esx_goods = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	esx_trade = {
+		trade_efficiency = 0.1
+	}
+	esx_ae = {
+		ae_impact = -0.15
+	}
+}
+
+GBR_ideas = {
+	start = {
+		naval_morale = 0.20
+		land_morale = 0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = GBR
+	}
+	free = yes		#will be added at load.
+
+	gbr_acts_of_union = {
+		diplomatic_annexation_cost = -0.15
+		governing_capacity_modifier = 0.1
+	}
+	city_upon_a_hill = {
+		global_colonial_growth = 20
+		global_tariffs = 0.15
+	}
+	the_british_parliament = {
+		trade_efficiency = 0.1
+	}
+	gbr_the_royal_society = {
+		global_manpower_modifier = 0.2
+	}
+	british_industrialization = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	reform_of_comission_buying = {
+		fire_damage = 0.1
+		allowed_marine_fraction = 0.25
+	}
+	britanna_rules_the_waves = {
+		navy_tradition = 0.25
+		heavy_ship_power = 0.15
+	}
+}
+
+POR_ideas = {
+	start = {
+		land_morale = 0.15
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = POR
+	}
+	free = yes		#will be added at load.
+	
+	legacy_of_the_navigator = {
+		naval_morale = 0.1
+		range = 0.20
+	}
+	afonsine_ordinances = {
+		trade_efficiency = 0.1
+	}
+	case_de_india = {
+		trade_steering = 0.2
+	}
+	land_before_faith = {
+		idea_claim_colonies = yes
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	the_bandeirantes = {
+		global_colonial_growth = 25
+	}
+	royal_absolutism = {
+		build_cost = -0.15
+		yearly_absolutism = 0.5
+	}
+	por_royal_military_academy = {
+		defensiveness = 0.1
+		artillery_fire = 1
+	}
+}
+
+SPA_ideas = {
+	start = {
+		land_morale = 0.15
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = SPA
+	}
+	free = yes		#will be added at load.
+
+	devout_catholisism = {
+		naval_morale = 0.1
+		range = 0.20
+	}
+	siglo_de_oro = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	salamanca_scholars = {
+		global_trade_power = 0.2
+	}
+	spanish_armada = {
+		heavy_ship_power = 0.1
+		naval_forcelimit_modifier = 0.25
+	}
+	spa_casa_de_contracion = {
+		idea_claim_colonies = yes
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	spa_cortes = {
+		build_cost = -0.15
+		yearly_absolutism = 0.5
+	}
+	inter_caetera = {
+		defensiveness = 0.1
+		artillery_fire = 1
+	}
+	
+}
