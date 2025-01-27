@@ -121,6 +121,8 @@
  flavor_eng.10007.t:0 "The Surrender of Dorset"
  flavor_eng.10007.a:0 "Let's teach them how to war"
  flavor_eng.10007.b:0 "It's not worth dying for Dorset"
+ flavor_eng.10008.t:0 "The Surrender of Dorset"
+ flavor_eng.10008.d:0 "In exchange for accepting the treaty of Tours in 1444 the county of Dorset was promised to Wales. In practice, however, this has still not come to pass. No English governor wants to be remembered as the one to surrender Dorset and in [Root.Capital.GetCapitalName] prominent nobles are claiming that our negotiator, William de la Pole, had no mandate to make this concession in the first place. Welsh emissaries have repeatedly tried to remind us of this ever since the signing and [WLS.Monarch.GetName] has now finally taken matters in his own hands and shown up at the walls of Le Mans, demanding the city to surrender. Unless we surrender Dorset to the Welsh we are very likely looking at a hasty resumption of hostilities."
 
  eng_rb_war_of_roses_title:0 "Dance of the Dragons"
  eng_rb_war_of_roses_desc:0 "This is a conflict that many have long seen coming. Our people must be safely shepherded through this period of uncertainty one way or another."
@@ -129,5 +131,27 @@
  
 
  # Other
+ esx_land_shock:0 "Elephant Infantry"
+ esx_land_shock_desc:0 ""
+ esx_advisor_cost:0 "Bitterstell Nepotism"
+ esx_advisor_cost_desc:0 ""
+ esx_manpower:0 "Rein over the Lords"
+ esx_manpower_desc:0 ""
+ esx_navy:0 "Royal Navy"
+ esx_navy_desc:0 ""
+ esx_goods:0 "Abundant Harvests"
+ esx_goods_desc:0 ""
+ esx_trade:0 "North Sea Trade"
+ esx_trade_desc:0 ""
+ esx_ae:0 "English Diplomacy"
+ esx_ae_desc:0 ""
+
+ gbr_acts_of_union:0 "End of the Dissolution Wars"
+ city_upon_a_hill:0 "Adventurer's Blood"
+ the_british_parliament:0 "Sea Dragon Route"
+ gbr_the_royal_society:0 "Conscription Laws"
+ british_industrialization:0 "Valyrian Steel"
+ reform_of_comission_buying:0 "Golden Cloacks Edict"
+ britanna_rules_the_waves:0 "Blackfyre Armada"
  
  

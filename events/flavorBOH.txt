@@ -82,7 +82,7 @@ country_event = {
 		}
 		change_religion = hussite
 		define_ruler = {
-			name = "Jir�"
+			name = "Jiri"
 			dynasty = "z Podebrad"
 			adm = 5
 			dip = 4
@@ -129,7 +129,7 @@ country_event = {
 			remove_heir = {}
 		}
 		define_ruler = {
-			name = "Jir�"
+			name = "Jiri"
 			dynasty = "z Podebrad"
 			adm = 5
 			dip = 4
@@ -2681,7 +2681,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "von Habsburg"
+			dynasty = "Vessalius"
 		}
 	}
 	
@@ -2716,7 +2716,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "von Habsburg"
+			dynasty = "Vessalius"
 		}
 	}
 	
