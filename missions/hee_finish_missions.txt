@@ -163,6 +163,7 @@ bruh = {
 		position = 4
 		required_missions = { 
 			fin_independence
+			fin_dalaskrogen
 		}
 		provinces_to_highlight = {
 			region = baltic_region
@@ -202,63 +203,37 @@ bruh = {
 		}
 	}
 
-	fin_dalaskrogen = {
-		icon = mission_dalaskogen
+	fin_found_helsingfors = {
+		icon = take_the_bishoprics
 		position = 5
-		required_missions = { fin_dominium_maris_baltici }
-		provinces_to_highlight = { 
-			province_id = 8 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+		required_missions = { fin_handle_the_sami fin_high_income }
+		provinces_to_highlight = { province_id = 28 } 
 		trigger = { 
-			8 = { country_or_non_sovereign_subject_holds = ROOT }
+			28 = { 
+				owned_by = ROOT 
+				development = 30
+				has_manufactory_trigger = yes 
+				num_of_buildings_in_province = 4 
+			}
+			is_lacking_institutions = no 	
 		}
 		effect = { 
-			if = { 
-				limit = { 
-					has_dlc = "Leviathan" 
-					8 = { 
-						NOT = { 	
-							has_great_project = {
-								type = falun_copper_mine 
-								tier = 3 
-							}
-						}
-					}
+			28 = { 
+				center_of_trade = 2 
+				if = { 
+					limit = { has_building = dock }
+					remove_building = dock 
+					add_building = drydock 
 				}
-				8 = {
-					add_great_project_tier = {
-						type = falun_copper_mine
-						tier = 1 
-					}
+				else = { add_building = dock }
+				if = { 
+					limit = { has_building = shipyard }
+					remove_building = shipyard
+					add_building = grand_shipyard
 				}
-			}
-			else = { 
-				8 = { add_base_production = 3 }
-			}
-			add_years_of_owned_provinces_production_income = {
-				years = 10
-				trigger = {
-					OR = {
-						trade_goods = iron
-						trade_goods = copper
-					}
-				}
-				custom_tooltip = fin_iron_copper_prod_tt
-			}
-			if = { 
-				limit = { 
-					has_dlc = "Rights of Man" 
-					NOT = { num_of_ruler_traits = { amount = 3 } }
-				}				
-				add_ruler_personality = industrious_personality
-			}
-			else = { 
-				change_ruler_stat = {
-					type = dip
-					amount = 1
-				}
-			}
+				else = { add_building = shipyard }
+			} 
+			add_mercantilism = 3
 		}
 	}
 
@@ -451,44 +426,70 @@ bruh = {
 		}
 	}
 
-	fin_found_helsingfors = {
-		icon = take_the_bishoprics
+	fin_dalaskrogen = {
+		icon = mission_dalaskogen
 		position = 3
-		required_missions = { fin_handle_the_sami fin_high_income }
-		provinces_to_highlight = { province_id = 28 } 
+		required_missions = { fin_dominium_maris_baltici }
+		provinces_to_highlight = { 
+			province_id = 8 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = { 
-			28 = { 
-				owned_by = ROOT 
-				development = 30
-				has_manufactory_trigger = yes 
-				num_of_buildings_in_province = 4 
-			}
-			is_lacking_institutions = no 	
+			8 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = { 
-			28 = { 
-				center_of_trade = 2 
-				if = { 
-					limit = { has_building = dock }
-					remove_building = dock 
-					add_building = drydock 
+			if = { 
+				limit = { 
+					has_dlc = "Leviathan" 
+					8 = { 
+						NOT = { 	
+							has_great_project = {
+								type = falun_copper_mine 
+								tier = 3 
+							}
+						}
+					}
 				}
-				else = { add_building = dock }
-				if = { 
-					limit = { has_building = shipyard }
-					remove_building = shipyard
-					add_building = grand_shipyard
+				8 = {
+					add_great_project_tier = {
+						type = falun_copper_mine
+						tier = 1 
+					}
 				}
-				else = { add_building = shipyard }
-			} 
-			add_mercantilism = 3
+			}
+			else = { 
+				8 = { add_base_production = 3 }
+			}
+			add_years_of_owned_provinces_production_income = {
+				years = 10
+				trigger = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+					}
+				}
+				custom_tooltip = fin_iron_copper_prod_tt
+			}
+			if = { 
+				limit = { 
+					has_dlc = "Rights of Man" 
+					NOT = { num_of_ruler_traits = { amount = 3 } }
+				}				
+				add_ruler_personality = industrious_personality
+			}
+			else = { 
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			}
 		}
 	}
 
 	fin_abo_academy = {
 		icon = powerhouse_of_the_north
 		position = 4
-		required_missions = { fin_independence fin_found_helsingfors }
+		required_missions = { fin_independence fin_dalaskrogen }
 		provinces_to_highlight = { province_id = 27 } 
 		trigger = { 
 			stability = 2
@@ -579,7 +580,7 @@ bruh = {
 	fin_fourth_rome = {
 		icon = peace_in_europe
 		position = 6
-		required_missions = { fin_dalaskrogen fin_three_capitals teu_defeat_the_poles }
+		required_missions = { fin_found_helsingfors fin_three_capitals teu_defeat_the_poles }
 		trigger = { 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
@@ -842,7 +843,7 @@ bruh = {
 	fin_baltic_empire = {
 		icon = mission_baltic_empire
 		position = 4
-		required_missions = { fin_found_helsingfors fin_teutonic_administration }
+		required_missions = { fin_dalaskrogen fin_teutonic_administration }
 		provinces_to_highlight = {
 			any_trade_node_member_province = {
 				province_id = 1926
@@ -938,45 +939,71 @@ bruh = {
 		}
 	}
 
-	teu_pru_teutonic_ruthenia = {
-		icon = mission_develop_kiev
+	fin_neva = {
+		icon = protect_against_the_turks
+		required_missions = { fin_independence }
 		position = 6
-		required_missions = { teu_defeat_the_poles }
-		provinces_to_highlight = {
-			OR = {
-				region = ruthenia_region
-				area = yedisan_area
-				area = zaporizhia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		provinces_to_highlight = { 
+			area = karelia_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = TEU_PRU }
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					region = ruthenia_region
-					area = yedisan_area
-					area = zaporizhia_area
-				}
-				value = 35
+			if = {
+				limit = { has_country_flag = rus_can_complete_missions_as_subject }
+				30 = { 
+					has_fort_building_trigger = yes 
+					base_manpower = 8 
+				} 	
 			}
+			else = {
+				karelia_area = {
+					type = all 
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				30 = { 
+					owned_by = ROOT 
+					has_fort_building_trigger = yes 
+					base_manpower = 8 
+				} 	
+			}	
 		}
 		effect = {
-			country_event = {
-				id = flavor_teu.45
+			30 = {
+				add_base_manpower = 2 
+				add_province_modifier = {
+					name = fin_viipurin_linna_modifier
+					duration = -1 
+					desc = fin_remove_modifier_upon_siege_tt
+				}
 			}
-			if = {
-				limit = { has_updated_culture = { culture = slavic } }
-				add_accepted_culture_or_dip_power = { culture = ruthenian free = yes }
+			custom_tooltip = fin_finnish_militarization_tt
+			tooltip = { 
+				add_country_modifier = {
+					name = fin_finnish_militarization_modifier
+					duration = 7300
+				}
 			}
-			custom_tooltip = teu_pru_conquer_poland_bt
+			hidden_effect = {
+				if = { 
+					limit = { 
+						1930 = { 
+							has_fort_building_trigger = yes 
+							country_or_non_sovereign_subject_holds = ROOT 
+						}
+					}
+					add_country_modifier = {
+						name = fin_finnish_militarization_modifier
+						duration = 7300
+					}
+				} 
+			}
 		}
 	}
 
 	teu_crusader_a_holy_horde = {
 		icon = mission_holy_horde
 		position = 7
-		required_missions = { teu_pru_teutonic_ruthenia teu_crusader_mil_reform_4 }
+		required_missions = { fin_neva teu_crusader_mil_reform_4 }
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU }
 			religion = catholic

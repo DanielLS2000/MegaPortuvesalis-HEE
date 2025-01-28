@@ -26,6 +26,57 @@ country_event = {
 			name = gbr_isolation_policy
 			duration = 9125
 		}
+
+		hidden_effect = {
+			WLS = {
+				inherit = Z3Y
+			}
+			WLS = {
+				if = {
+					limit = { 
+						ROOT = {
+							senior_union_with = Z20
+						}
+					}
+					inherit = Z20
+				}
+			}
+			WLS = {
+				if = {
+					limit = {
+						ROOT = {
+							senior_union_with = Z2C
+						}
+					}
+					inherit = Z2C
+				}
+			}
+			WLS = {
+				if = {
+					limit = {
+						ROOT = {
+							senior_union_with = Z8L
+						}
+					}
+					inherit = Z8L
+				}
+			}
+			ROOT = { 
+				create_union = WLS
+			}
+			4373 = {
+				limit = {
+					owned_by = WLS
+				}
+				cede_province = WLS
+			}
+			4372 = {
+				limit = {
+					owned_by = WLS
+				}
+				cede_province = WLS
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}
