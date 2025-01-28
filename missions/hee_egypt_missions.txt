@@ -6,7 +6,8 @@
 		tag = EGY
 		always = yes
 	}
-
+	has_country_shield = yes
+	
 	egy_mercantile_relationship = {
 		icon = mam_mercantile_relationship
 		position = 1
@@ -453,7 +454,8 @@
 		tag = EGY
 		always = yes
 	}
-
+	has_country_shield = yes
+	
 	egy_naval_enterprise = {
 		icon = mission_launch_a_flagship
 		position = 1
@@ -999,7 +1001,8 @@
 		tag = EGY
 		always = yes
 	}
-
+	has_country_shield = yes
+	
 	egy_develop_the_ancestors_city = {
 		icon = conquer_tuscany
 		position = 1
@@ -1710,6 +1713,7 @@
 		tag = EGY
 		always = yes
 	}
+	has_country_shield = yes
 
 	egy_reincorporate_northern_territories = {
 		icon = mam_reincorporate_northern_territories
@@ -2097,6 +2101,7 @@
 		tag = EGY
 		always = yes
 	}
+	has_country_shield = yes
 
 	egy_recruit_the_mamluks = {
 		icon = mam_recruit_the_mamluks
