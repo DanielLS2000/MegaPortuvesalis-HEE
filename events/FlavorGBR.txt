@@ -51,30 +51,14 @@ country_event = {
 					inherit = Z2C
 				}
 			}
-			WLS = {
-				if = {
-					limit = {
-						ROOT = {
-							senior_union_with = Z8L
-						}
-					}
-					inherit = Z8L
-				}
-			}
 			ROOT = { 
 				create_union = WLS
 			}
 			4373 = {
 				limit = {
-					owned_by = WLS
+					country_or_non_sovereign_subject_holds = ROOT
 				}
-				cede_province = WLS
-			}
-			4372 = {
-				limit = {
-					owned_by = WLS
-				}
-				cede_province = WLS
+				cede_province = ROOT
 			}
 		}
 		ai_chance = {

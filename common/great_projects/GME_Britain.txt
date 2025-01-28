@@ -1,0 +1,77 @@
+gme_chatham_dockyard = {
+	start = 235
+	date = 1.01.01
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+		has_owner_accepted_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+		has_owner_accepted_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			ship_recruit_speed = -0.05
+			local_ship_cost = -0.05
+			local_ship_repair = 0.05
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			ship_recruit_speed = -0.075
+			local_ship_cost = -0.075
+			local_ship_repair = 0.075
+		}
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			ship_recruit_speed = -0.15
+			local_ship_cost = -0.15
+			local_ship_repair = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = { 
+			ship_durability = 0.1
+		}
+		on_upgraded = { }
+	}
+}
