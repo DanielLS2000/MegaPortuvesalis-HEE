@@ -17,6 +17,7 @@ ck_eu_norse_missions_1 = {
 		NOT = { tag = NOV }
 		NOT = { tag = RUS }
 		NOT = { tag = DAN }
+		NOT = { tag = ICE }
 	}
 
 	ck_eu_norse_missions_1_task_1 = {
