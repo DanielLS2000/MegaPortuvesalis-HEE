@@ -317,8 +317,8 @@ MLO_ideas = {
 		global_sailors_modifier = 0.33
 		allowed_marine_fraction = 0.1
 	}
-	mlo_stato_milano = {
-		global_trade_power = 0.1
+	mlo_stato_milano = { ###
+		development_cost = -0.10
 	}
 	mlo_condotiere = {
 		global_manpower_modifier = 0.25
@@ -358,8 +358,8 @@ LOM_ideas = { # Lombardy
 	mlo_genoese_arsenal = {
 		# again
 	}
-	mlo_condotiere = {
-		# again
+		 = { ###
+		global_manpower_modifier = 0.33
 	}
 }
 
@@ -383,23 +383,23 @@ MALADA_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	mlo_torino_academy = {
+	lns_ufmg = { ##
 		technology_cost = -0.1
 	}
 	lom_alpine_legions = {
 		# again
 	}
-	mlo_larceda_legacy = {
+	lns_primo_tra_tutti = { ##
 		trade_efficiency = 0.2
 	}
-	mlo_tomige = {
+	lom_allotment_systhem = { ##
 		global_manpower_modifier = 0.33
 	}
-	mlo_sicily_war = {
-		fire_damage = 0.1
+	lns_maladeza_army = { ###
+		fire_damage = 0.15
 		land_forcelimit_modifier = 0.2
 	}
-	mlo_genoese_arsenal = {
+	lns_mare_nostrum = {
 		naval_forcelimit_modifier = 0.5
 	}
 	lns_ships = {
