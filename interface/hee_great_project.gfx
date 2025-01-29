@@ -22,6 +22,18 @@ spriteTypes = {
 		name = "GFX_great_project_gme_alcazar_segovia"
 		texturefile = "gfx//interface//great_projects//great_project_gme_alcazar_segovia.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_gme_smerederevo_fortress"
+		texturefile = "gfx//interface//great_projects//great_project_gme_smerederevo_fortress.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_port_of_jaffna"
+		texturefile = "gfx//interface//great_projects//great_project_gme_port_of_jaffna.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_binnenhof"
+		texturefile = "gfx//interface//great_projects//great_project_gme_binnenhof.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_great_project_fu_pharos_alexandria"
