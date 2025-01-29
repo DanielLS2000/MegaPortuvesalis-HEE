@@ -1,0 +1,112 @@
+gme_smerederevo_fortress = {
+	start = 141
+	date = 1.01.01
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_fort_maintenance_modifier = -0.25
+			local_garrison_size = 0.10
+			local_development_cost = -0.15
+			local_manpower_modifier = 0.25
+		}
+		area_modifier = {
+			local_regiment_cost = -0.15
+			regiment_recruit_speed = -0.15
+		}
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.50
+			local_garrison_size = 0.15
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+			local_fort_maintenance_modifier = -0.25
+			local_manpower_modifier = 0.33
+			local_regiment_cost = -0.25
+			regiment_recruit_speed = -0.25
+		}
+		region_modifier = { }
+		country_modifiers = { }
+		conditional_modifier = {
+			trigger = {
+				province_is_owner_culture_or_owner_has_cultural_union = {
+					culture_group = south_slavic
+				}
+			}
+			modifier = {
+				garrison_size = 0.10
+			}
+		}
+		on_upgraded = {
+			owner = {
+				add_army_tradition = 10
+				create_general = {
+					tradition = 75
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.75
+			local_garrison_size = 0.20
+		}
+		area_modifier = {
+			local_development_cost = -0.25
+			local_manpower_modifier = 0.50
+			local_regiment_cost = -0.33
+			regiment_recruit_speed = -0.33
+		}
+		region_modifier = {
+			local_fort_maintenance_modifier = -0.25
+		}
+		country_modifiers = { }
+		conditional_modifier = {
+			trigger = {
+				province_is_owner_culture_or_owner_has_cultural_union = {
+					culture_group = south_slavic
+				}
+			}
+			modifier = {
+				garrison_size = 0.10
+				infantry_power = 0.10
+			}
+		}
+		on_upgraded = {
+			owner = {
+				change_mil = 1
+				add_mil_power = 150
+			}
+		}
+	}
+}

@@ -1,11 +1,27 @@
 government = monarchy
-add_government_reform = austrian_archduchy_reform
+add_government_reform = burgundian_state_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = burgundian
+primary_culture = cosmopolitan_french
 capital = 193
-add_accepted_culture = cosmopolitan_french
+add_accepted_culture = burgundian
+
+1439.1.1 = {
+	leader = {
+		name = "Jean Bureau"
+		type = general
+
+		fire = 4
+		shock = 4
+		manuever = 1
+		siege = 3
+		death_date = 1463.7.5
+		personality = siege_specialist_personality
+	}
+}
+
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Alixandre"

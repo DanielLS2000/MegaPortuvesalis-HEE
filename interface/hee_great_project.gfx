@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	# Missions Expanded #
+
+	spriteType = {
+		name = "GFX_great_project_gme_chatham_dockyard"
+		texturefile = "gfx//interface//great_projects//great_project_gme_chatham_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_wenceslas_square"
+		texturefile = "gfx//interface//great_projects//great_project_gme_wenceslas_square.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_schnoor_district"
+		texturefile = "gfx//interface//great_projects//great_project_gme_schnoor_district.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_lanterna_genova"
+		texturefile = "gfx//interface//great_projects//great_project_gme_lanterna_genova.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_alcazar_segovia"
+		texturefile = "gfx//interface//great_projects//great_project_gme_alcazar_segovia.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_smerederevo_fortress"
+		texturefile = "gfx//interface//great_projects//great_project_gme_smerederevo_fortress.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_port_of_jaffna"
+		texturefile = "gfx//interface//great_projects//great_project_gme_port_of_jaffna.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gme_binnenhof"
+		texturefile = "gfx//interface//great_projects//great_project_gme_binnenhof.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_fu_pharos_alexandria"
+		texturefile = "gfx//interface//great_projects//great_project_fu_pharos_alexandria.dds"
+	}
+}
