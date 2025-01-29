@@ -756,7 +756,7 @@ incident_shadow_kingdom = {
 		modifier = {
 			factor = 5
 			capital_scope = {
-				region = italy_region
+				region = maghreb_region
 			}
 		}
 	}
