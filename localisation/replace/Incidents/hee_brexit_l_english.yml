@@ -1,0 +1,16 @@
+﻿l_english:
+ ############## Brexit ###############################
+
+ incident_switzerland.1.t:0 "Britain and the Empire"
+ incident_switzerland.1.d:0 "With the end of the great religious upheaval that engulfed much of the Empire, the British are reconsidering their increasingly loose relationship with the Empire. Though many fought and died for peace, the particulars of the settlement were not to the liking of British elites and many are calling for the formal and total separation of Great Britain from the Holy Roman Empire."
+ incident_switzerland.1.a:0 "The people call for Brexit"
+ incident_switzerland.1.a:0 "Britain will remain in the Empire"
+ incident_switzerland.2.t:0 "Britain and the Empire"
+ incident_switzerland.2.d:0 "Great Britain has abandoned the Empire! Driven by dissatisfaction with the religious peace as well as weakening ties with Imperial institutions, the British have decided that membership in the Holy Roman Empire no longer serves their interests and called for Brexit."
+ incident_switzerland.2.a:0 "Grant them permission to leave"
+ incident_switzerland.2.b:0 "Membership is not optional"
+
+ swixit_tt:1 "§YThe Emperor gets a claim on all Imperial provinces owned by Great Britain.§!\n§YThe Emperor may respond violently to this decision.§!"
+ incident_switzerland:0 "Britain and the Empire"
+ incident_switzerland_member_alert:0 "Great Britain has abandoned the Empire! Driven by dissatisfaction with the religious peace as well as weakening ties with Imperial institutions, the British have decided that membership in the Holy Roman Empire no longer serves their interests and called for Brexit."
+ incident_switzerland_emperor_alert:0 "Great Britain has abandoned the Empire! Driven by dissatisfaction with the religious peace as well as weakening ties with Imperial institutions, the British have decided that membership in the Holy Roman Empire no longer serves their interests and called for Brexit."

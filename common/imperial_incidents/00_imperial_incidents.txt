@@ -772,41 +772,41 @@ incident_switzerland = {
 	
 	can_stop = {
 		OR = {
-			NOT = { exists = SWI }
-			SWI = { is_emperor = yes }
-			SWI = { is_subject = yes }
-			SWI = { is_part_of_hre = yes }
-			emperor = { war_with = SWI }
+			NOT = { exists = GBR }
+			GBR = { is_emperor = yes }
+			GBR = { is_subject = yes }
+			GBR = { is_part_of_hre = yes }
+			emperor = { war_with = GBR }
 			emperor = {
 				is_in_war = {
-					defenders = SWI
+					defenders = GBR
 					defenders = emperor
 				}
 			}
 			emperor = {
 				is_in_war = {
-					attackers = SWI
+					attackers = GBR
 					attackers = emperor
 				}
 			}
 		}
 	}
 	
-	0 = { # swi leaves peacefully
+	0 = { # GBR leaves peacefully
 		factor = 2
 		modifier = {
 			factor = 100
 			OR = {
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_friendly
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_loyal
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_allied
 				}
 			}
@@ -819,27 +819,27 @@ incident_switzerland = {
 			factor = 100
 			OR = {
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_rivalry
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_hostile
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_threatened
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_outraged
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_disloyal
 				}
 				ai_attitude = {
-					who = SWI
+					who = GBR
 					attitude = attitude_rebellious
 				}
 			}

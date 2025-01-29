@@ -13,13 +13,11 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Emperor"
-		tag = SWI
+		tag = GBR
 		is_part_of_hre = yes
 		is_elector = no
 		is_emperor = no
 		is_subject = no
-		has_global_flag = italians_leave_hre
-		NOT = { has_global_flag = shadow_kingdom_averted }
 		NOT = { active_imperial_incident = any }
 		is_at_war = no
 		OR = {
@@ -103,7 +101,7 @@ country_event = {
 		hidden_effect = {
 			every_province = {
 				limit = {
-					owned_by = SWI
+					owned_by = GBR
 					is_claim = ROOT
 				}
 				remove_claim = ROOT
@@ -117,13 +115,13 @@ country_event = {
 			modifier = {
 				factor = 1000
 				OR = {
-					is_rival = SWI
-					SWI = { is_rival = ROOT }
+					is_rival = GBR
+					GBR = { is_rival = ROOT }
 				}
 			}
 		}
 		declare_war_with_cb = {
-			who = SWI
+			who = GBR
 			casus_belli = cb_reintegrate_into_hre
 		}
 	}
