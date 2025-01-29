@@ -587,6 +587,7 @@ nor_conquest_mission_slot = {
 				num_of_heavy_ship = 6
 				num_of_light_ship = 9
 			}
+			dip_tech = 9
 		}
 		effect = {
 			if = {
@@ -1437,11 +1438,18 @@ nor_development_mission_slot = {
 		required_missions = { }
 		provinces_to_highlight = {}
 		trigger = {
-			government = monarchy
-			num_of_estate_agendas_completed = {
-					estate = estate_nobility
-					value = 2
+			OR = {
+				num_of_estate_agendas_completed = {
+						estate = estate_nobles
+						value = 2
+					}
+				crown_land_share = 40
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 85
 				}
+			}
+			government = monarchy
 		}
 		effect = {
 			change_estate_land_share = {
@@ -2839,40 +2847,31 @@ nor_sca_internal_development = {
 			}
 		}
 		trigger = {
-			laponia_area = { 
-				owned_by = ROOT
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 9
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
 				religion = ROOT
 				has_owner_accepted_culture = yes
-				type = all
-			}
-			norrland_area = { 
-				owned_by = ROOT
-				religion = ROOT
-				has_owner_accepted_culture = yes
-				type = all
-			}
-			bothnia_area = { 
-				owned_by = ROOT
-				religion = ROOT
-				has_owner_accepted_culture = yes
-				type = all
 			}
 		}
 		effect = {
 			unlock_estate_privilege = {
 				estate_privilege = estate_burghers_forest_expansion
 			}
-			laponia_area = {
-				add_local_autonomy = -100
-				add_base_manpower = 2
-			}
-			norrland_area = {
-				add_local_autonomy = -100
-				add_base_manpower = 2
-			}
-			bothnia_area = {
-				add_local_autonomy = -100
-				add_base_manpower = 2
+			any_province = {
+				limit = {
+					OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+				religion = ROOT
+				has_owner_accepted_culture = yes
+				}
+			add_local_autonomy = -100
+			add_base_manpower = 2
 			}
 		}
 	}
@@ -2886,7 +2885,7 @@ nor_sca_internal_development = {
 				has_terrain = woods
 				has_terrain = forest
 			}
-			region = scandinavia_region
+			region = canada_region
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { development = 6 }
@@ -2895,7 +2894,7 @@ nor_sca_internal_development = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = swe_forest_expansion_tt
-				scandinavia_region = {
+				canada_region = {
 					OR = {
 						AND = {
 							NOT = { has_terrain = woods }
@@ -2955,28 +2954,7 @@ nor_sca_conquest = {
 		position = 10
 		required_missions = {}
 		provinces_to_highlight = {
-			OR = {
-				region = baltic_region
-				area = karelia_area
-				area = hinter_pommern_area
-				area = vorpommern_area
-				area = mecklenburg_area
-				area = holstein_area
-				area = jutland_area
-				area = denmark_area
-				area = skaneland_area
-				area = ostra_svealand_area
-				area = gotaland_area
-				area = norrland_area
-				area = bothnia_area
-				area = finland_area
-				area = eastern_norway
-			}
-			OR = {
-				province_has_center_of_trade_of_level = 1
-				has_river_estuary_trigger = yes
-				has_province_modifier = sound_toll
-			}
+			province_id = 1975
 			has_port = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -3012,66 +2990,14 @@ nor_sca_conquest = {
 			}
 		}
 		effect = {
-			custom_tooltip = nor_sca_conquer_the_enterpots_ct
-			hidden_effect = {
-				baltic_region = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				karelia_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				finland_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				ostra_svealand_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				norrland_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				bothnia_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				gotaland_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				skaneland_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				denmark_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				jutland_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				holstein_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				mecklenburg_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				vorpommern_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				hinter_pommern_area = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
-					add_permanent_claim = ROOT
-				}
-				eastern_norway = {
-					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
+			1975 = {
+				every_trade_node_member_province = { 
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 			}
@@ -3092,45 +3018,12 @@ nor_sca_conquest = {
 		position = 11
 		required_missions = { nor_sca_conquer_the_enterpots }
 		provinces_to_highlight = {
-			OR = {
-				region = baltic_region
-				area = karelia_area
-				area = finland_area
-				area = ostra_svealand_area
-				area = norrland_area
-				area = bothnia_area
-				area = gotaland_area
-				area = skaneland_area
-				area = denmark_area
-				area = jutland_area
-				area = holstein_area
-				area = mecklenburg_area
-				area = vorpommern_area
-				area = hinter_pommern_area
-				area = eastern_norway
-			}
+			province_id = 1975
 			has_port = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = dan_sca_balticum_dominance_tt
-				baltic_region = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				karelia_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				finland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				ostra_svealand_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				norrland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				bothnia_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				gotaland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				skaneland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				denmark_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				jutland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				holstein_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				mecklenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				vorpommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				hinter_pommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-				eastern_norway = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
-			}
+			1975 = {every_trade_node_member_province = { owned_by = ROOT }}
 		}
 		effect = {
 			add_country_modifier = {

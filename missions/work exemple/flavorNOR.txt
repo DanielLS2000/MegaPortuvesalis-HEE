@@ -18,11 +18,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		NOT = { is_year = 1452 }
@@ -57,11 +56,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		is_year = 1475
@@ -97,11 +95,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		NOT = { is_year = 1500 }
@@ -156,11 +153,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		NOT = { is_year = 1470 }
@@ -202,13 +198,13 @@ country_event = {
 	
 	desc = {
 		trigger = {
-			NOT = { tag = NOR }
+			NOT = { tag = ICE }
 		}
 		desc = flavor_nor.5.da
 	}
 	desc = {
 		trigger = {
-			tag = NOR
+			tag = ICE
 		}
 		desc = flavor_nor.5.db
 	}
@@ -218,7 +214,7 @@ country_event = {
 		NOT = { is_year = 1475 }
 		OR = {
 			AND = {
-				tag = NOR
+				tag = ICE
 				is_lesser_in_union = no
 			}
 			senior_union_with = NOR
@@ -249,14 +245,14 @@ country_event = {
 			factor = 90
 			modifier = {
 				factor = 0.01
-				tag = NOR #Orkney is a very high ranking title in Norway, an independent Norway would be unlikely to promise it away.
+				tag = ICE #Orkney is a very high ranking title in Norway, an independent Norway would be unlikely to promise it away.
 			}
 		}
 		SCO = { country_event = { id = flavor_nor.6 } }
 		custom_tooltip = flavor_nor.5.a.tt
 		if = {
 			limit = {
-				NOT = { tag = NOR }
+				NOT = { tag = ICE }
 			}
 			tooltip = { #Happens in event 7.
 				NOR = {
@@ -364,7 +360,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		if = {
 			limit = {
-				FROM = { NOT = { tag = NOR } }
+				FROM = { NOT = { tag = ICE } }
 			}
 			NOR = { country_event = { id = flavor_nor.7 } }
 		}
@@ -581,7 +577,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { tag = NOR }
+			limit = { tag = ICE }
 			369 = {
 				cede_province = SCO
 				add_core = SCO
@@ -682,7 +678,7 @@ country_event = {
 		}
 		OR = {
 			AND = {
-				tag = NOR
+				tag = ICE
 				is_lesser_in_union = no
 			}
 			senior_union_with = NOR
@@ -698,7 +694,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { tag = NOR }
+				limit = { tag = ICE }
 				add_stability = -1
 			}
 		}
@@ -710,7 +706,7 @@ country_event = {
 		add_prestige = -10
 		hidden_effect = { HSA = { country_event = { id = flavor_nor.14 } } }
 		if = {
-			limit = { NOT = { tag = NOR } }
+			limit = { NOT = { tag = ICE } }
 			NOR = { country_event = { id = flavor_nor.12 } }
 			tooltip = {
 				NOR = {
@@ -866,11 +862,10 @@ country_event = {
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		exists = NED #Independent Netherlands is perhaps not a requirement for Dutch traders but it should be for their ship sector to be thriving enough to have this big impact.
@@ -902,9 +897,8 @@ country_event = {
 	trigger = {
 		NOT = { has_dlc = "Lions of the North" }
 		OR = {
-			tag = NOR
+			tag = ICE
 			tag = DAN
-			tag = SCA
 		}
 		owns = 17
 		owns = 20
@@ -1037,11 +1031,10 @@ country_event = {
 			}
 			AND = {
 				OR = {
-					tag = NOR
+					tag = ICE
 					AND = {
-						was_tag = NOR
+						was_tag = ICE
 						NOT = { exists = NOR }
-						tag = SCA
 					}		
 				}
 				is_year = 1600
@@ -1090,11 +1083,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		num_of_ports = 3 #Still a maritime country.
@@ -1128,11 +1120,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		num_of_ports = 3 #Still a maritime country.
@@ -1167,9 +1158,8 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			tag = DAN
-			tag = SCA
 		}
 		owns = 17
 		is_year = 1610
@@ -1269,11 +1259,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			AND = {
-				was_tag = NOR
+				was_tag = ICE
 				NOT = { exists = NOR }
-				tag = SCA
 			}		
 		}
 		is_year = 1620
@@ -1322,9 +1311,8 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = NOR
+			tag = ICE
 			tag = DAN
-			tag = SCA
 		}
 		any_owned_province = {
 			culture = norwegian
@@ -1392,7 +1380,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = NOR
+		tag = ICE
 		is_year = 1500
 		NOT = { is_year = 1550 }
 		DAN = { senior_union_with = NOR } #Will happen as long as the union still holds in the years above. If Norway is already integrated or independent this event will never trigger.
