@@ -947,3 +947,40 @@ SCA_ideas = {
 		global_manpower_modifier = 0.2
 	}
 }
+
+EST_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		shock_damage = 0.10
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	trigger = {
+		tag = EST
+	}
+	free = yes
+	
+	est_brotherhood_of_blackheads = {
+		global_tax_modifier = 0.10
+	}
+	est_baltic_cooperation = {
+		army_tradition = 0.5
+	}
+	est_estophilia = {
+		tolerance_own = 1
+		global_missionary_strength = 0.01
+	}
+	est_academia_gustaviana = {
+		land_morale = 0.10
+	}
+	est_baltic_trade = {
+		stability_cost_modifier = -0.2
+	}
+	est_castles_of_estonia = {
+		fort_maintenance_modifier = -0.20
+	}
+	est_national_awakening = {
+		diplomatic_reputation = 1
+	}
+}
