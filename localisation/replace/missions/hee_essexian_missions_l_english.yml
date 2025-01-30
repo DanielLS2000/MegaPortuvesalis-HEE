@@ -2,84 +2,118 @@
  ############## MISSION ###############################
 
  esx_army_of_essex_title:0 "The Army of Essex"
- esx_army_of_essex_desc:0 ""
+ esx_army_of_essex_desc:0 "A strong kingdom requires a powerful army. By modernizing and expanding our forces, Essex shall stand as the undisputed military power of the British Isles."
+
  esx_subjugate_the_scots_title:0 "Subjugate the Scots"
- esx_subjugate_the_scots_desc:0 ""
+ esx_subjugate_the_scots_desc:0 "The northern frontier must be secured. The Scots have resisted English rule for too long—Essex shall bring them to heel and unify Britain under one crown."
+
  esx_develop_british_identity_title:0 "Develop British Identity"
- esx_develop_british_identity_desc:0 ""
+ esx_develop_british_identity_desc:0 "A true British identity must emerge, blending the diverse cultures of the Isles into one unified nation with a shared destiny."
+
  esx_frozen_frontier_title:0 "The Frozen Frontier"
- esx_frozen_frontier_desc:0 ""
+ esx_frozen_frontier_desc:0 "The harsh northern lands of the Isles are difficult to tame, but their strategic value cannot be ignored. Securing and developing these lands will solidify our rule."
+
  esx_import_potatoes_title:0 "Import Potatoes"
- esx_import_potatoes_desc:0 ""
+ esx_import_potatoes_desc:0 "A new crop has arrived from the New World—potatoes. By embracing this resilient food source, we can ensure a stable food supply for our growing population."
+
  esx_dance_of_the_dragons_title:0 "The Dance of the Dragons"
- esx_dance_of_the_dragons_desc:0 ""
+ esx_dance_of_the_dragons_desc:0 "Internal conflicts have shaped our history, but it is time to settle our disputes and emerge stronger. Only one house can rule Britain."
+
  esx_handle_the_reformation_title:0 "Handle the Reformation"
- esx_handle_the_reformation_desc:0 ""
+ esx_handle_the_reformation_desc:0 "Religious tensions threaten to tear the realm apart. Essex must take a firm stance—either embracing reform or standing as a bastion of tradition."
+
  esx_piety_of_the_state_title:0 "Piety of the State"
- esx_piety_of_the_state_desc:0 ""
+ esx_piety_of_the_state_desc:0 "The state and faith must stand united. Whether through devotion or pragmatism, we must ensure that our kingdom remains spiritually strong."
+
  esx_acts_of_the_parliament_title:0 "Acts of the Parliament"
- esx_acts_of_the_parliament_desc:0 ""
+ esx_acts_of_the_parliament_desc:0 "A strong government requires efficient legislation. By empowering Parliament, we can ensure the long-term stability and prosperity of our kingdom."
+
  esx_monopolize_the_channel_title:0 "Monopolize the Channel"
- esx_monopolize_the_channel_desc:0 ""
+ esx_monopolize_the_channel_desc:0 "Control over the English Channel is key to dominating European trade. We shall establish an unbreakable grip on its commerce."
+
  esx_centers_of_worlds_trade_title:0 "Centers of World's Trade"
- esx_centers_of_worlds_trade_desc:0 ""
+ esx_centers_of_worlds_trade_desc:0 "Essex shall become the heart of global trade, controlling the most valuable ports and routes across the world."
 
  esx_invasion_of_ireland_title:0 "Invasion of Ireland"
- esx_invasion_of_ireland_desc:0 ""
+ esx_invasion_of_ireland_desc:0 "Ireland remains divided and weak. By bringing it under our rule, we shall strengthen our hold over the British Isles."
+
  esx_lord_of_britain_title:0 "Lord of Britain"
- esx_lord_of_britain_desc:0 ""
+ esx_lord_of_britain_desc:0 "With Scotland and Ireland under our dominion, Essex now stands as the true ruler of Britain, ready to claim its rightful place in history."
+
  esx_britannia_united_title:0 "Britannia United"
- esx_britannia_united_desc:0 ""
+ esx_britannia_united_desc:0 "The dream of a united Britannia is now a reality. Our nation is strong, prosperous, and ready to take on the world."
+
  esx_brave_new_world_title:0 "A Brave New World"
- esx_brave_new_world_desc:0 ""
+ esx_brave_new_world_desc:0 "New lands await across the ocean. We must be among the first to claim these distant shores and establish our place in the new world order."
+
  esx_american_colonies_title:0 "The American Colonies"
- esx_american_colonies_desc:0 ""
+ esx_american_colonies_desc:0 "The vast lands of America offer boundless opportunities. We shall establish thriving colonies to expand our influence and wealth."
+
  esx_seize_ceylon_title:0 "Seize Ceylon"
- esx_seize_ceylon_desc:0 ""
+ esx_seize_ceylon_desc:0 "Control of Ceylon grants access to the lucrative spice trade. We must claim this jewel of the Indian Ocean for Essex."
+
  esx_early_industry_title:0 "Early Industry"
- esx_early_industry_desc:0 ""
+ esx_early_industry_desc:0 "Innovation and mechanization will define the future. By investing in industry, we ensure Essex remains ahead of its rivals."
+
  esx_the_english_empire_title:0 "The English Empire"
- esx_the_english_empire_desc:0 ""
+ esx_the_english_empire_desc:0 "From a kingdom to an empire, Essex shall extend its rule across continents. We are no longer just an island nation—we are a global power."
 
  esx_brother_war_title:0 "Brother's War"
- esx_brother_war_desc:0 ""
+ esx_brother_war_desc:0 "Internal struggles threaten to divide our realm. Only through strength and decisive action can we emerge victorious."
+
  esx_subdue_northumbria_title:0 "Subdue Northumbria"
- esx_subdue_northumbria_desc:0 ""
+ esx_subdue_northumbria_desc:0 "The north must be brought under firm rule. Essex shall extend its dominion and crush any remaining resistance."
+
  esx_found_the_royal_navy_title:0 "Found The Royal Navy"
- esx_found_the_royal_navy_desc:0 ""
+ esx_found_the_royal_navy_desc:0 "A great nation requires a great fleet. By establishing the Royal Navy, we shall rule the waves and secure our maritime dominance."
+
  esx_rule_britannia_title:0 "Rule Britannia"
- esx_rule_britannia_desc:0 ""
+ esx_rule_britannia_desc:0 "Essex stands supreme over the British Isles. The time has come to declare our rule and let our power be known across the world."
+
  esx_true_india_title:0 "The True India"
- esx_true_india_desc:0 ""
+ esx_true_india_desc:0 "India's wealth is too great to ignore. We must claim the richest lands and establish Essex as the master of the subcontinent."
+
  esx_new_golden_company_title:0 "A New Golden Company"
- esx_new_golden_company_desc:0 ""
+ esx_new_golden_company_desc:0 "A powerful mercenary force under our control will ensure our influence extends wherever we choose to wield it."
+
  esx_gujarati_trade_title:0 "Gujarati Trade"
- esx_gujarati_trade_desc:0 ""
+ esx_gujarati_trade_desc:0 "The markets of Gujarat hold immense wealth. Controlling this trade will bring prosperity to our realm."
+
  esx_masters_of_india_title:0 "Masters of India"
- esx_masters_of_india_desc:0 ""
+ esx_masters_of_india_desc:0 "With India under our control, Essex has become an empire spanning continents, wielding immense power and wealth."
+
  esx_a_house_divided_title:0 "A House Divided"
- esx_a_house_divided_desc:0 ""
+ esx_a_house_divided_desc:0 "The nobility stands divided, threatening our rule. We must unite or subdue them to secure the future of Essex."
+
  esx_english_renaissance_title:0 "English Renaissance"
- esx_english_renaissance_desc:0 ""
+ esx_english_renaissance_desc:0 "Art, science, and philosophy flourish under our rule. Essex shall be the beacon of culture and enlightenment in Europe."
+
  esx_renovate_oxbridge_title:0 "Renovate Oxbridge"
- esx_renovate_oxbridge_desc:0 ""
+ esx_renovate_oxbridge_desc:0 "The universities of Oxford and Cambridge must be expanded, ensuring they remain the centers of learning for generations to come."
 
  esx_bank_of_london_title:0 "Bank of London"
- esx_bank_of_london_desc:0 ""
+ esx_bank_of_london_desc:0 "A centralized banking system will bring stability and economic growth, securing Essex’s place as a financial powerhouse."
+
  esx_issue_royal_warrant_title:0 "Issue Royal Warrant"
- esx_issue_royal_warrant_desc:0 ""
+ esx_issue_royal_warrant_desc:0 "A royal warrant will grant exclusive rights to merchants and companies, strengthening our economy and global trade networks."
+
  esx_strengthen_the_kingdom_title:0 "Strengthen the Kingdom"
- esx_strengthen_the_kingdom_desc:0 ""
+ esx_strengthen_the_kingdom_desc:0 "Through reforms and centralization, Essex shall become an unshakable kingdom, prepared for the challenges ahead."
+
  esx_new_way_to_india_title:0 "A New Way To India"
- esx_new_way_to_india_desc:0 ""
+ esx_new_way_to_india_desc:0 "The riches of India call to us. We must explore new routes to secure our foothold in the East."
+
  esx_west_indies_title:0 "The West Indies"
- esx_west_indies_desc:0 ""
+ esx_west_indies_desc:0 "The Caribbean is a gateway to immense wealth. By securing these islands, we shall dominate the sugar and spice trade."
+
  esx_into_inland_india_title:0 "Push into Inland India"
- esx_into_inland_india_desc:0 ""
+ esx_into_inland_india_desc:0 "Our influence must extend beyond the coasts. By pushing inland, we ensure Essex’s grip over the subcontinent."
+
  esx_expand_the_royal_navy_title:0 "Expand the Royal Navy"
- esx_expand_the_royal_navy_desc:0 ""
+ esx_expand_the_royal_navy_desc:0 "A navy unrivaled in size and strength will secure our dominion over the seas."
+
  esx_the_royal_marines_title:0 "The Royal Marines"
- esx_the_royal_marines_desc:0 ""
+ esx_the_royal_marines_desc:0 "A dedicated marine force will allow Essex to project power anywhere in the world."
 
  esx_royal_court_title:0 "Royal Court"
  esx_royal_court_desc:0 ""
@@ -104,7 +138,7 @@
  esx_found_a_standing_army_title:0 "Found A Standing Army"
  esx_found_a_standing_army_desc:0 ""
  esx_the_redcoats_title:0 "The Redcoats"
- esx_the_redcoats_desc:0 ""
+ esx_the_redcoats_desc:0 "Our disciplined and fearsome Redcoats will be the backbone of our armies, securing victory on every battlefield."
 
  # Tooltips
  ave_conquer_lowlands_at:0 "Has its capital in the §YLowlands§!, has the primary culture of §YDutch§!, §YFlemish§!, §YWalloon§!, §YLotharian§! or §YFrisian§! and owns at least §Y15§! provinces in the §YLowlands§!."
@@ -121,13 +155,38 @@
  flavor_eng.10007.t:0 "The Surrender of Dorset"
  flavor_eng.10007.a:0 "Let's teach them how to war"
  flavor_eng.10007.b:0 "It's not worth dying for Dorset"
+ flavor_eng.10008.t:0 "The Surrender of Dorset"
+ flavor_eng.10008.d:0 "In exchange for accepting the treaty of Tours in 1444 the county of Dorset was promised to Wales. In practice, however, this has still not come to pass. No English governor wants to be remembered as the one to surrender Dorset and in [Root.Capital.GetCapitalName] prominent nobles are claiming that our negotiator, William de la Pole, had no mandate to make this concession in the first place. Welsh emissaries have repeatedly tried to remind us of this ever since the signing and [WLS.Monarch.GetName] has now finally taken matters in his own hands and shown up at the walls of Le Mans, demanding the city to surrender. Unless we surrender Dorset to the Welsh we are very likely looking at a hasty resumption of hostilities."
 
  eng_rb_war_of_roses_title:0 "Dance of the Dragons"
  eng_rb_war_of_roses_desc:0 "This is a conflict that many have long seen coming. Our people must be safely shepherded through this period of uncertainty one way or another."
  eng_rb_war_of_roses.tooltip:1 "Complete the Dance of the Dragons disaster, or reach the Age of Reformation without triggering it."
+ flavor_eng.10006.a.tt:0 "This will lead to war with the Welsh"
  # Decisions
  
 
  # Other
+ esx_land_shock:0 "Elephant Infantry"
+ esx_land_shock_desc:0 ""
+ esx_advisor_cost:0 "Bitterstell Nepotism"
+ esx_advisor_cost_desc:0 ""
+ esx_manpower:0 "Rein over the Lords"
+ esx_manpower_desc:0 ""
+ esx_navy:0 "Royal Navy"
+ esx_navy_desc:0 ""
+ esx_goods:0 "Abundant Harvests"
+ esx_goods_desc:0 ""
+ esx_trade:0 "North Sea Trade"
+ esx_trade_desc:0 ""
+ esx_ae:0 "English Diplomacy"
+ esx_ae_desc:0 ""
+
+ gbr_acts_of_union:0 "End of the Dissolution Wars"
+ city_upon_a_hill:0 "Adventurer's Blood"
+ the_british_parliament:0 "Sea Dragon Route"
+ gbr_the_royal_society:0 "Conscription Laws"
+ british_industrialization:0 "Valyrian Steel"
+ reform_of_comission_buying:0 "Golden Cloacks Edict"
+ britanna_rules_the_waves:0 "Blackfyre Armada"
  
  

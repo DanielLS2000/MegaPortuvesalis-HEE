@@ -134,94 +134,6 @@ GER_ideas = {
 	}
 }
 
-ENG_ideas = {
-	start = {
-		infantry_power = 0.10 # agincourt
-		global_unrest = -1 # magna carta, parliament
-	}
-
-	bonus = {
-		naval_morale = 0.1
-	}
-	
-	trigger = {
-		tag = ENG
-	}
-	free = yes		#will be added at load.
-	
-	royal_navy = {
-		navy_tradition = 0.25
-		heavy_ship_power = 0.10
-	}
-	eltham_ordinance = {
-		production_efficiency = 0.1
-	}
-	secretaries_of_state = {
-		diplomatic_upkeep = 1
-	}
-	navigation_acts = {
-		trade_efficiency = 0.1
-	}
-	eng_red_coats = {
-		fire_damage = 0.1
-		allowed_marine_fraction = 0.25
-	}
-	sick_and_hurt_board = {
-		sailors_recovery_speed = 0.10
-		sailor_maintenance_modifer = -0.1
-	}
-	british_bill_of_rights = {
-		years_of_nationalism = -5
-		num_of_parliament_issues = 1
-	}
-}
-
-GBR_ideas = {
-	start = {
-		naval_morale = 0.20
-		heavy_ship_power = 0.15
-	}
-
-	bonus = {
-		navy_tradition = 1
-	}
-	
-	trigger = {
-		tag = GBR
-	}
-	free = yes		#will be added at load.
-
-	gbr_acts_of_union = {
-		diplomatic_annexation_cost = -0.15
-		governing_capacity_modifier = 0.1
-	}
-	city_upon_a_hill = {
-		global_colonial_growth = 20
-		global_tariffs = 0.15
-	}
-	the_british_parliament = {
-		global_unrest = -1
-		num_of_parliament_issues = 1
-	}
-	#british_merchant_navy = {
-	#	global_tariffs = 0.15
-	#}
-	gbr_the_royal_society = {
-		technology_cost = -0.05
-	}
-	reform_of_comission_buying = {
-		discipline = 0.05
-	}
-	british_industrialization = {
-		global_trade_goods_size_modifier = 0.2
-	}
-	britanna_rules_the_waves = {
-		leader_naval_manuever = 1
-		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
-	}
-}
-
 AVE_ideas = {
 	start = {
 		global_manpower_modifier = 0.2
@@ -438,45 +350,6 @@ NOR_ideas = {
 	}
 }
 
-FIN_ideas = {
-	start = {
-		discipline = 0.05
-		global_tax_modifier = 0.10
-	}
-	
-	bonus = {
-		global_heretic_missionary_strength = 0.02
-	}
-	
-	trigger = {
-		tag = FIN
-	}
-	free = yes
-	
-	expand_viborg = {
-		defensiveness = 0.15
-	}
-	hakkapelitta_fin = {
- 		cavalry_power = 0.15
-	}	
-	the_fourth_estate = {
-		production_efficiency = 0.1
-	}
-	settle_middle_finland = {
-		build_cost = -0.1
-		development_cost = -0.1
-	}
-	found_turun_akatemia = {
-		technology_cost = -0.05
-	}
-	the_white_death = {
-		hostile_attrition = 1
-	}
-	anjala_conspiracy = {
-		land_morale = 0.1
-	}
-}
-
 KRL_ideas = {
 	start = {
 		global_regiment_cost = -0.1
@@ -516,50 +389,6 @@ KRL_ideas = {
 	}
 }
 
-ICE_ideas = {
-	start = {
-		may_explore = yes
-		hostile_attrition = 1
-	}
-	
-	bonus = {
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
-	}	
-
-	trigger = {
-		tag = ICE
-	}
-	free = yes
-	
-	ICE_althingi = {
-		global_unrest = -1
-		reform_progress_growth = 0.15
-	}
-	ICE_hrafna_floki = {
-		global_ship_recruit_speed = -0.2
-	}
-	ICE_christian_identity = {
-		papal_influence = 1
-		monthly_fervor_increase = 0.25
-		church_power_modifier = 0.1
-		global_missionary_strength = 0.01
-	}
-	ICE_merchant_navy = {
-		light_ship_power = 0.15
-	}
-	ICE_fire_and_ice = {
-		discipline = 0.05
-	}
-	ICE_natural_builders = {
-		build_cost = -0.1
-		development_cost = -0.05
-	}
-	ICE_nationalism = {
-		culture_conversion_cost = -0.2
-	}
-}
-
 GOT_ideas = {
 	start = {
 		privateer_efficiency = 0.15
@@ -595,49 +424,6 @@ GOT_ideas = {
 	}
 	found_visby_bank = {
 		interest = -0.5
-	}
-}
-
-SCA_ideas = {
-	start = {
-		discipline = 0.05
-		global_trade_goods_size_modifier = 0.15
-	}
-	
-	bonus = {
-		global_manpower_modifier = 0.2
-	}
-	
-	trigger = {
-		tag = SCA
-	}
-	free = yes
-	
-	sca_united_craftsman = {
-		global_allowed_num_of_buildings = 1
-		build_cost = -0.05
-	}
-	sca_unified_scandinavian = {
-		possible_policy = 1
-		administrative_efficiency = 0.05
-	}
-	sca_danish_baltic_fleet = {
-		trade_efficiency = 0.1
-		ship_durability = 0.05
-	}
-	sca_norwegian_marines = {
-		naval_morale = 0.2
-	}
-	sca_finnish_hakkapeliita = {
-		cavalry_fire = 0.5
-		cavalry_cost = -0.15
-	}
-	sca_swedish_carolean = {
-		infantry_power = 0.2
-	}
-	sca_empire_of_the_north = {
-		max_absolutism = 10
-		yearly_absolutism = 1
 	}
 }
 
@@ -727,53 +513,6 @@ RUS_ideas = {
 		land_morale = 0.05
 		fire_damage_received = -0.1
 	}
-}
-
-SPA_ideas = {
-	start = {
-		land_morale = 0.15
-		artillery_fire = 1
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		tag = SPA
-	}
-	free = yes		#will be added at load.
-
-	devout_catholisism = {
-		papal_influence = 2
-		church_power_modifier = 0.25
-		monthly_fervor_increase = 0.5
-	}
-	inter_caetera = {
-		idea_claim_colonies = yes
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
-	}
-	salamanca_scholars = {
-		global_institution_spread = 0.1
-		reform_progress_growth = 0.1
-	}
-	spanish_armada = {
-		heavy_ship_power = 0.1
-		naval_forcelimit_modifier = 0.25
-	}
-	spa_casa_de_contracion = {
-		envoy_travel_time = -0.33
-		global_tariffs = 0.15
-	}
-	siglo_de_oro = {
-		prestige = 1
-	}
-	spa_cortes = { 
-		possible_dip_policy = 1
-		loyalty_change_on_revoked = 0.05
-	}
-	
 }
 
 CAS_ideas = {
@@ -1668,48 +1407,6 @@ BRA_ideas = {
 	}
 }
 
-POR_ideas = {
-	start = {
-		movement_speed_in_fleet_modifier = 1
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		global_tariffs = 0.20
-	}
-	
-	trigger = {
-		tag = POR
-	}
-	free = yes		#will be added at load.
-	
-	legacy_of_the_navigator = {
-		naval_morale = 0.1
-		range = 0.20
-	}
-	afonsine_ordinances = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	case_de_india = {
-		global_trade_power = 0.1
-	}
-	land_before_faith = {
-		global_colonial_growth = 15
-	}
-	the_bandeirantes = {
-		trade_efficiency = 0.15
-	}
-	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.5
-	}
-	por_royal_military_academy = {
-		defensiveness = 0.1
-		artillery_fire = 1
-	}
-}
-
-
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
@@ -2156,48 +1853,6 @@ MUG_ideas = {
 #	}
 #}
 
-TIM_ideas = {
-	start = {
-		diplomatic_upkeep = 1
-		leader_land_shock = 1
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		tag = TIM
-	}
-	free = yes
-	
-	timurid_architecture = {
-		prestige = 1
-	}
-	the_mantle_of_the_great_khan = {
-		land_morale = 0.1
-	}
-	unleash_the_tiger = {
-		shock_damage = 0.1
-	}
-	chagatai_literature = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1	#For completion's sake
-		horde_unity = 1
-	}
-	timurid_renaissance = {
-		technology_cost = -0.05
-	}
-	riches_of_the_silk_road = {
-		global_own_trade_power = 0.25
-	}
-	reform_the_diwan = {
-		yearly_corruption = -0.1
- 	}
-}
-
 GEN_Ideas = {
 	start = {
 		trade_efficiency = 0.10
@@ -2447,88 +2102,6 @@ JAP_ideas = {
 	}
 }
 
-MAM2_ideas = { #Mission reward to double mam_monopoly_ports // see mam_establish_merchant_escorts
-	start = {
-		trade_steering = 0.25
-		cavalry_power = 0.10
-	}
-	
-	bonus = {
-		global_prov_trade_power_modifier = 0.25
-	}
-	
-	trigger = {
-		tag = MAM
-		has_country_flag = mam_upgrade_national_idea_flag
-	}
-	free = yes
-	
-	red_sea_trade = {
-		global_trade_power = 0.05
-		trade_range_modifier = 0.10
-	}
-	mam_monopoly_ports_evolved = {
-		trade_efficiency = 0.2
-	}
-	monuments_to_greatness = {
-		prestige = 1
-	}
-	purchase_new_mamelukes = {
-		manpower_recovery_speed = 0.15
-	}
-	mam_army_reform = {
-		discipline = 0.05
-	}
-	reform_fellah_system = {
-		production_efficiency = 0.1
-	}
-	reformed_succession = {
-		stability_cost_modifier = -0.15
-	}
-}
-
-
-MAM_ideas = {
-	start = {
-		trade_steering = 0.25
-		cavalry_power = 0.10
-	}
-	
-	bonus = {
-		global_prov_trade_power_modifier = 0.25
-	}
-	
-	trigger = {
-		tag = MAM
-		NOT = { has_country_flag = mam_upgrade_national_idea_flag }
-	}
-	free = yes
-	
-	red_sea_trade = {
-		global_trade_power = 0.05
-		trade_range_modifier = 0.10
-	}
-	mam_monopoly_ports = {
-		trade_efficiency = 0.10
-	}
-	monuments_to_greatness = {
-		prestige = 1
-	}
-	purchase_new_mamelukes = {
-		manpower_recovery_speed = 0.15
-	}
-	mam_army_reform = {
-		discipline = 0.05
-	}
-	reform_fellah_system = {
-		production_efficiency = 0.1
-	}
-	reformed_succession = {
-		stability_cost_modifier = -0.15
-	}
-}
-
-
 NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
@@ -2615,45 +2188,47 @@ SIC_ideas = {
 	}
 }
 
-ARA_ideas = {
-	start = {
-		galley_power = 0.2
-		trade_efficiency = 0.1
+CAT_ideas = {
+    start = {
+        merchants = 1
+        light_ship_cost = -0.15
+    }
+ 
+    bonus = {
+        sunk_ship_morale_hit_recieved = -0.2
+    }
+ 
+    trigger = {
+		OR = {
+			tag = CAT
+			tag = VAL
+			tag = MJO
+		}
+    }
+    free = yes
+ 
+	cat_consulate_of_the_sea = {
+		navy_tradition = 1
+    }
+	cat_consell_de_cent = {
+        advisor_cost = -0.1
+    }
+	cat_catalan_constitutions = {
+		global_unrest = -1
+    }
+	cat_fortifying_catalonia = {
+		fort_maintenance_modifier = -0.1
 	}
-	
-	bonus = {
-		artillery_fire = 1
-	}
-	
-	trigger = {
-		tag = ARA
-	}
-	free = yes
-	
-	mercenary_princes = {
-		merc_maintenance_modifier = -0.15
-	}
-	protection_of_coastlines = {
-		naval_forcelimit_modifier = 0.10
-		global_sailors_modifier = 0.25
-	}
-	ara_mediterranean_trade = {
-		trade_steering = 0.20
-	}
-	consolidation_of_the_estates = {
-		stability_cost_modifier = -0.1
-	}
-	chartered_merchant_companies = {
-		global_trade_power = 0.20
-	}
-	ara_reformed_admin = {
-		global_autonomy = -0.05
-	}
-	protection_of_the_little_folk = {
-		land_morale = 0.10
-	}
+	cat_miquelets = {
+        manpower_recovery_speed = 0.15
+    }
+	cat_lliures_morts = {
+        land_morale = 0.10
+    }
+	cat_catalan_forges = {
+        production_efficiency = 0.1
+    }
 }
-
 
 BYZ_ideas = {
 	start = {
@@ -8130,49 +7705,6 @@ BTI_ideas = {
 	}
 }
 
-
-CAT_ideas = {
-    start = {
-        merchants = 1
-        light_ship_cost = -0.15
-    }
- 
-    bonus = {
-        sunk_ship_morale_hit_recieved = -0.2
-    }
- 
-    trigger = {
-		OR = {
-			tag = CAT
-			tag = VAL
-			tag = MJO
-		}
-    }
-    free = yes
- 
-	cat_consulate_of_the_sea = {
-		navy_tradition = 1
-    }
-	cat_consell_de_cent = {
-        advisor_cost = -0.1
-    }
-	cat_catalan_constitutions = {
-		global_unrest = -1
-    }
-	cat_fortifying_catalonia = {
-		fort_maintenance_modifier = -0.1
-	}
-	cat_miquelets = {
-        manpower_recovery_speed = 0.15
-    }
-	cat_lliures_morts = {
-        land_morale = 0.10
-    }
-	cat_catalan_forges = {
-        production_efficiency = 0.1
-    }
-}
-
 LNA_ideas = {
 	start = {
 		global_prov_trade_power_modifier = 0.10
@@ -11700,43 +11232,6 @@ MVA_ideas = {
 	}
 }
 
-EST_ideas = {
-	start = {
-		sailor_maintenance_modifer = -0.1
-		ship_durability = 0.05
-	}
-	bonus = {
-		trade_efficiency = 0.1
-	}
-	trigger = {
-		tag = EST
-	}
-	free = yes
-	
-	est_brotherhood_of_blackheads = {
-		global_manpower_modifier = 0.15
-	}
-	est_baltic_cooperation = {
-		naval_forcelimit_modifier = 0.25
-		sailors_recovery_speed = 0.05
-	}
-	est_castles_of_estonia = {
-		fort_maintenance_modifier = -0.2
-	}
-	est_academia_gustaviana = {
-		technology_cost = -0.05
-	}
-	est_baltic_trade = {
-		merchants = 1
-	}
-	est_estophilia = {
-		diplomatic_reputation = 1
-	}
-	est_national_awakening = {
-		global_unrest = -1
-	}
-}
-
 TPR_ideas = {
 	start = {
 		infantry_power = 0.1
@@ -12325,47 +11820,6 @@ FRN_ideas = {
 	}
 }
 
-KOL_ideas = {
-	start = {
-		global_manpower_modifier = 0.15
-		missionaries = 1
-	}
-	bonus = {
-		unjustified_demands = -0.2
-	}
-	trigger = {
-		tag = KOL
-	}
-	free = yes
-	
-	kol_pursuit_of_unity = {
-		ae_impact = -0.1
-	}
-	kol_archchancellor_of_italy = {
-		prestige_decay = -0.01
-	}
-	kol_hanseatic_city = {
-		development_cost = -0.1
-	}
-	kol_prime_minister = {
-		legitimacy = 0.5
-		devotion = 0.5
-		republican_tradition = 0.15
-		meritocracy = 0.5
-		horde_unity = 0.5
-		global_autonomy = -0.03
-	}
-	kol_pivotal_ecclesiastic_territory = {
-		global_heretic_missionary_strength = 0.03
-	}
-	kol_shifting_alliances = {
-		diplomatic_upkeep = 1
-	}
-	kol_order_of_saint_michael = {
-		discipline = 0.05
-	}
-}
-
 MAI_ideas = {
 	start = {
 		global_tax_modifier = 0.1
@@ -12554,7 +12008,11 @@ TRS_ideas = {
 		global_own_trade_power = 0.25
 	}
 	chagatai_literature = {
-		#Same as Timurids
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1	#For completion's sake
+		horde_unity = 1
 	}
 }
 
@@ -12589,7 +12047,7 @@ QOM_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	reform_the_diwan = {
-		#Same as Timurids
+		yearly_corruption = -0.1
 	}
 	qom_shahanshah = {
 		reduced_liberty_desire = 10
@@ -15230,45 +14688,6 @@ MOR_ideas = {
 	}
 }
 
-TUN_ideas = {
-	start = {
-		naval_attrition = -0.25
-		galley_power = 0.2		
-	}
-	bonus = {
-		naval_forcelimit_modifier = 0.25
-	}
-	trigger = {
-		tag = TUN
-	}
-	free = yes
-	tun_catalan_guard = {
-		mercenary_discipline = 0.05
-		infantry_power = 0.05
-	}
-	dual_diplomacy = {
-		diplomatic_upkeep = 1
-	}
-	corsairs = {
-		navy_tradition = 1
-		privateer_efficiency = 0.10
-	}
-	tun_attract_foreign_pirates = {
-		global_sailors_modifier = 0.25
-	}
-	tun_board_of_captains = {
-		leader_naval_fire = 1
-	}
-	tun_export_monopolies = {
-		global_own_trade_power = 0.2
-		trade_efficiency = 0.05
-	}
-	tun_caliphate = {
-		tolerance_own = 1
-		monthly_piety = 0.001
-	}
-}
-
 TEX_ideas = {
 	start = {	
 		fire_damage_received = -0.1
@@ -15983,54 +15402,6 @@ EPI_ideas = {
 	epi_unity_in_strength = {
 		discipline = 0.05
 	}
-}
-
-LAE_ideas = {
-	start = {
-        discipline = 0.05
-        global_heretic_missionary_strength = 0.03
-	}
-	
-	bonus = {
-		missionaries = 1
-	}
-	
-	trigger = {
-		tag = LAE
-	}
-	free = yes
-    
-    lae_emperor_constantinople = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-        vassal_forcelimit_bonus = 1
-    }
-    lae_latin_patriarch = {
-        papal_influence = 2
-        curia_powers_cost = -0.1
-    }
-    lae_byzantine_bureaucracy = {
-        advisor_cost = -0.1
-        stability_cost_modifier = -0.1
-    }
-    lae_guilds_pera = {
-        global_trade_power = 0.1
-        galley_power = 0.1
-    }
-    epi_latin_knights = {
-        #cavalry_power = 0.15 same as Epirus
-    }
-    lae_partitio_graeci = {
-        warscore_cost_vs_other_religion = -0.1
-        unjustified_demands = -0.25
-    }
-    lae_frankokratia = {
-        diplomatic_reputation = 1
-        manpower_in_true_faith_provinces = 0.15
-    }
 }
 
 

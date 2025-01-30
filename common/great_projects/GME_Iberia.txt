@@ -1,0 +1,86 @@
+gme_alcazar_segovia = {
+	start = 4789
+	date = 1.01.01
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			culture_group = iberian
+		}
+		has_owner_accepted_culture = yes
+		OR = {
+			religion = catholic
+			religion = sunni
+		}
+		has_owner_religion = yes
+	}
+	can_upgrade_trigger = {
+		owner = {
+			culture_group = iberian
+		}
+		has_owner_accepted_culture = yes
+		OR = {
+			religion = catholic
+			religion = sunni
+		}
+		has_owner_religion = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.20
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.20
+			local_governing_cost = -0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			artillery_cost = -0.05
+			prestige = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.20
+			statewide_governing_cost = -0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			artillery_cost = -0.10
+			prestige = 0.50
+			mil_tech_cost_modifier = -0.05
+		}
+		on_upgraded = { }
+	}
+}

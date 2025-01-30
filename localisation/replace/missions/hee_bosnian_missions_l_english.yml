@@ -2,69 +2,94 @@
  ############## MISSION ###############################
 
  bos_fund_the_monasteries_title:0 "Fund The Monasteries"
- bos_fund_the_monasteries_desc:0 ""
+ bos_fund_the_monasteries_desc:0 "Monastic life has been a pillar of Bosnian society, preserving knowledge and faith through centuries. By funding these institutions, we strengthen both our religious and cultural foundations."
+
  bos_unity_in_belief_title:0 "Unity In Belief"
- bos_unity_in_belief_desc:0 ""
- bos_patron_of_the_reinassance_title:0 "Patron of the Reinassance"
- bos_patron_of_the_reinassance_desc:0 ""
+ bos_unity_in_belief_desc:0 "Religious diversity has long shaped Bosnia, but unity is necessary for stability. Through careful governance and reform, we shall harmonize our people under a shared spiritual and national identity."
+
+ bos_patron_of_the_reinassance_title:0 "Patron of the Renaissance"
+ bos_patron_of_the_reinassance_desc:0 "The Bosnian Renaissance is upon us. By supporting artists, architects, and philosophers, we shall ensure that Bosnia is remembered as a land of culture and progress."
+
  bos_frontier_fortifications_title:0 "Frontier Fortifications"
- bos_frontier_fortifications_desc:0 ""
+ bos_frontier_fortifications_desc:0 "Bosnia's position at the crossroads of empires demands strong defenses. By fortifying our borders, we can resist any invasion and secure our sovereignty."
+
  bos_adriatic_presence_title:0 "Adriatic Presence"
- bos_adriatic_presence_desc:0 ""
+ bos_adriatic_presence_desc:0 "The Adriatic is a gateway to trade, diplomacy, and influence. Establishing a strong naval presence will allow Bosnia to project power beyond its borders."
 
  bos_restore_medieval_law_title:0 "Restore Medieval Law"
- bos_restore_medieval_law_desc:0 ""
+ bos_restore_medieval_law_desc:0 "Our ancient legal traditions must be revitalized to ensure stability and justice for all citizens. A return to our historical laws will reinforce order and national unity."
+
  bos_the_great_university_title:0 "The Great University"
- bos_the_great_university_desc:0 ""
+ bos_the_great_university_desc:0 "Education is the foundation of progress. A grand university will attract scholars from across Europe, making Bosnia a center of learning and enlightenment."
+
  bos_army_reforms_title:0 "Army Reforms"
- bos_army_reforms_desc:0 ""
+ bos_army_reforms_desc:0 "To secure our place in the Balkans, our army must evolve. Through modernization and new tactics, we shall create a formidable force capable of defending and expanding our realm."
+
  bos_the_mountain_legion_title:0 "The Mountain Legion"
- bos_the_mountain_legion_desc:0 ""
+ bos_the_mountain_legion_desc:0 "The rugged terrain of Bosnia breeds warriors of unmatched endurance and skill. By organizing these fighters into an elite force, we shall dominate the battlefield."
+
  bos_expand_the_coastline_title:0 "Expand the Coastline"
- bos_expand_the_coastline_desc:0 ""
+ bos_expand_the_coastline_desc:0 "A nation cannot prosper without access to the sea. Expanding our coastline will bring new opportunities for trade and military power."
+
  bos_bosnian_fleet_title:0 "Bosnian Fleet"
- bos_bosnian_fleet_desc:0 ""
+ bos_bosnian_fleet_desc:0 "Our merchants and warriors must rule the waves. A strong fleet will ensure our security and influence over the Adriatic."
 
  bos_balance_the_estates_title:0 "Balance the Estates"
- bos_balance_the_estates_desc:0 ""
+ bos_balance_the_estates_desc:0 "The power struggles between the nobility, clergy, and merchants must be managed carefully. A balanced system will bring long-term stability to our realm."
+
  bos_bibliotheca_bosnia_title:0 "Bibliotheca Bosnia"
- bos_bibliotheca_bosnia_desc:0 ""
+ bos_bibliotheca_bosnia_desc:0 "A grand library shall be built, preserving the wisdom of past and present for future generations. Bosnia will become a guardian of knowledge in the Balkans."
+
  bos_the_great_capital_title:0 "The Great Capital"
- bos_the_great_capital_desc:0 ""
+ bos_the_great_capital_desc:0 "Our capital must reflect the strength and ambition of our nation. Investing in its infrastructure will make it the envy of the Balkans."
+
  bos_a_strong_government_title:0 "A Strong Government"
- bos_a_strong_government_desc:0 ""
+ bos_a_strong_government_desc:0 "Only through firm leadership and efficient administration can we guide Bosnia to greatness. Centralizing power will ensure stability in turbulent times."
+
  bos_found_sarajevo_title:0 "Found Sarajevo"
- bos_found_sarajevo_desc:0 ""
+ bos_found_sarajevo_desc:0 "A new capital is needed to symbolize Bosnia's rise. Sarajevo will be the beating heart of our kingdom, a city of culture, commerce, and governance."
+
  bos_bosnian_royal_family_title:0 "Bosnian Royal Family"
- bos_bosnian_royal_family_desc:0 ""
+ bos_bosnian_royal_family_desc:0 "The strength of our nation depends on the legitimacy of its rulers. Strengthening the royal family will ensure dynastic stability for generations to come."
+
  bos_south_slavia_title:0 "South Slavia"
- bos_south_slavia_desc:0 ""
+ bos_south_slavia_desc:0 "The dream of a united South Slavic state begins with Bosnia. By bringing together the Slavic peoples of the Balkans, we shall forge a powerful and unified kingdom."
+
  bos_the_albanian_crown_title:0 "King of Greece"
- bos_the_albanian_crown_desc:0 ""
+ bos_the_albanian_crown_desc:0 "Our influence must extend beyond the Balkans. By claiming the Albanian and Greek crowns, Bosnia shall become a true regional power."
 
  bos_the_adriatic_port_title:0 "The Adriatic Port"
- bos_the_adriatic_port_desc:0 ""
+ bos_the_adriatic_port_desc:0 "A stronghold on the Adriatic will secure our place in Mediterranean trade. Let us build a thriving port that will serve as the gateway to our prosperity."
+
  bos_the_great_centers_of_trade_title:0 "Centers of Trade"
- bos_the_great_centers_of_trade_desc:0 ""
+ bos_the_great_centers_of_trade_desc:0 "Bosnia must control the major commercial hubs of the Balkans. By dominating trade, we will secure our economic independence and influence."
+
  bos_the_peoples_of_the_balkans_title:0 "The Peoples of the Balkans"
- bos_the_peoples_of_the_balkans_desc:0 ""
+ bos_the_peoples_of_the_balkans_desc:0 "The Balkans are home to many cultures and faiths. A wise ruler must navigate these differences to maintain harmony and strengthen the state."
+
  bos_multicultural_kingdom_title:0 "Multicultural Kingdom"
- bos_multicultural_kingdom_desc:0 ""
+ bos_multicultural_kingdom_desc:0 "Bosnia thrives on diversity. By embracing our multicultural heritage, we create a nation where all peoples can prosper together."
+
  bos_encroach_on_the_serbians_title:0 "Encroach on the Serbians"
- bos_encroach_on_the_serbians_desc:0 ""
+ bos_encroach_on_the_serbians_desc:0 "Serbia stands in the way of our ambitions. By exerting influence over their lands, we bring ourselves closer to dominance in the Balkans."
+
  bos_fortress_of_the_balkans_title:0 "Fortress of the Balkans"
- bos_fortress_of_the_balkans_desc:0 ""
+ bos_fortress_of_the_balkans_desc:0 "Our mountainous homeland makes for a natural stronghold. Strengthening our defenses will ensure that no invader can break our spirit."
 
  bos_encourage_german_immigrants_title:0 "German Immigrants"
- bos_encourage_german_immigrants_desc:0 ""
- bos_dominate_dubrovinik_title:0 "Dominate Dubrovinik"
- bos_dominate_dubrovinik_desc:0 ""
+ bos_encourage_german_immigrants_desc:0 "Skilled artisans and merchants from the German lands can contribute to our economy. Encouraging their settlement will boost Bosnia's prosperity."
+
+ bos_dominate_dubrovinik_title:0 "Dominate Dubrovnik"
+ bos_dominate_dubrovinik_desc:0 "The Republic of Dubrovnik is a key center of trade and diplomacy. By bringing it under our influence, we control the flow of wealth through the Adriatic."
+
  bos_the_lands_of_the_balkans_title:0 "The Lands of the Balkans"
- bos_the_lands_of_the_balkans_desc:0 ""
+ bos_the_lands_of_the_balkans_desc:0 "To rule the Balkans, we must consolidate its lands under our banner. Expansion is the key to securing Bosnia's rightful place in history."
+
  bos_a_new_trade_power_title:0 "A New Trade Power"
- bos_a_new_trade_power_desc:0 ""
+ bos_a_new_trade_power_desc:0 "Bosnia has the potential to dominate commerce in the Balkans. By expanding our trade networks, we shall become a major economic force."
+
  bos_subjugate_serbia_title:0 "Subjugate Serbia"
- bos_subjugate_serbia_desc:0 ""
+ bos_subjugate_serbia_desc:0 "Serbia's independence is an obstacle to our rule. By bringing them into our fold, Bosnia shall emerge as the undisputed power of the Balkans."
 
  # Tooltips
  hun_naples_cb_tt_yes:0 "\n£yes£ If we complete this mission while @ALB §YDyrrachion§! exists and is §Tvalid for a personal union§!, we will also receive:"

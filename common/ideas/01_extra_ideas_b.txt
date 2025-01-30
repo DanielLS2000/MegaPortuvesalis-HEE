@@ -334,6 +334,10 @@ levantine_christian_cultural_ideas = {
 			capital_scope = { region = mashriq_region }
 		}
 		NOT = {tag = AKD}
+		NOT = {tag= EGY}
+		NOT = {was_tag = AKD}
+		NOT = {was_tag= EGY}
+		NOT = {tag = AFR}
 		religion_group = christian									#in case crusaders are successful
 	}
 	free = yes
@@ -529,6 +533,7 @@ african_christian_ideas = {
 			capital_scope = { region = maghreb_region }
 			culture_group = maghrebi
 		}
+		NOT = {tag=AFR}
 	}
 	free = yes
 

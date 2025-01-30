@@ -26,6 +26,41 @@ country_event = {
 			name = gbr_isolation_policy
 			duration = 9125
 		}
+
+		hidden_effect = {
+			WLS = {
+				inherit = Z3Y
+			}
+			WLS = {
+				if = {
+					limit = { 
+						ROOT = {
+							senior_union_with = Z20
+						}
+					}
+					inherit = Z20
+				}
+			}
+			WLS = {
+				if = {
+					limit = {
+						ROOT = {
+							senior_union_with = Z2C
+						}
+					}
+					inherit = Z2C
+				}
+			}
+			ROOT = { 
+				create_union = WLS
+			}
+			4373 = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = ROOT
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}

@@ -1044,7 +1044,6 @@ ESX_third_branch = {
 					exists = Z3Y
 				}
 				OR = {
-					war_with = Z3Y
 					custom_trigger_tooltip = {
 						tooltip = eng_war_france.tooltip
 						has_country_flag = rb_gave_up_maine
