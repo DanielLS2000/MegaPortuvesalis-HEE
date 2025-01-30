@@ -193,44 +193,6 @@ dynamic-bedouin_arabic-culture-num1_ideas = {
 	}
 }
 
-dynamic-dutch-franconian-cosmopolitan_french-culture-num1_ideas = {
-	start = {
-		 yearly_corruption = -0.1
-		 state_maintenance_modifier = -0.1
-	}
-	trigger = {
-		culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
-	}
-	free = yes
-
-	tradition_polders = {
-		development_cost = -0.1
-	}
-	tradition_chanson_de_geste = {
-		army_tradition_decay = -0.02
-		army_tradition_from_battle = 0.02
-	}
-	tradition_agrarian = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	tradition_castle_keepers = {
-		garrison_size = 0.10
-	}
-	tradition_parochialism = {
-		build_time = -0.2
-	}
-	tradition_maritime_mercantilism = {
-		mercantilism_cost = -0.2
-	}
-	tradition_chivalry = {
-		leader_land_shock = 1
-		nobles_loyalty_modifier = 0.05
-	}
-	bonus = {
-		free_adm_policy = 1
-	}
-}
-
 
 dynamic-russian_culture-culture-num1_ideas = {
 	start = {

@@ -11820,47 +11820,6 @@ FRN_ideas = {
 	}
 }
 
-KOL_ideas = {
-	start = {
-		global_manpower_modifier = 0.15
-		missionaries = 1
-	}
-	bonus = {
-		unjustified_demands = -0.2
-	}
-	trigger = {
-		tag = KOL
-	}
-	free = yes
-	
-	kol_pursuit_of_unity = {
-		ae_impact = -0.1
-	}
-	kol_archchancellor_of_italy = {
-		prestige_decay = -0.01
-	}
-	kol_hanseatic_city = {
-		development_cost = -0.1
-	}
-	kol_prime_minister = {
-		legitimacy = 0.5
-		devotion = 0.5
-		republican_tradition = 0.15
-		meritocracy = 0.5
-		horde_unity = 0.5
-		global_autonomy = -0.03
-	}
-	kol_pivotal_ecclesiastic_territory = {
-		global_heretic_missionary_strength = 0.03
-	}
-	kol_shifting_alliances = {
-		diplomatic_upkeep = 1
-	}
-	kol_order_of_saint_michael = {
-		discipline = 0.05
-	}
-}
-
 MAI_ideas = {
 	start = {
 		global_tax_modifier = 0.1
