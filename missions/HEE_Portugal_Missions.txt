@@ -3,7 +3,10 @@ POR_primeirobranch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			tag = SPA
+		}
 	}
 	has_country_shield = yes
 
@@ -329,7 +332,10 @@ POR_segundobranch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			tag = SPA
+		}
 	}
 	has_country_shield = yes
 
@@ -694,7 +700,7 @@ POR_segundobranch = {
 		}
 	}
 	POR_trade_of_silver_and_gold = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_african_gold
 		position = 8
 		required_missions = { POR_potosi_silver POR_the_kingdons_of_the_new_world }
 		provinces_to_highlight = {
@@ -887,7 +893,10 @@ POR_terceirobranch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			tag = SPA
+		}
 	}
 	has_country_shield = yes
 	
@@ -1023,7 +1032,7 @@ POR_terceirobranch = {
 		}
 	}
 	POR_claim_hispaniola = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_claim_hispaniola
 		position = 5
 		required_missions = { POR_the_colony_of_caraibas }
 		provinces_to_highlight = {
@@ -1099,7 +1108,7 @@ POR_terceirobranch = {
 		}
 	}
 	POR_aztec_conquest = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_iberian_conquistador
 		position = 6
 		required_missions = { POR_claim_hispaniola }
 		provinces_to_highlight = {
@@ -1172,7 +1181,10 @@ POR_quartobranch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			tag = SPA
+		}
 	}
 	has_country_shield = yes
 	
@@ -1321,7 +1333,7 @@ POR_quartobranch = {
 		}
 	}
 	POR_the_kingdons_of_the_new_world = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_kingdom_of_new_spain
 		position = 7
 		required_missions = { POR_aztec_conquest POR_the_triangle_trade POR_push_to_india }
 		provinces_to_highlight = {
@@ -1596,7 +1608,7 @@ POR_quartobranch = {
 			}
 		}
 		effect = {
-			iberia_region = {
+			maghreb_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1606,11 +1618,35 @@ POR_quartobranch = {
 		}
 	}
 	POR_spear_of_the_holy_roman_empire = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_lusitanian_empire
 		position = 13
 		required_missions = { POR_reform_the_navy POR_stop_the_shadow_kingdom POR_refine_the_tercios }
-		trigger = { }
-		effect = { }
+        provinces_to_highlight = {
+			region = mexico_region
+        }
+        
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_prestige_or_monarch_power = { amount = 50 }
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+			custom_tooltip = chi_permanent_pp
+		}
 	}
 }
 
@@ -1619,7 +1655,10 @@ POR_quintobranch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			tag = SPA
+		}
 	}
 	has_country_shield = yes
 	
