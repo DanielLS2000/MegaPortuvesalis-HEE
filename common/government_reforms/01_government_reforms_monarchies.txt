@@ -1421,7 +1421,11 @@ league_of_lezhe_reform = {
 	icon = "giga_chad"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = albanian
+		OR  = {
+			primary_culture = albanian
+			has_reform = league_of_lezhe_reform
+			have_had_reform = league_of_lezhe_reform
+		}
 	}
 	nation_designer_trigger = {
 		primary_culture = albanian

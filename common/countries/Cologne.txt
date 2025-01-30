@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 84 124 48 }
+color = { 220  150  158 }
 revolutionary_colors = { 5 1 0 }
 historical_idea_groups = {
 	religious_ideas

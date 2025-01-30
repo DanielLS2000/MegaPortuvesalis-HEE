@@ -1,0 +1,23 @@
+﻿l_english:
+ ############## Shadow Kingdom ###############################
+
+ emperor_trying_to_avert_shadow_kingdom_tt:0 "The Emperor has formally decided to rein in Morroco"
+ incident_shadow_kingdom_member_alert:0 "While the Kingdom of Morroco is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the African states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many African states is why they should allow the Emperor any authority over their lands."
+ incident_shadow_kingdom_emperor_alert:0 "While the Kingdom of Morroco is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the African states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many African states is why they should allow the Emperor any authority over their lands."
+ shadow_kingdom.3.b:0 "Morroco has been returned to the fold. Long live the Empire!"
+ shadow_kingdom.3.d2:0 "True to its promise, the Empire has reined in the Princes of Morroco and secured their place within the Holy Roman Empire. With this feat of diplomatic and military genius, all of Christendom now knows the futility of defying Imperial rule."
+ shadow_kingdom_decision_title:0 "Rein in Morroco"
+ shadow_kingdom_decision_desc:0 "The African Princes must be reined in either through diplomacy or war. We cannot allow Morroco to become a shadow kingdom!"
+ has_reined_in_all_italians_early:1 "All §YAfrican§! Princes have been reined in.\n\n§YReining§! means that the §YTarget§! country must fulfill at least one of the following conditions:\n    §YTarget's§! opinion of §Y[Root.GetName]§! is at least §G150§!.\n    Has the §YFree City§! Government Reform.\n    Is a Subject of §Y[Root.GetName]§!.\n    §YTarget§! is allied with §Y[Root.GetName]§!.\n    Has been defeated by §YEmperor§! in a War."
+ shadow_kingdom_warning_tt:1 "§YThe Emperor can rein in African states by defeating them in any war, making them a Free City, or by securing an alliance or strong relations with them.§!"
+ shadow_kingdom.2.d:1 "While the Kingdom of Morroco is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the African states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many African states is why they should allow the Emperor any authority over their lands."
+ shadow_kingdom.2.a:0 "It is time to abandon Morroco."
+ shadow_kingdom.2.b:0 "We must rein in the Africans."
+ shadow_kingdom_emperor_gives_up_tt:1 "§YAfrican nations within the HRE that have been reined in will remain in the Empire.§!\n§YAfrican nations that have not been reined in will leave the Empire.§!\n\n§YThe Emperor will lose §R0.2§! Imperial Authority per province development which leaves the Empire.§!"
+ shadow_kingdom_incident_tt:0 "§YThe Emperor has until the year 1490 to rein in as many African nations in the Empire as possible.§!"
+ shadow_kingdom_incident_penalty_tt:0 "Lose §R0.2§! Imperial Authority per §YDevelopment§! from the African provinces which leave the Holy Roman Empire."
+ shadow_kingdom.3.d:0 "Despite the Imperial resolution to rein in Morroco, there are still African states that refuse to accept the supremacy of the Empire. [Root.GetAdjective] efforts have not been completely in vain however; those states that have been reined in will not dare defy the Empire again."
+ shadow_kingdom.3.a:0 "The fate of Morroco is decided."
+ shadow_kingdom_triggered_modifier_tt:1 "§Y[Root.GetName] will suffer penalties to Prestige, Unrest, and Stability Cost while it remains within the Empire, unless allied to the Emperor.§!"
+ shadow_kingdom_result_ia_tooltip:0 "§Y[Root.GetName]§! will gain §Y5§! Imperial Authority for each African nation that remains in the Empire due to being reined in.\n§Y[Root.GetName]§! will lose §Y10§! Imperial Authority for each independent African nation that we did not rein in."
+ shadow_kingdom.4.d2:0 "As promised, the Emperor launched a campaign to restore Imperial authority to Morroco. [Root.GetName] was among the states that were forced to accept the rule of the Empire, and our submission is proof that the Emperor’s word is law."

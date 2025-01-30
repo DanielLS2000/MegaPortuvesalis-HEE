@@ -240,3 +240,13 @@
  bur_architetury_desc: "Originally composed as a treatise, studying the facets of architecture, by the Roman architect and military engineer Marcus Vitruvius Pollio, the study dubbed 'Ten Books on Architecture' has served as the basis for all matters of its nature. Its many lessons will only serve to assist us in erecting more illustrious and adorned buildings."
  bur_trade_fairs_title: "Promote Trade Fairs"
  bur_trade_fairs_desc: "The trade fairs across our nations are home to bustling economic activity as well as prosperity. By funding and expanding this tradition we will succeed in spreading out more prosperity across our realm."
+
+ # Cologne
+ kol_pursuit_of_unity: "Create the Naval Regimenta"
+ kol_archchancellor_of_italy: "Lotharingian Trading Spirit"
+ kol_pivotal_ecclesiastic_territory: "Reform the Feudal Army"
+ kol_shifting_alliances: " Imperial Towns"
+ kol_pursuit_of_unity_desc: ""
+ kol_archchancellor_of_italy_desc: ""
+ kol_pivotal_ecclesiastic_territory_desc: ""
+ kol_shifting_alliances_desc: ""
