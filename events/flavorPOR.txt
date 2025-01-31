@@ -230,7 +230,7 @@ country_event = {
 	}
 }
 
-# King Sebastião's Expedition to North Africa
+# King Sebasti�o's Expedition to North Africa
 country_event = {
 	id = flavor_por.3272
 	title = "flavor_por.EVTNAME3272"
@@ -448,7 +448,7 @@ country_event = {
 		add_dip_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Dom Luís de Meneses"
+			name = "Dom Lu�s de Meneses"
 			culture = portugese
 			discount = yes
 			skill = 2
@@ -489,7 +489,7 @@ country_event = {
 	}
 }
 
-# Marquês de Pombal
+# Marqu�s de Pombal
 country_event = {
 	id = flavor_por.3279
 	title = "flavor_por.EVTNAME3279"
@@ -568,7 +568,7 @@ country_event = {
 	}
 }
 
-# The Expulsion of Marquês de Pombal
+# The Expulsion of Marqu�s de Pombal
 country_event = {
 	id = flavor_por.3281
 	title = "flavor_por.EVTNAME3281"
@@ -606,7 +606,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	option = {		# Let the 'Great Marquês' rule
+	option = {		# Let the 'Great Marqu�s' rule
 		name = "flavor_por.EVTOPTB3281"
 		ai_chance = { factor = 25 }
 		every_owned_province = {
@@ -663,7 +663,7 @@ country_event = {
 				SPA = { has_idea = quest_for_the_new_world }
 			}
 			SPA = {
-				country_event = { id = flavor_por.1 days = 10 }
+				country_event = { id = flavor_spa.991 days = 10 }
 			}
 		}
 		if = {
@@ -673,7 +673,7 @@ country_event = {
 				CAS = { has_idea = quest_for_the_new_world }
 			}
 			CAS = {
-				country_event = { id = flavor_por.1 days = 10 }
+				country_event = { id = flavor_spa.99991 days = 10 }
 			}
 		}
 		if = {
@@ -699,7 +699,7 @@ country_event = {
 					religion = catholic
 					has_idea = quest_for_the_new_world
 				}
-				country_event = { id = flavor_por.1 }
+				country_event = { id = flavor_spa.99991 }
 			}
 		}
 	}
@@ -709,7 +709,7 @@ country_event = {
 		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {
-			name = "Cristóvão Colombo"
+			name = "Crist�v�o Colombo"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -983,7 +983,7 @@ country_event = {
 	}
 }
 
-# The Tower of Belém
+# The Tower of Bel�m
 country_event = {
 	id = flavor_por.9
 	title = "flavor_por.EVTNAME9"
@@ -1049,7 +1049,7 @@ country_event = {
 	}
 }
 
-# Jerónimos Monastery
+# Jer�nimos Monastery
 country_event = {
 	id = flavor_por.10
 	title = "flavor_por.EVTNAME10"
@@ -1128,3144 +1128,11 @@ country_event = {
 	}
 }
 
-# The Iberian Wedding
-country_event = {
-	id = flavor_por.3716
-	title = "flavor_por.EVTNAME3716"
-	desc = "flavor_por.EVTDESC3716"
-	picture = DIPLOMACY_eventPicture
-
-	major = yes
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		NOT = { exists = SPA }
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { war_with = ARA }
-				is_subject = no
-				ARA = {
-					exists = yes
-					ai = yes
-					was_player = no
-					is_subject = no
-					is_neighbor_of = ROOT
-					NOT = { is_in_war = { attacker_leader = ARA } }
-					NOT = { is_in_war = { defender_leader = ARA } }
-					NOT = { is_in_war = { casus_belli = cb_independence_war } }
-					government = monarchy
-				}
-				num_of_cities = 25
-			}
-			AND = {
-				tag = POR
-				NOT = { war_with = CAS }
-				is_subject = no
-				ai = no
-				CAS = {
-					exists = yes
-					ai = yes
-					was_player = no
-					is_subject = no
-					is_neighbor_of = ROOT
-					NOT = { is_in_war = { attacker_leader = CAS } }
-					NOT = { is_in_war = { defender_leader = CAS } }
-					NOT = { is_in_war = { casus_belli = cb_independence_war } }
-					government = monarchy
-				}
-				num_of_cities = 16
-			}
-		}
-		government = monarchy
-		is_year = 1450
-		NOT = { is_year = 1530 }
-		is_subject = no
-		num_of_cities = 10
-		OR = {
-			AND = {
-				CAS = { is_female = yes }
-				ARA = { is_female = no }
-			}
-			AND = {
-				CAS = { is_female = no }
-				ARA = { is_female = yes }
-			}
-			ARA = {
-				ai = yes
-				has_regency = yes
-			}
-			CAS = {
-				ai = yes
-				has_regency = yes
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 120
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					tag = POR
-					ARA = {
-						has_regency = no 
-					}
-				}
-				AND = {
-					tag = POR
-					CAS = { 
-						has_regency = no 
-					}
-				}
-			}
-		}
-	}
-	
-	
-	option = {		# Let us bind their Dynasty to ours
-		name = "flavor_por.EVTOPTA3716"
-		ai_chance = { factor = 90 }
-		if = {
-			limit = { tag = POR }
-			create_union = ARA
-			add_opinion = {
-				who = ARA
-				modifier = spa_iberian_wedding
-			}
-			ARA = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding
-				}
-				add_liberty_desire = -50
-			}
-			every_known_country = {
-				limit = {
-					marriage_with = ARA
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding_negative
-				}
-			}
-		}
-		if = {
-			limit = { tag = POR }
-			create_union = CAS
-			add_opinion = {
-				who = CAS
-				modifier = spa_iberian_wedding
-			}
-			CAS = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding
-				}
-				add_liberty_desire = -50
-			}
-			every_known_country = {
-				limit = {
-					marriage_with = CAS
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding_negative
-				}
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = noble_rebels
-				size = 2
-			}
-		}
-	}
-	option = {		# No let us marry a local talent instead
-		name = "flavor_por.EVTOPTB3716"
-		ai_chance = { factor = 10 }
-		add_stability_or_adm_power = yes
-		if = {
-			limit = { tag = POR }
-			ARA = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_declined_iberian_wedding
-				}
-			}
-		}
-		if = {
-			limit = { tag = POR }
-			CAS = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_declined_iberian_wedding
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_regency = no
-				has_consort = no
-				has_government_attribute = queen
-			}
-			define_consort = {
-				ADM = 2
-				MIL = 2
-				DIP = 2
-			}
-		}
-	}
-}
-
-# Torquemada and the Conversion of the Moors
-country_event = {
-	id = flavor_por.3150
-	title = "flavor_por.EVTNAME3150"
-	desc = "flavor_por.EVTDESC3150"
-	picture = ADVISOR_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		NOT = { exists = GRA }
-		religion = catholic
-		is_at_war = no
-		any_owned_province = {
-			region = iberia_region
-			religion_group = muslim
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = spa_holy_inquisition
-		}
-	}
-
-	option = {		# Let us make a clean sweep for the Glory of God
-		name = "flavor_por.EVTOPTA3150"
-		define_advisor = {
-			type = inquisitor
-			name = "Tomás de Torquemada"
-			location = 215 # Castilla La Vieja 
-			discount = yes
-			skill = 1
-		}
-		
-		every_owned_province = {
-			limit = {
-				region = iberia_region
-				religion_group = muslim
-			}
-			change_religion = catholic
-			add_province_modifier = {
-				name = forced_conversion
-				duration = 3650
-			}
-		}	
-		random_country = {
-			limit = {
-				religion_group = muslim
-				any_owned_province = {
-					sea_zone = {
-						any_neighbor_province = {
-							owned_by = ROOT
-						}
-					}
-				}
-			}
-			country_event = {  id = flavor_por.3151 days = 10 tooltip = "flavor_por.EVTTOOLTIP3150" }
-		}
-		set_country_flag = torquemada_expelled
-		add_reform_desire = 0.02
-
-	}
-	option = {		# Toleration is key to the nation's prosperity
-		name = "flavor_por.EVTOPTC3150"
-		ai_chance = { factor = 0 }
-		custom_tooltip = flavor_por.c.3150.tt
-		add_reform_desire = -0.01
-		add_stability_or_adm_power = yes
-		add_ruler_modifier = {
-			name = religious_tolerance
-		}
-	}
-}
-
-# Expulsion of the Moors
-country_event = {
-	id = flavor_por.3151
-	title = "flavor_por.EVTNAME3151"
-	desc = "flavor_por.EVTDESC3151"
-	picture = ECONOMY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {		# They are a welcome addition
-		name = "flavor_por.EVTOPTA3151"
-		ai_chance = { factor = 90 }
-		random_owned_province = {
-			add_base_tax = 1
-		}
-	}
-
-}
-
-# Christopher Columbus
-country_event = {
-	id = flavor_por.1
-	title = "flavor_por.EVTNAME1"
-	desc = "flavor_por.EVTDESC1"
-	picture = SHIP_SAILING_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = { has_global_flag = columbus_happened }
-		has_idea = quest_for_the_new_world
-		OR = {
-			NOT = {
-				north_america = {
-					has_discovered = ROOT
-				}
-			}
-			NOT = {
-				south_america = {
-					has_discovered = ROOT
-				}
-			}
-			NOT = {
-				any_known_country = {
-					north_america = {
-						has_discovered = PREV
-					}
-				}
-			}
-			NOT = {
-				any_known_country = {
-					south_america = {
-						has_discovered = PREV
-					}
-				}
-			}
-		}
-	}
-
-	option = {		# Reject his proposal
-		name = "flavor_por.EVTOPTA1"
-		ai_chance = { factor = 10 }
-		set_country_flag = turned_down_columbus
-		random_known_country = {
-			limit = {
-				NOT = { has_country_flag = turned_down_columbus }
-				religion = catholic
-				has_idea = quest_for_the_new_world
-			}
-			country_event = { id = flavor_por.1 }
-		}
-	}
-	option = {		# Hire Columbus
-		name = "flavor_por.EVTOPTB1"
-		ai_chance = { factor = 90 }
-		add_years_of_income = -0.25
-		set_global_flag = columbus_happened
-		define_explorer = {
-			name = "NAME_CRISTOBAL_COLON"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-		}
-	}
-}
-
-# Discovery of the New World!
-country_event = {
-	id = flavor_por.1005
-	title = "flavor_por.EVTNAME1005"
-	desc = "flavor_por.EVTDESC1005"
-	picture = COLONIZATION_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		NOT = { has_global_flag = new_world_discovered }
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		OR = {
-			north_america = {
-				has_discovered = ROOT
-			}
-			south_america = {
-				has_discovered = ROOT
-			}
-			new_world = {
-				has_discovered = ROOT
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		set_global_flag = new_world_discovered
-	}
-
-	option = {		# Now so have we!
-		name = "flavor_por.EVTOPTA1005"
-		add_prestige = 50
-		add_innovativeness_small_effect = yes
-	}
-}
-
-# Ignacio de Loyola
-country_event = {
-	id = flavor_por.1011
-	title = "flavor_por.EVTNAME1011"
-	desc = "flavor_por.EVTDESC1011"
-	picture = ADVISOR_eventPicture
-
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		religion = catholic
-		is_year = 1521
-		NOT = { is_year = 1556 }
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-
-	option = {		# An Excellent Minister!
-		name = "EXCELLENTMINISTER"
-		add_adm_power = 50
-		add_papal_influence = 25
-		define_advisor = {
-			type = theologian 
-			culture = basque
-			religion = catholic
-			name = "Ignacio de Loyola"
-			discount = yes
-			skill = 2
-		}
-	}
-}
-
-# The Quest for the New World
-country_event = {
-	id = flavor_por.3152
-	title = "flavor_por.EVTNAME3152"
-	desc = "flavor_por.EVTDESC3152"
-	picture = EXPLORERS_eventPicture
-
-	fire_only_once = yes	
-
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		religion = catholic
-		OR = {
-			north_america = {
-				has_discovered = ROOT
-			}
-			south_america = {
-				has_discovered = ROOT
-			}
-		}
-
-	}
-
-	mean_time_to_happen = {
-		months = 64
-	}
-
-
-	option = {		# A New Reconquista! We need Conquistadors
-		name = "flavor_por.EVTOPTA3152"
-		ai_chance = { factor = 45 }
-		define_conquistador = {
-			fire = 2
-			shock = 2
-			manuever = 5
-		}
-		add_mil_power = 50
-	}
-	option = {		# A New Reconquista! We need Explorers
-		name = "flavor_por.EVTOPTB3152"
-		ai_chance = { factor = 45 }
-		define_explorer = {
-			fire = 2
-			shock = 2
-			manuever = 5
-		}
-		add_mil_power = 50
-	}
-
-}
-
-# Crusade against Oran
-country_event = {
-	id = flavor_por.1000
-	title = "flavor_por.EVTNAME1000"
-	desc = "flavor_por.EVTDESC1000"
-	picture = BATTLE_eventPicture
-
-	fire_only_once = yes	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		337 = {
-			owned_by = ROOT
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-
-	option = {		# Expansion in North Africa seems prosperous
-		name = "flavor_por.EVTOPTA1000"
-		add_prestige = 10
-		add_years_of_income = 0.05
-	}
-}
-
-# Laws of Burgos
-country_event = {
-	id = flavor_por.1001
-	title = "flavor_por.EVTNAME1001"
-	desc = "flavor_por.EVTDESC1001"
-	picture = REFORM_eventPicture
-	
-	fire_only_once = yes	
-	
-	trigger = {
-		tag = SPA
-
-		is_year = 1500
-		NOT = { is_year = 1600 }
-		colony = 3
-		
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-
-	option = { # Enforce these laws!
-		name = "flavor_por.EVTOPTA1001"
-		ai_chance = { factor = 75 }
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		every_subject_country = {
-			limit = {
-				is_colonial_nation_of = ROOT
-			}
-			add_country_modifier = {
-				name = laws_of_the_burgos
-				duration = -1
-			}
-		}
-		
-	}
-	option = { # We rule by the right of Conqueror!
-		name = "flavor_por.EVTOPTB1001"
-		ai_chance = { factor = 25 }
-		add_prestige = 25
-	}
-}
-
-
-# Casa de Contratación
-country_event = {
-	id = flavor_por.1003
-	title = "flavor_por.EVTNAME1003"
-	desc = "flavor_por.EVTDESC1003"
-	picture = COLONIZATION_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			AND = {
-				NOT = { has_dlc = "Golden Century" }
-				OR = {
-					AND = {
-						tag = POR
-						NOT = { exists = SPA }
-					}
-					tag = SPA
-				}
-				num_of_colonists = 2
-			}
-			has_country_flag = spa_house_of_trade_flag
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-
-
-	option = {		# We should establish it
-		name = "flavor_por.EVTOPTA1003"
-		ai_chance = { factor = 90 }
-		add_country_modifier = {
-			name = casa_de_contratacion
-			duration = -1
-		}
-		clr_country_flag = spa_house_of_trade_flag
-	}
-}
-
-# The Sun Never Sets
-country_event = {
-	id = flavor_por.1004
-	title = "flavor_por.EVTNAME1004"
-	desc = "flavor_por.EVTDESC1004"
-	picture = COURT_eventPicture
-	
-	
-	fire_only_once = yes
-	trigger = {
-
-		tag = SPA
-
-		europe = {
-			country_or_vassal_holds = ROOT
-		}		
-		north_america = {
-			country_or_vassal_holds = ROOT
-		}		
-		south_america = {
-			country_or_vassal_holds = ROOT
-		}
-		africa = {
-			country_or_vassal_holds = ROOT
-		}
-		asia = {
-			country_or_vassal_holds = ROOT
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 64
-	}
-	
-
-	option = {		# We truly rule the world!
-		name = "flavor_por.EVTOPTA1004"
-		add_prestige = 25
-		add_legitimacy = 25
-		add_papal_influence = 100
-	}
-}
-
-# The Trade Center of Sevilla
-country_event = {
-	id = flavor_por.3153
-	title = "flavor_por.EVTNAME3153"
-	desc = "flavor_por.EVTDESC3153"
-	picture = MERCHANTS_TALKING_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				NOT = { has_dlc = "Golden Century" }
-				tag = SPA
-
-				owns = 224	# Andalucia
-				colony = 3
-			}
-			has_country_flag = sevilla_trade_center_flag
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-
-	option = {		# We now have control of our Oversea Trade
-		name = "flavor_por.EVTOPTA3153"
-		224 = {
-			add_province_modifier = {
-				name = port_to_the_new_world
-				duration = -1
-			}
-		}
-	}
-}
-
-# The Fuggers
-country_event = {
-	id = flavor_por.3154
-	title = "flavor_por.EVTNAME3154"
-	desc = "flavor_por.EVTDESC3154"
-	picture = COURT_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-		is_year = 1500
-		NOT = { is_year = 1600 }
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
-	
-
-	option = {		# Let the Fuggers run our Finances
-		name = "flavor_por.EVTOPTA3154"
-		add_ruler_modifier = {
-			name = the_fuggers
-		}
-	}
-	option = {		# Turn the Fuggers offer down
-		name = "flavor_por.EVTOPTB3154"
-		add_legitimacy = 5
-	}
-}
-
-# The Communeros
-country_event = {
-	id = flavor_por.3155
-	title = "flavor_por.EVTNAME3155"
-	desc = "flavor_por.EVTDESC3155"
-	picture = ANGRY_MOB_eventPicture
-
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		is_year = 1500
-		NOT = { is_year = 1600 }
-	}
-
-	mean_time_to_happen = {
-		months = 300
-	}
-	
-
-	option = {		# Crush the Rebellion
-		name = "flavor_por.EVTOPTA3155"
-		every_owned_province = {
-			limit = {
-				region = iberia_region
-			}
-			add_unrest = 10
-		}
-	}
-	option = {		# Give concessions to the Peasantry
-		name = "flavor_por.EVTOPTB3155"
-		add_ruler_modifier = {
-			name = concessions_to_the_peasantry
-		}
-	}
-}
-
-
-# State Bankruptcy
-country_event = {
-	id = flavor_por.3158	
-	title = "flavor_por.EVTNAME3158"
-	desc = "flavor_por.EVTDESC3158"
-	picture = BANKRUPTCY_eventPicture
-
-
-	fire_only_once = yes
-
-
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		is_bankrupt = yes
-		NOT = { is_year = 1590 }
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-
-	option = {		# Do we ever learn from history?
-		name = "flavor_por.EVTOPTA3158"
-		add_legitimacy = -5
-	}
-}
-
-# The Expulsion of the Moriscos
-country_event = {
-	id = flavor_por.3160	
-	title = "flavor_por.EVTNAME3160"
-	desc = "flavor_por.EVTDESC3160"
-	picture = ANGRY_MOB_eventPicture
-	
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-		religion = catholic
-		NOT = { primary_culture = andalucian }
-		NOT = { exists = GRA }
-		is_year = 1600
-		
-		any_owned_province = {
-			culture = andalucian	
-		}
-		NOT = { has_dlc = "Golden Century" }
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = expulsion_of_the_moriscos_flag
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 140
-	}
-
-	option = {		# Force them to become Good Catholic Spaniards
-		name = "flavor_por.EVTOPTA3160"
-		ai_chance = { factor = 90 }
-		add_papal_influence = 25
-
-		every_owned_province = {
-			limit = {
-				culture = andalucian	
-			}
-			add_unrest = 5
-		}
-		random_country = {
-			limit = {
-				religion_group = muslim
-				any_owned_province = {
-					sea_zone = {
-						any_neighbor_province = {
-							owned_by = ROOT
-						}
-					}
-				}
-			}
-			country_event = {  id = flavor_por.3161 days = 10 tooltip = "flavor_por.EVTTOOLTIP3160" }
-		}
-	}
-	option = {		# Let them be as they are needed for the economy
-		name = "flavor_por.EVTOPTB3160"
-		add_papal_influence = -25
-	}
-}
-
-# Expulsion of the Moriscos
-country_event = {
-	id = flavor_por.3161
-	title = "flavor_por.EVTNAME3161"
-	desc = "flavor_por.EVTDESC3161"
-	picture = ECONOMY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {		# They are a welcome addition
-		name = "flavor_por.EVTOPTA3161"
-		ai_chance = { factor = 90 }
-		random_owned_province = {
-			add_base_tax = 1
-		}
-	}
-
-}
-
-# Baltasar de Zuniga
-country_event = {
-	id = flavor_por.3710
-	title = "flavor_por.EVTNAME3710"
-	desc = "flavor_por.EVTDESC3710"
-	picture = ADVISOR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		is_year = 1591
-		NOT = { is_year = 1622 }
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-
-
-
-	option = {			# An Excellent Minister!
-		name = "EXCELLENTMINISTER"
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		add_adm_power = 40
-		add_dip_power = 40
-		add_mil_power = 40
-		define_advisor = {
-			type = statesman
-			name = "Baltasar de Zuniga"
-			discount = yes
-			skill = 3
-		}
-	}
-}
-
-# Olivares
-country_event = {
-	id = flavor_por.3711
-	title = "flavor_por.EVTNAME3711"
-	desc = "flavor_por.EVTDESC3711"
-	picture = ADVISOR_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SPA
-		is_year = 1617
-		NOT = { is_year = 1645 }
-	}
-
-	mean_time_to_happen = {
-		months = 64
-	}
-
-	immediate = {
-		set_country_flag = SPA_had_event_3711
-	}
-
-	option = {			# An Excellent Minister!
-		name = "EXCELLENTMINISTER"
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		define_advisor = {
-			type = statesman
-			name = "Conde-Duque Olivares"
-			culture = umbrian
-			discount = yes
-			skill = 3
-		}
-	}
-}
-
-# The Portuguese Crown
-country_event = {
-	id = flavor_por.3162	
-	title = "flavor_por.EVTNAME3162"
-	desc = "flavor_por.EVTDESC3162"
-	picture = COURT_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-		marriage_with = POR
-		is_subject = no
-		POR = {
-			exists = yes
-			ai = yes
-			was_player = no
-			is_subject = no
-			has_regency = yes
-			religion = ROOT
-			NOT = { is_rival = SPA }
-			has_opinion = { who = ROOT value = 150 }
-		}
-		is_year = 1550
-		NOT = { is_year = 1650 }
-	}
-
-	mean_time_to_happen = {
-		months = 2000
-	}
-	
-
-	option = {		# One King, Two Kingdoms
-		name = "flavor_por.EVTOPTB3162"
-		ai_chance = { factor = 90 }
-		create_union = POR
-	}
-	option = {		# The extra burden is not worth it
-		name = "flavor_por.EVTOPTC3162"
-		ai_chance = { factor = 10 }
-		add_prestige = 1
-	}
-}
-
-
-# State Bankruptcy
-country_event = {
-	id = flavor_por.3164	
-	title = "flavor_por.EVTNAME3164"
-	desc = "flavor_por.EVTDESC3164"
-	picture = BANKRUPTCY_eventPicture
-
-
-	fire_only_once = yes
-	trigger = {
-		tag = SPA
-		is_year = 1590
-		is_bankrupt = yes
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-	option = {		# Do we ever learn from history?
-		name = "flavor_por.EVTOPT3164"
-		add_prestige = -5
-	}
-}
-
-# Epidemic Plague
-country_event = {
-	id = flavor_por.3165	
-	title = "flavor_por.EVTNAME3165"
-	desc = "flavor_por.EVTDESC3165"
-	picture = PLAGUE_eventPicture
-
-
-	fire_only_once = yes
-	trigger = {
-		tag = SPA
-		num_of_cities = 4
-		iberia_region = {
-			owned_by = ROOT
-		}
-		is_year = 1550
-		NOT = { is_year = 1700 }		
-	
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-
-	option = {		# We will recover
-		name = "flavor_por.EVTOPTA3165"
-		add_country_modifier = { 
-			name = severe_plague 
-			duration = 1825
-		}		
-	}
-}
-
-# The Iberian Revolts
-country_event = {
-	id = flavor_por.3169
-	title = "flavor_por.EVTNAME3169"
-	desc = "flavor_por.EVTDESC3169"
-	picture = ANGRY_MOB_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-
-		num_of_cities = 10
-		
-		is_year = 1600
-		NOT = { is_year = 1700 }
-
-
-		NOT = { primary_culture = catalan }
-		any_owned_province = {
-			culture = catalan
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 400
-	}
-	
-
-	option = {		# Put it down!
-		name = "flavor_por.EVTOPTA3169"
-		every_owned_province = {
-			limit = {
-				culture = catalan
-			}
-			add_unrest = 20
-		}
-	}
-	option = {		# Appease them!
-		name = "flavor_por.EVTOPTB3169"
-		every_owned_province = {
-			limit = {
-				culture = catalan
-			}
-			add_local_autonomy = 25
-		}
-	}
-}
-
-# National revolt in Portugal
-country_event = {
-	id = flavor_por.3168	
-	title = "flavor_por.EVTNAME3168"
-	desc = "flavor_por.EVTDESC3168"
-	picture = DIPLOMACY_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-
-		num_of_cities = 10
-		
-		is_year = 1600
-		NOT = { is_year = 1700 }
-
-
-		NOT = { primary_culture = portugese }
-		any_owned_province = {
-			culture = portugese
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 400
-	}
-	
-	option = {		# Put it down!
-		name = "flavor_por.EVTOPTA3168"
-		every_owned_province = {
-			limit = {
-				culture = portugese
-			}
-			add_unrest = 20
-		}
-	}
-	option = {		# Appease them!
-		name = "flavor_por.EVTOPTB3168"
-		every_owned_province = {
-			limit = {
-				culture = portugese
-			}
-			add_local_autonomy = 25
-		}
-	}	
-	
-}
-
-# The Italian Revolts
-country_event = {
-	id = flavor_por.3170
-	title = "flavor_por.EVTNAME3170"
-	desc = "flavor_por.EVTDESC3170"
-	picture = ANGRY_MOB_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-
-		num_of_cities = 10
-		
-		is_year = 1600
-		NOT = { is_year = 1700 }
-
-
-		any_owned_province = {
-			region = italy_region
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 400
-	}
-	
-
-	option = {		# Put it down!
-		name = "flavor_por.EVTOPTA3170"
-		every_owned_province = {
-			limit = {
-				region = italy_region
-			}
-			add_unrest = 20
-		}
-	}
-	option = {		# Appease them!
-		name = "flavor_por.EVTOPTB3170"
-		every_owned_province = {
-			limit = {
-				region = italy_region
-			}
-			add_local_autonomy = 25
-		}
-	}	
-	
-
-}
-
-# Giulio Alberoni
-country_event = {
-	id = flavor_por.3712
-	title = "flavor_por.EVTNAME3712"
-	desc = "flavor_por.EVTDESC3712"
-	picture = ADVISOR_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SPA
-		is_year = 1694
-		NOT = { is_year = 1752 }
-	}
-
-	mean_time_to_happen = {
-		months = 150
-	}
-
-	
-	option = {			# An Excellent Minister!
-		name = "EXCELLENTMINISTER"
-		add_dip_power = 100
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		define_advisor = {
-			type = statesman
-			culture = romagnan
-			religion = catholic
-			name = "Giulio Alberoni"
-			discount = yes
-			skill = 2
-		}
-	}
-}
-
-# José Monino
-country_event = {
-	id = flavor_por.3094
-	title = "flavor_por.EVTNAME3094"
-	desc = "flavor_por.EVTDESC3094"
-	picture = ADVISOR_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SPA
-		is_year = 1758
-		NOT = { is_year = 1808 }
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {			# An Excellent Minister!
-		name = "EXCELLENTMINISTER"
-		add_adm_power = 100
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		define_advisor = {
-			type = statesman
-			name = "José Monino"
-			culture = andalucian
-			discount = yes
-			skill = 3
-		}
-	}
-}
-
-# The Constitution of 1812
-country_event = {
-	id = flavor_por.3095
-	title = "flavor_por.EVTNAME3095"
-	desc = "flavor_por.EVTDESC3095"
-	picture = DEBATE_REPUBLICAN_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SPA
-		is_year = 1800
-		NOT = { has_reform = parliamentary_reform }
-		NOT = { has_reform = celestial_empire }
-		government = monarchy
-	}
-
-	mean_time_to_happen = {
-		months = 10
-	}
-
-	option = {		# Follow the Cortes
-		name = "flavor_por.EVTOPTA3095"
-		ai_chance = { factor = 75 }
-		add_government_reform = parliamentary_reform
-		#set_legacy_government = constitutional_monarchy
-	}
-	option = {		# Resist these liberals!
-		name = "flavor_por.EVTOPTB3095"
-		ai_chance = { factor = 25 }
-		add_stability = -1
-	}
-}
-
-
-
-########################################
-# Minor Flavor Events                  #
-########################################
-
-# Miguel de Cervantes
-country_event = {
-	id = flavor_por.1100
-	title = "flavor_por.EVTNAME1100"
-	desc = "flavor_por.EVTDESC1100"
-	picture = ADVISOR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SPA
-		is_year = 1577
-		NOT = { is_year = 1616 }
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-	option = {		# Excellent
-		name = "EXCELLENT"
-		add_dip_power = 50
-		
-	}
-}
-
-# Tomás Luis de Victoria
-country_event = {
-	id = flavor_por.1101
-	title = "flavor_por.EVTNAME1101"
-	desc = "flavor_por.EVTDESC1101"
-	picture = THEATRE_eventPicture
-	
-	fire_only_once = yes
-	trigger = {
-		tag = SPA
-		is_year = 1578
-		NOT = { is_year = 1611 }
-	}
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-	immediate = {
-		set_country_flag = SPA_had_event_1101
-	}
-
-	option = {		# Excellent
-		name = "EXCELLENT"
-		add_prestige = 25
-	}
-}
-
-########################################
-# The Italian Wars
-########################################
-
-# The Italian Wars
-country_event = {
-	id = flavor_por.1007
-	title = "flavor_por.EVTNAME1007"
-	desc = "flavor_por.EVTDESC1007"
-	picture = {	
-		trigger = {
-			has_dlc = "Emperor"
-		}
-		picture = ITALIAN_wars_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Emperor" }
-		}
-		picture = MILITARY_CAMP_eventPicture
-	}
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA
-		exists = FRA
-		is_year = 1490
-		NOT = { is_year = 1590 }
-		NOT = { alliance_with = FRA }
-		NOT = { is_subject_of = FRA }
-		NOT = { war_with = FRA }
-		italy_region = {
-			is_part_of_hre = yes
-		}
-		italy_region = {
-			owned_by = FRA
-		}
-	}
-	
-	
-
-
-	mean_time_to_happen = {
-		months = 100
-	}
-	
-	
-
-	option = {		# Claim all French land in Italy!
-		name = "flavor_por.EVTOPTA1007"
-		ai_chance = { factor = 90 }
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = claimed_italy
-			}
-			every_owned_province = {
-				limit = {
-					region = italy_region
-				}
-				add_claim = ROOT
-			}
-			hidden_effect = {
-				country_event = { id = flavor_por.1008 days = 10 }
-			}
-		}
-	}
-	option = {		# Italy lies outside our sphere of interest
-		name = "flavor_por.EVTOPTB1007"
-		ai_chance = { factor = 10 }
-		add_prestige = -10
-	}
-}
-
-
-
-
-# The Italian Wars
-country_event = {
-	id = flavor_por.1008
-	title = "flavor_por.EVTNAME1008"
-	desc = "flavor_por.EVTDESC1008"
-	picture = {	
-		trigger = {
-			has_dlc = "Emperor"
-		}
-		picture = ITALIAN_wars_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Emperor" }
-		}
-		picture = MILITARY_CAMP_eventPicture
-	}
-	
-	is_triggered_only = yes
-	
-	option = {		# Then counter-claim all ADJECTIVE provinces!
-		name = "flavor_por.EVTOPTA1008"
-		ai_chance = { factor = 90 }
-		FROM = {
-			every_owned_province = {
-				limit = {
-					region = italy_region
-				}
-				add_claim = ROOT
-			}
-			tooltip = {
-				add_opinion = {
-					who = ROOT
-					modifier = claimed_italy
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_por.1009 days = 10 }
-			}
-		}
-	}
-	option = {		# We should back down in Italy
-		name = "flavor_por.EVTOPTB1008"
-		ai_chance = { factor = 10 }
-		add_prestige = -10
-	}
-}
-
-# The Italian Wars
-country_event = {
-	id = flavor_por.1009
-	title = "flavor_por.EVTNAME1009"
-	desc = "flavor_por.EVTDESC1009"
-	picture = {	
-		trigger = {
-			has_dlc = "Emperor"
-		}
-		picture = ITALIAN_wars_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Emperor" }
-		}
-		picture = MILITARY_CAMP_eventPicture
-	}
-	
-	is_triggered_only = yes
-	
-	option = {		# How dare they?! Italy is ours!
-		name = "flavor_por.EVTOPTA1009"
-		add_opinion = {
-			who = FROM
-			modifier = claimed_italy
-		}
-	}
-}
-
-###################################
-# Additional Flavor Events
-# Scripted by Henrik Lohmander
-###################################
-
-#Valladolid Debate
-country_event = {
-	id = flavor_por.2
-	title = "flavor_por.2.t"
-	desc = "flavor_por.2.d"
-	picture = UNIVERSITY_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		religion = catholic
-		is_year = 1540
-		NOT = { is_year = 1570 }
-		colony = 3 #colonial aristocracy exists
-		OR = {
-			north_america = {
-				country_or_vassal_holds = ROOT
-			}		
-			south_america = {
-				country_or_vassal_holds = ROOT
-			}
-		}
-		owns = 215 #Valladolid
-	}
-	
-	mean_time_to_happen = {
-		months = 90
-	}
-	
-	
-
-	option = {		# Allow Sepúlveda's arguments to shape our policies
-		name = "flavor_por.2.a"
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 2
-				has_idea_group = religious_ideas
-			}
-		}
-		add_country_modifier = {
-			name = "valladolid_sepulveda_motherland"
-			duration = 3650
-		}
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		if = {
-			limit = {
-				any_subject_country = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_tooltip = every_colonial_subject_gains_tt
-			tooltip = {
-				random_subject_country = {
-					limit = {
-						is_colonial_nation_of = ROOT
-					}
-					add_country_modifier = {
-						name = "valladolid_sepulveda"
-						duration = 3650
-					}
-				}
-			}
-			hidden_effect = {
-				every_subject_country = {
-					limit = {
-						is_colonial_nation_of = ROOT
-					}
-					add_country_modifier = {
-						name = "valladolid_sepulveda"
-						duration = 3650
-					}
-				}
-			}
-		}
-	}
-	option = {		# Inconclusive result
-		name = "flavor_por.2.b"
-		ai_chance = { factor = 70 }
-		add_prestige = 10 #For holding the debate
-	}
-	option = {		# Let Las Casas Arguments shape our policies
-		name = "flavor_por.2.c"
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 2
-				has_idea_group = humanist_ideas
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_completed_all_reforms_trigger = yes }
-			}
-			add_reform_progress_small_effect = yes
-		}
-		if = {
-			limit = {
-				any_subject_country = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_tooltip = every_colonial_subject_gains_tt
-			tooltip = {
-				random_subject_country = {
-					limit = {
-						is_colonial_nation_of = ROOT
-					}
-					add_country_modifier = {
-						name = "valladolid_las_casas"
-						duration = 3650
-					}
-					add_opinion = {
-						who = ROOT
-						modifier = "angered_colonial_land_owners"
-					}
-				}
-			}
-			hidden_effect = {
-				every_subject_country = {
-					limit = {
-						is_colonial_nation_of = ROOT
-					}
-					add_country_modifier = {
-						name = "valladolid_las_casas"
-						duration = 3650
-					}
-					add_opinion = {
-						who = ROOT
-						modifier = "angered_colonial_land_owners"
-					}
-				}
-			}
-		}
-	}
-}
-
-#Alhambra Decree
-country_event = {
-	id = flavor_por.3
-	title = "flavor_por.3.t"
-	desc = "flavor_por.3.d"
-	picture = REFORM_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		NOT = { exists = GRA }
-		religion = catholic
-		has_idea = spanish_inquisition
-		is_at_war = no
-		is_year = 1480
-		NOT = {
-			is_year = 1540
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-	
-
-	option = {		# Extradition or Conversion
-		name = "flavor_por.3.a"
-		ai_chance = {
-			factor = 70
-		}
-		add_country_modifier = {
-			name = "alhambra_decree"
-			duration = 3650
-		}
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = "alhambra_decree_opinion"
-			}
-		}
-	}
-	option = {		# Let them Stay
-		name = "flavor_por.3.b"
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 2
-				has_idea_group = humanist_ideas
-			}
-		}
-		add_prestige = 10
-		if = {
-			limit = {
-				has_dlc = "Leviathan"
-			}
-			add_country_modifier = {
-				name = "alhambra_working_force"
-				duration = 3650
-			}
-		}
-	}
-}
-
-# Unification of Spain / Nueva Planta Decrees
-country_event = {
-	id = flavor_por.4
-	title = "flavor_por.4.t"
-	desc = "flavor_por.4.d"
-	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA #This one requires you to actually be Spain
-		OR = {
-			has_reform = constitutional_monarchy
-			has_reform = constitutional_republic
-			has_reform = parliamentary_reform
-		}
-		is_at_war = no
-		NOT = { has_country_modifier = decentralization_modifier }
-		owns_core_province = 1749
-		owns_core_province = 206
-		owns_core_province = 210
-		owns_core_province = 220
-		owns_core_province = 213
-		owns_core_province = 214
-		owns_core_province = 208
-		owns_core_province = 217
-		NOT = { exists = CAS }
-		NOT = { exists = ARA }
-		NOT = { exists = NAV }
-		NOT = { exists = GAL }
-		NOT = { exists = LON }
-	}
-	
-	mean_time_to_happen = {
-		months = 1	#Should trigger shortly after becoming a constitutional state.
-	}
-	
-
-	option = {		# One Cortes for a united Spain
-		name = "flavor_por.4.a"
-		ai_chance = {
-			factor = 90
-		}
-		add_adm_power = -50
-		add_country_modifier = {
-			name = "unification_of_spain"
-			duration = -1
-		}
-	}
-	option = {		# Continue to be the ruler of all Spains
-		name = "flavor_por.4.b"
-		ai_chance = {
-			factor = 10
-		}
-		add_country_modifier = {
-			name = "cortes_defended"
-			duration = 3650
-		}
-		if = {
-			limit = {
-				has_dlc = "Common Sense"
-			}
-			every_owned_province = {
-				limit = {
-					OR = {
-						province_id = 1749
-						province_id = 206
-						province_id = 210
-						province_id = 220
-						province_id = 213
-						province_id = 214
-						province_id = 208
-						province_id = 217
-					}
-					has_seat_in_parliament = no
-				}
-				set_seat_in_parliament = yes #Has to placate all the local Cortes from now on.
-			}
-		}
-		else = {
-			every_owned_province = {
-				limit = {
-					OR = {
-						province_id = 1749
-						province_id = 206
-						province_id = 210
-						province_id = 220
-						province_id = 213
-						province_id = 214
-						province_id = 208
-						province_id = 217
-					}
-					is_capital = no
-				}
-				add_local_autonomy = 50
-			}
-		}
-	}
-}
-
-# Grammar of the Castilian Language (localized to whatever culture formed Spain)
-country_event = {
-	id = flavor_por.5
-	title = "flavor_por.5.t"
-	desc = "flavor_por.5.d"
-	picture = BIG_BOOK_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA
-		is_year = 1490
-		num_of_cities = 25
-	}
-	
-	mean_time_to_happen = {
-		months = 150
-	}
-	
-
-	option = {		# Promote the use of Castilian Language in government
-		name = "flavor_por.5.a"
-		ai_chance = {
-			factor = 90
-		}
-		add_ruler_modifier = {
-			name = "castilian_grammar"
-		}
-	}
-	option = {		# We must respect the many cultures of Spain
-		name = "flavor_por.5.b"
-		ai_chance = {
-			factor = 10
-		}
-		add_ruler_modifier = {
-			name = "promote_regional_languages"
-		}
-	}
-}
-
-# Sólo Madrid es corte
-country_event = {
-	id = flavor_por.6
-	title = "flavor_por.6.t"
-	desc = "flavor_por.6.d"
-	picture = CITY_DEVELOPMENT_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA
-		owns_core_province = 227 #Madrid
-		NOT = { capital = 227 } #Madrid
-		num_of_cities = 25
-		government = monarchy
-		is_year = 1520
-		NOT = { is_year = 1580 }
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-	
-
-	option = {		# Move the Court to Madrid
-		name = "flavor_por.6.a"
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				NOT = { primary_culture = castillian }
-			}
-		}
-		set_capital = 227
-		227 = {
-			add_province_modifier = {
-				name = "solo_madrid_es_corte"
-				duration = 3650
-			}
-			if = { 
-				limit = { 
-					NOT = { trade_goods = glass }
-				}
-				change_trade_goods = glass
-			}
-		}
-	}
-	option = {		# X remains a fine capital.
-		name = "flavor_por.6.b"
-		ai_chance = {
-			factor = 10
-		}
-		add_stability_or_adm_power = yes
-	}
-}
-
-# War of Las Alpujarras
-country_event = {
-	id = flavor_por.7
-	title = "flavor_por.7.t"
-	desc = "flavor_por.7.d"
-	picture = BORDER_TENSION_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		religion = catholic
-		NOT = { is_year = 1600 } #Resurgent Granada unlikely
-		has_country_flag = spa_holy_inquisition
-		NOT = { exists = GRA }
-		owns = 223 #Granada
-		any_owned_province = {
-			NOT = { has_province_modifier = forced_conversion }
-			region = iberia_region
-			culture = andalucian
-			is_core = GRA
-		}
-		OR = {
-			has_country_flag = torquemada_expelled
-			AND = {
-				NOT = { has_country_flag = torquemada_expelled }
-				any_owned_province = {
-					is_core = GRA
-					has_missionary = yes #Persecution despite choosing tolerance
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					region = iberia_region
-					is_core = GRA
-					OR = {
-						fort_level = 1
-						province_id = 223
-					}
-				}
-				set_province_flag = alpujarras_centre_of_revolt
-			}
-			every_owned_province = {
-				limit = {
-					region = iberia_region
-					is_core = GRA
-					NOT = { has_province_flag = alpujarras_centre_of_revolt }
-				}
-				set_province_flag = alpujarras_revolt
-			}
-		}
-	}
-	
-	option = {		# Ok.
-		name = "flavor_por.7.a"
-		add_stability = -1
-		set_country_flag = alpujarras_revolt_happened
-		random_owned_province = {
-			limit = {
-				has_province_flag = alpujarras_centre_of_revolt
-			}
-			if = {
-				limit = { NOT = { religion = sunni } }
-				change_religion = sunni #Crypto-Muslims
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				leader = "Abén Umayyad"
-				friend = GRA
-				size = 2
-				win = yes
-			}
-			clr_province_flag = alpujarras_centre_of_revolt
-		}
-		every_owned_province = {
-			limit = {
-				has_province_flag = alpujarras_revolt
-			}
-			if = {
-				limit = { NOT = { religion = sunni } }
-				change_religion = sunni #Crypto-Muslims
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				friend = GRA
-				size = 1
-			}
-			clr_province_flag = alpujarras_revolt
-		}
-	}
-}
-
-#Fate of the Kingdom of Granada
-country_event = {
-	id = flavor_por.8
-	title = "flavor_por.8.t"
-	desc = "flavor_por.8.d"
-	picture = MILITARY_CAMP_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			has_country_flag = fate_of_granada_mission_flag
-			AND = {
-				NOT = { has_dlc = "Golden Century" }
-				OR = {
-					AND = {
-						tag = POR
-						NOT = { exists = SPA }
-					}
-					tag = SPA
-				}
-				has_country_flag = alpujarras_revolt_happened
-				NOT = { has_country_flag = end_of_granada }
-				NOT = { exists = GRA }
-				owns = 223 #Granada
-				NOT = {
-					any_owned_province = {
-						is_core = GRA
-						controlled_by = REB
-					}
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-	option = {		# Expulsion or conversion!
-		name = "flavor_por.8.a"
-		ai_chance = {
-			factor = 1
-		}
-		set_country_flag = end_of_granada
-		add_papal_influence = 25
-		add_stability = -1
-		every_owned_province = {
-			limit = {
-				is_core = GRA
-			}
-			change_religion = catholic
-			remove_core = GRA
-		}
-		#Repeat of effect from earlier persecutions:
-		random_country = {
-			limit = {
-				religion_group = muslim
-				any_owned_province = {
-					sea_zone = {
-						any_neighbor_province = {
-							owned_by = ROOT
-						}
-					}
-				}
-			}
-			country_event = {  id = flavor_por.3151 days = 10 tooltip = "flavor_por.EVTTOOLTIP3150" }
-		}
-	}
-	option = {		# We must mend these wounds not cut off the limb itself.
-		name = "flavor_por.8.b"
-		if = {
-			limit = { NOT = { stability = 3 } }
-			add_stability_or_adm_power = yes
-		}
-		add_papal_influence = -25
-		if = {
-			limit = { stability = 3 }
-			every_owned_province = {
-				limit = {
-					is_core = GRA
-				}
-				add_unrest = -2
-			}
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
-# New Testament Translated into Spanish
-country_event = {
-	id = flavor_por.9
-	title = "flavor_por.9.t"
-	desc = "flavor_por.9.d"
-	picture = BIG_BOOK_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		is_religion_enabled = protestant
-		government = monarchy
-		religion = catholic
-		is_year = 1530
-		NOT = { is_year = 1560 }
-		NOT = {
-			iberia_region = {
-				is_reformation_center = yes
-			}
-		}
-		NOT = {
-			num_of_owned_provinces_with = {
-				value = 4
-				region = iberia_region
-				OR = {
-					religion = reformed
-					religion = protestant
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 90
-	}
-	
-	option = {		# Best to nip this in the bud.
-		name = "flavor_por.9.a"
-		ai_chance = {
-			factor = 9
-			modifier = {
-				factor = 0.1
-				has_idea_group = humanist_ideas
-			}
-		}
-		add_ruler_modifier = {
-			name = "supressing_spanish_protestantism"
-		}
-	}
-	option = {		# Let us not stifle free thought, this is a fine humanist work.
-		name = "flavor_por.9.b"
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_country_modifier = counter_reformation
-			}
-		}
-		add_country_modifier = {
-			name = "spanish_bible_translation"
-			duration = 7300
-		}
-	}
-}
-
-# Ottoman Encroachment in the Mediterrenean
-# Deposed Hafsid ruler seeks Spanish Aid
-country_event = {
-	id = flavor_por.10
-	title = "flavor_por.10.t"
-	desc = "flavor_por.10.d"
-	picture = NAVAL_MILITARY_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		OR = {
-			AND = {
-				tag = POR
-				NOT = { exists = SPA }
-			}
-			tag = SPA
-		}
-		religion = catholic
-		OR = {
-			NOT = { exists = TUN }
-			TUN = { vassal_of = ROOT }
-		}
-		TUR = {
-			NOT = { alliance_with = ROOT }
-			NOT = { war_with = ROOT }
-			num_of_cities = 40
-			NOT = { religion_group = christian }
-			owns = 341 #Tunis
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	option = {		# We must act to contain this threat!
-		name = "flavor_por.10.a"
-		ai_chance = {
-			factor = 1
-		}
-		TUR = {
-			add_opinion = {
-				who = ROOT
-				modifier = supporting_tunisian_claimant
-			}
-		}
-		341 = {
-			add_claim = ROOT
-		}
-	}
-	option = {		# Our interests lie elsewhere.
-		name = "flavor_por.10.b"
-		add_prestige = -5
-		TUR = {
-			add_opinion = {
-				who = ROOT
-				modifier = turned_down_tunisian_claimant
-			}
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
-# Reforming the Colonial Administration (Bourbon Reforms)
-country_event = {
-	id = flavor_por.11
-	title = "flavor_por.11.t"
-	desc = "flavor_por.11.d"
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA
-		is_year = 1700
-		government = monarchy
-		colony = 3
-	}
-	
-	mean_time_to_happen = {
-		months = 150
-	}
-	
-	option = {		# Reform our colonial administration.
-		name = "flavor_por.11.a"
-		ai_chance = {
-			factor = 1
-		}
-		add_adm_power = -75
-		add_country_modifier = {
-			name = "spa_new_colonial_reforms"
-			duration = -1
-		}
-		every_subject_country = {
-			limit = {
-				is_colonial_nation_of = ROOT
-			}
-			add_country_modifier = {
-				name = "spa_new_colonial_reforms_subject"
-				duration = 7300
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = "spa_colonial_reforms"
-			}
-		}
-	}
-	option = {		# Let us not rock the boat.
-		name = "flavor_por.11.b"
-		ai_chance = {
-			factor = 0
-		}
-		every_subject_country = {
-			limit = {
-				is_colonial_nation_of = ROOT
-			}
-			add_liberty_desire = -5
-			add_opinion = {
-				who = ROOT
-				modifier = "colonial_privileges_kept"
-			}
-		}
-	}
-}
-
-# Supression of the Society of Jesus
-country_event = {
-	id = flavor_por.12
-	title = "flavor_por.12.t"
-	desc = "flavor_por.12.d"
-	picture = POPE_PREACHING_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = SPA 
-		religion = catholic
-		colony = 3
-		is_year = 1750
-		government = monarchy
-		has_country_modifier = the_societas_jesu
-	}
-	
-	mean_time_to_happen = {
-		months = 150
-	}
-	
-	option = {		#Expel all Jesuits and auction of their property - Sacrifice tech and missionary strength of colonial vassals for a one time money boost post 1750.
-		name = "flavor_por.12.a"
-		ai_chance = {
-			factor = 1
-		}
-		add_years_of_income = 0.25 #Auctioning of Reductions and other property
-		add_prestige = -10
-		remove_country_modifier = the_societas_jesu
-		every_subject_country = {
-			limit = {
-				is_colonial_nation_of = ROOT
-				religion = catholic
-			}
-			every_owned_province = {
-				limit = { has_province_modifier = jesuit_mission }
-				remove_province_modifier = jesuit_mission
-			}
-			add_years_of_income = 0.25 #Auctioning of Reductions and other property
-			add_country_modifier = {
-				name = "jesuits_expelled" #Long term effects of expulsion
-				duration = -1
-			}
-			add_liberty_desire = -5 #Jesuits support colonial autonomy.
-		}
-	}
-	option = {		# Their contributions to our Society has been too great to measure.
-		name = "flavor_por.12.b"
-		add_prestige = 25
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
-
-#A Habsburg Heir in Spain
-country_event = {
-	id = flavor_por.13
-	title = flavor_por.13.t
-	desc = flavor_por.13.d
-	picture = NEW_HEIR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				tag = POR
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		has_heir = no
-		is_lesser_in_union = no
-		marriage_with = HAB
-		HAB = {
-			dynasty = "von Habsburg"
-			OR = {
-				NOT = {
-					has_country_flag = bur_marriage_successor
-				}
-				ai = no
-			}
-		}
-		NOT = {
-			dynasty = HAB
-		}
-		FRA = {
-			is_rival = HAB
-			is_rival = ROOT
-		}
-		NOT = {
-			OR = {
-				is_rival = HAB
-				war_with = HAB
-				HAB = {
-					is_rival = SPA
-				}
-				AND = {
-					HAB = {
-						is_rival = CAS
-					}
-					NOT = {
-						exists = SPA
-					}
-				}
-			}
-		}
-		NOT = {
-			dynasty = FRA
-		}
-		ruler_age = 20
-		has_government_attribute = heir
-	}
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	option = {
-		name = flavor_por.13.a
-		define_heir = {
-			claim = 100
-			dynasty = "von Habsburg"
-		}
-		hidden_effect = {
-			HAB = {
-				country_event = { id = flavor_por.14 }
-			}
-		}
-	}
-}
-
-#Habsburg in Spain notification for Austria
-country_event = {
-	id = flavor_por.14
-	title = flavor_por.14.t
-	desc = flavor_por.14.d
-	picture = NEW_HEIR_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_por.14.a
-		add_prestige = 5
-	}
-}
-
-#The Low Countries Pass to Spain
-country_event = {
-	id = flavor_por.15
-	title = flavor_por.15.t
-	desc = flavor_por.15.d
-	picture = NEW_HEIR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				tag = POR
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		has_heir = no
-		is_lesser_in_union = no
-		marriage_with = HAB
-		is_at_war = no
-		HAB = {
-			ai = yes
-			is_at_war = no
-			OR = {
-				any_subject_country = {
-					any_owned_province = {
-						OR = {
-							region = low_countries_region
-							area = picardy_area
-						}
-					}
-				}
-				any_owned_province = {
-					OR = {
-						region = low_countries_region
-						area = picardy_area
-					}
-				}
-			}
-			dynasty = "von Habsburg"
-		}
-		ruler_age = 20
-		NOT = { is_rival = HAB }
-		NOT = { war_with = HAB }
-		NOT = {
-			HAB = {
-				is_rival = ROOT
-			}
-		}
-		has_government_attribute = heir
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-		modifier = {
-			factor = 0.5
-			NOT = {
-				dynasty = HAB
-			}
-		}
-		modifier = {
-			factor = 0.5
-			FRA = {
-				is_rival = HAB
-				is_rival = ROOT
-			}
-			NOT = {
-				dynasty = FRA
-			}
-		}
-		modifier = {
-			factor = 0.5
-			HAB = {
-				dynasty = "von Habsburg"
-			}
-		}
-		modifier = {
-			factor = 0.5
-			HAB = {
-				OR = {
-					any_subject_country = {
-						num_of_owned_provinces_with = {
-							OR = {
-								region = low_countries_region
-								area = picardy_area
-							}
-							value = 5
-						}
-					}
-					num_of_owned_provinces_with = {
-						OR = {
-							region = low_countries_region
-							area = picardy_area
-						}
-						value = 5
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = flavor_por.15.a
-		ai_chance = {
-			factor = 85
-		}
-		define_heir = {
-			claim = 100
-			dynasty = "von Habsburg"
-			age = 0
-		}
-		custom_tooltip = flavor_por.15.tt
-		hidden_effect = {
-			low_countries_region = {
-				limit = {
-					owner = {
-						OR = {
-							tag = HAB
-							is_subject_of = HAB
-						}
-						ai = yes
-					}
-				}
-				add_core = ROOT
-				remove_core = HAB
-				cede_province = ROOT
-			}
-			picardy_area = {
-				limit = {
-					owner = {
-						OR = {
-							tag = HAB
-							is_subject_of = HAB
-						}
-						ai = yes
-					}
-				}
-				add_core = ROOT
-				remove_core = HAB
-				cede_province = ROOT
-			}
-			HAB = {
-				country_event = { id = flavor_por.14 }
-			}
-		}
-	}
-
-	option = {
-		name = flavor_por.15.b
-		ai_chance = {
-			factor = 15
-		}
-		define_heir = {
-			claim = 100
-			dynasty = "von Habsburg"
-			age = 0
-		}
-		hidden_effect = {
-			HAB = {
-				country_event = { id = flavor_por.14 }
-			}
-		}
-	}
-}
-
-# Merino Wool and the Mesta by Daniel Tolman
-
-# Merino Wool
-country_event = {
-	id = flavor_por.16
-	title = flavor_por.16.t
-	desc = flavor_por.16.d
-	picture = ECONOMY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				tag = POR
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		NOT = { is_year = 1550 }
-		any_owned_province = {
-			region = iberia_region
-			trade_goods = wool
-		}
-		has_estate = estate_church
-		has_estate = estate_nobles
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "flavor_por.16.a"
-		every_owned_province = {
-			limit = {
-				region = iberia_region
-				trade_goods = wool
-			}
-			add_province_modifier = {
-				name = merino_wool
-				duration = -1
-			}
-		}
-		give_estate_land_share_medium = { estate = estate_nobles }
-		give_estate_land_share_medium = { estate = estate_church }
-	}
-}
-
-# The Mesta
-country_event = {
-	id = flavor_por.17
-	title = flavor_por.17.t
-	desc = flavor_por.17.d
-	picture = ECONOMY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_year = 1550
-		OR = {
-			tag = SPA
-			AND = {
-				tag = POR
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		any_owned_province = {
-			has_province_modifier = merino_wool
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "flavor_por.17.a"
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = -10
-		}
-		take_estate_land_share_small = { estate = estate_nobles }
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
-		take_estate_land_share_small = { estate = estate_church }
-		every_owned_province = {
-			limit = {
-				has_province_modifier = merino_wool
-			}
-			remove_province_modifier = merino_wool
-			change_trade_goods = cloth
-			add_province_modifier = {
-				name = "mesta_privileged_revoked"
-				duration = -1
-			}
-		}
-	}
-	option = {
-		name = "flavor_por.17.b"
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 20
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 20
-		}
-		every_owned_province = {
-			limit = {
-				has_province_modifier = merino_wool
-			}
-			add_local_autonomy = 5
-		}
-	}
-}
-
-
-#1.35 Events# 
-
-country_event = { #The Infantes of Aragon
-	id = flavor_por.18
-	title = flavor_por.18.t
-	desc = flavor_por.18.d
-	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes 
-	is_triggered_only = yes 	
-	
-	option = { 
-		name = flavor_por.18.a 
-		set_country_flag = cas_royalist_flag
-		add_stability = -1
-		random_owned_province = {
-			limit = { 
-				region = iberia_region 
-				controlled_by = ROOT 
-			}
-			spawn_rebels = {
-				type = noble_rebels
-				size = 3
-				win = yes 
-				should_take_capital = yes
-			}
-		}
-		random_owned_province = {
-			limit = { 
-				region = iberia_region 
-				controlled_by = ROOT 
-			}
-			spawn_rebels = {
-				type = noble_rebels
-				size = 2
-				win = yes 
-				should_take_capital = yes
-			}
-		}
-		custom_tooltip = cas_impact_mission_tt
-	}
-	
-	option = { 
-		name = flavor_por.18.b
-		set_country_flag = cas_infantes_flag
-		
-		random_owned_province = {
-			limit = { 
-				region = iberia_region 
-				controlled_by = ROOT 
-			}
-			spawn_rebels = {
-				type = noble_rebels
-				size = 2
-				leader = "Alvaro de Luna"
-				win = yes 
-				should_take_capital = yes
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_leader = "Alvaro de Luna"
-				}
-				kill_leader = {
-					type = "Alvaro de Luna"
-				}
-			}
-		}
-		custom_tooltip = cas_impact_mission_tt
-	}
-}
-
-country_event = { # End of the Infantes 
-	id = flavor_por.20
-	title = flavor_por.20.t
-	desc = flavor_por.20.d
-	picture = GOOD_WITH_MONARCH_eventPicture
-	fire_only_once = yes 
-	is_triggered_only = yes 
-	immediate = {
-		on_non_estate_disaster_end = yes
-	}
-	
-	option = { 
-		name = flavor_por.20.a 
-		
-		add_legitimacy = 20 
-		if = { 
-			limit = { has_country_flag = cas_royalist_flag }
-			change_estate_land_share = { 
-				estate = all 
-				share = -5
-			}
-		}
-		else = { 
-			add_estate_loyalty = {
-				estate = estate_nobles 
-				loyalty = 20 
-			}
-			custom_tooltip = spa_no_isabella_event_tt
-			set_country_flag = no_isabella_event_flag
-		}
-		add_yearly_manpower = 2
-		set_country_flag = ended_infantes_disaster_flag
-	}    
-}
-
-# country_event = { #
-	# id = flavor_por.21
-	# title = flavor_por.21.t
-	# desc = flavor_por.21.d
-	# picture = GOOD_WITH_MONARCH_eventPicture
-	# fire_only_once = yes 
-	# is_triggered_only = yes 
-	
-	# option = { 
-		# name = flavor_por.21.a 
-		
-		
-	# }
-# }
-
-country_event = { #The Spanish Dollar
-	id = flavor_por.22
-	title = flavor_por.22.t
-	desc = flavor_por.22.d
-	picture = MERCHANTS_TALKING_eventPicture
-	fire_only_once = yes 
-	is_triggered_only = yes 
-	
-	option = { 
-		name = flavor_por.22.a 
-		
-		add_country_modifier = {
-			name = spa_spanish_dollar_modifier
-			duration = 7300
-		}
-		
-		change_ruler_stat = {
-			type = adm
-			amount = 1
-		}
-		
-	}
-}
-
-country_event = { #San Lorenzo de El Escorial 
-	id = flavor_por.23
-	title = flavor_por.23.t
-	desc = flavor_por.23.d
-	picture = GREAT_BUILDING_eventPicture
-	fire_only_once = yes 
-	is_triggered_only = yes 
-	goto = 217
-	option = { 
-		name = flavor_por.23.a 
-		
-		if = { 
-			limit = { has_dlc = "Leviathan" } 
-			217 = {
-				add_great_project_tier = {
-					type = el_escorial
-					tier = 2 
-				}
-			}
-		}
-		else = {
-			add_country_modifier = {
-				name = spa_san_lorenzo_escorial_modifier
-				duration = 9125
-			}
-			217 = {
-				add_base_production = 2 
-				add_base_manpower = 1
-			}
-		}
-	}
-}
-
-country_event = { #Ferdinand Magellan
-	id = flavor_por.199
-	title = flavor_por.199.t
-	desc = flavor_por.199.d
-	picture = HARBOUR_eventPicture
-	is_triggered_only = yes 
-	
-	immediate = {
-		set_country_flag = had_magellan_event_flag
-	}
-	
-	option = { 
-		name = flavor_por.199.a 
-		
-		ai_chance = { factor = 5 }
-		define_explorer = {
-			name = "Ferdinand Magellan"
-			fire = 4 
-			shock = 4 
-			manuever = 6
-			siege = 1
-			trait = great_explorer_personality
-		}
-		if = {
-			limit = { has_dlc = "Rule Britannia" }
-			change_innovativeness = 2
-		}
-		else = { add_adm_power = 25 add_dip_power = 25 }
-	}
-	
-	option = {
-		name = flavor_por.199.b 
-		ai_chance = { factor = 5 }
-		add_prestige_or_monarch_power = { amount = 15 } 
-		if = {
-			limit = { has_estate = estate_church }
-			add_estate_loyalty = {
-				estate = estate_church 
-				loyalty = 20 
-			}
-		}
-		if = {
-			limit = { 
-				OR = { 
-					tag = SPA 
-					tag = POR
-				}
-				POR = { 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			POR = { 
-				country_event = { id = flavor_por.199 }
-			}
-		}
-		else_if = {
-			limit = { 
-				tag = POR 
-				SPA = { 
-					exists = yes 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			SPA = { 
-				country_event = { id = flavor_por.199 }
-			}
-		}
-		else_if = {
-			limit = { 
-				tag = POR 
-				CAS = { 
-					exists = yes 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			CAS = { 
-				country_event = { id = flavor_por.199 }
-			}
-		}
-	}			
-}
-
-
-########################################
-# Major Flavor Events                  #
-########################################
-
-namespace = flavor_spa
-normal_or_historical_nations = yes
+### Eventos Castela
 
 # The Iberian Wedding
 country_event = {
-	id = flavor_hee_por.3716
+	id = flavor_spa.99993716
 	title = "flavor_spa.EVTNAME3716"
 	desc = "flavor_spa.EVTDESC3716"
 	picture = DIPLOMACY_eventPicture
@@ -4280,24 +1147,24 @@ country_event = {
 		OR = {
 			AND = {
 				tag = POR
-				NOT = { war_with = ARA }
+				NOT = { war_with = CAS }
 				is_subject = no
-				ARA = {
+				CAS = {
 					exists = yes
 					ai = yes
 					was_player = no
 					is_subject = no
 					is_neighbor_of = ROOT
-					NOT = { is_in_war = { attacker_leader = ARA } }
-					NOT = { is_in_war = { defender_leader = ARA } }
+					NOT = { is_in_war = { attacker_leader = CAS } }
+					NOT = { is_in_war = { defender_leader = CAS } }
 					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 					government = monarchy
 				}
 				num_of_cities = 25
 			}
 			AND = {
-				tag = POR
-				NOT = { war_with = CAS }
+				tag = CAS
+				NOT = { war_with = POR }
 				is_subject = no
 				ai = no
 				POR = {
@@ -4306,8 +1173,8 @@ country_event = {
 					was_player = no
 					is_subject = no
 					is_neighbor_of = ROOT
-					NOT = { is_in_war = { attacker_leader = CAS } }
-					NOT = { is_in_war = { defender_leader = CAS } }
+					NOT = { is_in_war = { attacker_leader = POR } }
+					NOT = { is_in_war = { defender_leader = POR } }
 					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 					government = monarchy
 				}
@@ -4322,13 +1189,13 @@ country_event = {
 		OR = {
 			AND = {
 				POR = { is_female = yes }
-				ARA = { is_female = no }
+				CAS = { is_female = no }
 			}
 			AND = {
 				POR = { is_female = no }
-				ARA = { is_female = yes }
+				CAS = { is_female = yes }
 			}
-			ARA = {
+			CAS = {
 				ai = yes
 				has_regency = yes
 			}
@@ -4346,12 +1213,12 @@ country_event = {
 			OR = {
 				AND = {
 					tag = POR
-					ARA = {
+					CAS = {
 						has_regency = no 
 					}
 				}
 				AND = {
-					tag = POR
+					tag = CAS
 					POR = { 
 						has_regency = no 
 					}
@@ -4366,12 +1233,12 @@ country_event = {
 		ai_chance = { factor = 90 }
 		if = {
 			limit = { tag = POR }
-			create_union = ARA
+			create_union = CAS
 			add_opinion = {
-				who = ARA
+				who = CAS
 				modifier = spa_iberian_wedding
 			}
-			ARA = {
+			CAS = {
 				add_opinion = {
 					who = ROOT
 					modifier = spa_iberian_wedding
@@ -4380,7 +1247,7 @@ country_event = {
 			}
 			every_known_country = {
 				limit = {
-					marriage_with = ARA
+					marriage_with = CAS
 				}
 				add_opinion = {
 					who = ROOT
@@ -4389,10 +1256,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { tag = POR }
-			create_union = CAS
+			limit = { tag = CAS }
+			create_union = POR
 			add_opinion = {
-				who = CAS
+				who = POR
 				modifier = spa_iberian_wedding
 			}
 			POR = {
@@ -4404,7 +1271,7 @@ country_event = {
 			}
 			every_known_country = {
 				limit = {
-					marriage_with = CAS
+					marriage_with = POR
 				}
 				add_opinion = {
 					who = ROOT
@@ -4428,7 +1295,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		if = {
 			limit = { tag = POR }
-			ARA = {
+			CAS = {
 				add_opinion = {
 					who = ROOT
 					modifier = spa_declined_iberian_wedding
@@ -4436,7 +1303,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { tag = POR }
+			limit = { tag = CAS }
 			POR = {
 				add_opinion = {
 					who = ROOT
@@ -4461,7 +1328,7 @@ country_event = {
 
 # Torquemada and the Conversion of the Moors
 country_event = {
-	id = flavor_hee_por.3150
+	id = flavor_spa.99993150
 	title = "flavor_spa.EVTNAME3150"
 	desc = "flavor_spa.EVTDESC3150"
 	picture = ADVISOR_eventPicture
@@ -4527,7 +1394,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = {  id = flavor_hee_por.3151 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3150" }
+			country_event = {  id = flavor_spa.99993151 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3150" }
 		}
 		set_country_flag = torquemada_expelled
 		add_reform_desire = 0.02
@@ -4547,7 +1414,7 @@ country_event = {
 
 # Expulsion of the Moors
 country_event = {
-	id = flavor_hee_por.3151
+	id = flavor_spa.99993151
 	title = "flavor_spa.EVTNAME3151"
 	desc = "flavor_spa.EVTDESC3151"
 	picture = ECONOMY_eventPicture
@@ -4566,7 +1433,7 @@ country_event = {
 
 # Christopher Columbus
 country_event = {
-	id = flavor_hee_por.1
+	id = flavor_spa.99991
 	title = "flavor_spa.EVTNAME1"
 	desc = "flavor_spa.EVTDESC1"
 	picture = SHIP_SAILING_eventPicture
@@ -4614,7 +1481,7 @@ country_event = {
 				religion = catholic
 				has_idea = quest_for_the_new_world
 			}
-			country_event = { id = flavor_hee_por.1 }
+			country_event = { id = flavor_spa.991 }
 		}
 	}
 	option = {		# Hire Columbus
@@ -4634,7 +1501,7 @@ country_event = {
 
 # Discovery of the New World!
 country_event = {
-	id = flavor_hee_por.1005
+	id = flavor_spa.991005
 	title = "flavor_spa.EVTNAME1005"
 	desc = "flavor_spa.EVTDESC1005"
 	picture = COLONIZATION_eventPicture
@@ -4681,7 +1548,7 @@ country_event = {
 
 # Ignacio de Loyola
 country_event = {
-	id = flavor_hee_por.1011
+	id = flavor_spa.991011
 	title = "flavor_spa.EVTNAME1011"
 	desc = "flavor_spa.EVTDESC1011"
 	picture = ADVISOR_eventPicture
@@ -4724,7 +1591,7 @@ country_event = {
 
 # The Quest for the New World
 country_event = {
-	id = flavor_hee_por.3152
+	id = flavor_spa.993152
 	title = "flavor_spa.EVTNAME3152"
 	desc = "flavor_spa.EVTDESC3152"
 	picture = EXPLORERS_eventPicture
@@ -4781,7 +1648,7 @@ country_event = {
 
 # Crusade against Oran
 country_event = {
-	id = flavor_hee_por.1000
+	id = flavor_spa.991000
 	title = "flavor_spa.EVTNAME1000"
 	desc = "flavor_spa.EVTDESC1000"
 	picture = BATTLE_eventPicture
@@ -4815,7 +1682,7 @@ country_event = {
 
 # Laws of Burgos
 country_event = {
-	id = flavor_hee_por.1001
+	id = flavor_spa.991001
 	title = "flavor_spa.EVTNAME1001"
 	desc = "flavor_spa.EVTDESC1001"
 	picture = REFORM_eventPicture
@@ -4866,7 +1733,7 @@ country_event = {
 
 # Casa de Contrataci�n
 country_event = {
-	id = flavor_hee_por.1003
+	id = flavor_spa.991003
 	title = "flavor_spa.EVTNAME1003"
 	desc = "flavor_spa.EVTDESC1003"
 	picture = COLONIZATION_eventPicture
@@ -4908,7 +1775,7 @@ country_event = {
 
 # The Sun Never Sets
 country_event = {
-	id = flavor_hee_por.1004
+	id = flavor_spa.991004
 	title = "flavor_spa.EVTNAME1004"
 	desc = "flavor_spa.EVTDESC1004"
 	picture = COURT_eventPicture
@@ -4951,7 +1818,7 @@ country_event = {
 
 # The Trade Center of Sevilla
 country_event = {
-	id = flavor_hee_por.3153
+	id = flavor_spa.993153
 	title = "flavor_spa.EVTNAME3153"
 	desc = "flavor_spa.EVTDESC3153"
 	picture = MERCHANTS_TALKING_eventPicture
@@ -4989,7 +1856,7 @@ country_event = {
 
 # The Fuggers
 country_event = {
-	id = flavor_hee_por.3154
+	id = flavor_spa.993154
 	title = "flavor_spa.EVTNAME3154"
 	desc = "flavor_spa.EVTDESC3154"
 	picture = COURT_eventPicture
@@ -5021,7 +1888,7 @@ country_event = {
 
 # The Communeros
 country_event = {
-	id = flavor_hee_por.3155
+	id = flavor_spa.993155
 	title = "flavor_spa.EVTNAME3155"
 	desc = "flavor_spa.EVTDESC3155"
 	picture = ANGRY_MOB_eventPicture
@@ -5066,7 +1933,7 @@ country_event = {
 
 # State Bankruptcy
 country_event = {
-	id = flavor_hee_por.3158	
+	id = flavor_spa.993158	
 	title = "flavor_spa.EVTNAME3158"
 	desc = "flavor_spa.EVTDESC3158"
 	picture = BANKRUPTCY_eventPicture
@@ -5100,7 +1967,7 @@ country_event = {
 
 # The Expulsion of the Moriscos
 country_event = {
-	id = flavor_hee_por.3160	
+	id = flavor_spa.993160	
 	title = "flavor_spa.EVTNAME3160"
 	desc = "flavor_spa.EVTDESC3160"
 	picture = ANGRY_MOB_eventPicture
@@ -5153,7 +2020,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = {  id = flavor_hee_por.3161 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3160" }
+			country_event = {  id = flavor_spa.993161 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3160" }
 		}
 	}
 	option = {		# Let them be as they are needed for the economy
@@ -5164,7 +2031,7 @@ country_event = {
 
 # Expulsion of the Moriscos
 country_event = {
-	id = flavor_hee_por.3161
+	id = flavor_spa.993161
 	title = "flavor_spa.EVTNAME3161"
 	desc = "flavor_spa.EVTDESC3161"
 	picture = ECONOMY_eventPicture
@@ -5183,7 +2050,7 @@ country_event = {
 
 # Baltasar de Zuniga
 country_event = {
-	id = flavor_hee_por.3710
+	id = flavor_spa.993710
 	title = "flavor_spa.EVTNAME3710"
 	desc = "flavor_spa.EVTDESC3710"
 	picture = ADVISOR_eventPicture
@@ -5230,7 +2097,7 @@ country_event = {
 
 # Olivares
 country_event = {
-	id = flavor_hee_por.3711
+	id = flavor_spa.993711
 	title = "flavor_spa.EVTNAME3711"
 	desc = "flavor_spa.EVTDESC3711"
 	picture = ADVISOR_eventPicture
@@ -5275,7 +2142,7 @@ country_event = {
 
 # The Portuguese Crown
 country_event = {
-	id = flavor_hee_por.3162	
+	id = flavor_spa.993162	
 	title = "flavor_spa.EVTNAME3162"
 	desc = "flavor_spa.EVTDESC3162"
 	picture = COURT_eventPicture
@@ -5320,7 +2187,7 @@ country_event = {
 
 # State Bankruptcy
 country_event = {
-	id = flavor_hee_por.3164	
+	id = flavor_spa.993164	
 	title = "flavor_spa.EVTNAME3164"
 	desc = "flavor_spa.EVTDESC3164"
 	picture = BANKRUPTCY_eventPicture
@@ -5345,7 +2212,7 @@ country_event = {
 
 # Epidemic Plague
 country_event = {
-	id = flavor_hee_por.3165	
+	id = flavor_spa.993165	
 	title = "flavor_spa.EVTNAME3165"
 	desc = "flavor_spa.EVTDESC3165"
 	picture = PLAGUE_eventPicture
@@ -5379,7 +2246,7 @@ country_event = {
 
 # The Iberian Revolts
 country_event = {
-	id = flavor_hee_por.3169
+	id = flavor_spa.993169
 	title = "flavor_spa.EVTNAME3169"
 	desc = "flavor_spa.EVTDESC3169"
 	picture = ANGRY_MOB_eventPicture
@@ -5428,7 +2295,7 @@ country_event = {
 
 # National revolt in Portugal
 country_event = {
-	id = flavor_hee_por.3168	
+	id = flavor_spa.993168	
 	title = "flavor_spa.EVTNAME3168"
 	desc = "flavor_spa.EVTDESC3168"
 	picture = DIPLOMACY_eventPicture
@@ -5477,7 +2344,7 @@ country_event = {
 
 # The Italian Revolts
 country_event = {
-	id = flavor_hee_por.3170
+	id = flavor_spa.993170
 	title = "flavor_spa.EVTNAME3170"
 	desc = "flavor_spa.EVTDESC3170"
 	picture = ANGRY_MOB_eventPicture
@@ -5527,7 +2394,7 @@ country_event = {
 
 # Giulio Alberoni
 country_event = {
-	id = flavor_hee_por.3712
+	id = flavor_spa.993712
 	title = "flavor_spa.EVTNAME3712"
 	desc = "flavor_spa.EVTDESC3712"
 	picture = ADVISOR_eventPicture
@@ -5568,7 +2435,7 @@ country_event = {
 
 # Jos� Monino
 country_event = {
-	id = flavor_hee_por.3094
+	id = flavor_spa.993094
 	title = "flavor_spa.EVTNAME3094"
 	desc = "flavor_spa.EVTDESC3094"
 	picture = ADVISOR_eventPicture
@@ -5607,7 +2474,7 @@ country_event = {
 
 # The Constitution of 1812
 country_event = {
-	id = flavor_hee_por.3095
+	id = flavor_spa.993095
 	title = "flavor_spa.EVTNAME3095"
 	desc = "flavor_spa.EVTDESC3095"
 	picture = DEBATE_REPUBLICAN_eventPicture
@@ -5648,7 +2515,7 @@ country_event = {
 
 # Miguel de Cervantes
 country_event = {
-	id = flavor_hee_por.1100
+	id = flavor_spa.991100
 	title = "flavor_spa.EVTNAME1100"
 	desc = "flavor_spa.EVTDESC1100"
 	picture = ADVISOR_eventPicture
@@ -5674,7 +2541,7 @@ country_event = {
 
 # Tom�s Luis de Victoria
 country_event = {
-	id = flavor_hee_por.1101
+	id = flavor_spa.991101
 	title = "flavor_spa.EVTNAME1101"
 	desc = "flavor_spa.EVTDESC1101"
 	picture = THEATRE_eventPicture
@@ -5706,7 +2573,7 @@ country_event = {
 
 # The Italian Wars
 country_event = {
-	id = flavor_hee_por.1007
+	id = flavor_spa.991007
 	title = "flavor_spa.EVTNAME1007"
 	desc = "flavor_spa.EVTDESC1007"
 	picture = {	
@@ -5765,7 +2632,7 @@ country_event = {
 				add_claim = ROOT
 			}
 			hidden_effect = {
-				country_event = { id = flavor_hee_por.1008 days = 10 }
+				country_event = { id = flavor_spa.991008 days = 10 }
 			}
 		}
 	}
@@ -5781,7 +2648,7 @@ country_event = {
 
 # The Italian Wars
 country_event = {
-	id = flavor_hee_por.1008
+	id = flavor_spa.991008
 	title = "flavor_spa.EVTNAME1008"
 	desc = "flavor_spa.EVTDESC1008"
 	picture = {	
@@ -5816,7 +2683,7 @@ country_event = {
 				}
 			}
 			hidden_effect = {
-				country_event = { id = flavor_hee_por.1009 days = 10 }
+				country_event = { id = flavor_spa.991009 days = 10 }
 			}
 		}
 	}
@@ -5829,7 +2696,7 @@ country_event = {
 
 # The Italian Wars
 country_event = {
-	id = flavor_hee_por.1009
+	id = flavor_spa.991009
 	title = "flavor_spa.EVTNAME1009"
 	desc = "flavor_spa.EVTDESC1009"
 	picture = {	
@@ -5863,7 +2730,7 @@ country_event = {
 
 #Valladolid Debate
 country_event = {
-	id = flavor_hee_por.2
+	id = flavor_spa.992
 	title = "flavor_spa.2.t"
 	desc = "flavor_spa.2.d"
 	picture = UNIVERSITY_eventPicture
@@ -6013,7 +2880,7 @@ country_event = {
 
 #Alhambra Decree
 country_event = {
-	id = flavor_hee_por.3
+	id = flavor_spa.993
 	title = "flavor_spa.3.t"
 	desc = "flavor_spa.3.d"
 	picture = REFORM_eventPicture
@@ -6084,7 +2951,7 @@ country_event = {
 
 # Unification of Spain / Nueva Planta Decrees
 country_event = {
-	id = flavor_hee_por.4
+	id = flavor_spa.994
 	title = "flavor_spa.4.t"
 	desc = "flavor_spa.4.d"
 	picture = ELECTION_REPUBLICAN_eventPicture
@@ -6108,7 +2975,7 @@ country_event = {
 		owns_core_province = 213
 		owns_core_province = 214
 		owns_core_province = 208
-		owns_core_province = 217
+		owns_core_province = 227
 		NOT = { exists = CAS }
 		NOT = { exists = ARA }
 		NOT = { exists = NAV }
@@ -6155,7 +3022,7 @@ country_event = {
 						province_id = 213
 						province_id = 214
 						province_id = 208
-						province_id = 217
+						province_id = 227
 					}
 					has_seat_in_parliament = no
 				}
@@ -6173,7 +3040,7 @@ country_event = {
 						province_id = 213
 						province_id = 214
 						province_id = 208
-						province_id = 217
+						province_id = 227
 					}
 					is_capital = no
 				}
@@ -6185,7 +3052,7 @@ country_event = {
 
 # Grammar of the Castilian Language (localized to whatever culture formed Spain)
 country_event = {
-	id = flavor_hee_por.5
+	id = flavor_spa.995
 	title = "flavor_spa.5.t"
 	desc = "flavor_spa.5.d"
 	picture = BIG_BOOK_eventPicture
@@ -6226,7 +3093,7 @@ country_event = {
 
 # S�lo Madrid es corte
 country_event = {
-	id = flavor_hee_por.6
+	id = flavor_spa.996
 	title = "flavor_spa.6.t"
 	desc = "flavor_spa.6.d"
 	picture = CITY_DEVELOPMENT_eventPicture
@@ -6236,8 +3103,8 @@ country_event = {
 	
 	trigger = {
 		tag = SPA
-		owns_core_province = 217 #Madrid
-		NOT = { capital = 217 } #Madrid
+		owns_core_province = 227 #Madrid
+		NOT = { capital = 227 } #Madrid
 		num_of_cities = 25
 		government = monarchy
 		is_year = 1520
@@ -6258,8 +3125,8 @@ country_event = {
 				NOT = { primary_culture = castillian }
 			}
 		}
-		set_capital = 217
-		217 = {
+		set_capital = 227
+		227 = {
 			add_province_modifier = {
 				name = "solo_madrid_es_corte"
 				duration = 3650
@@ -6283,7 +3150,7 @@ country_event = {
 
 # War of Las Alpujarras
 country_event = {
-	id = flavor_hee_por.7
+	id = flavor_spa.997
 	title = "flavor_spa.7.t"
 	desc = "flavor_spa.7.d"
 	picture = BORDER_TENSION_eventPicture
@@ -6391,7 +3258,7 @@ country_event = {
 
 #Fate of the Kingdom of Granada
 country_event = {
-	id = flavor_hee_por.8
+	id = flavor_spa.998
 	title = "flavor_spa.8.t"
 	desc = "flavor_spa.8.d"
 	picture = MILITARY_CAMP_eventPicture
@@ -6456,7 +3323,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = {  id = flavor_hee_por.3151 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3150" }
+			country_event = {  id = flavor_spa.993151 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3150" }
 		}
 	}
 	option = {		# We must mend these wounds not cut off the limb itself.
@@ -6483,7 +3350,7 @@ country_event = {
 
 # New Testament Translated into Spanish
 country_event = {
-	id = flavor_hee_por.9
+	id = flavor_spa.999
 	title = "flavor_spa.9.t"
 	desc = "flavor_spa.9.d"
 	picture = BIG_BOOK_eventPicture
@@ -6557,7 +3424,7 @@ country_event = {
 # Ottoman Encroachment in the Mediterrenean
 # Deposed Hafsid ruler seeks Spanish Aid
 country_event = {
-	id = flavor_hee_por.10
+	id = flavor_spa.9910
 	title = "flavor_spa.10.t"
 	desc = "flavor_spa.10.d"
 	picture = NAVAL_MILITARY_eventPicture
@@ -6623,7 +3490,7 @@ country_event = {
 
 # Reforming the Colonial Administration (Bourbon Reforms)
 country_event = {
-	id = flavor_hee_por.11
+	id = flavor_spa.9911
 	title = "flavor_spa.11.t"
 	desc = "flavor_spa.11.d"
 	picture = GOOD_WITH_MONARCH_eventPicture
@@ -6686,7 +3553,7 @@ country_event = {
 
 # Supression of the Society of Jesus
 country_event = {
-	id = flavor_hee_por.12
+	id = flavor_spa.9912
 	title = "flavor_spa.12.t"
 	desc = "flavor_spa.12.d"
 	picture = POPE_PREACHING_eventPicture
@@ -6744,7 +3611,7 @@ country_event = {
 
 #A Habsburg Heir in Spain
 country_event = {
-	id = flavor_hee_por.13
+	id = flavor_spa.9913
 	title = flavor_spa.13.t
 	desc = flavor_spa.13.d
 	picture = NEW_HEIR_eventPicture
@@ -6816,7 +3683,7 @@ country_event = {
 		}
 		hidden_effect = {
 			HAB = {
-				country_event = { id = flavor_hee_por.14 }
+				country_event = { id = flavor_spa.9914 }
 			}
 		}
 	}
@@ -6824,7 +3691,7 @@ country_event = {
 
 #Habsburg in Spain notification for Austria
 country_event = {
-	id = flavor_hee_por.14
+	id = flavor_spa.9914
 	title = flavor_spa.14.t
 	desc = flavor_spa.14.d
 	picture = NEW_HEIR_eventPicture
@@ -6839,7 +3706,7 @@ country_event = {
 
 #The Low Countries Pass to Spain
 country_event = {
-	id = flavor_hee_por.15
+	id = flavor_spa.9915
 	title = flavor_spa.15.t
 	desc = flavor_spa.15.d
 	picture = NEW_HEIR_eventPicture
@@ -6982,7 +3849,7 @@ country_event = {
 				cede_province = ROOT
 			}
 			HAB = {
-				country_event = { id = flavor_hee_por.14 }
+				country_event = { id = flavor_spa.9914 }
 			}
 		}
 	}
@@ -6999,7 +3866,7 @@ country_event = {
 		}
 		hidden_effect = {
 			HAB = {
-				country_event = { id = flavor_hee_por.14 }
+				country_event = { id = flavor_spa.9914 }
 			}
 		}
 	}
@@ -7009,7 +3876,7 @@ country_event = {
 
 # Merino Wool
 country_event = {
-	id = flavor_hee_por.16
+	id = flavor_spa.9916
 	title = flavor_spa.16.t
 	desc = flavor_spa.16.d
 	picture = ECONOMY_eventPicture
@@ -7058,7 +3925,7 @@ country_event = {
 
 # The Mesta
 country_event = {
-	id = flavor_hee_por.17
+	id = flavor_spa.9917
 	title = flavor_spa.17.t
 	desc = flavor_spa.17.d
 	picture = ECONOMY_eventPicture
@@ -7132,7 +3999,7 @@ country_event = {
 #1.35 Events# 
 
 country_event = { #The Infantes of Aragon
-	id = flavor_hee_por.18
+	id = flavor_spa.9918
 	title = flavor_spa.18.t
 	desc = flavor_spa.18.d
 	picture = DIPLOMACY_eventPicture
@@ -7202,7 +4069,7 @@ country_event = { #The Infantes of Aragon
 }
 
 country_event = { # End of the Infantes 
-	id = flavor_hee_por.20
+	id = flavor_spa.9920
 	title = flavor_spa.20.t
 	desc = flavor_spa.20.d
 	picture = GOOD_WITH_MONARCH_eventPicture
@@ -7237,7 +4104,7 @@ country_event = { # End of the Infantes
 }
 
 # country_event = { #
-	# id = flavor_hee_por.21
+	# id = flavor_spa.9921
 	# title = flavor_spa.21.t
 	# desc = flavor_spa.21.d
 	# picture = GOOD_WITH_MONARCH_eventPicture
@@ -7252,7 +4119,7 @@ country_event = { # End of the Infantes
 # }
 
 country_event = { #The Spanish Dollar
-	id = flavor_hee_por.22
+	id = flavor_spa.9922
 	title = flavor_spa.22.t
 	desc = flavor_spa.22.d
 	picture = MERCHANTS_TALKING_eventPicture
@@ -7276,19 +4143,19 @@ country_event = { #The Spanish Dollar
 }
 
 country_event = { #San Lorenzo de El Escorial 
-	id = flavor_hee_por.23
+	id = flavor_spa.9923
 	title = flavor_spa.23.t
 	desc = flavor_spa.23.d
 	picture = GREAT_BUILDING_eventPicture
 	fire_only_once = yes 
 	is_triggered_only = yes 
-	goto = 217
+	goto = 227
 	option = { 
 		name = flavor_spa.23.a 
 		
 		if = { 
 			limit = { has_dlc = "Leviathan" } 
-			217 = {
+			227 = {
 				add_great_project_tier = {
 					type = el_escorial
 					tier = 2 
@@ -7300,7 +4167,7 @@ country_event = { #San Lorenzo de El Escorial
 				name = spa_san_lorenzo_escorial_modifier
 				duration = 9125
 			}
-			217 = {
+			227 = {
 				add_base_production = 2 
 				add_base_manpower = 1
 			}
@@ -7309,7 +4176,7 @@ country_event = { #San Lorenzo de El Escorial
 }
 
 country_event = { #Ferdinand Magellan
-	id = flavor_hee_por.199
+	id = flavor_spa.99199
 	title = flavor_spa.199.t
 	desc = flavor_spa.199.d
 	picture = HARBOUR_eventPicture
@@ -7360,7 +4227,7 @@ country_event = { #Ferdinand Magellan
 				}
 			}
 			POR = { 
-				country_event = { id = flavor_hee_por.199 }
+				country_event = { id = flavor_spa.99199 }
 			}
 		}
 		else_if = {
@@ -7372,23 +4239,803 @@ country_event = { #Ferdinand Magellan
 				}
 			}
 			SPA = { 
-				country_event = { id = flavor_hee_por.199 }
+				country_event = { id = flavor_spa.99199 }
 			}
 		}
 		else_if = {
 			limit = { 
 				tag = POR 
-				POR = { 
+				CAS = { 
 					exists = yes 
 					NOT = { has_country_flag = had_magellan_event_flag }
 				}
 			}
-			POR = { 
-				country_event = { id = flavor_hee_por.199 }
+			CAS = { 
+				country_event = { id = flavor_spa.99199 }
 			}
 		}
 	}			
 }
+
+# Eventos Aragão
+
+# Consulate of the Sea
+country_event = {
+	id = flavor_por.9991
+	title = "flavor_ara.EVTNAME1"
+	desc = "flavor_ara.EVTDESC1"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = POR
+				NOT = { is_year = 1500 }
+				NOT = {
+					has_country_modifier = ara_consulate_sea
+				}
+			}
+			has_country_flag = ara_consulate_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA1"
+		if = {
+			limit = { has_dlc = "Domination" }
+			add_government_reform = consulate_of_the_sea
+		}
+		else = {
+			add_country_modifier = {
+				name = ara_consulate_sea
+				duration = 18250
+			}
+		}
+	}
+}
+
+# Book of the Consulate of the Sea
+country_event = {
+	id = flavor_por.9992
+	title = "flavor_ara.EVTNAME2"
+	desc = "flavor_ara.EVTDESC2"
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		has_country_modifier = ara_consulate_sea
+		NOT = { has_country_modifier = ara_book_consulate_sea }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA2"
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		remove_country_modifier = ara_consulate_sea
+		add_country_modifier = {
+			name = ara_book_consulate_sea
+			duration = -1
+		}
+	}
+	option = {
+		name = "flavor_ara.EVTOPTB2"
+		add_prestige = -1
+	}
+}
+
+# Antonio Beccadelli (poet)
+country_event = {
+	id = flavor_por.9993
+	title = "flavor_ara.EVTNAME3"
+	desc = "flavor_ara.EVTDESC3"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { is_year = 1471 }
+		OR = {
+			dip = 3
+			adm = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA3"
+		add_adm_power = 10
+		add_prestige = 10
+		define_advisor = {
+			type = artist
+			name = "Antonio Beccadelli"
+			culture = sicilian
+			skill = 2
+			discount = yes
+		}
+		add_innovativeness_small_effect = yes
+	}
+}
+
+# Iovianus Pontanus
+country_event = {
+	id = flavor_por.9994
+	title = "flavor_ara.EVTNAME4"
+	desc = "flavor_ara.EVTDESC4"
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { is_year = 1503 }
+		OR = {
+			dip = 3
+			adm = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA4"
+		add_prestige = 10
+		add_innovativeness_small_effect = yes
+	}
+	option = {
+		name = "flavor_ara.EVTOPTB4"
+		add_stability_or_adm_power = yes
+		add_innovativeness_small_effect = yes
+	}
+}
+
+# Monastery of Santa Mar�a de Sigena
+country_event = {
+	id = flavor_por.9995
+	title = "flavor_ara.EVTNAME5"
+	desc = "flavor_ara.EVTDESC5"
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { is_year = 1520 }
+		NOT = { has_country_modifier = ara_monastery_maria }
+		religion = catholic
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA5"
+		add_years_of_income = -0.5
+		add_country_modifier = { 
+			name = ara_monastery_maria 
+			duration = 18250
+		}
+	}
+	option = {
+		name = "flavor_ara.EVTOPTB5"
+		add_years_of_income = -0.5
+		add_country_modifier = { 
+			name = ara_monastery_painter
+			duration = 18250
+		}
+	}
+	option = {
+		name = "flavor_ara.EVTOPTC5"
+		add_prestige = -1
+	}
+}
+
+# Sindicat Remen�a
+country_event = {
+	id = flavor_por.9996
+	title = "flavor_ara.EVTNAME6"
+	desc = "flavor_ara.EVTDESC6"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		catalonia_area = {
+			type = all 
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ara_remensa_flag
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+				}
+				set_province_flag = ara_sindicat_remensa_flag
+			}
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+					NOT = {  has_province_flag = ara_sindicat_remensa_flag }
+				}
+				set_province_flag = ara_sindicat_remensa_flag
+			}
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+					NOT = { has_province_flag = ara_sindicat_remensa_flag }
+				}
+				set_province_flag = ara_sindicat_remensa_flag
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA6"
+		trigger = {
+			if = { 
+				limit = { has_dlc = "Domination" }
+				has_estate = estate_burghers
+			}
+		}
+		add_country_modifier = {
+			name = "decentralization_modifier"
+			duration = 3650
+		}
+		if = {
+			limit = { has_dlc = "Domination" }
+			set_country_flag = remensa_privilege_flag
+			set_estate_privilege = estate_burghers_sindicat_remensa_privilege
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = ara_sindicat_remensa_flag
+				}
+				add_province_modifier = { 
+					name = ara_sindicat_remensa 
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_flag = ara_sindicat_remensa_flag
+					}
+					clr_province_flag = ara_sindicat_remensa_flag
+				}
+			}
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	option = {
+		name = "flavor_ara.EVTOPTB6"
+		every_owned_province = {
+			limit = {
+				has_province_flag = ara_sindicat_remensa_flag
+			}
+			clr_province_flag = ara_sindicat_remensa_flag
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+			add_local_autonomy = -25
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTC6"
+		
+		if = { 
+			limit = { 
+				stability = 0 
+			}
+			add_stability = -3 
+		}
+		else = { 
+			add_adm_power = -50 
+			add_dip_power = -50
+			add_mil_power = -50
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = ara_sindicat_remensa_flag
+			}
+			clr_province_flag = ara_sindicat_remensa_flag
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		define_ruler = {
+			name = "�ric" 
+			DIP = 6
+			ADM = 5
+			MIL = 4
+			age = 28
+			
+		}
+		if = {
+			limit = { has_dlc = "Rights of Man" }
+			add_ruler_personality = careful_personality
+			add_ruler_personality = peasant_revolt_leader_personality
+		}
+		custom_tooltip = ara_become_p_republic_tt
+		add_stability_or_adm_power = yes 
+		hidden_effect = {
+			change_government = republic 
+			add_government_reform = peasants_republic
+			hidden_effect = { add_republican_tradition = 100 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+
+
+########################################
+# Additions by Michael Kundak Cowall
+########################################
+
+# The Neapolitan Succession
+country_event = {
+	id = flavor_por.9997
+	title = "flavor_ara.EVTNAME7"
+	desc = "flavor_ara.EVTDESC7"
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { has_ruler = "Alfons V" }
+		NOT = { has_country_flag = alfonso_died_yes_really }
+		NAP = { junior_union_with = ARA }
+		NOT = { is_year = 1500 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	immediate = {
+		set_country_flag = alfonso_died_yes_really
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA7"
+		ai_chance = {
+			factor = 20
+		}
+		custom_tooltip = flavor_ara7_naples_goes_free
+		hidden_effect = {
+			NAP = {
+				country_event = { id = flavor_por.9998 }
+			}
+		}
+		set_ruler_flag = alfonsos_successor
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTB7"
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_legitimacy = -25
+		NAP = { add_liberty_desire = 50 }
+	}
+}
+
+country_event = {
+	id = flavor_por.9998
+	title = "flavor_ara.EVTNAME8"
+	desc = "flavor_ara.EVTDESC8"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
 	
 	
+	option = {
+		name = "flavor_ara.EVTOPTA8"
+		define_ruler = {
+			name = "Ferrando I"
+			dynasty = "de Trast�mara"
+			dip = 4
+			mil = 4
+			adm = 2
+			claim = 50
+		}
+		PAP = {
+			country_event = { id = flavor_por.9999 days = 1 }
+		}
+		break_union = ARA
+		hidden_effect = {
+			if = { 
+				limit = { 
+					ARA = { has_heir = yes } 
+				}
+				NAP = { 
+					remove_heir = { } 
+				} 
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTB8"
+		define_ruler = {
+			name = "Ferrando I"
+			dynasty = "de Trast�mara"
+			dip = 4
+			mil = 4
+			adm = 2
+			claim = 50
+		}
+		break_union = ARA
+		hidden_effect = {
+			if = { 
+				limit = { 
+					ARA = { has_heir = yes } 
+				}
+				NAP = { 
+					remove_heir = { } 
+				} 
+			}
+		}
+		add_legitimacy = -20
+		add_treasury = -100
+		PAP = {
+			country_event = { id = flavor_por.99910 days = 1 }
+		}
+		set_country_flag = naples_submits_to_the_pope
+	}
+}
+
+
+country_event = {
+	id = flavor_por.9999
+	title = "flavor_ara.EVTNAME9"
+	desc = "flavor_ara.EVTDESC9"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_ara.EVTOPTA9"
+		trigger = {
+			FRA = {
+				NOT = { has_country_flag = claimed_naples }
+			}
+		}
+		FRA = {
+			country_event = { id = flavor_fra.3105 days = 7 }
+		}
+		NAP = {
+			add_opinion = {
+				who = PAP
+				modifier = opinion_interfering_pope
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTB9"
+		trigger = {
+			OR = {
+				FRA = {
+					has_country_flag = claimed_naples
+				}
+				ai = no
+			}
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 600
+			target = NAP
+		}
+		NAP = {
+			add_opinion = {
+				who = PAP
+				modifier = opinion_interfering_pope
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTC9"
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -40
+	}
+}
+
+country_event = {
+	id = flavor_por.99910
+	title = "flavor_ara.EVTNAME10"
+	desc = "flavor_ara.EVTDESC10"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_ara.EVTOPTA10"
+		add_treasury = 100
+		add_opinion = {
+			who = NAP
+			modifier = opinion_NAP_paid_tribute
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.99911
+	title = "flavor_ara.EVTNAME11"
+	desc = "flavor_ara.EVTDESC11"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NAP = {
+			exists = yes
+			is_subject = no
+		}
+		NOT = {
+			has_casus_belli = {
+				type = cb_restore_personal_union
+				target = NAP
+			}
+		}
+		OR = {
+			AND = {
+				tag = POR
+				government = monarchy
+				has_country_flag = alfonso_died_yes_really
+				NOT = { has_ruler_flag = alfonsos_successor }
+				is_subject = no
+			}
+			AND = {
+				NOT = { exists = ARA }
+				tag = SPA
+				government = monarchy
+				is_subject = no
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "flavor_ara.EVTOPTA11"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = NAP
+			}
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 600
+			target = NAP
+		}
+		NAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_claimed_naples
+			}
+		}
+	}
+	option = {
+		name = "flavor_ara.EVTOPTB11"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { alliance_with = NAP }
+			}
+		}
+		NAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_did_not_claim_naples
+			}
+		}
+	}
+}
+
+#1.35 Content by Big Boss#
+
+country_event = {
+	id = flavor_por.99912
+	title = flavor_ara.12.t 
+	desc = flavor_ara.12.d 
+	picture = SONS_OF_ARAGON_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = POR 
+		NOT = { is_year = 1452 }
+	}
+	
+	mean_time_to_happen = { months = 2 } 
+	major = yes 
+	major_trigger = {
+		OR = { 
+			tag = CAS 
+			is_rival = CAS 
+			is_enemy = CAS 
+			capital_scope = {
+				region = iberia_region 
+			}
+		}
+	}
+	
+	option = { 
+		name = flavor_ara.12.a 
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = CAS 
+					value = 0
+				}
+			}
+		}
+		custom_tooltip = ara_claims_in_castile_tt
+		hidden_effect = {
+			CAS = { 
+				every_owned_province = {
+					limit = { is_core = CAS  owned_by = CAS } 
+					add_permanent_claim = ROOT 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_ara.12.b 
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = CAS 
+						value = 0
+					}
+				}
+			}
+		}
+		CAS = {
+			add_opinion = {
+				who = ROOT 
+				modifier = successful_diplomacy
+			}
+		}
+		add_opinion = {
+			who = CAS 
+			modifier = successful_diplomacy
+		}
+		if = { 
+			limit = { 
+				OR = { 
+					is_rival = CAS 
+					is_enemy = CAS 
+					CAS = {
+						OR = { 
+							is_rival = ROOT 
+							is_enemy = ROOT 
+						}
+					}
+				}
+			}
+			remove_rival = CAS 
+			CAS = { 
+				remove_rival = ROOT 
+				add_stability_or_adm_power = yes 
+			} 
+			add_trust = { 
+				who = CAS 
+				value = 10 
+				mutual = yes 
+			}
+		}
+	}
+}	
+
+country_event = { #Commercial Expansion in Alexandria
+	id = flavor_por.99913 
+	title = flavor_ara.13.t 
+	desc = flavor_ara.13.d 
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		OR = { 
+			tag = POR 
+			was_tag = POR 
+		}
+		OR = { 
+			mission_completed = gc_ara_alexandria2
+			mission_completed = gc_ara_alexandria
+			bahari_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			delta_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 120 } 
+	
+	option = {
+		name = flavor_ara.13.a 
+		
+		bahari_area = { 
+			add_province_modifier = {
+				name = ara_nile_production_monopoly_modifier
+				duration = 9125 
+			}
+		}
+		delta_area = {
+			add_province_modifier = {
+				name = ara_nile_production_monopoly_modifier
+				duration = 9125 
+			}
+		}
+	}
+}
 	
