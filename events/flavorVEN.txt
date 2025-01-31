@@ -1804,7 +1804,7 @@ country_event = { #Venice and the Italian Power Struggle
 
 	option = {
 		name = flavor_ven.52.a
-		Maghreb_region = {
+		south_germany_region = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
