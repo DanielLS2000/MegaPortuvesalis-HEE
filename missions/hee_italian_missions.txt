@@ -2,10 +2,9 @@ diplo_colonial_branch = {
 	slot = 1
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	magi_square = {
 		icon = friends_in_high_places
@@ -245,10 +244,9 @@ consolidate_flancs_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	take_nice = {
 		icon = la_latinocrazia
@@ -340,10 +338,9 @@ unify_italy_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	build_armata_lombadia = {
 		icon = ven_army_republic
@@ -555,10 +552,9 @@ fort_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	emp_mlo_fortify_alps = {
 		icon = fortify_the_passes
@@ -658,10 +654,9 @@ merc_branch = {
 	slot = 5
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	emp_mlo_swiss_mercs = {
 		icon = swiss_mercenaries
@@ -697,10 +692,9 @@ kill_tazos_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	regia_marina = {
 		icon = a_worthy_navy
@@ -794,10 +788,9 @@ resorgimento_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	JHC_ITA_complete_the_risorgimento = {
 		icon = complete_the_risorgimento
@@ -854,10 +847,9 @@ balkan_expansion_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	consolidate_the_alps = {
 		icon = claim_tirol
@@ -1007,10 +999,9 @@ arsenale_branch = {
 	slot = 1
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	dev_arsenal = {
 		icon = expand_the_arsenal
@@ -1212,55 +1203,16 @@ arsenale_branch = {
 			}
 		}
 	}
-	ven_standing_army_mission_2 = {
-		icon = ven_standing_army_mission_2 
-		position = 8
-		required_missions = { ITA_galleasses }
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
-			num_of_owned_provinces_with = {
-				value = 10
-				has_building = soldier_households
-			}
-			num_of_owned_provinces_with = {
-				value = 25
-				has_manpower_building_trigger = yes
-			}
-			num_of_owned_provinces_with = {
-				value = 25
-				has_forcelimit_building_trigger = yes
-			}
-			OR = {
-				army_size = 140
-				has_global_modifier_value = {
-					which = discipline
-					value = 0.15
-				}
-				if = {
-					limit = { has_dlc = "Cradle of Civilization" }
-					army_professionalism = 0.5
-				}
-				else = { army_tradition = 70 }
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = ven_iron_wall_of_italy_modifier
-				duration = -1
-			}
-		}
-	}
 }
 
 building_genoa_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
+
 	ven_patronize_the_scuole_grandi = {
 		icon = ven_patronize_the_scuole_grandi
 		position = 7
@@ -1366,10 +1318,9 @@ renaissance_in_lombardy_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	bacon = {
 		icon = mlo_renaissance_city
@@ -1498,10 +1449,9 @@ great_past_manarchs_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	sonne = {
 		icon = ven_embrace_neoplatonism
@@ -1589,10 +1539,9 @@ academic_erudition_branch = {
 	slot = 5
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	emp_lan_commission_the_mona_lisa = {
 		icon = commission_the_mona_lisa
@@ -1681,14 +1630,13 @@ military_italian_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	ITA_reform_the_military = {
 		icon = mission_italian_condottiere
-		position = 11
+		position = 12
 		required_missions = {  }
 		trigger = {
 			army_size = 90
@@ -1723,7 +1671,7 @@ military_italian_branch = {
 	}
 	ITA_galleasses = {
 		icon = mission_galleass
-		position = 12
+		position = 13
 		required_missions = { ITA_reform_the_military }
 		trigger = {
 			navy_size = 70
@@ -1779,70 +1727,6 @@ military_italian_branch = {
 					name = ITA_galleass_galleys
 					duration = -1
 				}
-			}
-		}
-	}
-	ITA_economic_liberalism = {
-		icon = mission_camillo_cavour
-		position = 13
-		required_missions = { ITA_unify_regional_economies }
-		trigger = {
-			home_trade_node = {
-				highest_value_trade_node = yes
-				trade_share = {
-					country = ROOT
-					share = 80
-				}
-			}
-			if = {
-				limit = {
-					trade_income_percentage = 0.01
-				}
-				custom_trigger_tooltip = {
-					tooltip = ITA_at_least_100_trade_income
-					variable_arithmetic_trigger = {
-						export_to_variable = {
-							which = current_trade_income
-							value = monthly_income
-						}
-						export_to_variable = {
-							which = trade_income_share
-							value = trigger_value:trade_income_percentage
-						}
-						multiply_variable = { which = current_trade_income which = trade_income_share }
-						check_variable = { which = current_trade_income value = 100 }
-					}
-				}
-			}
-			trade_efficiency = 0.5
-		}
-		effect = {
-			country_event_with_option_insight = {
-				id = flavor_ita.2
-				option_1 = "
-				hire_advisor = {
-					type = statesman
-					religion = root
-					culture = root
-					min_age = 25
-					max_age = 25
-					skill = 3
-					name = \"Camillo Benso di Cavour\"
-					cost_multiplier = 1
-				}
-				set_country_flag = ITA_camillo_is_alive
-				custom_tooltip = \" \"
-				custom_tooltip = ITA_while_cavour_is_active
-				custom_tooltip = \" \"
-				add_mercantilism = -5
-				"
-				option_2 = "
-				add_country_modifier = {
-					name = ITA_protectionism
-					duration = 10950
-				}
-				add_mercantilism = 5
-				"
 			}
 		}
 	}
@@ -1926,10 +1810,9 @@ treangulo_industriale_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
 	ITA_unify_regional_economies = {
 		icon = dominant_economy
@@ -2192,71 +2075,14 @@ renaissance_evolution_branch = {
 	slot = 4
 	generic = no
 	ai = yes
-		potential = {
-		is_or_was_tag = { tag = MLO } 
+	potential = {
+		is_or_was_tag = { tag = MLO }
 	}
-        has_country_shield = yes
 
-	kingdom_of_von_klautz = {
-		icon = a_roman_empire
-		position = 11
-		required_missions = {  }
-		provinces_to_highlight = {
-			region = italy_region
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			total_development = 800
-			num_of_owned_provinces_with = {
-				region = italy_region
-				value = 45
-			}
-		}
-		effect = {
-			give_claims = { area = provence_area }
-			give_claims = { area = savoy_dauphine_area }
-			give_claims = { area = tirol_area }
-			give_claims = { area = east_adriatic_coast_area}
-			give_claims = { id = 4174 }
-			give_claims = { id = 130 }
-			give_claims = { id = 1826 }
-			give_claims = { id = 4738 }
-			give_claims = { id = 4752 }
-			give_claims = { id = 4754 }
-			custom_tooltip = " "
-			country_event_with_option_insight = {
-				id = flavor_ita.1
-				option_1 = "
-				if = {
-					limit = {
-						NOT = { government_rank = 3 }
-					}
-					set_government_rank = 3
-					custom_tooltip = \" \"
-				}
-				add_country_modifier = {
-					name = ITA_blatant_roman_larp
-					duration = -1
-					desc = ITA_until_roman_empire_is_formed
-				}
-				custom_tooltip = ITA_unlock_roman_ambition
-				custom_tooltip = \" \"
-				custom_tooltip = ITA_stylize
-				"
-				option_2 = "
-				add_country_modifier = {
-					name = ITA_permanent_absolutism_buff
-					duration = -1
-				}
-				add_power_projection_mission = { amount = 10 }
-				"
-			}
-		}
-	}
 	JHC_ITA_continue_the_renaissance = {
 		icon = continue_the_renaissance
-		position = 12
-		required_missions = { kingdom_of_von_klautz }
+		position = 11
+		required_missions = {  }
 		provinces_to_highlight = {
 			if = {
 				limit = {
@@ -2336,7 +2162,7 @@ renaissance_evolution_branch = {
 	}
 	ITA_train_of_thought = {
 		icon = commission_the_mona_lisa
-		position = 13
+		position = 12
 		required_missions = { JHC_ITA_continue_the_renaissance }
 		trigger = {
 			if = {
@@ -2411,6 +2237,70 @@ renaissance_evolution_branch = {
 			custom_tooltip = ITA_maintaining_the_ptm_will_be_easier
 		}
 	}
+	ITA_economic_liberalism = {
+		icon = mission_camillo_cavour
+		position = 13
+		required_missions = { ITA_unify_regional_economies }
+		trigger = {
+			home_trade_node = {
+				highest_value_trade_node = yes
+				trade_share = {
+					country = ROOT
+					share = 80
+				}
+			}
+			if = {
+				limit = {
+					trade_income_percentage = 0.01
+				}
+				custom_trigger_tooltip = {
+					tooltip = ITA_at_least_100_trade_income
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = current_trade_income
+							value = monthly_income
+						}
+						export_to_variable = {
+							which = trade_income_share
+							value = trigger_value:trade_income_percentage
+						}
+						multiply_variable = { which = current_trade_income which = trade_income_share }
+						check_variable = { which = current_trade_income value = 100 }
+					}
+				}
+			}
+			trade_efficiency = 0.5
+		}
+		effect = {
+			country_event_with_option_insight = {
+				id = flavor_ita.2
+				option_1 = "
+				hire_advisor = {
+					type = statesman
+					religion = root
+					culture = root
+					min_age = 25
+					max_age = 25
+					skill = 3
+					name = \"Camillo Benso di Cavour\"
+					cost_multiplier = 1
+				}
+				set_country_flag = ITA_camillo_is_alive
+				custom_tooltip = \" \"
+				custom_tooltip = ITA_while_cavour_is_active
+				custom_tooltip = \" \"
+				add_mercantilism = -5
+				"
+				option_2 = "
+				add_country_modifier = {
+					name = ITA_protectionism
+					duration = 10950
+				}
+				add_mercantilism = 5
+				"
+			}
+		}
+	}
 	ITA_silk = {
 		icon = purely_for_commerce
 		position = 14
@@ -2466,6 +2356,248 @@ renaissance_evolution_branch = {
 			}
 			custom_tooltip = " "
 			add_mercantilism = 3
+		}
+	}
+}
+
+gustavo_lima = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		is_or_was_tag = { tag = MLO }
+	}
+
+	JHC_ITA_alpine_defenses = {
+		icon = alpine_defenses
+		position = 13
+		required_missions = { ITA_reform_the_military }
+		provinces_to_highlight = {
+			OR = {
+				area = liguria_area
+				area = piedmont_area
+				area = lombardy_area
+				area = po_valley_area
+				area = venetia_area
+			}
+			owned_by = root
+
+			if = {
+				limit = {
+					ROOT = {
+						num_of_owned_provinces_with = {
+							value = 5
+							OR = {
+								area = liguria_area
+								area = piedmont_area
+								area = lombardy_area
+								area = po_valley_area
+								area = venetia_area
+							}
+							fort_level = 1
+						}
+					}
+				}
+				fort_level = 1
+				NOT = {
+					AND = {
+						if = {
+							limit = {
+								ROOT = {
+									NOT = { mil_tech = 14 }
+								}
+							}
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									AND = {
+										mil_tech = 14
+										NOT = { mil_tech = 19 }
+									}
+								}
+							}
+							OR = {
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									AND = {
+										mil_tech = 19
+										NOT = { mil_tech = 24 }
+									}
+								}
+							}
+							OR= { 
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									mil_tech = 24
+								}
+							}
+							has_building = fort_18th
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					AND = {
+						if = {
+							limit = {
+								ROOT = {
+									NOT = { mil_tech = 14 }
+								}
+							}
+							has_building = fort_15th
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									AND = {
+										mil_tech = 14
+										NOT = { mil_tech = 19 }
+									}
+								}
+							}
+							OR = {
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									AND = {
+										mil_tech = 19
+										NOT = { mil_tech = 24 }
+									}
+								}
+							}
+							OR = {
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+
+						}
+						else_if = {
+							limit = {
+								ROOT = {
+									mil_tech = 24
+								}
+							}
+							has_building = fort_18th
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = emp_ita_alpine_defenses_tooltip
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					area = liguria_area
+					area = piedmont_area
+					area = lombardy_area
+					area = po_valley_area
+					area = venetia_area
+				}
+				if = {
+					limit = {
+						ROOT = {
+							NOT = { mil_tech = 14 }
+						}
+					}
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							AND = {
+								mil_tech = 14
+								NOT = { mil_tech = 19 }
+							}
+						}
+					}
+					OR = {
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							AND = {
+								mil_tech = 19
+								NOT = { mil_tech = 24 }
+							}
+						}
+					}
+					OR = {
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							mil_tech = 24
+						}
+					}
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Domination"
+				}
+				custom_tooltip = ITA_upgrade_the_expand_the_fortifications_privilege
+				set_country_flag = ITA_upgrade_the_expand_the_fortifications_privilege_flag
+			}
+			else = {
+				add_mil_power = 150
+			}
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = fortification_expert
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+			
+			custom_tooltip = " "
+			
+			add_army_tradition_or_mil_power = { amount = 10 }
 		}
 	}
 }
