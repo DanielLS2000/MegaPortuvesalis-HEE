@@ -18,7 +18,7 @@ gme_binnenhof = {
 				primary_culture = flemish
 				primary_culture = wallonian
 				primary_culture = burgundian
-				dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+				primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			}
 		}
 	}
@@ -31,7 +31,7 @@ gme_binnenhof = {
 				primary_culture = flemish
 				primary_culture = wallonian
 				primary_culture = burgundian
-				dynamic-dutch-franconian-cosmopolitan_french-culture-num1
+				primary_culture = dynamic-dutch-franconian-cosmopolitan_french-culture-num1
 			}
 		}
 	}
