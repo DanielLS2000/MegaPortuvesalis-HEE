@@ -67,6 +67,10 @@
  gme_westminster_palace: "Westminster's Palace"
  gme_westminster_palace_desc: "§gThe Palace of Westminster serves as the meeting place for both the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom.§!"
 
+ # Scandinavia
+ saint_marcus_statue: "Statue of Saint Marcus"
+ saint_marcus_statue_desc: "§gThe Statue of Saint Marcus is a grand monument located in the heart of Finland, commemorating one of the most legendary crusaders of the First Crusade. Saint Marcus, a revered warrior-king, is depicted in full plate armor, his sword raised high as a symbol of victory and divine mission. Having led the conquest of the pagan lands of Finland, his campaigns brought Christianity to the northernmost frontiers of Europe. The statue stands as a testament to his unwavering faith and military prowess, inspiring generations with the tale of his battles and the establishment of Christendom in the region.§!"
+
 # California
  gme_chetro_ketl: "Chetro Ketl"
  gme_chetro_ketl_desc: "§g§!"

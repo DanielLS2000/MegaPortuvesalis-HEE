@@ -34,6 +34,14 @@ spriteTypes = {
 		name = "GFX_great_project_gme_binnenhof"
 		texturefile = "gfx//interface//great_projects//great_project_gme_binnenhof.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_gme_bolshoi_theatre"
+		texturefile = "gfx//interface//great_projects//great_project_gme_bolshoi_theatre.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_saint_marcus_statue"
+		texturefile = "gfx//interface//great_projects//great_project_saint_marcus_statue.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_great_project_fu_pharos_alexandria"

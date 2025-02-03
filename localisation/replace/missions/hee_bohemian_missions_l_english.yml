@@ -2,104 +2,151 @@
  ############## MISSION ###############################
 
  boh_protect_nitra_title:0 "Protect Nitra"
- boh_protect_nitra_desc:0 ""
+ boh_protect_nitra_desc:0 "The strategic region of Nitra has long been a contested land between Bohemia and Hungary. Securing it would strengthen our influence in Central Europe and provide a stepping stone for further expansion."
+ 
  boh_lion_of_the_empire_title:0 "Lion of the Empire"
- boh_decline_of_hungary_desc:0 ""
+ boh_lion_of_the_empire_desc:0 "Through conquest and diplomacy, Bohemia has risen as the dominant force in the Holy Roman Empire. We are no longer a mere kingdom; we are its guardian, its sword, and its roaring lion."
+ 
  boh_guardian_empire_title:0 "Guardian of the Empire"
  boh_guardian_empire_desc:0 ""
+
  boh_ruthenian_lands_title:0 "Ruthenian Lands"
- boh_ruthenian_lands_desc:0 ""
+ boh_ruthenian_lands_desc:0 "The lands of Ruthenia, once fragmented and weak, now fall under our banner. By bringing them into the Bohemian sphere, we ensure stability and a stronger frontier against the east."
+
  boh_invest_in_eastern_poland_title:0 "Invest in Eastern Poland"
- boh_invest_in_eastern_poland_desc:0 ""
+ boh_invest_in_eastern_poland_desc:0 "As Zapadoslavia extends its reach, investing in Eastern Poland will secure trade routes, fortify defenses, and integrate the region into our growing economic network."
+
  boh_czech_silver_mines_title:0 "Czech Silver Mines"
- boh_czech_silver_mines_desc:0 ""
+ boh_czech_silver_mines_desc:0 "The legendary silver mines of Kutná Hora have been the backbone of Bohemian wealth. By further developing them, we ensure financial dominance over Central Europe."
+
  boh_support_the_merchants_title:0 "Support The Merchants"
- boh_support_the_merchants_desc:0 ""
+ boh_support_the_merchants_desc:0 "Trade has always been the lifeblood of our prosperity. Strengthening merchant guilds and establishing new trade routes will expand our economic influence across Europe."
+
  boh_bohemian_government_title:0 "Bohemian Monarchy"
- boh_bohemian_government_desc:0 ""
+ boh_bohemian_government_desc:0 "From the days of Peter Vessalius to the establishment of Zapadoslavia, our monarchy has evolved into a powerful institution, blending the best traditions of governance into a unique model of rule."
+
  boh_jewel_of_the_empire_title:0 "Jewel of The Empire"
- boh_jewel_of_the_empire_desc:0 ""
+ boh_jewel_of_the_empire_desc:0 "Prague, the heart of Bohemia and the Empire, must shine brighter than ever. Through investment in culture, trade, and infrastructure, we shall make it the undisputed jewel of Europe."
+
  boh_cultural_flowering_title:0 "Cultural Flowering"
- boh_cultural_flowering_desc:0 ""
+ boh_cultural_flowering_desc:0 "The Renaissance has brought new artistic and intellectual achievements to Bohemia. Encouraging scholars, artists, and architects will solidify our status as a beacon of culture."
+
  boh_peace_in_europe_title:0 "Peace in Europe"
- boh_peace_in_europe_desc:0 ""
+ boh_peace_in_europe_desc:0 "After years of war and turmoil, it is time for Bohemia to use its influence to bring lasting peace to Europe, securing our place as the stabilizing force of the continent."
+
 
  boh_incorporate_the_slovaks_title:0 "Incorporate The Slovaks"
- boh_incorporate_the_slovaks_desc:0 ""
+ boh_incorporate_the_slovaks_desc:0 "The Slovak lands have long been intertwined with our history. By fully integrating them into our realm, we unify the western Slavs under one banner."
+
  boh_cool_general_title:0 "Bozi Bojovnici"
- boh_cool_general_desc:0 ""
+ boh_cool_general_desc:0 "The Hussite warriors, known as God's Warriors, revolutionized medieval warfare with their innovative tactics. Their legacy remains a cornerstone of Bohemian military strategy."
+
  boh_slovak_cities_title:0 "Slovak Cities"
- boh_slovak_cities_desc:0 ""
+ boh_slovak_cities_desc:0 "Slovakian cities serve as crucial trade and military hubs. By expanding their infrastructure, we can transform them into economic powerhouses."
+
  boh_bohemian_crystal_title:0 "Bohemian Crystal"
- boh_bohemian_crystal_desc:0 ""
+ boh_bohemian_crystal_desc:0 "The famed Bohemian crystal has long been sought after by nobles across Europe. Further investment in our glassmaking industry will solidify our dominance in luxury goods."
+
  boh_vladislav_hall_title:0 "Vladislav Hall"
- boh_vladislav_hall_desc:0 ""
+ boh_vladislav_hall_desc:0 "A masterpiece of Bohemian architecture, the Vladislav Hall stands as a testament to our cultural and political might. Let it serve as the symbol of our ambitions."
+
  boh_holdings_in_india_title:0 "Holdings in India"
- boh_holdings_in_india_desc:0 ""
+ boh_holdings_in_india_desc:0 "Bohemian traders have set their sights on the riches of India. Establishing trade ports will bring untold wealth to our realm."
+
 
  boh_hussite_wars_aftermath_title:0 "Hussite Wars Aftermath"
- boh_hussite_wars_aftermath_desc:0 ""
+ boh_hussite_wars_aftermath_desc:0 "The Hussite Wars reshaped Bohemia, forging a strong national identity. It is time to build upon this foundation and ensure our place as a formidable power."
+
  boh_humiliate_milcenia_title:0 "Humiliate Milcenia"
- boh_humiliate_milcenia_desc:0 ""
+ boh_humiliate_milcenia_desc:0 "The time has come to remind Milcenia of its place. A decisive show of force will shatter their pride and reinforce our superiority."
+
  boh_karel_legacy_title:0 "Karel Legacy"
- boh_karel_legacy_desc:0 ""
+ boh_karel_legacy_desc:0 "Karel III's reign ushered in a golden age for Bohemia. By following his vision of expansion and modernization, we ensure the future greatness of our realm."
+
  boh_establish_zapadoslavia_title:0 "Establish Zapadoslavia"
- boh_establish_zapadoslavia_desc:0 ""
+ boh_establish_zapadoslavia_desc:0 "The unification of Bohemians, Poles, and Slovaks has created a new superpower in Central Europe—Zapadoslavia, the heir to the Great Moravian dream."
+
  boh_balance_princely_lands_title:0 "Balance Princely Lands"
- boh_balance_princely_lands_desc:0 ""
+ boh_balance_princely_lands_desc:0 "Managing the ambitions of noble houses requires careful diplomacy. A balance of power ensures stability and prevents internal strife."
+
  boh_bohemia_prospers_title:0 "Bohemia Prospers"
- boh_bohemia_prospers_desc:0 ""
+ boh_bohemia_prospers_desc:0 "Through wise governance, economic growth, and military strength, Bohemia enters an era of unprecedented prosperity."
+
  boh_bohemian_commonwealth_title:0 "Bohemian Commonwealth"
- boh_bohemian_commonwealth_desc:0 ""
+ boh_bohemian_commonwealth_desc:0 "By forging deeper ties with our Slavic neighbors, we create a powerful commonwealth capable of challenging the greatest empires of Europe."
+
  boh_recover_from_hussite_wars_title:0 "Recover From Hussite Wars"
- boh_recover_from_hussite_wars_desc:0 ""
+ boh_recover_from_hussite_wars_desc:0 "The wounds of the Hussite Wars still linger, but through reconstruction and unity, Bohemia will rise stronger than before."
+
  boh_the_golden_city_title:0 "The Golden City"
- boh_the_golden_city_desc:0 ""
+ boh_the_golden_city_desc:0 "Prague, the Golden City, must stand as a testament to Bohemian grandeur. With continued investment, it will become the most magnificent city in the world."
+
  boh_reform_the_bergordnung_title:0 "Reform The Bergordnung"
- boh_reform_the_bergordnung_desc:0 ""
+ boh_reform_the_bergordnung_desc:0 "The mining laws of Bohemia must be reformed to increase silver production and maintain our economic dominance."
+
  boh_czech_heavy_industry_title:0 "Czech Heavy Industry"
- boh_czech_heavy_industry_desc:0 ""
+ boh_czech_heavy_industry_desc:0 "A new age of industrialization is upon us. Investing in heavy industry will secure Bohemia's position as an economic powerhouse."
+
  boh_the_balance_of_power_title:0 "The Balance of Power"
- boh_the_balance_of_power_desc:0 ""
+ boh_the_balance_of_power_desc:0 "Maintaining a delicate balance of power within the Empire is crucial to ensuring Bohemia's continued influence and security."
+
  boh_the_ostend_company_title:0 "The Ostend Company"
- boh_the_ostend_company_desc:0 ""
+ boh_the_ostend_company_desc:0 "By establishing trade networks in the East Indies, we can enrich Bohemia and secure our place among the great naval powers."
+
 
  boh_secure_the_vistula_title:0 "Secure The Vistula"
- boh_secure_the_vistula_desc:0 ""
+ boh_secure_the_vistula_desc:0 "Control over the Vistula River is crucial for trade and military logistics. By securing its banks, we ensure our dominance in Central European commerce and fortify our eastern frontier."
+
  boh_lifetime_of_war_title:0 "Lifetime of War"
- boh_lifetime_of_war_desc:0 ""
+ boh_lifetime_of_war_desc:0 "From the Hussite Wars to the conquest of Bohemia, our nation has been forged in the fires of conflict. Our people know no peace—only the struggle to survive and conquer."
+
  boh_breadbasket_of_europe_title:0 "Breadbasket of Europe"
- boh_breadbasket_of_europe_desc:0 ""
+ boh_breadbasket_of_europe_desc:0 "The fertile lands of Zapadoslavia provide an endless bounty of grain, feeding both our people and the armies of Europe. Strengthening our agricultural infrastructure will ensure our place as the continent's primary food supplier."
+
  boh_bohemian_industry_title:0 "Bohemian Industry"
- boh_bohemian_industry_desc:0 ""
+ boh_bohemian_industry_desc:0 "Bohemia has long been the industrial heart of the empire. Expanding our mines, mills, and manufactories will solidify our status as an economic powerhouse."
+
  boh_univerzita_karlova_title:0 "Univerzita Karlova"
- boh_univerzita_karlova_desc:0 ""
+ boh_univerzita_karlova_desc:0 "Founded as a beacon of learning, the University of Prague has shaped the minds of scholars and rulers alike. Continued investment in education will cement Bohemia's intellectual legacy."
+
  boh_settle_new_world_title:0 "Explore the World"
- boh_settle_new_world_desc:0 ""
+ boh_settle_new_world_desc:0 "The riches of the New World await those bold enough to claim them. By expanding our naval expeditions, we shall carve out a place for Bohemia beyond the European continent."
+
 
  boh_consolidate_silesia_title:0 "Consolidate Silesia"
- boh_consolidate_silesia_desc:0 ""
+ boh_consolidate_silesia_desc:0 "The lands of Silesia have long been contested, but they rightfully belong under Bohemian rule. By integrating them into our kingdom, we secure both economic and strategic advantages."
+
  boh_polish_diplomacy_title:0 "Polish Diplomacy"
- boh_polish_diplomacy_desc:0 ""
+ boh_polish_diplomacy_desc:0 "Our bonds with Poland run deep. Whether through alliance or conquest, ensuring Polish cooperation will be key to securing Zapadoslavia's dominance in the region."
+
  boh_vessalius_heritage_title:0 "Vessalius Heritage"
- boh_vessalius_heritage_desc:0 ""
+ boh_vessalius_heritage_desc:0 "Peter Vessalius legacy of military genius and ambition continues to shape Bohemia. Honoring his name means ensuring our nation's strength through conquest and discipline."
+
  boh_prussian_lands_title:0 "Prussian Lands"
- boh_prussian_lands_desc:0 ""
+ boh_prussian_lands_desc:0 "The lands of Prussia are a natural extension of our influence. By claiming them, we establish our presence on the Baltic coast and control vital trade routes."
+
  boh_restore_kralovec_title:0 "Restore Kralovec"
- boh_restore_kralovec_desc:0 ""
+ boh_restore_kralovec_desc:0 "Kralovec, once a beacon of commerce and culture, must be restored to its former glory. Through investment and expansion, it will once again shine as a center of trade and governance."
+
  boh_bohemian_reinassance_title:0 "Bohemian Reinassance"
- boh_bohemian_reinassance_desc:0 ""
+ boh_bohemian_reinassance_desc:0 "Art, science, and philosophy flourish in our realm. By embracing this cultural golden age, we shall make Bohemia a shining star of European civilization."
+
  boh_printing_movement_title:0 "Printing Movement"
- boh_printing_movement_desc:0 ""
+ boh_printing_movement_desc:0 "The advent of the printing press has revolutionized the spread of knowledge. By fostering its growth, we ensure that Bohemian ideas and innovations reach every corner of the world."
+
  boh_edict_of_education_title:0 "Edict of Education"
- boh_edict_of_education_desc:0 ""
+ boh_edict_of_education_desc:0 "An educated populace is the backbone of a strong state. By enacting reforms to promote learning, we ensure that our future generations will lead Bohemia to greater heights."
+
  boh_beiou_title:0 "B.E.I.O.U"
- boh_beiou_desc:0 ""
+ boh_beiou_desc:0 "Bohemia est imperare orbi universo—Bohemia must rule the world. Only through absolute control can we fulfill our destiny as the true inheritors of the imperial mantle."
+
 
  boh_purge_hussites_title:0 "Purge Hussites"
- boh_purge_hussites_desc:0 ""
+ boh_purge_hussites_desc:0 "The Hussite heresy has plagued our realm for too long. By rooting out its remnants, we shall restore unity to Bohemia under the one true faith."
+
  boh_shield_of_the_true_faith_title:0 "Shield of The True Faith"
- boh_shield_of_the_true_faith_desc:0 ""
+ boh_shield_of_the_true_faith_desc:0 "As the last bastion of orthodoxy, Bohemia must stand firm against all heretical threats. We are the sword and shield of the righteous, defenders of the true faith in an age of chaos."
+
 
  # Tooltips
  boh_had_start_event_tt:0 "Has had the '§YThe Aftermath of the Hussite Wars§!' event"
