@@ -3848,7 +3848,6 @@ boh_hussite_branch = {
 		position = 9
 		
 		trigger = {
-			not_in_mission_preview_mode = { key = BOH_RELIGION }
 			bohemia_area = {
 				type = all
 				religion = hussite
@@ -3962,7 +3961,7 @@ boh_hussite_branch = {
 		position = 10
 		
 		trigger = {
-			not_in_mission_preview_mode = { key = BOH_RELIGION }
+			
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 30
@@ -4100,7 +4099,7 @@ boh_catholic_branch = {
 			}
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = BOH_RELIGION }
+			
 			bohemia_area = {
 				type = all
 				owned_by = ROOT
@@ -4239,7 +4238,7 @@ boh_catholic_branch = {
 			}
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = BOH_RELIGION }
+			
 			is_defender_of_faith = yes
 			custom_trigger_tooltip = {
 				tooltip = boh_has_won_20_battles_against_heretic_heathen

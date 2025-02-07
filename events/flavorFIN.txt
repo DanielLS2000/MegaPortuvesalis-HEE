@@ -5,6 +5,7 @@
 ########################################
 
 namespace = flavor_fin
+namespace = recurso_tecnico
 
 #A new, Imperial Name
 country_event = {
@@ -75,15 +76,15 @@ country_event = {
 #Gambiarras do Frederico
 
 country_event = { #La Sorbonne
-	id = recurso_tecnico_1
-	title = recurso_tecnico_1.t 
-	desc = recurso_tecnico_1.d 
+	id = recurso_tecnico.1
+	title = recurso_tecnico.1.t 
+	desc = recurso_tecnico.1.d 
 	picture = GREAT_BUILDING_eventPicture
 	
 	is_triggered_only = yes 
 	
 	option = {
-		name = recurso_tecnico_1.a 
+		name = recurso_tecnico.1.a 
 		
 		1 = {
 			add_province_modifier = {

@@ -1,4 +1,4 @@
-1 = {
+egy_first_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -446,7 +446,7 @@
 	}
 }
 
-2 = {
+egy_second_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -993,7 +993,7 @@
 	}
 }
 
-3 = {
+egy_third_branch = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1705,7 +1705,7 @@
 	}
 }
 
-4 = {
+egy_fourth_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2093,7 +2093,7 @@
 	}
 }
 
-5 = {
+egy_fifth_branch = {
 	slot = 5
 	generic = no
 	ai = yes

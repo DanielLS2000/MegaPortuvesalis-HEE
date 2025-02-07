@@ -1,4 +1,4 @@
-bruh = {
+fin_first_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -296,11 +296,11 @@ bruh = {
 	}
 }
 
-2 = {
+fin_second_branch = {
 	slot = 2
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
@@ -572,7 +572,7 @@ bruh = {
 			1 = { owned_by = ROOT num_of_times_improved = 8 } 
 		}
 		effect = { 
-			country_event = { id = recurso_tecnico_1 } 
+			country_event = { id = recurso_tecnico.1 } 
 			custom_tooltip = fra_event_insight_204_tt
 		}
 	}
@@ -744,11 +744,11 @@ bruh = {
 	}
 }
 
-3 = {
+fin_third_branch = {
 	slot = 3
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		is_or_was_tag = { tag = FIN } 
 	}
         has_country_shield = yes
@@ -1020,7 +1020,7 @@ bruh = {
 	}
 }
 
-4 = {
+fin_fourth_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1202,7 +1202,7 @@ bruh = {
 	}
 }
 
-5 = {
+fin_fifth_branch = {
 	slot = 5
 	generic = no
 	ai = yes

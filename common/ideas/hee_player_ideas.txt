@@ -428,7 +428,7 @@ EGY_ideas = {
 		global_missionary_strength = 0.02
 	}
 	training_missions_in_egypt = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.2
 	}
 	legacy_of_the_karimis = {
 		discipline = 0.05
