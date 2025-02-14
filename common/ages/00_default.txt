@@ -405,11 +405,17 @@ age_of_reformation = {
 		}
 	
 		ab_siege_blockades = {
+			allow = {
+				ROOT = {
+					is_part_of_hre = yes
+				}
+			}
 			effect = { 
 				on_age_ability_taken = { age = age_of_reformation }
 			}
 			modifier = {
-				siege_blockade_progress = 1
+				colonists = 1
+				range = 0.25
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
@@ -417,7 +423,7 @@ age_of_reformation = {
 				modifier = {
 					factor = 0
 					NOT = {
-							num_of_ports = 5
+						num_of_ports = 5
 					}
 				}
 

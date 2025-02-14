@@ -194,8 +194,8 @@ country_decisions = {
 			}
 			is_tutorial_active = no
 			OR = {
+				tag = POR
 				tag = CAS
-				tag = ARA
 			}
 			capital_scope = {
 				region = iberia_region
@@ -206,12 +206,12 @@ country_decisions = {
 					ai = yes
 					OR = {
 						AND = {
-							tag = CAS
-							ARA = {	is_subject_of = CAS	}
+							tag = POR
+							CAS = {	is_subject_of = POR	}
 						}
 						AND = {
-							tag = ARA
-							CAS = {	is_subject_of = ARA	}
+							tag = CAS
+							POR = {	is_subject_of = CAS	}
 						}
 					}
 				}
@@ -220,13 +220,13 @@ country_decisions = {
 				ai = no
 				AND = {
 					ai = yes
-					tag = CAS
-					ARA = { NOT = { num_of_cities = 40 } } #Keep this number the same as below
+					tag = POR
+					CAS = { NOT = { num_of_cities = 40 } } #Keep this number the same as below
 				}
 				AND = {
 					ai = yes
-					tag = ARA
-					CAS = { NOT = { num_of_cities = 47 } } #Keep this number the same as below
+					tag = CAS
+					POR = { NOT = { num_of_cities = 47 } } #Keep this number the same as below
 				}
 			}
 		}
@@ -248,53 +248,52 @@ country_decisions = {
 				tooltip = forming_spain_diplomatically_tooltip
 				OR = {
 					AND = {
-						tag = CAS
-						ARA = {	is_subject_of = CAS	}
+						tag = POR
+						CAS = {	is_subject_of = POR	}
 					}
 					AND = {
-						tag = ARA
-						CAS = {	is_subject_of = ARA	}
+						tag = CAS
+						POR = {	is_subject_of = CAS	}
 					}
 				}
 			}
 			OR = {
 				AND = {
-					tag = CAS
-					ARA = {
+					tag = POR
+					CAS = {
 						NOT = { num_of_cities = 40 } #Keep this number the same as above. Original 17 +15, +5 with Spain update, +3 with Emperor update
 					}
 				}
 				AND = {
-					tag = ARA
-					CAS = {
+					tag = CAS
+					POR = {
 						NOT = { num_of_cities = 47 } #Keep this number the same as above. Original 25 +15, +5 with Spain update, +2 with Emperor update
 					}
 				}
 			}
 		}
 		effect = {
-			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
 			if = {
 				limit = {
-					tag = CAS
-					ARA = {
-						ai = yes
-					}
-				}
-				inherit = ARA
-			}
-			if = {
-				limit = {
-					tag = ARA
+					tag = POR
 					CAS = {
 						ai = yes
 					}
 				}
 				inherit = CAS
+			}
+			if = {
+				limit = {
+					tag = CAS
+					POR = {
+						ai = yes
+					}
+				}
+				inherit = POR
 			}
 			change_tag = SPA
 			if = {
@@ -302,7 +301,7 @@ country_decisions = {
 					NOT = { 
 						AND = {
 							has_dlc = "Golden Century"
-							tag = ARA
+							tag = CAS
 						}
 					}
 				}
@@ -331,8 +330,8 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 200
-		do_not_integrate = ARA
 		do_not_integrate = CAS
+		do_not_integrate = POR
 	}	
 	
 }

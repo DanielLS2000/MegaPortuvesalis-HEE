@@ -667,20 +667,48 @@ egy_second_branch = {
 					}
 				}
 				religion_group = coptic
-				province_id = 361
-				province_id = 2324
-				province_id = 379
-				province_id = 390
-				province_id = 1205
-				province_id = 1227
-				province_id = 1228
-				province_id = 387
-				province_id = 2757
-				province_id = 2762
-				province_id = 1212
-				province_id = 1099
-				province_id = 358
-				province_id = 2313
+				361 = {
+					owned_by = root
+				}
+				2324 = {
+					owned_by = root
+				}
+				379 = {
+					owned_by = root
+				}
+				390 = {
+					owned_by = root
+				}
+				1205 = {
+					owned_by = root
+				}
+				1227 = {
+					owned_by = root
+				}
+				1228 = {
+					owned_by = root
+				}
+				387 = {
+					owned_by = root
+				}
+				2757 = {
+					owned_by = root
+				}
+				2762 = {
+					owned_by = root
+				}
+				1212 = {
+					owned_by = root
+				}
+				1099 = {
+					owned_by = root
+				}
+				358 = {
+					owned_by = root
+				}
+				2313 = {
+					owned_by = root
+				}
 			}
 			else = {
 				custom_trigger_tooltip = {

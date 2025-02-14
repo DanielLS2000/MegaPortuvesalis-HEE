@@ -56,6 +56,44 @@ country_event = {
 	}
 }
 
+# Return of the Habsburgs
+country_event = {
+	id = flavor_fra.999999
+	title = "flavor_hab.EVTNAME7"
+	desc = "flavor_hab.EVTDESC7"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+
+	trigger = {
+		tag = FRA
+		has_disaster = civil_war
+		NOT = { 
+			dynasty = "Habsburg-Burgundy" 
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	
+	option = {		# Welcome back!
+		name = "flavor_hab.EVTOPTB7"
+		define_ruler = {
+			name = "Marie"
+			dynasty = "Habsburg-Burgundy"
+			adm = 4
+			dip = 5
+			mil = 3
+			claim = 95
+			female = yes
+			age = 21
+		}
+	}
+}
+
 # The End of the Hundred Years War
 country_event = {
 	id = flavor_fra.9104
@@ -1203,7 +1241,7 @@ country_event = {
 		add_adm_power = 50
 		define_advisor = {
 			type = statesman
-			name = "Charles-François de Broglie"
+			name = "Charles-Franï¿½ois de Broglie"
 			culture = gascon
 			discount = yes
 			skill = 2
@@ -1872,7 +1910,7 @@ country_event = {
 		name = "flavor_fra.EVTOPTB9000"
 		define_advisor = {
 			type = artist
-			name = "François Villon"
+			name = "Franï¿½ois Villon"
 			culture = cosmopolitan_french
 			discount = yes
 			skill = 3
