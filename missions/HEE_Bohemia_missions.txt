@@ -938,10 +938,6 @@ boh_second_branch = {
 		trigger = {
 			army_tradition = 60
 			has_mil_advisor_2 = yes
-			custom_trigger_tooltip = {
-				tooltip = boh_has_won_20_battles
-				check_variable = { which = bohemia_num_of_won_battles value = 20 }
-			}
 		}
 		effect = {
 			unlock_government_reform = {

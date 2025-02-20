@@ -1777,11 +1777,11 @@ country_event = {
 		name = flavor_gbr.100.a
 		define_heir = {
 			name = "Henry"
+			dynasty = "Blackfyre"
 			adm = 5
 			dip = 5
 			mil = 5
 			age = 0
-			dynasty = ROOT
 		}
 		hidden_effect = {
 			add_heir_personality = reformist_personality
@@ -1861,7 +1861,7 @@ country_event = {
 			female = yes
 			min_age = 15
 			max_age = 25
-			dynasty = ROOT
+			dynasty = "Blackfyre"
 		}
 		if = {
 			limit = {
@@ -3032,7 +3032,7 @@ country_event = {
 			religion = catholic
 			min_age = 15
 			max_age = 25
-			dynasty = ROOT
+			dynasty = "Blackfyre"
 		}
 		if = {
 			limit = {

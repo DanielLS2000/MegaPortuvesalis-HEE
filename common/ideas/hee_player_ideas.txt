@@ -633,7 +633,7 @@ SPA_ideas = {
 	siglo_de_oro = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	salamanca_scholars = {
+	chartered_merchant_companies = {
 		global_trade_power = 0.2
 	}
 	spanish_armada = {
@@ -645,11 +645,11 @@ SPA_ideas = {
 		colonists = 1
 		effect = { remove_temporary_colonist = yes }
 	}
-	spa_cortes = {
+	royal_absolutism = {
 		build_cost = -0.15
 		yearly_absolutism = 0.5
 	}
-	inter_caetera = {
+	por_royal_military_academy = {
 		defensiveness = 0.1
 		artillery_fire = 1
 	}	

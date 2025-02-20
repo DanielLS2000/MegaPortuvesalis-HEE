@@ -909,24 +909,6 @@ ARM_ideas = {
 	}
 }
 
-
-WLS_ideas = {
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				num_of_cities = 15
-				is_subject = no
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				primary_culture = welsh
-			}
-		}
-	}
-}
-
 KHI_ideas = {
 	trigger = {
 		tag = KHI
