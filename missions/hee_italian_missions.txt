@@ -1909,10 +1909,6 @@ treangulo_industriale_branch = {
 				has_manufactory_trigger = yes
 				value = 5
 			}
-			trading_part = {
-				trade_goods = wine
-				value = 0.67
-			}
 			production_leader = {
 				trade_goods = wine
 			}
@@ -1928,8 +1924,6 @@ treangulo_industriale_branch = {
 			else = {
 				add_years_of_income = 1
 			}
-			custom_tooltip = " "
-			add_mercantilism = 3
 			custom_tooltip = " "
 			country_event_with_effect_insight = {
 				id = flavor_ita.9
