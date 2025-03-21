@@ -2119,7 +2119,10 @@ NED_4 = {
 		} 
 
 		trigger = {  
-			tag = NED
+			OR = {
+				tag = NED
+				tag = LOT
+			}
 			12 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT

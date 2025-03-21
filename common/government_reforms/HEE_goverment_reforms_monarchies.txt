@@ -77,3 +77,33 @@ irish_highkingdom_reform = {
 		factor = 1
 	}
 }
+
+musketeers_reform = {
+	icon = "musketeers_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		tag = FRA 
+	}
+	trigger = {
+		NOT = { current_age = age_of_discovery }
+		NOT = { current_age = age_of_reformation }
+		mission_completed = bur_royal_musketeers
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = musketeers_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		has_musketeer = yes
+		allowed_musketeer_fraction = 0.2
+		nobles_influence_modifier = -0.1
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}

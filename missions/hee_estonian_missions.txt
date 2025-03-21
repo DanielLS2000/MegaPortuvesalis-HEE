@@ -272,7 +272,6 @@ has_country_shield = yes
 			33 = {
 				owned_by = ROOT
 				has_building = marketplace
-				has_building = dock
 				is_strongest_trade_power = ROOT
 			}
 			navy_size_percentage = 1
@@ -1541,10 +1540,6 @@ has_country_shield = yes
 		trigger = {
 			stability = 1
 			reform_level = 3
-			OR = {
-				has_reform = tysyatsky_reform
-				has_reform = namestnik_reform
-			}
 			owns_or_non_sovereign_subject_of = 274
 			owns_or_non_sovereign_subject_of = 310
 			274 = { num_of_times_improved = 3 }

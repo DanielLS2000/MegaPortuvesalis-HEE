@@ -3261,10 +3261,10 @@ country_event = {
 	trigger = {
 		has_global_flag = eth_ottoman_company_available
 		tag = EGY
-		exists = BOH
+		exists = ZPD
 		has_country_flag = eth_portuguese_help
 		is_at_war = yes
-		NOT = { war_with = BOH }
+		NOT = { war_with = ZPD }
 		NOT = { is_year = 1600 }
 	}
 
@@ -3279,7 +3279,7 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			any_owned_province = {
-				has_discovered = BOH
+				has_discovered = ZPD
 			}
 		}
 	}
@@ -3358,10 +3358,10 @@ country_event = {
 		tag = EGY
 		is_year = 1600
 		NOT = { is_year = 1700 }
-		exists = BOH
-		BOH = { religion = catholic }
+		exists = ZPD
+		ZPD = { religion = protestant }
 		OR = {
-			alliance_with = BOH
+			alliance_with = ZPD
 			has_country_flag = portuguese_embassy
 		}
 		religion = coptic
@@ -3381,7 +3381,7 @@ country_event = {
 	option = {	#Banish them from Ethiopia
 		name = flavor_eth.52.a
 		reverse_add_opinion = {
-			who = BOH
+			who = ZPD
 			modifier = eth_banned_jesuits
 		}
 		random_owned_province = {
@@ -3391,7 +3391,7 @@ country_event = {
 			}
 			spawn_small_scaled_rebels = {
 				no_defined_leader = yes
-				type = catholic_rebels
+				type = protestant_rebels
 			}
 		}
 
@@ -3407,7 +3407,7 @@ country_event = {
 				region = horn_of_africa_region
 				religion = coptic
 			}
-			change_religion = catholic
+			change_religion = protestant
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
@@ -3418,7 +3418,7 @@ country_event = {
 				region = horn_of_africa_region
 				religion = coptic
 			}
-			change_religion = catholic
+			change_religion = protestant
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
@@ -3429,7 +3429,7 @@ country_event = {
 				region = horn_of_africa_region
 				religion = coptic
 			}
-			change_religion = catholic
+			change_religion = protestant
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
@@ -3443,9 +3443,9 @@ country_event = {
 
 	option = {	#Convert to Catholicism 
 		name = flavor_eth.52.c
-		change_religion = catholic
+		change_religion = protestant
 		capital_scope = {
-			change_religion = catholic
+			change_religion = protestant
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
@@ -3456,7 +3456,7 @@ country_event = {
 				region = horn_of_africa_region
 				religion = coptic
 			}
-			change_religion = catholic
+			change_religion = protestant
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
